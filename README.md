@@ -17,9 +17,9 @@ Vou estudar:
 	Módulo 3: Desenvolvimento Back-end; 
 	Módulo 3: Ciência da Computação.
 
-O curso é bem intenso, de 14:00 às 20:00 em todos os dias úteis, e pode ser necessários outras
-horas extras além das atvidades normais. A duração é de 1 ano, com cerca de 1.500 horas de estudo!
-Espero me aprofundar bastante neste ramo, adquirir "hard" e "soft skills". 
+O curso é bem intenso, de 14:00 às 20:00 em todos os dias úteis, e podem ser necessárias outras
+horas além das atvidades normais para fazer as tarefas. A duração é de 1 ano, com cerca de 1.500
+horas de estudo! Espero me aprofundar bastante neste ramo, adquirir as "hard" e "soft skills". 
 
 Então é isso, Vamo que vamo! Juntos! #goTrybe #goTurma14 #goTiago
 

@@ -6,16 +6,16 @@ Sou formado em engenharia elétrica, tendo atuado durante alguns anos na área d
 mas agora estou mudando de carreira, buscando uma antiga paixão que é a computação,
 especificamente no desenevolvimento WEB full-stack.
 
-A Trybe é uma incrível escola do tipo bootcamp que me ensina três fundamentos básicos:
-	 - Como Programar
-	 - Como Aprender
-	 - Como Trabalhar
+A Trybe é uma incrível escola do tipo bootcamp que me ensina três fundamentos básicos: 
+	 Como Programar, 
+	 Como Aprender e
+	 Como Trabalhar.
 
-Vou estudar:
-	Módulo 1: Fundamentos do Desenvolvimento Web
-	Módulo 2: Desenvolvimento Front-end
-	Módulo 3: Desenvolvimento Back-end
-	Módulo 3: Ciência da Computação
+Vou estudar: 
+	Módulo 1: Fundamentos do Desenvolvimento Web; 
+	Módulo 2: Desenvolvimento Front-end; 
+	Módulo 3: Desenvolvimento Back-end; 
+	Módulo 3: Ciência da Computação.
 
 O curso é bem intenso, de 14:00 às 20:00 em todos os dias úteis, e pode ser necessários outras
 horas extras além das atvidades normais. A duração é de 1 ano, com cerca de 1.500 horas de estudo!

@@ -4,9 +4,9 @@ Parque Nacional do Caparaó e da divisa com o estado do ES.
 
 Sou formado em engenharia elétrica, tendo atuado durante alguns anos na área de mineração,
 mas agora estou mudando de carreira, buscando uma antiga paixão que é a computação,
-especificamente no desenevolvimento WEB full-stack.
+especificamente no desenvolvimento WEB full-stack.
 
-A Trybe é uma incrível escola do tipo bootcamp que me ensina três fundamentos básicos: 
+A Trybe é uma escola incrível do tipo "bootcamp" que me ensina três fundamentos básicos: 
 	 Como Programar, 
 	 Como Aprender e
 	 Como Trabalhar.

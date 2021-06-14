@@ -4,3 +4,4 @@ O que estou aprendendo na Trybe (até 11/06/21):
 - Git  (11/06);
 
 - Next, React
+- Next, HTML

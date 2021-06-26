@@ -81,3 +81,10 @@ for (let index = 1; index <= 25; index += 1) {
 }
 console.log('Meu array: ' + meusNumeros)
 console.log('-----------')
+
+// p.9
+console.log('Bloco 4 / Dia 2 / Programa 9')
+for (let number of meusNumeros) {
+  console.log(number/2)
+}
+console.log('-----------')

@@ -190,3 +190,17 @@ if ( (!(a % 2)&&(a !=0) ) || ( !(b % 2)&&(b != 0) ) || ( !(c % 2)&&(c != 0) ))  
   console.log(false)
 }
 console.log('-----------')
+
+//Programa 8
+console.log('Programa 9');
+a = -3;
+b = 2;
+c = 0;
+console.log('Dados a = ' + a + ', b = ' + b + ' e c = ' + c);
+console.log("Algum número é ímpar? (" + a +", " + b + ", " + c + ")" )
+if ( (a % 2) || (b % 2) || (c % 2) ) {
+  console.log(true)
+} else {
+  console.log(false)
+}
+console.log('-----------')

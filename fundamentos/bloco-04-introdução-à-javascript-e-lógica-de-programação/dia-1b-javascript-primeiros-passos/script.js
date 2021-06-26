@@ -176,3 +176,17 @@ if (nota > 100 || nota < 0) {
   console.log('Nota ' + nota + '. Conceito F')
 }
 console.log('-----------')
+
+//Programa 8
+console.log('Programa 8');
+a = 5;
+b = 1;
+c = 0;
+console.log('Dados a = ' + a + ', b = ' + b + ' e c = ' + c);
+console.log("Algum número é par? (" + a +", " + b + ", " + c + ")" )
+if ( (!(a % 2)&&(a !=0) ) || ( !(b % 2)&&(b != 0) ) || ( !(c % 2)&&(c != 0) ))  {
+  console.log(true)
+} else {
+  console.log(false)
+}
+console.log('-----------')

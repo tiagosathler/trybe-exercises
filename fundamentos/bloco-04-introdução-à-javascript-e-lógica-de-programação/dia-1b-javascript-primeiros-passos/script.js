@@ -81,3 +81,28 @@ if (a > 0) {
   console.log("a é zero")
 }
 console.log('-----------')
+
+// Programa 5
+let angle1 = 30;
+let angle2 = 30;
+let angle3 = 120;
+console.log('Programa 5');
+console.log('Dados angle1 = ' + angle1 + ', angle2 = ' + angle2 + ' e angle3 = ' + angle3);
+
+resultado = angle1 + angle2 + angle3;
+console.log("os angulos " + angle1 + " " + angle2 + " " + angle3 + " são ângulos internos de um triângulo?")
+if (resultado == 180) {
+  console.log(true)
+} else if (angle1 == 0 && angle1 > 180) {
+  console.log("o angle1 de " + angle1 + "º não é um ângulo válido")
+  console.log(false)
+} else if (angle2 == 0 || angle2 > 180) {
+  console.log("o angle2 de " + angle2 + "º não é um ângulo válido")
+  console.log(false)
+} else if (angle3 == 0 || angle3 > 180) {
+  console.log("o angle3 de " + angle3 + "º não é um ângulo válido")
+  console.log(false)
+} else {
+  console.log(false)
+}
+console.log('-----------')

@@ -10,3 +10,12 @@ for (let number of numbers) {
   console.log(number);
 }
 console.log('-----------')
+
+// p.2
+console.log('Bloco 4 / Dia 2 / Programa 2')
+let soma=0;
+for (let number of numbers) {
+  soma += number;
+  }
+console.log('Soma: ' + soma);  
+console.log('-----------')

@@ -220,3 +220,53 @@ if (custoProduto < 0 || valorVenda < 0 || numVendas < 0 || imposto < 0) {
 }
 console.log('-----------')
 
+//Programa 11
+console.log('Programa 11');
+let salarioBruto = 11000;
+console.log('Dado salarioBruto = ' + salarioBruto);
+
+let salarioLiquido;
+let salarioBase;
+let aliquotaINSS;
+let aliquotaIRPF;
+let parcelaIRPF;
+
+if (salarioBruto <= 1556.94) {
+  aliquotaINSS = 0.08;
+  salarioBase = salarioBruto * (1 - aliquotaINSS);
+} else if (salarioBruto <= 2594.92) {
+  aliquotaINSS = 0.09;
+  salarioBase = salarioBruto * (1 - aliquotaINSS); 
+} else if (salarioBruto <= 5189.82) {
+  aliquotaINSS = 0.11;
+  salarioBase = salarioBruto * (1 - aliquotaINSS);
+} else {
+  aliquotaINSS = 570.88;
+  salarioBase = salarioBruto - aliquotaINSS;
+}
+
+if (salarioBase <= 1903.98) {
+  aliquotaIRPF = 0;
+  parcelaIRPF = 0;  
+} else if (salarioBase <= 2826.65) {
+  aliquotaIRPF = 0.075;  
+  parcelaIRPF = 142.8;
+} else if (salarioBase <= 3751.05) {
+  aliquotaIRPF = 0.15;  
+  parcelaIRPF = 354.8;
+} else if (salarioBase <= 4664.68) {
+  aliquotaIRPF = 0.225;  
+  parcelaIRPF = 636.13;
+} else {
+  aliquotaIRPF = 0.275;  
+  parcelaIRPF = 869.36;
+}
+salarioLiquido = salarioBase * (1 - aliquotaIRPF) + parcelaIRPF;
+
+console.log("Salario Bruto: R$ " + salarioBruto)
+console.log("Parcela INSS: R$ " + (salarioBruto-salarioBase));
+console.log("Salário Base: R$ " + salarioBase);
+console.log("Aliquota IRPF: R$ " + (salarioBase*aliquotaIRPF - parcelaIRPF))
+console.log("SALARIO LIQUITO: R$ " + salarioLiquido)
+
+console.log('-----------')

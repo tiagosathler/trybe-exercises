@@ -27,3 +27,12 @@ let media = soma / numbers.length;
 console.log('Média: ' + media);  
 console.log('-----------')
 
+// p.4
+console.log('Bloco 4 / Dia 2 / Programa 4')
+if (media > 20 ) {
+  console.log('valor maior que 20');
+} else {
+  console.log('valor menor ou igual a 20')
+}
+console.log('-----------')
+

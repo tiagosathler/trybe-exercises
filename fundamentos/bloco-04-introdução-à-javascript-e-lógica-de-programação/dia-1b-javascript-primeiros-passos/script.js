@@ -84,7 +84,7 @@ console.log('-----------')
 
 // Programa 5
 let angle1 = 30;
-let angle2 = 30;
+let angle2 = 40;
 let angle3 = 120;
 console.log('Programa 5');
 console.log('Dados angle1 = ' + angle1 + ', angle2 = ' + angle2 + ' e angle3 = ' + angle3);
@@ -154,3 +154,25 @@ switch (nomeDaPeca) {
   default:
     console.log('PEÇA INVÁLIDA')
 }
+console.log('-----------')
+
+//Programa 7
+console.log('Programa 7');
+let nota = 10;
+console.log('Dado nota = ' + nota);
+if (nota > 100 || nota < 0) {
+  console.log('Nota inválida')
+} else if (nota >= 90) {
+  console.log('Nota ' + nota + '. Conceito A')
+} else if (nota >= 80) {
+  console.log('Nota ' + nota + '. Conceito B')
+} else if (nota >= 70) {
+  console.log('Nota ' + nota + '. Conceito C')
+} else if (nota >= 60) {
+  console.log('Nota ' + nota + '. Conceito D')
+} else if (nota >= 50) {
+  console.log('Nota ' + nota + '. Conceito E')
+} else {
+  console.log('Nota ' + nota + '. Conceito F')
+}
+console.log('-----------')

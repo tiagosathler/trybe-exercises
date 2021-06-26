@@ -46,3 +46,18 @@ for (let number of numbers) {
 }
 console.log('Maior valor do array: ' + maiorValor)
 console.log('-----------')
+
+// p.6
+console.log('Bloco 4 / Dia 2 / Programa 6')
+let contaImpares = 0;
+for (let number of numbers) {
+  if (number % 2 != 0 ) {
+    contaImpares += 1;
+  }
+}
+if (contaImpares > 0) {
+  console.log('Quantidade de números ímpares: ' + contaImpares);
+} else {
+  console.log('nenhum valor ímpar encontrado')
+}
+console.log('-----------')

@@ -68,3 +68,16 @@ if (a > b && a > c) {
   console.log("maior dos três é... " + c);
 }
 console.log('-----------')
+
+// Programa 4
+a = 0;
+console.log('Programa 4');
+console.log('Dado a = ' + a);
+if (a > 0) {
+  console.log("a é um número positivo")
+} else if (a < 0) {
+  console.log("a é um número negativo")
+} else {
+  console.log("a é zero")
+}
+console.log('-----------')

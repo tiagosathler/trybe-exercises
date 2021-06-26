@@ -191,7 +191,7 @@ if ( (!(a % 2)&&(a !=0) ) || ( !(b % 2)&&(b != 0) ) || ( !(c % 2)&&(c != 0) ))  
 }
 console.log('-----------')
 
-//Programa 8
+//Programa 9
 console.log('Programa 9');
 a = -3;
 b = 2;
@@ -204,3 +204,19 @@ if ( (a % 2) || (b % 2) || (c % 2) ) {
   console.log(false)
 }
 console.log('-----------')
+
+//Programa 10
+console.log('Programa 10');
+let custoProduto = 1000;
+let valorVenda = 1300;
+let numVendas = 1000;
+let imposto = 0.2;
+console.log('Dados custoProduto = ' + custoProduto + ', valorVenda = ' + valorVenda + ', numVendas = ' + numVendas + ' e imposto = ' + imposto);
+if (custoProduto < 0 || valorVenda < 0 || numVendas < 0 || imposto < 0) {
+  console.log("ERRO, algum parâmetro está errado!")
+} else {
+  resultado = numVendas * ( valorVenda - custoProduto*(1+imposto));
+  console.log("Lucro liquido: R$" + resultado);
+}
+console.log('-----------')
+

@@ -72,3 +72,12 @@ for (let number of numbers) {
 }
 console.log('Menor valor do array: ' + menorValor)
 console.log('-----------')
+
+// p.8
+console.log('Bloco 4 / Dia 2 / Programa 8')
+let meusNumeros = [];
+for (let index = 1; index <= 25; index += 1) {
+  meusNumeros.push(index + 1);
+}
+console.log('Meu array: ' + meusNumeros)
+console.log('-----------')

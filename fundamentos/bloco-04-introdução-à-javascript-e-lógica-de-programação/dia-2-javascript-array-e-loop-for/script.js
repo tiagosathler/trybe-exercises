@@ -118,3 +118,17 @@ for (let index = 1; index < numbers.length; index += 1) {
 }
 console.log(numbers)
 console.log('-----------')
+
+// b.3
+console.log('Bloco 4 / Dia 2 / Bônus 3')
+numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+resultado = [];
+for (let index = 0; index < numbers.length; index += 1) {
+  if ( index < numbers.length - 1) {
+    resultado.push(numbers[index]*numbers[index+1]);
+  } else {
+    resultado.push(numbers[index]*2);
+  }  
+}
+console.log(resultado)
+console.log('-----------')

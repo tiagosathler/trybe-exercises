@@ -19,3 +19,11 @@ for (let number of numbers) {
   }
 console.log('Soma: ' + soma);  
 console.log('-----------')
+
+// p.3
+console.log('Bloco 4 / Dia 2 / Programa 3')
+let media = soma / numbers.length;
+
+console.log('Média: ' + media);  
+console.log('-----------')
+

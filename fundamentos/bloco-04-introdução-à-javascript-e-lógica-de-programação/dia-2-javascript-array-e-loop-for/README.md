@@ -23,7 +23,7 @@ Utilizando o array criado no exercício anterior imprima o resultado da divisão
 
 *Bônus:*
 
-> Ordenação através do algoritmo *Bubble Sort* - [Introdução ao algoritmo de ordenação Bubble Sort].(http://devfuria.com.br/logica-de-programacao/introducao-ao-algoritmo-de-ordenacao-bubble-sort/)
+> Ordenação através do algoritmo *Bubble Sort* - [Introdução ao algoritmo de ordenação Bubble Sort](http://devfuria.com.br/logica-de-programacao/introducao-ao-algoritmo-de-ordenacao-bubble-sort/).
 
 > Use o o algoritmo a seguir para ordenar em ordem crescente e entenda:
 > `for (let index = 1; index < array.length; index += 1) {` 

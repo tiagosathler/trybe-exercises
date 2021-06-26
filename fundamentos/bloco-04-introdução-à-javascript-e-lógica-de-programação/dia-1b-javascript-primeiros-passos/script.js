@@ -39,3 +39,17 @@ console.log('Programa 1.5 - Resto da divisão')
 resultado = a % b;
 console.log("a % b = " + resultado);
 console.log('-----------')
+
+// Programa 2
+a = 10;
+b = 9;
+console.log('Programa 2')
+console.log('Dados a = ' + a + ' e b = ' + b)
+if (a > b) {
+  console.log("a é maior que b = " + a + " > " + b)
+  console.log("maior dos dois é... " + a)
+} else {
+  console.log("b é maior que a = " + b + " > " + a)
+  console.log("maior dos dois é... " + b)
+}
+console.log('-----------')

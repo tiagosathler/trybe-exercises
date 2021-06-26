@@ -61,3 +61,14 @@ if (contaImpares > 0) {
   console.log('nenhum valor ímpar encontrado')
 }
 console.log('-----------')
+
+// p.7
+console.log('Bloco 4 / Dia 2 / Programa 7')
+let menorValor = Number.POSITIVE_INFINITY;
+for (let number of numbers) {
+  if (number <= menorValor) {
+    menorValor = number;
+  }
+}
+console.log('Menor valor do array: ' + menorValor)
+console.log('-----------')

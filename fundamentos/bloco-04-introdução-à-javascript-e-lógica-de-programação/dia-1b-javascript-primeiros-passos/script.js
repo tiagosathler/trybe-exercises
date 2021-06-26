@@ -74,13 +74,13 @@ a = 0;
 console.log('Programa 4');
 console.log('Dado a = ' + a);
 if (a > 0) {
-  console.log("a é um número positivo")
+  console.log("a é um número positivo");
 } else if (a < 0) {
-  console.log("a é um número negativo")
+  console.log("a é um número negativo");
 } else {
-  console.log("a é zero")
+  console.log("a é zero");
 }
-console.log('-----------')
+console.log('-----------');
 
 // Programa 5
 let angle1 = 30;
@@ -90,22 +90,22 @@ console.log('Programa 5');
 console.log('Dados angle1 = ' + angle1 + ', angle2 = ' + angle2 + ' e angle3 = ' + angle3);
 
 resultado = angle1 + angle2 + angle3;
-console.log("os angulos " + angle1 + " " + angle2 + " " + angle3 + " são ângulos internos de um triângulo?")
+console.log("os angulos " + angle1 + " " + angle2 + " " + angle3 + " são ângulos internos de um triângulo?");
 if (resultado == 180) {
-  console.log(true)
+  console.log(true);
 } else if (angle1 == 0 && angle1 > 180) {
-  console.log("o angle1 de " + angle1 + "º não é um ângulo válido")
-  console.log(false)
+  console.log("o angle1 de " + angle1 + "º não é um ângulo válido");
+  console.log(false);
 } else if (angle2 == 0 || angle2 > 180) {
-  console.log("o angle2 de " + angle2 + "º não é um ângulo válido")
-  console.log(false)
+  console.log("o angle2 de " + angle2 + "º não é um ângulo válido");
+  console.log(false);
 } else if (angle3 == 0 || angle3 > 180) {
-  console.log("o angle3 de " + angle3 + "º não é um ângulo válido")
-  console.log(false)
+  console.log("o angle3 de " + angle3 + "º não é um ângulo válido");
+  console.log(false);
 } else {
-  console.log(false)
+  console.log(false);
 }
-console.log('-----------')
+console.log('-----------');
 
 //Programa 6
 console.log('Programa 6');
@@ -121,61 +121,61 @@ switch (nomeDaPeca) {
     break;
   case 'rook':
     console.log('ROOK - TORRE');
-    console.log('Avança ou retroce em direção reta: à frente ou para atrás ou para aos lados')
-    console.log('Pode avançar até atingir a borda ou outra peça')
-    console.log('Não pode passar por cima de outra peça')
-    console.log('Pode capturar qualquer peça que esteja no seu alance')
+    console.log('Avança ou retroce em direção reta: à frente ou para atrás ou para aos lados');
+    console.log('Pode avançar até atingir a borda ou outra peça');
+    console.log('Não pode passar por cima de outra peça');
+    console.log('Pode capturar qualquer peça que esteja no seu alance');
     break;
   case 'bishop':
     console.log('BISHOP - BISPO');
-    console.log('Pode avançar ou retroceder somente pelas diagonais')
-    console.log('Pode avançar várias casas até a borda ou a outra peça')
-    console.log('Pode capturar qualquer peça ao seu alcance')
-    console.log('Não pode passar por cima de outra peça')
+    console.log('Pode avançar ou retroceder somente pelas diagonais');
+    console.log('Pode avançar várias casas até a borda ou a outra peça');
+    console.log('Pode capturar qualquer peça ao seu alcance');
+    console.log('Não pode passar por cima de outra peça');
     break;
   case 'knife':
     console.log('KNIFE - CAVALO');
     console.log('Movimento em L: duas à frente / trás e, sem seguida outra à esquerda ou direita');
     console.log('Pode pular outra peças inclusive as suas');
-    console.log('Pode capturar qualquer peça desde que esteja ao seu alcance')
+    console.log('Pode capturar qualquer peça desde que esteja ao seu alcance');
     break;
   case 'queen':
-    console.log('QUEEN - RAINHA')
+    console.log('QUEEN - RAINHA');
     console.log('Pode avançar em qualquer direção');
-    console.log('Pode avançar várias casas mas não pode pular outras peças')
-    console.log('Pode capturar qualquer peça')
+    console.log('Pode avançar várias casas mas não pode pular outras peças');
+    console.log('Pode capturar qualquer peça');
     break;
   case 'king':
-    console.log('KING - REI')
-    console.log('Pode se mover em qualquer direção apenas por uma casa')
-    console.log('Não pode se mover para por em xeque')
-    console.log('Pode capturar qualquer peça')
+    console.log('KING - REI');
+    console.log('Pode se mover em qualquer direção apenas por uma casa');
+    console.log('Não pode se mover para por em xeque');
+    console.log('Pode capturar qualquer peça');
     break;
   default:
-    console.log('PEÇA INVÁLIDA')
+    console.log('PEÇA INVÁLIDA');
 }
-console.log('-----------')
+console.log('-----------');
 
 //Programa 7
 console.log('Programa 7');
 let nota = 10;
 console.log('Dado nota = ' + nota);
 if (nota > 100 || nota < 0) {
-  console.log('Nota inválida')
+  console.log('Nota inválida');
 } else if (nota >= 90) {
-  console.log('Nota ' + nota + '. Conceito A')
+  console.log('Nota ' + nota + '. Conceito A');
 } else if (nota >= 80) {
-  console.log('Nota ' + nota + '. Conceito B')
+  console.log('Nota ' + nota + '. Conceito B');
 } else if (nota >= 70) {
-  console.log('Nota ' + nota + '. Conceito C')
+  console.log('Nota ' + nota + '. Conceito C');
 } else if (nota >= 60) {
-  console.log('Nota ' + nota + '. Conceito D')
+  console.log('Nota ' + nota + '. Conceito D');
 } else if (nota >= 50) {
-  console.log('Nota ' + nota + '. Conceito E')
+  console.log('Nota ' + nota + '. Conceito E');
 } else {
-  console.log('Nota ' + nota + '. Conceito F')
+  console.log('Nota ' + nota + '. Conceito F');
 }
-console.log('-----------')
+console.log('-----------');
 
 //Programa 8
 console.log('Programa 8');
@@ -183,13 +183,13 @@ a = 5;
 b = 1;
 c = 0;
 console.log('Dados a = ' + a + ', b = ' + b + ' e c = ' + c);
-console.log("Algum número é par? (" + a +", " + b + ", " + c + ")" )
+console.log("Algum número é par? (" + a +", " + b + ", " + c + ")" );
 if ( (!(a % 2)&&(a !=0) ) || ( !(b % 2)&&(b != 0) ) || ( !(c % 2)&&(c != 0) ))  {
-  console.log(true)
+  console.log(true);
 } else {
-  console.log(false)
+  console.log(false);
 }
-console.log('-----------')
+console.log('-----------');
 
 //Programa 9
 console.log('Programa 9');
@@ -197,13 +197,13 @@ a = -3;
 b = 2;
 c = 0;
 console.log('Dados a = ' + a + ', b = ' + b + ' e c = ' + c);
-console.log("Algum número é ímpar? (" + a +", " + b + ", " + c + ")" )
+console.log("Algum número é ímpar? (" + a +", " + b + ", " + c + ")" );
 if ( (a % 2) || (b % 2) || (c % 2) ) {
-  console.log(true)
+  console.log(true);
 } else {
-  console.log(false)
+  console.log(false);
 }
-console.log('-----------')
+console.log('-----------');
 
 //Programa 10
 console.log('Programa 10');
@@ -213,12 +213,12 @@ let numVendas = 1000;
 let imposto = 0.2;
 console.log('Dados custoProduto = ' + custoProduto + ', valorVenda = ' + valorVenda + ', numVendas = ' + numVendas + ' e imposto = ' + imposto);
 if (custoProduto < 0 || valorVenda < 0 || numVendas < 0 || imposto < 0) {
-  console.log("ERRO, algum parâmetro está errado!")
+  console.log("ERRO, algum parâmetro está errado!");
 } else {
   resultado = numVendas * ( valorVenda - custoProduto*(1+imposto));
   console.log("Lucro liquido: R$" + resultado);
 }
-console.log('-----------')
+console.log('-----------');
 
 //Programa 11
 console.log('Programa 11');
@@ -263,10 +263,10 @@ if (salarioBase <= 1903.98) {
 }
 salarioLiquido = salarioBase * (1 - aliquotaIRPF) + parcelaIRPF;
 
-console.log("Salario Bruto: R$ " + salarioBruto)
+console.log("Salario Bruto: R$ " + salarioBruto);
 console.log("Parcela INSS: R$ " + (salarioBruto-salarioBase));
 console.log("Salário Base: R$ " + salarioBase);
-console.log("Aliquota IRPF: R$ " + (salarioBase*aliquotaIRPF - parcelaIRPF))
-console.log("SALARIO LIQUITO: R$ " + salarioLiquido)
+console.log("Aliquota IRPF: R$ " + (salarioBase*aliquotaIRPF - parcelaIRPF));
+console.log("SALARIO LIQUITO: R$ " + salarioLiquido);
 
-console.log('-----------')
+console.log('-----------');

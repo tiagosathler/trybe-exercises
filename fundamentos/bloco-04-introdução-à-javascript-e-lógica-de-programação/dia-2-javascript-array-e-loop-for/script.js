@@ -36,3 +36,13 @@ if (media > 20 ) {
 }
 console.log('-----------')
 
+// p.5
+console.log('Bloco 4 / Dia 2 / Programa 5')
+let maiorValor = Number.NEGATIVE_INFINITY;
+for (let number of numbers) {
+  if (number >= maiorValor) {
+    maiorValor = number;
+  }
+}
+console.log('Maior valor do array: ' + maiorValor)
+console.log('-----------')

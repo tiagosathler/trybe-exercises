@@ -106,3 +106,51 @@ if (resultado == 180) {
   console.log(false)
 }
 console.log('-----------')
+
+//Programa 6
+console.log('Programa 6');
+let nomeDaPeca = 'King';
+console.log('Dado nomeDaPeca = ' + nomeDaPeca);
+nomeDaPeca = nomeDaPeca.toLowerCase();
+switch (nomeDaPeca) {
+  case 'pawn':
+    console.log('PAWN - PEÂO');
+    console.log('Primeiro avanço: pode ser 2 casas a frente');
+    console.log('Um avanço a frente por turno');
+    console.log('Um avanço à frente na diagonal apenas se for para capturar outra peça');
+    break;
+  case 'rook':
+    console.log('ROOK - TORRE');
+    console.log('Avança ou retroce em direção reta: à frente ou para atrás ou para aos lados')
+    console.log('Pode avançar até atingir a borda ou outra peça')
+    console.log('Não pode passar por cima de outra peça')
+    console.log('Pode capturar qualquer peça que esteja no seu alance')
+    break;
+  case 'bishop':
+    console.log('BISHOP - BISPO');
+    console.log('Pode avançar ou retroceder somente pelas diagonais')
+    console.log('Pode avançar várias casas até a borda ou a outra peça')
+    console.log('Pode capturar qualquer peça ao seu alcance')
+    console.log('Não pode passar por cima de outra peça')
+    break;
+  case 'knife':
+    console.log('KNIFE - CAVALO');
+    console.log('Movimento em L: duas à frente / trás e, sem seguida outra à esquerda ou direita');
+    console.log('Pode pular outra peças inclusive as suas');
+    console.log('Pode capturar qualquer peça desde que esteja ao seu alcance')
+    break;
+  case 'queen':
+    console.log('QUEEN - RAINHA')
+    console.log('Pode avançar em qualquer direção');
+    console.log('Pode avançar várias casas mas não pode pular outras peças')
+    console.log('Pode capturar qualquer peça')
+    break;
+  case 'king':
+    console.log('KING - REI')
+    console.log('Pode se mover em qualquer direção apenas por uma casa')
+    console.log('Não pode se mover para por em xeque')
+    console.log('Pode capturar qualquer peça')
+    break;
+  default:
+    console.log('PEÇA INVÁLIDA')
+}

@@ -1,10 +1,12 @@
-#Módulo 01 - Fundamentos do Desenvolvimento Web
+# Módulo 01 - Fundamentos do Desenvolvimento Web
 
-##Sobre
+## Sobre
 
-Módulo introdutório sobre a rotina de um desenvolvedor e os fundamentos da Web: HTML, CSS e Javascript.
+Este módulo aborda sobre a rotina de um desenvolvedor e os fundamentos da Web: HTML, CSS e Javascript.
 
->Nesse módulo aprendi os fundamentos principais de *Unix/Linux/Ubuntu*, *bash* ou *zsh*, *git* e *gitHub*. Aprendi sobre os fundamentos da *internet* e a tríade *HTML*, *CSS* e *Javascript*. Aprendi os fundamentos da lógica da programação em JavaScript, *DOM*, *Eventos* e *Web Storage*. Aprendi HTML e CSS através de *Forms*, *Flexbox* e *Responsibilidade*. No JavaSript *ES6* aprendi sobre novas funções e sobre *Objects* e *Testes unitários* e também *Higher Order Functions*. Finalmente, fechando o módulo, aprendi sobre JavaScript *Assíncrono* e *Promises* e *Testes automatizados com Jest*.
+Aprendi os fundamentos principais de *Unix/Linux/Ubuntu*, os comandos no terminal *bash* ou *zsh*, *git* e *gitHub*. Aprendi sobre os fundamentos da *internet* e a tríade *HTML*, *CSS* e *Javascript*. Aprendi os fundamentos da lógica da programação em JavaScript, *DOM*, *Eventos* e *Web Storage*. Aprendi HTML e CSS através de *Forms*, *Flexbox* e *Responsibilidade*. No JavaSript *ES6* aprendi sobre novas funções e sobre *Objects* e *Testes unitários* e também *Higher Order Functions*. Finalmente, fechando o módulo, aprendi sobre JavaScript *Assíncrono* e *Promises* e *Testes automatizados com Jest*.
+
+Tendo isso em mente, esta pasta contém todas as atividades de aprendizagem que desenvolvi ao longo deste módulo de fundamentos do curso da [Trybe](https://www.betrybe.com/).
 
 Um resumo geral sobre este módulo:
 

@@ -12,6 +12,8 @@ O objetivo deste dia é aprender sobre introdução à JavaScript e a Lógica de
 * Operadores lógicos.
 * Estruturas condicionais como if/else e switch/case.
 
+Os resultados estão gerados a partir do arquivo `script.js` e podem ser vistos no console do browser ao abrir o arquivo `exercícios.html`.
+
 ## Os requisitos dos exercícios de hoje são:
 
 > Nos exercícios de hoje, você vai fazer quinze pequenos programas. Todos trabalham a lógica condicional ( `if/else` e `switch/case` ), operadores aritméticos ( `+` , `-` , `*` , `/` , `%` ) e operadores lógicos ( `>` , `<` , `&&` , `||` ).

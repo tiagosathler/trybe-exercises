@@ -1,4 +1,4 @@
-# Bloco 04 - Dia 01 - Parte B - Primeiros Passos
+# Bloco 04 - Dia 01 - Parte B - JavaScript - Primeiros Passos
 O objetivo deste dia é aprender sobre introdução à JavaScript e a Lógica de Programação e dar os Primeiros Passos nesta linguagem universalmente mais usada no mundo: 
 * O que é o JavaScript (JS)?
 * De onde surgiu?

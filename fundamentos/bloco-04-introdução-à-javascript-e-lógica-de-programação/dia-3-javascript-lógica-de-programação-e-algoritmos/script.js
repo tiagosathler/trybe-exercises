@@ -58,3 +58,24 @@ if ( n<= 1) {
 }
 console.log('---------')
 
+// P.4
+console.log('Programa 4 - Pirâmide com n asteriscos de base')
+n = 4;
+if ( n<= 1) {
+  console.log('Valor de n deve ser maior que 1');
+} else if ( n % 2 === 0 ) {
+  console.log('Valor de n precisa ser ímpar');
+} else {
+  let resultado = '';
+  let posicao = n;
+  for (let index = 0; index < n ; index += 1) {
+    for (let charIndex = 0; charIndex <= n ; charIndex += 1) {
+      
+    }
+    console.log(resultado);
+    resultado = '';
+    posicao -= 1;    
+  }
+}
+console.log('---------')
+

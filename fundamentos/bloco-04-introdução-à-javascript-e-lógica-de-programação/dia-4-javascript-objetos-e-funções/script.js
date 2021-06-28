@@ -32,3 +32,10 @@ for (let key in info) {
   console.log(key);
 }
 console.log('-----------------')
+
+// programa I.4
+console.log('Programa I - 4:');
+for (let key in info) {
+  console.log(info[key]);
+}
+console.log('-----------------')

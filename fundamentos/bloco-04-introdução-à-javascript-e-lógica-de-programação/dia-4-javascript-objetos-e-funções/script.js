@@ -39,3 +39,24 @@ for (let key in info) {
   console.log(info[key]);
 }
 console.log('-----------------')
+
+// programa I.5
+console.log('Programa I - 5:');
+let outraInfo = {
+  personagem: 'Tio Patinhas',
+  origem: "Christmas on Bear Mountain, Dell's Four Color Comics #178",
+  nota: 'O último MacPatinhas',
+  recorrente: 'Sim'
+}
+for (let key in info) {  
+  if (key != 'recorrente') {
+    console.log(info[key] + ' e ' + outraInfo[key]);
+  } else if (info[key] === 'Sim' && outraInfo[key] === 'Sim') {
+    console.log('Ambos recorrentes');
+  } else if (info[key] === 'Não' && outraInfo[key] === 'Não') {
+    console.log('Ambos não são recorrentes');
+  } else {
+    console.log('Recorrente? ' + info[key] + ' / ' + outraInfo[key]);
+  }
+}
+console.log('-----------------')

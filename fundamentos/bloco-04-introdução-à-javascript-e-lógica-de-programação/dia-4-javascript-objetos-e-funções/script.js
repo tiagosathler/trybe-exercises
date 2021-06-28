@@ -16,13 +16,19 @@ let info = {
 };
 
 // programa I.1
-console.log('Programa I - 1');
+console.log('Programa I - 1:');
 console.log('Boas-vindas para você, ' + info.personagem + '.');
 console.log('-----------------')
 
 // programa I.2
-console.log('Programa I - 2');
+console.log('Programa I - 2:');
 info.recorrente = 'Sim';
 console.log(info);
 console.log('-----------------')
 
+// programa I.3
+console.log('Programa I - 3:');
+for (let key in info) {
+  console.log(key);
+}
+console.log('-----------------')

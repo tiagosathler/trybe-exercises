@@ -20,3 +20,17 @@ if (n<= 1) {
 }
 console.log('---------')
 
+// P.2
+console.log('Programa 2 - Triângulo retângulo de n astericos')
+n = 5;
+if (n<= 1) {
+  console.log('Valor de n deve ser maior que 1');
+} else {
+  let resultado = '*';
+  console.log(resultado);
+  for (let index = 1; index < n ; index += 1) {
+    resultado += '*';
+    console.log(resultado)
+  }  
+}
+console.log('---------')

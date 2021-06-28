@@ -34,3 +34,27 @@ if (n<= 1) {
   }  
 }
 console.log('---------')
+
+// P.3
+console.log('Programa 3 - Triângulo retângulo invertido de n astericos')
+n = 5;
+if ( n<= 1) {
+  console.log('Valor de n deve ser maior que 1');  
+} else {
+  let resultado = '';
+  let posicao = n;
+  for (let index = 0; index < n ; index += 1) {
+    for (let charIndex = 0; charIndex <= n ; charIndex += 1) {
+      if ( charIndex < posicao ) {
+        resultado += ' '; // acrescenta um espaço
+      } else {
+        resultado += '*'; // acrescenta um asterisco
+      }
+    }
+    console.log(resultado);
+    resultado = '';
+    posicao -= 1;    
+  }
+}
+console.log('---------')
+

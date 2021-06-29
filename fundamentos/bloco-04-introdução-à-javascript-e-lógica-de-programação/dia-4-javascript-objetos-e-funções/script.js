@@ -101,6 +101,23 @@ function indexOfBigger(array) {
 }
 let arrayDeTeste = [2, 3, 6, 7, 10, 1];
 console.log("Dado o 'arrayDeTeste' = " + arrayDeTeste);
-console.log("Índice do maior valor no 'arrayDeTeste': " + indexOfBigger(arrayDeTeste));
+console.log("Índice do MAIOR valor no 'arrayDeTeste': " + indexOfBigger(arrayDeTeste));
 console.log('-----------------');
 
+// programa II.3
+console.log('Programa II - 3:');
+function indexOfSmaller(array) {
+  let smallerValue = Number.POSITIVE_INFINITY;
+  let indexOfValue = 0;
+  for (let index in array) {
+    if (array[index] < smallerValue) {
+      smallerValue = array[index];
+      indexOfValue = index;
+    }
+  }
+  return indexOfValue;
+}
+arrayDeTeste = [2, 4, 6, 7, 10, 0, -3];
+console.log("Dado o 'arrayDeTeste' = " + arrayDeTeste);
+console.log("Índice do MENOR valor no 'arrayDeTeste': " + indexOfSmaller(arrayDeTeste));
+console.log('-----------------');

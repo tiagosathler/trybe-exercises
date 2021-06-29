@@ -140,3 +140,27 @@ console.log("Dado o 'arrayDeTeste' = ", arrayDeTeste);
 console.log("Maior 'string' em 'arrayDeTeste': " + biggestWord(arrayDeTeste));
 console.log('-----------------');
 
+// programa II.4
+console.log('Programa II - 5:');
+function repeatableInteger(array) {
+  let count = [];
+  let maxCount = 0;
+  let indexOfInteger = 0;
+  for (let index1 in array) {
+    count[index1] = 0;
+    for (let index2 in array ) {
+      if ( array[index1] === array[index2]) {
+        count[index1] += 1;
+      }
+    }
+    if (count[index1] > maxCount) {
+      maxCount = count[index1];
+      indexOfInteger = index1;
+    }
+  }  
+  return array[indexOfInteger];
+}
+arrayDeTeste = [2, 3, 2, 5, 8, 2, 3]; 
+console.log("Dado o 'arrayDeTeste' formado de números inteiros = ", arrayDeTeste);
+console.log("O número que mais se repete no 'arrayDeTeste' é: " + repeatableInteger(arrayDeTeste));
+console.log('-----------------');

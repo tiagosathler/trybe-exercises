@@ -85,3 +85,22 @@ console.log("'TeNeT' é palíndrome? " + isPalindrome('TeNeT'));
 console.log("'AMA' é palíndrome? " + isPalindrome('AMA'));
 console.log("'amar' é palíndrome? " + isPalindrome('amar'));
 console.log('-----------------');
+
+// programa II.2
+console.log('Programa II - 2:');
+function indexOfBigger(array) {
+  let biggerValue = Number.NEGATIVE_INFINITY;
+  let indexOfValue = 0;
+  for (let index in array) {
+    if (array[index] > biggerValue) {
+      biggerValue = array[index];
+      indexOfValue = index;
+    }
+  }
+  return indexOfValue;
+}
+let arrayDeTeste = [2, 3, 6, 7, 10, 1];
+console.log("Dado o 'arrayDeTeste' = " + arrayDeTeste);
+console.log("Índice do maior valor no 'arrayDeTeste': " + indexOfBigger(arrayDeTeste));
+console.log('-----------------');
+

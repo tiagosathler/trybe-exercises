@@ -140,7 +140,7 @@ console.log("Dado o 'arrayDeTeste' = ", arrayDeTeste);
 console.log("Maior 'string' em 'arrayDeTeste': " + biggestWord(arrayDeTeste));
 console.log('-----------------');
 
-// programa II.4
+// programa II.5
 console.log('Programa II - 5:');
 function repeatableInteger(array) {
   let count = [];
@@ -161,6 +161,21 @@ function repeatableInteger(array) {
   return array[indexOfInteger];
 }
 arrayDeTeste = [2, 3, 2, 5, 8, 2, 3]; 
-console.log("Dado o 'arrayDeTeste' formado de números inteiros = ", arrayDeTeste);
+console.log("Dado o 'arrayDeTeste' formado por números inteiros = ", arrayDeTeste);
 console.log("O número que mais se repete no 'arrayDeTeste' é: " + repeatableInteger(arrayDeTeste));
 console.log('-----------------');
+
+// programa II.6
+console.log('Programa II - 6:');
+function sumOfN(n) {
+  let sum = 0;
+  for (let index = 0; index <= n; index += 1) {
+    sum += index;
+  }
+  return sum;
+}
+let numberN = 5;
+console.log("Dado um número 'numberN' = ", numberN);
+console.log("O somatório dos números inteiros de 1 até " + numberN + " é: " + sumOfN(numberN));
+console.log('-----------------');
+

@@ -179,3 +179,22 @@ console.log("Dado um número 'numberN' = ", numberN);
 console.log("O somatório dos números inteiros de 1 até " + numberN + " é: " + sumOfN(numberN));
 console.log('-----------------');
 
+// programa II.7
+console.log('Programa II - 7:');
+function verificaFimPalavra(string1, string2) {
+  let condicao = true;
+  string1 = string1.toLowerCase();
+  string2 = string2.toLowerCase();
+  difTamanhoStrings = string1.length - string2.length;
+  for (let index = difTamanhoStrings; index < string1.length; index += 1 ) {
+    if (string1[index] != string2[index -difTamanhoStrings]) {
+      condicao = false;
+    }
+  }
+  return condicao;
+}
+let word = 'trybe';
+let ending = 'be';
+console.log("Dadas duas strings 'word' = '" + word + "' e 'ending' = '" + ending + "'");
+console.log("No final de 'word' contém o conteúdo de 'ending'?", verificaFimPalavra(word, ending));
+console.log('-----------------');

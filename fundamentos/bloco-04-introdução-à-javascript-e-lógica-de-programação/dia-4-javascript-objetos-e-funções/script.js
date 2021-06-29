@@ -59,4 +59,29 @@ for (let key in info) {
     console.log('Recorrente? ' + info[key] + ' / ' + outraInfo[key]);
   }
 }
-console.log('-----------------')
+
+
+// Parte I - Objetos e For/In
+console.log('*****************************');
+console.log('PARTE II - Funções');
+console.log('*****************************');
+
+// programa II.1
+console.log('Programa I - 1:');
+function isPalindrome(string) {
+  string = string.toLowerCase();
+  let diffChar = true;
+  for (let index = 0; index < string.length / 2 ; index += 1) {
+    if (string[index] != string[string.length - index - 1]) {
+      diffChar = false;
+    }  
+  }
+  return diffChar;
+}
+console.log("'arara' é palíndrome? " + isPalindrome('arara'));
+console.log("'desenvolvimento' é palíndrome? " + isPalindrome('desenvolvimento'));
+console.log("'Osso' é palíndrome? " + isPalindrome('Osso'));
+console.log("'TeNeT' é palíndrome? " + isPalindrome('TeNeT'));
+console.log("'AMA' é palíndrome? " + isPalindrome('AMA'));
+console.log("'amar' é palíndrome? " + isPalindrome('amar'));
+console.log('-----------------');

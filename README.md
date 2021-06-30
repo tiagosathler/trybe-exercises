@@ -37,8 +37,8 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 - [X] 4-1: _JavaScript - Primeiros passos_
 - [X] 4-2: _JavaScript - Array e loop For_
 - [X] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
-- [ ] 4-4: _JavaScript - Objetos e funções_
-- [ ] 4-5: _[Projeto - Playground Functions]()_
+- [x] 4-4: _JavaScript - Objetos e funções_
+- [x] 4-5: _[Projeto - Playground Functions]()_
 
 ##### :hourglass_flowing_sand: Bloco 5: Introdução - JavaScript - Projetos
 

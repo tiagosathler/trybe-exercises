@@ -48,7 +48,7 @@ let outraInfo = {
   nota: 'O último MacPatinhas',
   recorrente: 'Sim'
 }
-for (let key in info) {  
+for (let key in info) {
   if (key != 'recorrente') {
     console.log(info[key] + ' e ' + outraInfo[key]);
   } else if (info[key] === 'Sim' && outraInfo[key] === 'Sim') {
@@ -67,14 +67,15 @@ console.log('PARTE II - Funções');
 console.log('*****************************');
 
 // programa II.1
-console.log('Programa I - 1:');
+console.log('Programa II - 1:');
+
 function isPalindrome(string) {
   string = string.toLowerCase();
   let diffChar = true;
-  for (let index = 0; index < string.length / 2 ; index += 1) {
+  for (let index = 0; index < string.length / 2; index += 1) {
     if (string[index] != string[string.length - index - 1]) {
       diffChar = false;
-    }  
+    }
   }
   return diffChar;
 }
@@ -88,6 +89,7 @@ console.log('-----------------');
 
 // programa II.2
 console.log('Programa II - 2:');
+
 function indexOfBigger(array) {
   let biggerValue = Number.NEGATIVE_INFINITY;
   let indexOfValue = 0;
@@ -106,6 +108,7 @@ console.log('-----------------');
 
 // programa II.3
 console.log('Programa II - 3:');
+
 function indexOfSmaller(array) {
   let smallerValue = Number.POSITIVE_INFINITY;
   let indexOfValue = 0;
@@ -124,6 +127,7 @@ console.log('-----------------');
 
 // programa II.4
 console.log('Programa II - 4:');
+
 function biggestWord(array) {
   let wordLength = 0;
   let getWord = '';
@@ -142,14 +146,15 @@ console.log('-----------------');
 
 // programa II.5
 console.log('Programa II - 5:');
+
 function repeatableInteger(array) {
   let count = [];
   let maxCount = 0;
   let indexOfInteger = 0;
   for (let index1 in array) {
     count[index1] = 0;
-    for (let index2 in array ) {
-      if ( array[index1] === array[index2]) {
+    for (let index2 in array) {
+      if (array[index1] === array[index2]) {
         count[index1] += 1;
       }
     }
@@ -157,16 +162,17 @@ function repeatableInteger(array) {
       maxCount = count[index1];
       indexOfInteger = index1;
     }
-  }  
+  }
   return array[indexOfInteger];
 }
-arrayDeTeste = [2, 3, 2, 5, 8, 2, 3]; 
+arrayDeTeste = [2, 3, 2, 5, 8, 2, 3];
 console.log("Dado o 'arrayDeTeste' formado por números inteiros = ", arrayDeTeste);
 console.log("O número que mais se repete no 'arrayDeTeste' é: ", repeatableInteger(arrayDeTeste));
 console.log('-----------------');
 
 // programa II.6
 console.log('Programa II - 6:');
+
 function sumOfN(n) {
   let sum = 0;
   for (let index = 0; index <= n; index += 1) {
@@ -181,13 +187,14 @@ console.log('-----------------');
 
 // programa II.7
 console.log('Programa II - 7:');
+
 function verificaFimPalavra(string1, string2) {
   let condicao = true;
   string1 = string1.toLowerCase();
   string2 = string2.toLowerCase();
   difTamanhoStrings = string1.length - string2.length;
-  for (let index = difTamanhoStrings; index < string1.length; index += 1 ) {
-    if (string1[index] != string2[index -difTamanhoStrings]) {
+  for (let index = difTamanhoStrings; index < string1.length; index += 1) {
+    if (string1[index] != string2[index - difTamanhoStrings]) {
       condicao = false;
     }
   }
@@ -207,6 +214,7 @@ console.log('*****************************');
 
 // programa III.1
 console.log('Programa III - 1:');
+
 function romanToDecimalNumber(string) {
   string = string.toUpperCase();
   let values = [];
@@ -237,10 +245,10 @@ function romanToDecimalNumber(string) {
       default:
         return NaN;
     }
-  }  
+  }
   for (let index = 0; index < values.length; index += 1) {
     if (index < values.length - 1) {
-      if (values[index] < values[index+1]) {
+      if (values[index] < values[index + 1]) {
         values[index] = -values[index];
       }
     }
@@ -257,19 +265,19 @@ console.log('-----------------');
 
 // programa III.2
 console.log('Programa III - 2:');
-console.log('-----------------');
+
 function arrayNumber(vector) {
   let result = [];
-  let arrayExtracted = [];  
+  let arrayExtracted = [];
   for (let index in vector) {
     arrayExtracted = vector[index];
-    if (typeof(arrayExtracted) === 'number') {
-      if (arrayExtracted %2 === 0 && arrayExtracted !== 0) {
+    if (typeof (arrayExtracted) === 'number') {
+      if (arrayExtracted % 2 === 0 && arrayExtracted !== 0) {
         result.push(arrayExtracted);
       }
     } else {
       for (let value of arrayExtracted) {
-        if (typeof(value) === 'number' && value % 2 === 0 && value !== 0) {
+        if (typeof (value) === 'number' && value % 2 === 0 && value !== 0) {
           result.push(value);
         }
       }
@@ -279,7 +287,9 @@ function arrayNumber(vector) {
   return result;
 }
 
-let vector = [10, [3,4,5,6], [7,8,9,10], 'algum texto', [-3, -4, -6, 0, -1]];
+let vector = [10, [3, 4, 5, 6],
+  [7, 8, 9, 10], 'algum texto', [-3, -4, -6, 0, -1]
+];
 let evenNumbers = arrayNumber(vector);
 console.log("Dado um objeto 'vector' = ", vector);
 console.log("Números pares encontrados dentro de 'vector': ", evenNumbers);
@@ -287,7 +297,7 @@ console.log('-----------------');
 
 // programa III.3
 console.log('Programa III - 3:');
-console.log('-----------------');
+
 function cesta(array) {
   let result = {
     fruitsName: [],
@@ -295,16 +305,16 @@ function cesta(array) {
   }
   let slicedArray = array.slice();
   let countFruit;
-  let index = 0;  
+  let index = 0;
   for (let fruit of array) {
-    countFruit = 0;    
-    while (slicedArray.indexOf(fruit) >= 0 ) {
+    countFruit = 0;
+    while (slicedArray.indexOf(fruit) >= 0) {
       countFruit += 1;
       index = slicedArray.indexOf(fruit);
-      slicedArray.splice(index,1);
+      slicedArray.splice(index, 1);
       if (slicedArray.indexOf(fruit) < 0) {
         result.fruitsName.push(fruit);
-        result.quantityFruit.push(countFruit); 
+        result.quantityFruit.push(countFruit);
       }
     }
   }
@@ -336,11 +346,11 @@ let message1 = "Sua cesta possui: ";
 let message2 = '';
 for (let index in fruitsInBasket.fruitsName) {
   message2 += fruitsInBasket.quantityFruit[index] + ' ' + fruitsInBasket.fruitsName[index] + 's';
-  if (index < fruitsInBasket.fruitsName.length - 2 ) {
+  if (index < fruitsInBasket.fruitsName.length - 2) {
     message2 += ', '
   } else if (index < fruitsInBasket.fruitsName.length - 1) {
     message2 += ' e '
   }
 }
-console.log(message1 + message2) ;
+console.log(message1 + message2);
 console.log('-----------------');

@@ -78,12 +78,12 @@ function isPalindrome(string) {
   }
   return diffChar;
 }
-console.log("'arara' é palíndrome? " + isPalindrome('arara'));
-console.log("'desenvolvimento' é palíndrome? " + isPalindrome('desenvolvimento'));
-console.log("'Osso' é palíndrome? " + isPalindrome('Osso'));
-console.log("'TeNeT' é palíndrome? " + isPalindrome('TeNeT'));
-console.log("'AMA' é palíndrome? " + isPalindrome('AMA'));
-console.log("'amar' é palíndrome? " + isPalindrome('amar'));
+console.log("'arara' é palíndrome? ", isPalindrome('arara'));
+console.log("'desenvolvimento' é palíndrome? ", isPalindrome('desenvolvimento'));
+console.log("'Osso' é palíndrome? ", isPalindrome('Osso'));
+console.log("'TeNeT' é palíndrome? ", isPalindrome('TeNeT'));
+console.log("'AMA' é palíndrome? ", isPalindrome('AMA'));
+console.log("'amar' é palíndrome? ", isPalindrome('amar'));
 console.log('-----------------');
 
 // programa II.2

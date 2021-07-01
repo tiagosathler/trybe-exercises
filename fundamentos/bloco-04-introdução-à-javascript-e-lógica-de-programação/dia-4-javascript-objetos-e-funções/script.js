@@ -176,7 +176,7 @@ function sumOfN(n) {
 }
 let numberN = 5;
 console.log("Dado um número 'numberN' = ", numberN);
-console.log("O somatório dos números inteiros de 1 até " + numberN + " é: " + sumOfN(numberN));
+console.log("O somatório dos números inteiros de 1 até " + numberN + " é: ", sumOfN(numberN));
 console.log('-----------------');
 
 // programa II.7

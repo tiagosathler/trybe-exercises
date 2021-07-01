@@ -249,8 +249,38 @@ function romanToDecimalNumber(string) {
   return sum;
 }
 
-let romanNumber = 'MDCCCLXX'
+let romanNumber = 'MMMCMXCIX'
 let decimalNumber = romanToDecimalNumber(romanNumber);
 console.log('Dado um número em notação Romana: ' + romanNumber);
 console.log('O mesmo número em notação decimal: ' + decimalNumber);
 console.log('-----------------');
+
+// programa III.2
+console.log('Programa III - 2:');
+console.log('-----------------');
+function arrayNumber(vector) {
+  let result = [];
+  let arrayExtracted = [];  
+  for (let index in vector) {
+    arrayExtracted = vector[index];
+    if (typeof(arrayExtracted) === 'number') {
+      if (arrayExtracted %2 === 0 && arrayExtracted !== 0) {
+        result.push(arrayExtracted);
+      }
+    } else {
+      for (let value of arrayExtracted) {
+        if (typeof(value) === 'number' && value % 2 === 0 && value !== 0) {
+          result.push(value);
+        }
+      }
+      arrayExtracted = [];
+    }
+  }
+  return result;
+}
+
+let vector = [10, [3,4,5,6], [7,8,9,10], 'algum texto', [-3, -4, -6, 0, -1]];
+let evenNumbers = arrayNumber(vector);
+console.log("Dado um vetor 'vector' = ", vector);
+console.log("Números pares encontrados dentro de 'vector': ", evenNumbers);
+

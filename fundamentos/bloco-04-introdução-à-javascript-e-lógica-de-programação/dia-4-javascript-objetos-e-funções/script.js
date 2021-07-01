@@ -137,7 +137,7 @@ function biggestWord(array) {
 }
 arrayDeTeste = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
 console.log("Dado o 'arrayDeTeste' = ", arrayDeTeste);
-console.log("Maior 'string' em 'arrayDeTeste': " + biggestWord(arrayDeTeste));
+console.log("Maior 'string' em 'arrayDeTeste': ", biggestWord(arrayDeTeste));
 console.log('-----------------');
 
 // programa II.5
@@ -162,7 +162,7 @@ function repeatableInteger(array) {
 }
 arrayDeTeste = [2, 3, 2, 5, 8, 2, 3]; 
 console.log("Dado o 'arrayDeTeste' formado por números inteiros = ", arrayDeTeste);
-console.log("O número que mais se repete no 'arrayDeTeste' é: " + repeatableInteger(arrayDeTeste));
+console.log("O número que mais se repete no 'arrayDeTeste' é: ", repeatableInteger(arrayDeTeste));
 console.log('-----------------');
 
 // programa II.6

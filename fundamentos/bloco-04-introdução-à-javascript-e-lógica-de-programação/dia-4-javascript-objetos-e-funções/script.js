@@ -283,4 +283,64 @@ let vector = [10, [3,4,5,6], [7,8,9,10], 'algum texto', [-3, -4, -6, 0, -1]];
 let evenNumbers = arrayNumber(vector);
 console.log("Dado um vetor 'vector' = ", vector);
 console.log("Números pares encontrados dentro de 'vector': ", evenNumbers);
+console.log('-----------------');
 
+// programa III.3
+console.log('Programa III - 3:');
+console.log('-----------------');
+function cesta(array) {
+  let result = {
+    fruitsName: [],
+    quantityFruit: []
+  }
+  let slicedArray = array.slice();
+  let countFruit;
+  let index = 0;  
+  for (let fruit of array) {
+    countFruit = 0;    
+    while (slicedArray.indexOf(fruit) >= 0 ) {
+      countFruit += 1;
+      index = slicedArray.indexOf(fruit);
+      slicedArray.splice(index,1);
+      if (slicedArray.indexOf(fruit) < 0) {
+        result.fruitsName.push(fruit);
+        result.quantityFruit.push(countFruit); 
+      }
+    }
+  }
+  return result;
+}
+
+const basket = [
+  'Melancia', 'Abacate', 'Melancia', 'Melancia', 'Uva', 'Laranja',
+  'Jaca', 'Pera', 'Melancia', 'Uva', 'Laranja', 'Melancia',
+  'Banana', 'Uva', 'Pera', 'Abacate', 'Laranja', 'Abacate',
+  'Banana', 'Melancia', 'Laranja', 'Laranja', 'Jaca', 'Uva',
+  'Banana', 'Uva', 'Laranja', 'Pera', 'Melancia', 'Uva',
+  'Jaca', 'Banana', 'Pera', 'Abacate', 'Melancia', 'Melancia',
+  'Laranja', 'Pera', 'Banana', 'Jaca', 'Laranja', 'Melancia',
+  'Abacate', 'Abacate', 'Pera', 'Melancia', 'Banana', 'Banana',
+  'Abacate', 'Uva', 'Laranja', 'Banana', 'Abacate', 'Uva',
+  'Uva', 'Abacate', 'Abacate', 'Melancia', 'Uva', 'Jaca',
+  'Uva', 'Banana', 'Abacate', 'Banana', 'Uva', 'Banana',
+  'Laranja', 'Laranja', 'Jaca', 'Jaca', 'Abacate', 'Jaca',
+  'Laranja', 'Melancia', 'Pera', 'Jaca', 'Melancia', 'Uva',
+  'Abacate', 'Jaca', 'Jaca', 'Abacate', 'Uva', 'Laranja',
+  'Pera', 'Melancia', 'Jaca', 'Pera', 'Laranja', 'Jaca',
+  'Pera', 'Melancia', 'Jaca', 'Banana', 'Laranja', 'Jaca',
+  'Banana', 'Pera', 'Abacate', 'Uva',
+];
+let fruitsInBasket = cesta(basket);
+let message1 = "Sua cesta possui: ";
+let message2 = '';
+console.log("Dada uma constante 'basket' contendo nomes de frutas = ", basket);
+for (let index in fruitsInBasket.fruitsName) {
+  message2 += fruitsInBasket.quantityFruit[index] + ' ' + fruitsInBasket.fruitsName[index] + 's';
+  if (index < fruitsInBasket.fruitsName.length - 2 ) {
+    message2 += ', '
+  } else if (index < fruitsInBasket.fruitsName.length - 1) {
+    message2 += ' e '
+  }
+}
+console.log(message1 + message2) ;
+console.log('-----------------');

@@ -53,8 +53,8 @@
         <li><button onclick="originalColor3=facaExercicio3()">Faça</button>
           <button onclick="desfacaExercicio3(originalColor3)">Desfaça</button>
         </li>
-        <li><button onclick="facaExercicio4()">Faça</button>
-          <button onclick="desfacaExercicio4()">Desfaça</button>
+        <li><button onclick="originalContent4=facaExercicio4()">Faça</button>
+          <button onclick="desfacaExercicio4(originalContent4)">Desfaça</button>
         </li>
         <li><button onclick="facaExercicio5()">Faça</button>
           <button onclick="desfacaExercicio6()">Desfaça</button>
@@ -76,6 +76,7 @@
       let originalContent1;
       let originalColor2;
       let originalColor3;
+      let originalContent4;
 
       function facaExercicio1() {
         let content = document.getElementsByTagName("p")[0].innerText;
@@ -116,7 +117,16 @@
 
       // 4. Crie uma função que corrija o texto da tag <h1>.
       function facaExercicio4() {
-        document.querySelector(".title").innerText = 'Exercício 5.1 - JavaScript'
+        let content;
+        content = document.querySelector(".title").innerText;
+        document.querySelector(".title").innerText = 'Exercício 5.1 - JavaScript';
+        return content;
+      }
+
+      function desfacaExercicio4(object) {
+        if (typeof(object) !== 'undefined') {
+          document.querySelector(".title").innerText = object;
+        }
       }
 
       // 5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.

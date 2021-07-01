@@ -251,8 +251,8 @@ function romanToDecimalNumber(string) {
 
 let romanNumber = 'MMMCMXCIX'
 let decimalNumber = romanToDecimalNumber(romanNumber);
-console.log('Dado um número em notação Romana: ' + romanNumber);
-console.log('O mesmo número em notação decimal: ' + decimalNumber);
+console.log('Dado um número em notação Romana: ', romanNumber);
+console.log('O mesmo número em notação decimal: ', decimalNumber);
 console.log('-----------------');
 
 // programa III.2
@@ -281,7 +281,7 @@ function arrayNumber(vector) {
 
 let vector = [10, [3,4,5,6], [7,8,9,10], 'algum texto', [-3, -4, -6, 0, -1]];
 let evenNumbers = arrayNumber(vector);
-console.log("Dado um vetor 'vector' = ", vector);
+console.log("Dado um objeto 'vector' = ", vector);
 console.log("Números pares encontrados dentro de 'vector': ", evenNumbers);
 console.log('-----------------');
 
@@ -331,9 +331,9 @@ const basket = [
   'Banana', 'Pera', 'Abacate', 'Uva',
 ];
 let fruitsInBasket = cesta(basket);
+console.log("Dada uma constante 'basket' contendo nomes de frutas:", basket);
 let message1 = "Sua cesta possui: ";
 let message2 = '';
-console.log("Dada uma constante 'basket' contendo nomes de frutas = ", basket);
 for (let index in fruitsInBasket.fruitsName) {
   message2 += fruitsInBasket.quantityFruit[index] + ' ' + fruitsInBasket.fruitsName[index] + 's';
   if (index < fruitsInBasket.fruitsName.length - 2 ) {

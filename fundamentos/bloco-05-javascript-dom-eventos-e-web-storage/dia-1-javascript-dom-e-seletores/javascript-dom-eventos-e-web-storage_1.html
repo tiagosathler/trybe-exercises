@@ -56,12 +56,10 @@
         <li><button onclick="originalContent4=facaExercicio4()">Faça</button>
           <button onclick="desfacaExercicio4(originalContent4)">Desfaça</button>
         </li>
-        <li><button onclick="facaExercicio5()">Faça</button>
-          <button onclick="desfacaExercicio6()">Desfaça</button>
+        <li><button onclick="originalContent5=facaExercicio5()">Faça</button>
+          <button onclick="desfacaExercicio5(originalContent5)">Desfaça</button>
         </li>
-        <li><button onclick="facaExercicio6()">Faça</button>
-          <button onclick="desfacaExercicio6()">Desfaça</button>
-        </li>        
+        <li><button onclick="facaExercicio6()">Faça</button> (resultado no console)</li>        
       </ol>
     </section>
     <script>
@@ -77,6 +75,7 @@
       let originalColor2;
       let originalColor3;
       let originalContent4;
+      let originalContent5;
 
       function facaExercicio1() {
         let content = document.getElementsByTagName("p")[0].innerText;
@@ -131,15 +130,28 @@
 
       // 5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
       function facaExercicio5() {
+        let content = [];
         for (let index = 0; index < document.querySelectorAll('p').length; index += 1) {
+          content.push(document.querySelectorAll('p')[index].innerText);
           document.querySelectorAll('p')[index].innerText =document.querySelectorAll('p')[index].innerText.toUpperCase();
+        }
+        return content;
+      }
+
+      function desfacaExercicio5(object) {
+        if (typeof(object) !== 'undefined') {
+          for (let index in object) {
+            document.querySelectorAll('p')[index].innerText = object[index];
+          }
         }
       }
 
       // 6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
-      for (let index = 0; index < document.querySelectorAll('p').length; index += 1) {
+      function facaExercicio6() {
+        for (let index = 0; index < document.querySelectorAll('p').length; index += 1) {
         console.log(document.querySelectorAll('p')[index].innerText);
-      }        
+        }
+      }
     </script>
   </body>
 </html>

@@ -47,8 +47,8 @@
         <li><button onclick="originalContent1=facaExercicio1()">Faça</button>
           <button onclick="desfacaExercicio1(originalContent1)">Desfaça</button>
         </li>
-        <li><button onclick="facaExercicio2()">Faça</button>
-          <button onclick="desfacaExercicio2()">Desfaça</button>
+        <li><button onclick="originalColor2=facaExercicio2()">Faça</button>
+          <button onclick="desfacaExercicio2(originalColor2)">Desfaça</button>
         </li>
         <li><button onclick="facaExercicio3()">Faça</button>
           <button onclick="desfacaExercicio3()">Desfaça</button>
@@ -74,6 +74,7 @@
       // 1. Crie uma função que mude o texto na tag <p> para uma descrição de como você
       // se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
       let originalContent1;
+      let originalColor2;
 
       function facaExercicio1() {
         let content = document.getElementsByTagName("p")[0].innerText;
@@ -88,8 +89,17 @@
       }
       // 2. Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
       function facaExercicio2() {
+        let content = document.getElementsByClassName("main-content")[0].style.backgroundColor;
         document.getElementsByClassName("main-content")[0].style.backgroundColor = 'green';
+        return content;
       }
+      
+      function desfacaExercicio2(object) {
+        if (typeof(object) !== 'undefined') {
+          document.getElementsByClassName("main-content")[0].style.backgroundColor = object;
+        }
+      }
+
 
       // 3. Crie uma função que mude a cor do quadrado vermelho para branco.
       function facaExercicio3() {

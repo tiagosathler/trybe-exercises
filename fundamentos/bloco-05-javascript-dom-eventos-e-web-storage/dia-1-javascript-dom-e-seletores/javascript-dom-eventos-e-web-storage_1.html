@@ -41,6 +41,27 @@
         <p>Trybe</p>
       </section>
     </main>
+    <section class="buttons">
+      <h2>Exercícios interativos:</h2>
+      <ol>
+        <li><button onclick="originalContent1=facaExercicio1()">Faça</button>
+          <button onclick="desfacaExercicio1(originalContent1)">Desfaça</button>
+        </li>
+        <li><button onclick="originalColor2=facaExercicio2()">Faça</button>
+          <button onclick="desfacaExercicio2(originalColor2)">Desfaça</button>
+        </li>
+        <li><button onclick="originalColor3=facaExercicio3()">Faça</button>
+          <button onclick="desfacaExercicio3(originalColor3)">Desfaça</button>
+        </li>
+        <li><button onclick="originalContent4=facaExercicio4()">Faça</button>
+          <button onclick="desfacaExercicio4(originalContent4)">Desfaça</button>
+        </li>
+        <li><button onclick="originalContent5=facaExercicio5()">Faça</button>
+          <button onclick="desfacaExercicio5(originalContent5)">Desfaça</button>
+        </li>
+        <li><button onclick="facaExercicio6()">Faça</button> (resultado no console)</li>        
+      </ol>
+    </section>
     <script>
 
       // Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
@@ -50,26 +71,87 @@
       
       // 1. Crie uma função que mude o texto na tag <p> para uma descrição de como você
       // se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
-      document.getElementsByTagName("p")[0].innerText = 'Me vejo mais velho ainda kkk';
+      let originalContent1;
+      let originalColor2;
+      let originalColor3;
+      let originalContent4;
+      let originalContent5;
 
+      function facaExercicio1() {
+        let content = document.getElementsByTagName("p")[0].innerText;
+        document.getElementsByTagName("p")[0].innerText = 'Me vejo mais velho ainda kkk';
+        return content;
+      }
+      
+      function desfacaExercicio1(object) {
+        if (typeof(object) !== 'undefined') {
+            document.getElementsByTagName("p")[0].innerText = object;
+        }                
+      }
       // 2. Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
-      document.getElementsByClassName("main-content")[0].style.backgroundColor = 'green';
+      function facaExercicio2() {
+        let content = document.getElementsByClassName("main-content")[0].style.backgroundColor;
+        document.getElementsByClassName("main-content")[0].style.backgroundColor = 'green';
+        return content;
+      }
+
+      function desfacaExercicio2(object) {
+        if (typeof(object) !== 'undefined') {
+          document.getElementsByClassName("main-content")[0].style.backgroundColor = object;
+        }
+      }
 
       // 3. Crie uma função que mude a cor do quadrado vermelho para branco.
-      document.getElementsByClassName("center-content")[0].style.backgroundColor = 'white';
+      function facaExercicio3() {
+        let content = document.getElementsByClassName("center-content")[0].style.backgroundColor;
+        document.getElementsByClassName("center-content")[0].style.backgroundColor = 'white';
+        return content;
+      }
+      
+      function desfacaExercicio3(object) {
+        if (typeof(object) !== 'undefined') {
+          document.getElementsByClassName("center-content")[0].style.backgroundColor = object;
+        }
+      }
 
       // 4. Crie uma função que corrija o texto da tag <h1>.
-      document.querySelector(".title").innerText = 'Exercício 5.1 - JavaScript'
+      function facaExercicio4() {
+        let content;
+        content = document.querySelector(".title").innerText;
+        document.querySelector(".title").innerText = 'Exercício 5.1 - JavaScript';
+        return content;
+      }
+
+      function desfacaExercicio4(object) {
+        if (typeof(object) !== 'undefined') {
+          document.querySelector(".title").innerText = object;
+        }
+      }
 
       // 5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
-      for (let index = 0; index < document.querySelectorAll('p').length; index += 1) {
-        document.querySelectorAll('p')[index].innerText =document.querySelectorAll('p')[index].innerText.toUpperCase();
+      function facaExercicio5() {
+        let content = [];
+        for (let index = 0; index < document.querySelectorAll('p').length; index += 1) {
+          content.push(document.querySelectorAll('p')[index].innerText);
+          document.querySelectorAll('p')[index].innerText =document.querySelectorAll('p')[index].innerText.toUpperCase();
+        }
+        return content;
+      }
+
+      function desfacaExercicio5(object) {
+        if (typeof(object) !== 'undefined') {
+          for (let index in object) {
+            document.querySelectorAll('p')[index].innerText = object[index];
+          }
+        }
       }
 
       // 6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
-      for (let index = 0; index < document.querySelectorAll('p').length; index += 1) {
+      function facaExercicio6() {
+        for (let index = 0; index < document.querySelectorAll('p').length; index += 1) {
         console.log(document.querySelectorAll('p')[index].innerText);
-      }        
+        }
+      }
     </script>
   </body>
 </html>

@@ -61,7 +61,7 @@ for (let key in info) {
 }
 
 
-// Parte I - Objetos e For/In
+// Parte II - Objetos e For/In
 console.log('*****************************');
 console.log('PARTE II - Funções');
 console.log('*****************************');
@@ -198,3 +198,11 @@ let ending = 'be';
 console.log("Dadas duas strings 'word' = '" + word + "' e 'ending' = '" + ending + "'");
 console.log("No final de 'word' contém o conteúdo de 'ending'?", verificaFimPalavra(word, ending));
 console.log('-----------------');
+
+
+// Parte III - Bônus
+console.log('*****************************');
+console.log('PARTE III - Bônus');
+console.log('*****************************');
+
+// programa III.1

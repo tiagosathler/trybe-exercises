@@ -206,3 +206,51 @@ console.log('PARTE III - Bônus');
 console.log('*****************************');
 
 // programa III.1
+console.log('Programa III - 1:');
+function romanToDecimalNumber(string) {
+  string = string.toUpperCase();
+  let values = [];
+  let sum = 0;
+  for (let index = 0; index < string.length; index += 1) {
+    switch (string[index]) {
+      case 'I':
+        values[index] = 1;
+        break;
+      case 'V':
+        values[index] = 5;
+        break;
+      case 'X':
+        values[index] = 10;
+        break;
+      case 'L':
+        values[index] = 50;
+        break;
+      case 'C':
+        values[index] = 100;
+        break;
+      case 'D':
+        values[index] = 500;
+        break;
+      case 'M':
+        values[index] = 1000;
+        break;
+      default:
+        return NaN;
+    }
+  }  
+  for (let index = 0; index < values.length; index += 1) {
+    if (index < values.length - 1) {
+      if (values[index] < values[index+1]) {
+        values[index] = -values[index];
+      }
+    }
+    sum += values[index];
+  }
+  return sum;
+}
+
+let romanNumber = 'MDCCCLXX'
+let decimalNumber = romanToDecimalNumber(romanNumber);
+console.log('Dado um número em notação Romana: ' + romanNumber);
+console.log('O mesmo número em notação decimal: ' + decimalNumber);
+console.log('-----------------');

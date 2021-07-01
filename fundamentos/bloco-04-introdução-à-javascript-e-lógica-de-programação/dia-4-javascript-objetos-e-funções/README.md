@@ -1,5 +1,5 @@
 # Bloco 04 - Dia 4 - JavaScript - Objetos e funções
-O objetivo deste dia é aprender sobre o uso de **'objetos'**, laço **'for / in'** e **'function'**. Os resultados podem ser observados ao abrir o arquivo ´exercicios.html´ e visualizados no *console* do *inspecionar* do browser ou se preferir execute os comandos JavaScript do arquivo `script.js` diretamente no Node.Js.
+O objetivo deste dia é aprender sobre o uso de **'objetos'**, laço **'for / in'** e **'function'**. Os resultados podem ser observados ao abrir o arquivo `exercicios.html` e visualizados no *console* do *inspecionar* do seu browser ou se preferir execute os comandos JavaScript do arquivo `script.js` diretamente no Node.Js.
 
 ## Os requisitos dos exercícios de hoje são:
 

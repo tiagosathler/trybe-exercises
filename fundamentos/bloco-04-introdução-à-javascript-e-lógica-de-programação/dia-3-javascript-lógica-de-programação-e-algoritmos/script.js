@@ -109,3 +109,16 @@ if ( n<= 1) {
   }
 }
 console.log('---------')
+n = 643;
+console.log("Programa 6 (Bônus) - Testa se o número inteiro 'n = " + n + "' é primo:")
+let divisores = 0;
+for (let d = 2; d*d < n; d += 1) {
+  if ( n % d === 0 )  {
+    divisores++;
+  }
+}
+if ( divisores >= 1 ) {
+  console.log("false");
+} else {
+  console.log("true");
+}

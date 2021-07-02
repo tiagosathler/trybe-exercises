@@ -1,6 +1,7 @@
 # Bloco 04 - Dia 3 - JavaScript - Lógica de Programação e Algoritmos
 
 O objetivo deste dia é aprender algoritmos e lógica de programação, a base de tudo! Quebrar grandes problemas em outros menores e utilizar a lógica de programação na resolução de problemas.
+Os exercícios estão compilados no arquivo `script.js` e os resultados podem ser visualizados ao abrir o arquivo HTML no *browser* utilizando-se do *console* da ferramenta *inspecionar*. Também podem ser vistos ao rodar diretamente no *Node.Js*.
 
 ## Exercícios do dia
 1. Para o primeiro exercício de hoje, faça um programa que, dado um valor `n` qualquer, seja `n > 1` , imprima na tela um quadrado feito de *asteriscos* de lado de tamanho `n`. Por exemplo:

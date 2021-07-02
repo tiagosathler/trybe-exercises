@@ -7,7 +7,6 @@ Os exercícios podem ser vistos a partir do arquivo HTML deste repositório.
 ## Os requisitos dos exercícios de hoje são:
 
 ### Exercícios do momento pré-aula ao vivo:
-Para fixar: index.html
 
 > <Para fixar: `index.html` 
 ```

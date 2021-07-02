@@ -28,7 +28,7 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 
 - [X] 3-1: _[HTML & CSS - Introdução - Estruturas de página](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-03-introducao-%C3%A0-html-e-css/dia-1-html-e-css-introdu%C3%A7%C3%A3o-estruturas-de-p%C3%A1gina)_
 - [X] 3-2: _[HTML & CSS - Primeiros passos em CSS](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-03-introducao-%C3%A0-html-e-css/dia-2-html-e-css-primeiros-passos-em-css)_
-- [X] 3-3: _HTML & CSS - Seletores e posicionamento_
+- [X] 3-3: _[HTML & CSS - Seletores e posicionamento](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-03-introducao-%C3%A0-html-e-css/dia-3-html-e-css-seletores-e-posicionamento)_
 - [X] 3-4: _HTML Semântico_
 - [X] 3-5: _[Projeto - HTML & CSS]()_
 

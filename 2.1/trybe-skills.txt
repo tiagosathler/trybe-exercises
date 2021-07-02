@@ -1,8 +1,0 @@
-O que estou aprendendo na Trybe (até 11/06/21):
-- Unix (09/06);
-- Bash (10/06);
-- Git  (11/06);
-
-- Next, Javascript
-- Next, React
-- Next, HTML

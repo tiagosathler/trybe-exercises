@@ -116,7 +116,7 @@ Os exercícios podem ser vistos a partir dos arquivos HTML deste repositório.
 
 #### Parte III - Agrupamento de seletores e pseudoclasses:
 
-> Para fixar:
+##### Para fixar I:
 > `index3.html`:
 ```
 <!DOCTYPE html>
@@ -143,10 +143,51 @@ Os exercícios podem ser vistos a partir dos arquivos HTML deste repositório.
 5. No `style3.css`, adicione a propriedade `list-style: none` para ambas as listas.
 > **Dica** : Nesse [link](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes), você irá encontrar a documentação sobre todas as pseudoclasses do CSS.
 
+##### Para fixar II:
+
+Para o próximo exercício, você não deve atribuir nenhuma classe ou id aos componentes, mas apenas utilizar pseudoclasses para individualizar cada elemento!
+
+> `index4.html`:
+```
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Pseudoclasses</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Paleta de Cores</h1>
+  <p>Vamos criar uma paleta de cores com as divs abaixo:</p>
+  <div>
+    <h3>Cor primária</h3>
+  </div>
+  <div>
+    <h3>Cor Secundária</h3>
+  </div>
+  <div>
+    <h3>Cor Complementar</h3>
+  </div>
+  <div>
+    <h3>Cor Escura</h3>
+  </div>
+  <div>
+    <h3>Cor Clara</h3>
+  </div>
+</body>
+</html>
+```
+1. Estilize as divs para que, ao passar o cursor por cima das mesmas, elas ganhem uma borda.
+2. Faça cada div ter uma cor própria.
+3. Estilize cada uma das tags h3 .
+4. Faça a terceira div ser maior que as demais.
+5. Deixe as tags ímpares h3 com o texto em itálico.
+
+
 #### Parte IV - Combinações e classes descendentes:
 
 > Para fixar:
-> `index4.html`
+> `index5.html`
 ```
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -195,7 +236,7 @@ Os exercícios podem ser vistos a partir dos arquivos HTML deste repositório.
   </body>
 </html>
 ```
- *Crie o arquivo `style4.css` e resolva os seguintes exercícios:*
+ *Crie o arquivo `style5.css` e resolva os seguintes exercícios:*
 
 1. Faça com que todos os itens de Listas Ordenadas tenham uma cor de fundo amarela. Se a numeração do item for PAR, faça a cor de fonte ser verde. Se o número for considerado ÍMPAR, utilize a propriedade text-transform para deixar o texto maiúsculo. (Dica: combinar classes pode ser útil aqui).
 
@@ -209,7 +250,4 @@ Os exercícios podem ser vistos a partir dos arquivos HTML deste repositório.
 
 > _Dica 1:_ Utilize o seletor :hover para controlar o passar do mouse.
 > _Dica 2:_ Sugestão de cores padrão. StackOverflow (laranja), W3Schools (verde), MDN (preta), DevDocs (amarela), Trybe (verde).
-
-
-
 

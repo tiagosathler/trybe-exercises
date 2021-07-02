@@ -81,3 +81,31 @@ if ( n<= 1) {
 }
 console.log('---------')
 
+// P.4
+n = 7;
+console.log("Programa 5 (Bônus) - Pirâmide vazia 'n = " + n + "' asteriscos de base:")
+if ( n<= 1) {
+  console.log('Valor de n deve ser maior que 1');
+} else if ( n % 2 === 0 ) {
+  console.log('Valor de n precisa ser ímpar');
+} else {
+  let resultado = '';
+  for (let indexLinha = 0; indexLinha < (n-1)/2 + 1 ; indexLinha += 1) {
+    if (indexLinha !== (n-1)/2) {
+      for (let indexChar = 0; indexChar < n; indexChar += 1) {
+        if (indexChar === (n-1)/2 - indexLinha || indexChar === (n-1)/2 + indexLinha) {
+          resultado += '*';
+        } else {
+          resultado += ' ';
+        }
+      }
+    } else {
+      for (let indexChar = 0; indexChar < n; indexChar += 1) {
+        resultado += '*';
+      }
+    }
+    console.log(resultado);
+    resultado = '';    
+  }
+}
+console.log('---------')

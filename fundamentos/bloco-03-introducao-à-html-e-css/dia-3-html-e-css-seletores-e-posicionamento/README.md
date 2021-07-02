@@ -251,3 +251,14 @@ Para o próximo exercício, você não deve atribuir nenhuma classe ou id aos co
 > _Dica 1:_ Utilize o seletor :hover para controlar o passar do mouse.
 > _Dica 2:_ Sugestão de cores padrão. StackOverflow (laranja), W3Schools (verde), MDN (preta), DevDocs (amarela), Trybe (verde).
 
+
+### 2. Exercícios do momento pós-aula ao vivo:
+
+Hoje vamos finalizar a primeira versão do seu Portfólio Web adicionando seletores e CSS de layout. 
+Com este exercício, você será capaz de:
+
+* Aplicar layout mais consistente usando elementos de bloco e inline, aplicando todo o conhecimento que você construiu hoje;
+* Salvar todas as estilizações dentro de um arquivo externo `style.css`;
+* Usar Box Model para organizar melhor os elementos no seu Portfólio Web ;
+
+> **OBS**: O portfólio está hospedado em outro repositório. Você poderá acessá-lo por [aqui](https://github.com/tiagosathler/tiagosathler.github.io) ou abrir diretamente a página hospedada em [tiagosathler.github.io](https://tiagosathler.github.io).

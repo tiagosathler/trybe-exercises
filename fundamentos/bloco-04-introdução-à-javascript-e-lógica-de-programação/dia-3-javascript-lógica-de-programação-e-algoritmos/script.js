@@ -2,122 +2,133 @@
 // EXERCÍCIOS DO DIA
 // 25/06/21 - Tiago H. S. Sathler
 
-
 // P.1
-console.log('---------')
+console.log("---------");
 let n = 5;
 console.log("Programa 1 - Quadro de 'n = " + n + "' astericos:");
-if (n<= 1) {
-  console.log('Valor de n deve ser maior que 1');
+if (n <= 1) {
+  console.log("Valor de n deve ser maior que 1");
 } else {
-  let resultado = '*';
-  for (let index = 1; index < n ; index += 1) {
-    resultado += '*';
+  let resultado = "*";
+  for (let index = 1; index < n; index += 1) {
+    resultado += "*";
   }
-  for (let index = 0; index < n ; index += 1) {
+  for (let index = 0; index < n; index += 1) {
     console.log(resultado);
   }
 }
-console.log('---------')
+console.log("---------");
 
 // P.2
 n = 5;
 console.log("Programa 2 - Triângulo retângulo de 'n = " + n + "' astericos:");
-if (n<= 1) {
-  console.log('Valor de n deve ser maior que 1');
+if (n <= 1) {
+  console.log("Valor de n deve ser maior que 1");
 } else {
-  let resultado = '*';
+  let resultado = "*";
   console.log(resultado);
-  for (let index = 1; index < n ; index += 1) {
-    resultado += '*';
-    console.log(resultado)
-  }  
+  for (let index = 1; index < n; index += 1) {
+    resultado += "*";
+    console.log(resultado);
+  }
 }
-console.log('---------')
+console.log("---------");
 
 // P.3
 n = 5;
-console.log("Programa 3 - Triângulo retângulo invertido de 'n = " + n + "' astericos:");
-if ( n<= 1) {
-  console.log('Valor de n deve ser maior que 1');  
+console.log(
+  "Programa 3 - Triângulo retângulo invertido de 'n = " + n + "' astericos:"
+);
+if (n <= 1) {
+  console.log("Valor de n deve ser maior que 1");
 } else {
-  let resultado = '';
+  let resultado = "";
   let posicao = n;
-  for (let index = 0; index < n ; index += 1) {
-    for (let charIndex = 0; charIndex <= n ; charIndex += 1) {
-      if ( charIndex < posicao ) {
-        resultado += ' ';
+  for (let index = 0; index < n; index += 1) {
+    for (let charIndex = 0; charIndex <= n; charIndex += 1) {
+      if (charIndex < posicao) {
+        resultado += " ";
       } else {
-        resultado += '*';
+        resultado += "*";
       }
     }
     console.log(resultado);
-    resultado = '';
-    posicao -= 1;    
+    resultado = "";
+    posicao -= 1;
   }
 }
-console.log('---------')
+console.log("---------");
 
 // P.4
 n = 5;
-console.log("Programa 4 - Pirâmide 'n = " + n + "' asteriscos de base:")
-if ( n<= 1) {
-  console.log('Valor de n deve ser maior que 1');
-} else if ( n % 2 === 0 ) {
-  console.log('Valor de n precisa ser ímpar');
+console.log("Programa 4 - Pirâmide de 'n = " + n + "' asteriscos de base:");
+if (n <= 1) {
+  console.log("Valor de n deve ser maior que 1");
+} else if (n % 2 === 0) {
+  console.log("Valor de n precisa ser ímpar");
 } else {
-  let resultado = '';
-  for (let indexLinha = 0; indexLinha < (n-1)/2 + 1 ; indexLinha += 1) {
+  let resultado = "";
+  for (let indexLinha = 0; indexLinha < (n - 1) / 2 + 1; indexLinha += 1) {
     for (let indexChar = 0; indexChar < n; indexChar += 1) {
-      if (indexChar < (n-1)/2 - indexLinha || indexChar > (n-1)/2 + indexLinha) {
-        resultado += ' ';
+      if (
+        indexChar < (n - 1) / 2 - indexLinha ||
+        indexChar > (n - 1) / 2 + indexLinha
+      ) {
+        resultado += " ";
       } else {
-        resultado += '*';
+        resultado += "*";
       }
     }
     console.log(resultado);
-    resultado = '';    
+    resultado = "";
   }
 }
-console.log('---------')
+console.log("---------");
 
 // P.4
 n = 7;
-console.log("Programa 5 (Bônus) - Pirâmide vazia 'n = " + n + "' asteriscos de base:")
-if ( n<= 1) {
-  console.log('Valor de n deve ser maior que 1');
-} else if ( n % 2 === 0 ) {
-  console.log('Valor de n precisa ser ímpar');
+console.log(
+  "Programa 5 (Bônus) - Pirâmide vazia de 'n = " + n + "' asteriscos de base:"
+);
+if (n <= 1) {
+  console.log("Valor de n deve ser maior que 1");
+} else if (n % 2 === 0) {
+  console.log("Valor de n precisa ser ímpar");
 } else {
-  let resultado = '';
-  for (let indexLinha = 0; indexLinha < (n-1)/2 + 1 ; indexLinha += 1) {
-    if (indexLinha !== (n-1)/2) {
+  let resultado = "";
+  for (let indexLinha = 0; indexLinha < (n - 1) / 2 + 1; indexLinha += 1) {
+    if (indexLinha !== (n - 1) / 2) {
       for (let indexChar = 0; indexChar < n; indexChar += 1) {
-        if (indexChar === (n-1)/2 - indexLinha || indexChar === (n-1)/2 + indexLinha) {
-          resultado += '*';
+        if (
+          indexChar === (n - 1) / 2 - indexLinha ||
+          indexChar === (n - 1) / 2 + indexLinha
+        ) {
+          resultado += "*";
         } else {
-          resultado += ' ';
+          resultado += " ";
         }
       }
     } else {
       for (let indexChar = 0; indexChar < n; indexChar += 1) {
-        resultado += '*';
+        resultado += "*";
       }
     }
     console.log(resultado);
-    resultado = '';    
+    resultado = "";
   }
 }
-console.log('---------')
+console.log("---------");
 n = 643;
-console.log("Programa 6 (Bônus) - Testa se o número inteiro 'n = " + n + "' é primo:")
+console.log(
+  "Programa 6 (Bônus) - Testa se o número inteiro 'n = " + n + "' é primo:"
+);
 let divisores = 0;
-for (let d = 2; d*d < n; d += 1) {
-  if ( n % d === 0 )  {
+for (let d = 2; d * d < n; d += 1) {
+  if (n % d === 0) {
     divisores++;
   }
 }
-if ( divisores >= 1 ) {
+if (divisores >= 1) {
   console.log("false");
 } else {
   console.log("true");

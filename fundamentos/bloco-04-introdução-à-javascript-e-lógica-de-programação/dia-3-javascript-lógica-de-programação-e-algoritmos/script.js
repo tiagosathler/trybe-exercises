@@ -5,8 +5,8 @@
 
 // P.1
 console.log('---------')
-console.log('Programa 1 - Quadro de n astericos')
 let n = 5;
+console.log("Programa 1 - Quadro de 'n = " + n + "' astericos:");
 if (n<= 1) {
   console.log('Valor de n deve ser maior que 1');
 } else {
@@ -21,8 +21,8 @@ if (n<= 1) {
 console.log('---------')
 
 // P.2
-console.log('Programa 2 - Triângulo retângulo de n astericos')
 n = 5;
+console.log("Programa 2 - Triângulo retângulo de 'n = " + n + "' astericos:");
 if (n<= 1) {
   console.log('Valor de n deve ser maior que 1');
 } else {
@@ -36,8 +36,8 @@ if (n<= 1) {
 console.log('---------')
 
 // P.3
-console.log('Programa 3 - Triângulo retângulo invertido de n astericos')
 n = 5;
+console.log("Programa 3 - Triângulo retângulo invertido de 'n = " + n + "' astericos:");
 if ( n<= 1) {
   console.log('Valor de n deve ser maior que 1');  
 } else {
@@ -46,9 +46,9 @@ if ( n<= 1) {
   for (let index = 0; index < n ; index += 1) {
     for (let charIndex = 0; charIndex <= n ; charIndex += 1) {
       if ( charIndex < posicao ) {
-        resultado += ' '; // acrescenta um espaço
+        resultado += ' ';
       } else {
-        resultado += '*'; // acrescenta um asterisco
+        resultado += '*';
       }
     }
     console.log(resultado);
@@ -59,8 +59,8 @@ if ( n<= 1) {
 console.log('---------')
 
 // P.4
-n = 7;
-console.log("Programa 4 - Pirâmide 'n = " + n + "' asteriscos de base")
+n = 5;
+console.log("Programa 4 - Pirâmide 'n = " + n + "' asteriscos de base:")
 if ( n<= 1) {
   console.log('Valor de n deve ser maior que 1');
 } else if ( n % 2 === 0 ) {

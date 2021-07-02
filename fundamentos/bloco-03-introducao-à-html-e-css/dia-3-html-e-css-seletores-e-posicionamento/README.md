@@ -134,8 +134,8 @@ Os exercícios podem ser vistos a partir dos arquivos HTML deste repositório.
 </html>
 ```
 1. Adicione uma lista ordenada dos 3 melhores sites que você conhece.
-2. Crie um arquivo no mesmo diretório e nomeie-o de 'style.css'.
-3. Nesse arquivo .css, adicione os estilos para que:
+2. Crie um arquivo `style3.css` no diretŕio `estilos`.
+3. Nesse arquivo `.css`, adicione os estilos para que:
    * O texto das tags `h1` e `p` estejam centralizados.
    * A cor de fundo da sua lista mude quando o cursor estiver sobre o item.
    * A fonte do item mude quando ele for clicado.

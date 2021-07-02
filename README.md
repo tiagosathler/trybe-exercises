@@ -30,7 +30,7 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 - [X] 3-2: _[HTML & CSS - Primeiros passos em CSS](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-03-introducao-%C3%A0-html-e-css/dia-2-html-e-css-primeiros-passos-em-css)_
 - [X] 3-3: _[HTML & CSS - Seletores e posicionamento](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-03-introducao-%C3%A0-html-e-css/dia-3-html-e-css-seletores-e-posicionamento)_
 - [X] 3-4: _HTML Semântico_
-- [X] 3-5: _[Projeto - HTML & CSS]()_
+- [X] 3-5: _[Projeto - Lessos Learned](https://github.com/tryber/sd-014-a-project-lessons-learned/pull/42)_
 
 ##### :white_check_mark: Bloco 4 - Introdução à JavaScript e Lógica de Programação
 
@@ -38,7 +38,7 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 - [X] 4-2: _[JavaScript - Array e loop For](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-04-introdu%C3%A7%C3%A3o-%C3%A0-javascript-e-l%C3%B3gica-de-programa%C3%A7%C3%A3o/dia-2-javascript-array-e-loop-for)_
 - [X] 4-3: [_JavaScript - Lógica de Programação e Algoritmos_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-04-introdu%C3%A7%C3%A3o-%C3%A0-javascript-e-l%C3%B3gica-de-programa%C3%A7%C3%A3o/dia-3-javascript-l%C3%B3gica-de-programa%C3%A7%C3%A3o-e-algoritmos)
 - [x] 4-4: _[JavaScript - Objetos e funções](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-04-introdu%C3%A7%C3%A3o-%C3%A0-javascript-e-l%C3%B3gica-de-programa%C3%A7%C3%A3o/dia-4-javascript-objetos-e-fun%C3%A7%C3%B5es)_
-- [x] 4-5: _[Projeto - Playground Functions]()_
+- [x] 4-5: _[Projeto - Playground Functions](https://github.com/tryber/sd-014-a-project-playground-functions/pull/13)_
 
 ##### :hourglass_flowing_sand: Bloco 5 - JavaScript: DOM, Eventos e Web Storage
 

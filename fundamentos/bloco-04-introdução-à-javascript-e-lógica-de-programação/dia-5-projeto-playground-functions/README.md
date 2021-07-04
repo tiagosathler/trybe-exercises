@@ -8,4 +8,4 @@ Este projeto teve como finalidade gerar 12 funções em JavaScript na resoluçã
 > **A minha solução pode ser vista neste Pull Request:**
 > [Playground Functions - Pull Request from TIAGO-SATHLER](https://github.com/tryber/sd-014-a-project-playground-functions/pull/13)
 
-![](fundamentos/bloco-04-introdução-à-javascript-e-lógica-de-programação/dia-5-projeto-playground-functions/Resultados.png)
+![Resultados](fundamentos/bloco-04-introdução-à-javascript-e-lógica-de-programação/dia-5-projeto-playground-functions/Resultados.png)

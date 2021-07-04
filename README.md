@@ -38,7 +38,7 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 - [X] 4-2: _[JavaScript - Array e loop For](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-04-introdu%C3%A7%C3%A3o-%C3%A0-javascript-e-l%C3%B3gica-de-programa%C3%A7%C3%A3o/dia-2-javascript-array-e-loop-for)_
 - [X] 4-3: [_JavaScript - Lógica de Programação e Algoritmos_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-04-introdu%C3%A7%C3%A3o-%C3%A0-javascript-e-l%C3%B3gica-de-programa%C3%A7%C3%A3o/dia-3-javascript-l%C3%B3gica-de-programa%C3%A7%C3%A3o-e-algoritmos)
 - [x] 4-4: _[JavaScript - Objetos e funções](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-04-introdu%C3%A7%C3%A3o-%C3%A0-javascript-e-l%C3%B3gica-de-programa%C3%A7%C3%A3o/dia-4-javascript-objetos-e-fun%C3%A7%C3%B5es)_
-- [x] 4-5: _[Projeto - Playground Functions](https://github.com/tryber/sd-014-a-project-playground-functions/pull/13#issuecomment-873653499)_
+- [x] 4-5: _[Projeto - Playground Functions](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-04-introdu%C3%A7%C3%A3o-%C3%A0-javascript-e-l%C3%B3gica-de-programa%C3%A7%C3%A3o/dia-5-projeto-playground-functions)_
 
 ##### :hourglass_flowing_sand: Bloco 5 - JavaScript: DOM, Eventos e Web Storage
 

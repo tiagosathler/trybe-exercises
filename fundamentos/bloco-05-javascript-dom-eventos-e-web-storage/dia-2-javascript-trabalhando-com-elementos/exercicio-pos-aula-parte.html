@@ -57,80 +57,95 @@
   </head>
   <body>
     <script>
-      //1.
-      let elementH1 = document.createElement('h1');
+      //I-1.
+      let elementH1 = document.createElement("h1");
       elementH1.innerText = "Exercício 5.2 - JavaScript DOM";
       document.body.appendChild(elementH1);
 
-      //2.
-      let elementDiv1 = document.createElement('div');
-      elementDiv1.className = 'main-content';
+      //I-2.
+      let elementDiv1 = document.createElement("div");
+      elementDiv1.className = "main-content";
       document.body.appendChild(elementDiv1);
 
-      //3.
-      let elementDiv2 = document.createElement('div');
-      elementDiv2.className = 'center-content';
-      document.querySelector('.main-content').appendChild(elementDiv2);
+      //I-3.
+      let elementDiv2 = document.createElement("div");
+      elementDiv2.className = "center-content";
+      document.querySelector(".main-content").appendChild(elementDiv2);
 
-      //4.
-      let elementP = document.createElement('p');
-      elementP.innerHTML = 'Exemplo de um <strong>texto<strong>.';
-      document.querySelector('.center-content').appendChild(elementP);
+      //I-4.
+      let elementP = document.createElement("p");
+      elementP.innerHTML = "Exemplo de um <strong>texto<strong>.";
+      document.querySelector(".center-content").appendChild(elementP);
 
-      //5.
-      let elementDiv3 = document.createElement('div');
-      elementDiv3.className = 'left-content';
-      document.querySelector('.main-content').appendChild(elementDiv3);
+      //I-5.
+      let elementDiv3 = document.createElement("div");
+      elementDiv3.className = "left-content";
+      document.querySelector(".main-content").appendChild(elementDiv3);
 
-      //6.
-      let elementDiv4 = document.createElement('div');
-      elementDiv4.className = 'right-content';
-      document.querySelector('.main-content').appendChild(elementDiv4);
+      //I-6.
+      let elementDiv4 = document.createElement("div");
+      elementDiv4.className = "right-content";
+      document.querySelector(".main-content").appendChild(elementDiv4);
 
-      //7.
-      let elementImg = document.createElement('img');
-      elementImg.src = 'https://picsum.photos/200';
-      elementImg.className = 'small-image';
-      document.querySelector('.left-content').appendChild(elementImg);
+      //I-7.
+      let elementImg = document.createElement("img");
+      elementImg.src = "https://picsum.photos/200";
+      elementImg.className = "small-image";
+      document.querySelector(".left-content").appendChild(elementImg);
 
-      //8.
-      let elementUl = document.createElement('ul');
-      elementUl.className = 'lista-numeros'      
-      let numbers = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
-      document.querySelector('.right-content').appendChild(elementUl);
+      //I-8.
+      let elementUl = document.createElement("ul");
+      elementUl.className = "lista-numeros";
+      let numbers = [
+        "um",
+        "dois",
+        "três",
+        "quatro",
+        "cinco",
+        "seis",
+        "sete",
+        "oito",
+        "nove",
+        "dez",
+      ];
+      document.querySelector(".right-content").appendChild(elementUl);
       for (let value of numbers) {
-        let elementLi = document.createElement('li');
+        let elementLi = document.createElement("li");
         elementLi.innerText = value;
-        document.querySelector('.lista-numeros').appendChild(elementLi);
+        document.querySelector(".lista-numeros").appendChild(elementLi);
       }
 
-      //9.
+      //I-9.
       for (let index = 0; index < 3; index += 1) {
-        let elementH3 = document.createElement('h3');
-        elementH3.className = 'description';
-        document.querySelector('.main-content').appendChild;
+        let element = document.createElement("h3");
+        document.querySelector(".main-content").appendChild(element);
       }
 
       //II-1.
-      let elementTitle = document.createElement('title');
-      document.body.firstElementChild.appendChild(elementTitle);
+      document.querySelector("h1").className = "title";
 
       //II-2.
-      //feito no 9
+      let elements = document
+        .querySelector(".main-content")
+        .querySelectorAll("h3");
+      for (let index = 0; index < elements.length; index += 1) {
+        elements[index].className = "description";        
+      }
 
       //II-3:
-      document.querySelector('.main-content').removeChild(elementDiv3);
+      document.querySelector(".main-content").removeChild(document.querySelector(".left-content"));
 
       //II-4.
-      elementDiv4.style.marginRight = 'auto';
+      document.querySelector(".right-content").style.marginRight = "auto";
 
       //II-5.
-      document.querySelector('.center-content').style.backgroundColor = 'green';
+      document.querySelector(".center-content").style.backgroundColor = "green";
 
-
-
-
-
+      //II-6
+      for (let index = 0; index < 2; index += 1) {
+        let element = document.querySelector(".lista-numeros").lastElementChild;
+        document.querySelector(".lista-numeros").removeChild(element);
+      }
     </script>
   </body>
 </html>

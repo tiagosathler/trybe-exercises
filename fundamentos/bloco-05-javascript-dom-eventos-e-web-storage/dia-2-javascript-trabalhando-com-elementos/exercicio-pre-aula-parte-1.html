@@ -80,6 +80,16 @@
     console.log("Parte II - 4. A partir desse filho criado, acesse 'terceiroFilho':");
     console.log(document.querySelector('#primeiroFilhoDoFilho').lastElementChild.parentElement.parentElement.nextElementSibling);
 
+    //III
+    console.log("Parte III - Remova todos os elementos filhos de 'paiDoPai' exceto 'pai' , 'elementoOndeVoceEsta' e 'primeiroFilhoDoFilho'");
+    let childrenOfPai = document.querySelector('#pai').children;
+    console.log(childrenOfPai);
+    childrenOfPai.removeChild();
+    console.log(childrenOfPai);
+    //for (let index = element.length - 3; index < element.length; index += 1) {
+      //childOfPai.removeChild(element[index]);
+    //}
+
   </script>
 </body>
 </html>

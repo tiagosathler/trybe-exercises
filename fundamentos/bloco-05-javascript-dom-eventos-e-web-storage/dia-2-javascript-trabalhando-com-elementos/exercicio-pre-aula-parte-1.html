@@ -19,5 +19,39 @@
       <div id="quartoEUltimoFilho"></div>
     </div>
   </div>
+  <script>
+    //1.
+    console.log("1. Acesse o elemento 'elementoOndeVoceEsta':")
+    console.log(document.querySelector('#elementoOndeVoceEsta'));
+    
+    //2.
+    console.log("2. Acesse pai a partir de 'elementoOndeVoceEsta' e adicione uma 'color' a ele.");
+    document.querySelector('#elementoOndeVoceEsta').parentElement.style.color = "red";
+
+    //3.
+    console.log("3. Acesse o 'primeiroFilhoDoFilho' e adicione um texto a ele.")
+    document.querySelector('#primeiroFilhoDoFilho').innerHTML = 'Um texto adicionado';
+
+    //4.
+    console.log("4. Acesse o 'primeiroFilho' a partir de 'pai':")
+    console.log(document.querySelector('#pai').firstElementChild);
+
+    //5.
+    console.log("5. Agora acesse o 'primeiroFilho' a partir de 'elementoOndeVoceEsta':")
+    console.log(document.querySelector('#elementoOndeVoceEsta').previousElementSibling);
+
+    //6.
+    console.log("6. Agora acesse o texto 'Atenção!'' a partir de 'elementoOndeVoceEsta':")
+    console.log(document.querySelector('#elementoOndeVoceEsta').nextSibling);
+
+    //7.
+    console.log("7. Agora acesse o 'terceiroFilho' a partir de 'elementoOndeVoceEsta':")
+    console.log(document.querySelector('#elementoOndeVoceEsta').nextElementSibling);
+
+    //8.
+    console.log("8. Agora acesse o 'terceiroFilho' a partir de 'pai':")
+    console.log(document.querySelector('#pai').lastElementChild.previousElementSibling);
+
+  </script>
 </body>
 </html>

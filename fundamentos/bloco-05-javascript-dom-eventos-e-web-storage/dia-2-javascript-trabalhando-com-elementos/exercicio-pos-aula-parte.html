@@ -93,6 +93,17 @@
       elementImg.className = 'small-image';
       document.querySelector('.left-content').appendChild(elementImg);
 
+      //8.
+      let elementUl = document.createElement('ul');
+      elementUl.className = 'lista-numeros'      
+      let numbers = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      document.querySelector('.right-content').appendChild(elementUl);
+      for (let value of numbers) {
+        let elementLi = document.createElement('li');
+        elementLi.innerText = value;
+        document.querySelector('.lista-numeros').appendChild(elementLi);
+      }
+      
     </script>
   </body>
 </html>

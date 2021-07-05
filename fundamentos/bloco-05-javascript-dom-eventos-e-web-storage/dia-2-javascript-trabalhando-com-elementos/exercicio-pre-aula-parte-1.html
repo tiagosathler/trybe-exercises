@@ -20,37 +20,65 @@
     </div>
   </div>
   <script>
-    //1.
-    console.log("1. Acesse o elemento 'elementoOndeVoceEsta':")
+    //I-1.
+    console.log("Parte I - 1. Acesse o elemento 'elementoOndeVoceEsta':")
     console.log(document.querySelector('#elementoOndeVoceEsta'));
     
-    //2.
-    console.log("2. Acesse pai a partir de 'elementoOndeVoceEsta' e adicione uma 'color' a ele.");
+    //I-2.
+    console.log("Parte I - 2. Acesse pai a partir de 'elementoOndeVoceEsta' e adicione uma 'color' a ele.");
     document.querySelector('#elementoOndeVoceEsta').parentElement.style.color = "red";
 
-    //3.
-    console.log("3. Acesse o 'primeiroFilhoDoFilho' e adicione um texto a ele.")
+    //I-3.
+    console.log("Parte I - 3. Acesse o 'primeiroFilhoDoFilho' e adicione um texto a ele.")
     document.querySelector('#primeiroFilhoDoFilho').innerHTML = 'Um texto adicionado';
 
-    //4.
-    console.log("4. Acesse o 'primeiroFilho' a partir de 'pai':")
+    //I-4.
+    console.log("Parte I - 4. Acesse o 'primeiroFilho' a partir de 'pai':")
     console.log(document.querySelector('#pai').firstElementChild);
 
-    //5.
-    console.log("5. Agora acesse o 'primeiroFilho' a partir de 'elementoOndeVoceEsta':")
+    //I-5.
+    console.log("Parte I - 5. Agora acesse o 'primeiroFilho' a partir de 'elementoOndeVoceEsta':")
     console.log(document.querySelector('#elementoOndeVoceEsta').previousElementSibling);
 
-    //6.
-    console.log("6. Agora acesse o texto 'Atenção!'' a partir de 'elementoOndeVoceEsta':")
+    //I-6.
+    console.log("Parte I - 6. Agora acesse o texto 'Atenção!'' a partir de 'elementoOndeVoceEsta':")
     console.log(document.querySelector('#elementoOndeVoceEsta').nextSibling);
 
-    //7.
-    console.log("7. Agora acesse o 'terceiroFilho' a partir de 'elementoOndeVoceEsta':")
+    //I-7.
+    console.log("Parte I - 7. Agora acesse o 'terceiroFilho' a partir de 'elementoOndeVoceEsta':")
     console.log(document.querySelector('#elementoOndeVoceEsta').nextElementSibling);
 
-    //8.
-    console.log("8. Agora acesse o 'terceiroFilho' a partir de 'pai':")
+    //I-8.
+    console.log("Parte I - 8. Agora acesse o 'terceiroFilho' a partir de 'pai':")
     console.log(document.querySelector('#pai').lastElementChild.previousElementSibling);
+
+    //II-1.
+    console.log("Parte II - 1. Crie um irmão para 'elementoOndeVoceEsta':");
+    let textInSonOfElementoOndeVoceEsta = "'div' irmã de 'elementoOndeVoceEsta'";
+    let sonOfElementoOndeVoceEsta = document.createElement('div');
+    sonOfElementoOndeVoceEsta.innerHTML = textInSonOfElementoOndeVoceEsta;
+    document.querySelector('#elementoOndeVoceEsta').parentElement.appendChild(sonOfElementoOndeVoceEsta);
+    console.log(document.querySelector('#elementoOndeVoceEsta').parentElement.lastElementChild);
+    
+    //II-2.
+    console.log("Parte II - 2. Crie um filho para 'elementoOndeVoceEsta':");
+    let textInChildOfElementoOndeVoceEsta = "'div' filha de 'elementoOndeVoceEsta'";
+    let childOfElementoOndeVoceEsta = document.createElement('div');
+    childOfElementoOndeVoceEsta.innerHTML = textInChildOfElementoOndeVoceEsta;
+    document.querySelector('#elementoOndeVoceEsta').appendChild(childOfElementoOndeVoceEsta);
+    console.log(document.querySelector('#elementoOndeVoceEsta').lastElementChild);
+    
+    //II-3.
+    console.log("Parte II - 3. Crie um filho para 'primeiroFilhoDoFilho':");
+    let textInChildOfprimeiroFilhoDoFilho = "'div' filha de 'primeiroFilhoDoFilho'";
+    let childOfprimeiroFilhoDoFilho = document.createElement('div');
+    childOfprimeiroFilhoDoFilho.innerHTML = textInChildOfprimeiroFilhoDoFilho;
+    document.querySelector('#primeiroFilhoDoFilho').appendChild(childOfprimeiroFilhoDoFilho);
+    console.log(document.querySelector('#primeiroFilhoDoFilho').lastElementChild);
+
+    //II-4.
+    console.log("Parte II - 4. A partir desse filho criado, acesse 'terceiroFilho':");
+    console.log(document.querySelector('#primeiroFilhoDoFilho').lastElementChild.parentElement.parentElement.nextElementSibling);
 
   </script>
 </body>

@@ -63,10 +63,14 @@
       document.body.appendChild(elementH1);
 
       //2.
-      let elementDiv = document.createElement('div');
-      elementDiv.className = 'main-content';
-      document.body.appendChild(elementDiv);
-      
+      let elementDiv1 = document.createElement('div');
+      elementDiv1.className = 'main-content';
+      document.body.appendChild(elementDiv1);
+
+      //3.
+      let elementDiv2 = document.createElement('div');
+      elementDiv2.className = 'center-content';
+      document.querySelector('.main-content').appendChild(elementDiv2);
     </script>
   </body>
 </html>

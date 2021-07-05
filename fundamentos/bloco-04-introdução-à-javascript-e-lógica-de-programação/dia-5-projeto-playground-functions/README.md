@@ -1,12 +1,12 @@
-# Bloco 04 - Dia 5 - Projeto Playground Functions
+# Bloco 04 - Dia 5 - JavaScript - Projeto Playground Functions
 
-Este projeto teve como finalidade gerar 12 funções em JavaScript na resolução de diversos problemas. O intuito era aplicar os conhecimento básicos já estuados até aqui: variáveis e tipos primitivos, operadores lógicos, aritméticos e de atribuição, testes condicionais if/else, arrays e objetos, laços de repetição for/in/of e while. Por fim, usar técnicas de lógica de programação na resolução de problemas.
+Este projeto teve como finalidade gerar 12 funções em **JavaScript** para resolução de problemas. O intuito era aplicar os conhecimentos básicos já estudados até aqui: variáveis e tipos primitivos, operadores lógicos, aritméticos e de atribuição, testes condicionais `if/else`, arrays e objetos, laços de repetição `for/in/of` e `while`. Por fim, usar as técnicas de lógica de programação na resolução de problemas.
 
 > **Os requisitos do projeto podem ser lidos no repositório:**
 > [JavaScript - Playground Functions](https://github.com/tryber/sd-014-a-project-playground-functions)
 
-> **As minhas soluções podem ser lidas nos arquivos .js desta Branch:**
-> [Sources em branch tiago-sathler-playground-functions](https://github.com/tryber/sd-014-a-project-playground-functions/tree/tiago-sathler-playground-functions/src) 
+> **As minhas soluções podem ser lidas nos arquivos .js desta branch:**
+> [Sources em branch de tiago-sathler-playground-functions](https://github.com/tryber/sd-014-a-project-playground-functions/tree/tiago-sathler-playground-functions/src) 
 
 > **O resultado do Projeto pode ser visto neste Pull Request:**
 > [Playground Functions - Pull Request from TIAGO-SATHLER](https://github.com/tryber/sd-014-a-project-playground-functions/pull/13)

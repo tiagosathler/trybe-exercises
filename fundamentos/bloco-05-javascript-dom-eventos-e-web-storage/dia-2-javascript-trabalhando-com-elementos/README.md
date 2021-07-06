@@ -1,5 +1,5 @@
-# Bloco 05 - Dia 1 - JavaScript: DOM, Eventos e Web Storage
-Objetivo deste dia é continuar a manipulação de elementos do DOM, desta vez selecionando elementos através das hierarquias criadas na árvore DOM (... vô, pai, filho, neto...), como criar ou remover elementos na estrutura HTML a partir do JS e por fim acrescentar conteúdo ou valores aos parâmetros dos elementos.
+# Bloco 05 - Dia 2 - JavaScript - Trabalhando com elementos
+Objetivo deste dia é continuar a manipulação do DOM, desta vez selecionando **elementos** através das hierarquias criadas na árvore DOM (... vô, pai, filho, neto...), como criar ou remover elementos na estrutura HTML a partir do JS e por fim acrescentar conteúdo ou valores aos parâmetros dos elementos.
 
 ## Exercícios do dia
 
@@ -49,7 +49,7 @@ Objetivo deste dia é continuar a manipulação de elementos do DOM, desta vez s
 
 > **Aprofunde seu conhecimento!**
 
-> Exercícios desta seção estão no arquivo _[exercicios-pos-aula.html](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-05-javascript-dom-eventos-e-web-storage/dia-2-javascript-trabalhando-com-elementos/exercicios-pos-aula.html)_!
+> Exercícios desta seção estão no arquivo _[exercicios-pos-aula.html](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-05-javascript-dom-eventos-e-web-storage/dia-2-javascript-trabalhando-com-elementos/exercicios-pos-aula.html)_
 
 O objetivo desses exercícios é colocar em prática o que você acabou de aprender sobre DOM. Por isso, você deve fazer os exercícios utilizando apenas código JavaScript , o qual deve ser inserido entre as tags `<script>` e `</script>` .
 Para uma melhor organização, faça commits a cada tarefa concluída. Vamos aos exercícios:

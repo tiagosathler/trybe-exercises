@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      //I-1.
+      let elementH1 = document.createElement("h1");
+      elementH1.innerText = "Exercício 5.2 - JavaScript DOM";
+      document.body.appendChild(elementH1);
+
+      //I-2.
+      let elementDiv1 = document.createElement("div");
+      elementDiv1.className = "main-content";
+      document.body.appendChild(elementDiv1);
+
+      //I-3.
+      let elementDiv2 = document.createElement("div");
+      elementDiv2.className = "center-content";
+      document.querySelector(".main-content").appendChild(elementDiv2);
+
+      //I-4.
+      let elementP = document.createElement("p");
+      elementP.innerHTML = "Exemplo de um <strong>texto<strong>.";
+      document.querySelector(".center-content").appendChild(elementP);
+
+      //I-5.
+      let elementDiv3 = document.createElement("div");
+      elementDiv3.className = "left-content";
+      document.querySelector(".main-content").appendChild(elementDiv3);
+
+      //I-6.
+      let elementDiv4 = document.createElement("div");
+      elementDiv4.className = "right-content";
+      document.querySelector(".main-content").appendChild(elementDiv4);
+
+      //I-7.
+      let elementImg = document.createElement("img");
+      elementImg.src = "https://picsum.photos/200";
+      elementImg.className = "small-image";
+      document.querySelector(".left-content").appendChild(elementImg);
+
+      //I-8.
+      let elementUl = document.createElement("ul");
+      elementUl.className = "lista-numeros";
+      let numbers = [
+        "um",
+        "dois",
+        "três",
+        "quatro",
+        "cinco",
+        "seis",
+        "sete",
+        "oito",
+        "nove",
+        "dez",
+      ];
+      document.querySelector(".right-content").appendChild(elementUl);
+      for (let value of numbers) {
+        let elementLi = document.createElement("li");
+        elementLi.innerText = value;
+        document.querySelector(".lista-numeros").appendChild(elementLi);
+      }
+
+      //I-9.
+      for (let index = 0; index < 3; index += 1) {
+        let element = document.createElement("h3");
+        document.querySelector(".main-content").appendChild(element);
+      }
+
+      //II-1.
+      document.querySelector("h1").className = "title";
+
+      //II-2.
+      let elements = document
+        .querySelector(".main-content")
+        .querySelectorAll("h3");
+      for (let index = 0; index < elements.length; index += 1) {
+        elements[index].className = "description";        
+      }
+
+      //II-3:
+      document.querySelector(".main-content").removeChild(document.querySelector(".left-content"));
+
+      //II-4.
+      document.querySelector(".right-content").style.marginRight = "auto";
+
+      //II-5.
+      document.querySelector(".center-content").style.backgroundColor = "green";
+
+      //II-6
+      for (let index = 0; index < 2; index += 1) {
+        let element = document.querySelector(".lista-numeros").lastElementChild;
+        document.querySelector(".lista-numeros").removeChild(element);
+      }
+    </script>
+  </body>
+</html>

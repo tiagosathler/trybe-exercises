@@ -43,7 +43,7 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 ##### :hourglass_flowing_sand: Bloco 5 - JavaScript: DOM, Eventos e Web Storage
 
 - [x] 5-1: _[JavaScript - DOM e seletores](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-05-javascript-dom-eventos-e-web-storage/dia-1-javascript-dom-e-seletores)_
-- [ ] 5-2: _JavaScript - Trabalhando com elementos_
+- [x] 5-2: _[JavaScript - Trabalhando com elementos](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-05-javascript-dom-eventos-e-web-storage/dia-2-javascript-trabalhando-com-elementos)_
 - [ ] 5-3: _JavaScript - Eventos_
 - [ ] 5-4: _JavaScript - Web Storage_
 - [ ] 5-5: _[Projeto - Arte com Pixels]()_

@@ -9,7 +9,7 @@ Objetivo deste dia é continuar a manipulação de elementos do DOM, desta vez s
 
 > Adicione o código abaixo a uma página *HTML* e adicione uma tag *script* . Você deverá fazer tudo a seguir usando somente *JavaScript*.
 
-> Os exercícios desta seção estão no arquivo **`exercicios-pre-aula.html`**!
+> Os exercícios desta seção estão no arquivo _[exercicios-pre-aula.html](fundamentos/bloco-05-javascript-dom-eventos-e-web-storage/dia-2-javascript-trabalhando-com-elementos/exercicios-pre-aula.html)_
 
 ```
 <div id="paiDoPai">
@@ -49,7 +49,7 @@ Objetivo deste dia é continuar a manipulação de elementos do DOM, desta vez s
 
 > **Aprofunde seu conhecimento!**
 
-> Exercícios desta seção estão no arquivo **`exercicios-pos-aula.html`**!
+> Exercícios desta seção estão no arquivo _[exercicios-pos-aula.html](fundamentos/bloco-05-javascript-dom-eventos-e-web-storage/dia-2-javascript-trabalhando-com-elementos/exercicios-pos-aula.html)_!
 
 O objetivo desses exercícios é colocar em prática o que você acabou de aprender sobre DOM. Por isso, você deve fazer os exercícios utilizando apenas código JavaScript , o qual deve ser inserido entre as tags `<script>` e `</script>` .
 Para uma melhor organização, faça commits a cada tarefa concluída. Vamos aos exercícios:

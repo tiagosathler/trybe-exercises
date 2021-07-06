@@ -57,6 +57,7 @@
     let textInSonOfElementoOndeVoceEsta = "'div' irmã de 'elementoOndeVoceEsta'";
     let sonOfElementoOndeVoceEsta = document.createElement('div');
     sonOfElementoOndeVoceEsta.innerHTML = textInSonOfElementoOndeVoceEsta;
+    sonOfElementoOndeVoceEsta.id = "irmão de elementoOndeVoceEsta";
     document.querySelector('#elementoOndeVoceEsta').parentElement.appendChild(sonOfElementoOndeVoceEsta);
     console.log(document.querySelector('#elementoOndeVoceEsta').parentElement.lastElementChild);
     
@@ -65,15 +66,17 @@
     let textInChildOfElementoOndeVoceEsta = "'div' filha de 'elementoOndeVoceEsta'";
     let childOfElementoOndeVoceEsta = document.createElement('div');
     childOfElementoOndeVoceEsta.innerHTML = textInChildOfElementoOndeVoceEsta;
+    childOfElementoOndeVoceEsta.id = "filho de elementoOndeVoceEsta";
     document.querySelector('#elementoOndeVoceEsta').appendChild(childOfElementoOndeVoceEsta);
     console.log(document.querySelector('#elementoOndeVoceEsta').lastElementChild);
     
     //II-3.
     console.log("Parte II - 3. Crie um filho para 'primeiroFilhoDoFilho':");
-    let textInChildOfprimeiroFilhoDoFilho = "'div' filha de 'primeiroFilhoDoFilho'";
-    let childOfprimeiroFilhoDoFilho = document.createElement('div');
-    childOfprimeiroFilhoDoFilho.innerHTML = textInChildOfprimeiroFilhoDoFilho;
-    document.querySelector('#primeiroFilhoDoFilho').appendChild(childOfprimeiroFilhoDoFilho);
+    let textInChildOfPrimeiroFilhoDoFilho = "'div' filha de 'primeiroFilhoDoFilho'";
+    let childOfPrimeiroFilhoDoFilho = document.createElement('div');
+    childOfPrimeiroFilhoDoFilho.innerHTML = textInChildOfPrimeiroFilhoDoFilho;
+    childOfPrimeiroFilhoDoFilho.id = 'filho de primeiroFilhoDoFilho';
+    document.querySelector('#primeiroFilhoDoFilho').appendChild(childOfPrimeiroFilhoDoFilho);
     console.log(document.querySelector('#primeiroFilhoDoFilho').lastElementChild);
 
     //II-4.
@@ -83,13 +86,23 @@
     //III
     console.log("Parte III - Remova todos os elementos filhos de 'paiDoPai' exceto 'pai' , 'elementoOndeVoceEsta' e 'primeiroFilhoDoFilho'");
     let childrenOfPai = document.querySelector('#pai').children;
+    console.log("==> Antes de apagar os filhos de 'pai':");
     console.log(childrenOfPai);
-    childrenOfPai.removeChild();
-    console.log(childrenOfPai);
-    //for (let index = element.length - 3; index < element.length; index += 1) {
-      //childOfPai.removeChild(element[index]);
-    //}
+    document.querySelector('#pai').removeChild(document.querySelector('#pai').firstElementChild);
+    while (document.querySelector('#pai').childElementCount > 1) {
+      document.querySelector('#pai').removeChild(document.querySelector('#pai').lastElementChild);
+    }
+    console.log("--> Depois de apagar os filhos de 'pai', sobrou apenas:");
+    console.log(childrenOfPai)
 
+    let childrenOfElementoOndeVoceEsta = document.querySelector('#elementoOndeVoceEsta').children;
+    console.log("==> Antes de apagar os filhos de 'elementoOndeVoceEsta':");
+    console.log(childrenOfElementoOndeVoceEsta)
+    while (document.querySelector('#elementoOndeVoceEsta').childElementCount > 1) {
+      document.querySelector('#elementoOndeVoceEsta').removeChild(document.querySelector('#elementoOndeVoceEsta').lastElementChild);
+    }
+    console.log("--> Depois de apagar os filhos de 'elementoOndeVoceEsta', sobrou apenas:");
+    console.log(childrenOfElementoOndeVoceEsta)
   </script>
 </body>
 </html>

@@ -116,8 +116,9 @@
       }
 
       //I-9.
-      for (let index = 0; index < 3; index += 1) {
+      for (let index = 1; index <= 3; index += 1) {
         let element = document.createElement("h3");
+        element.innerText = "Título " + index + "('h3')";
         document.querySelector(".main-content").appendChild(element);
       }
 

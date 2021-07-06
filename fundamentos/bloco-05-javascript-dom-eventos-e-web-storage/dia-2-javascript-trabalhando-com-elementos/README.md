@@ -1,5 +1,5 @@
 # Bloco 05 - Dia 1 - JavaScript: DOM, Eventos e Web Storage
-O objetivo deste dia é aprender a manipular DOM (Document Object Model), a estrutura que faz a ponte entre o HTML e o JavaScript e que permite interção entre os dois. Os exerícios permitem recuperar os dados do HTML através do JavaScript. Também aplicou-se nestes exercícios alguns eventos relacionados a botões do conteúdo HTML.
+Objetivo deste dia é continuar a manipulação de elementos do DOM, desta vez selecionando elementos através das hierarquias criadas na árvore DOM (... vô, pai, filho, neto...), como criar ou remover elementos na estrutura HTML a partir do JS e por fim acrescentar conteúdo ou valores aos parâmetros dos elementos.
 
 ## Exercícios do dia
 
@@ -7,7 +7,9 @@ O objetivo deste dia é aprender a manipular DOM (Document Object Model), a estr
 
 #### Parte I
 
-> dicione o código abaixo a uma página *HTML* e adicione uma tag *script* . Você deverá fazer tudo a seguir usando somente *JavaScript*.
+> Adicione o código abaixo a uma página *HTML* e adicione uma tag *script* . Você deverá fazer tudo a seguir usando somente *JavaScript*.
+
+> Os exercícios desta seção estão no arquivo **`exercicios-pre-aula.html`**!
 
 ```
 <div id="paiDoPai">
@@ -32,12 +34,25 @@ O objetivo deste dia é aprender a manipular DOM (Document Object Model), a estr
 7. Agora acesse o `terceiroFilho` a partir de `elementoOndeVoceEsta` .
 8. Agora acesse o `terceiroFilho a partir de `pai` .
 
+#### Parte II
+
+1. Crie um irmão para `elementoOndeVoceEsta`.
+2. Crie um filho para `elementoOndeVoceEsta`.
+3. Crie um filho para `primeiroFilhoDoFilho` .
+4. A partir desse filho criado, acesse `terceiroFilho`.
+
+#### Parte III
+
+* Remova todos os elementos filhos de `paiDoPai` exceto `pai`, `elementoOndeVoceEsta` e `primeiroFilhoDoFilho`.
 
 ### Exercícios pós-aula ao vivo
 
-#### Aprofunde seu conhecimento
+> **Aprofunde seu conhecimento!**
 
-> Use o documento HTML a seguir:
+> Exercícios desta seção estão no arquivo **`exercicios-pos-aula.html`**!
+
+O objetivo desses exercícios é colocar em prática o que você acabou de aprender sobre DOM. Por isso, você deve fazer os exercícios utilizando apenas código JavaScript , o qual deve ser inserido entre as tags `<script>` e `</script>` .
+Para uma melhor organização, faça commits a cada tarefa concluída. Vamos aos exercícios:
 
 ```
 <!DOCTYPE html>
@@ -105,11 +120,7 @@ O objetivo deste dia é aprender a manipular DOM (Document Object Model), a estr
 </html>
 ```
 
-##### Parte I
-
-O objetivo desses exercícios é colocar em prática o que você acabou de aprender sobre DOM. Por isso, você deve fazer os exercícios utilizando apenas código JavaScript , o qual deve ser inserido entre as tags `<script>` e `</script>` .
-Para uma melhor organização, faça commits a cada tarefa concluída. Vamos aos exercícios:
-
+#### Parte I
 
 1. Adicione a tag `h1` com o texto `Exercício 5.2 - JavaScript DOM` como filho da tag `body`;
 2. Adicione a tag `div` com a classe `main-content` como filho da tag `body`;
@@ -121,7 +132,7 @@ Para uma melhor organização, faça commits a cada tarefa concluída. Vamos aos
 8. Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do `div` criado no passo 6;
 9. Adicione 3 tags `h3`, todas sendo filhas do `div` criado no passo 2.
 
-##### Parte II
+#### Parte II
 
 1. Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
 2. Adicione a classe `title` na tag `h1` criada;

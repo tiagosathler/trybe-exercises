@@ -44,10 +44,10 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 
 - [x] 5-1: _[JavaScript - DOM e seletores](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-05-javascript-dom-eventos-e-web-storage/dia-1-javascript-dom-e-seletores)_
 - [x] 5-2: _[JavaScript - Trabalhando com elementos](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-05-javascript-dom-eventos-e-web-storage/dia-2-javascript-trabalhando-com-elementos)_
-- [ ] 5-3: _JavaScript - Eventos_
-- [ ] 5-4: _JavaScript - Web Storage_
-- [ ] 5-5: _[Projeto - Arte com Pixels](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-05-javascript-dom-eventos-e-web-storage/dia-5-projeto-arte-com-pixels)_
-- [ ] 5-6: _[Projeto - Lista de tarefas](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-05-javascript-dom-eventos-e-web-storage/dia-6-projeto-lista-de-tarefas)_
+- [x] 5-3: _JavaScript - Eventos_
+- [x] 5-4: _JavaScript - Web Storage_
+- [x] 5-5: _[Projeto - Arte com Pixels](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-05-javascript-dom-eventos-e-web-storage/dia-5-projeto-arte-com-pixels)_
+- [x] 5-6: _[Projeto - Lista de tarefas](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-05-javascript-dom-eventos-e-web-storage/dia-6-projeto-lista-de-tarefas)_
 - [ ] 5-7: _[(Bônus) Projeto - Meme Generator]()_
 - [ ] 5-7: _[(Bônus) Projeto - Adivinhe a Cor]()_
 - [ ] 5-7: _[(Bônus) Projeto - Carta Misteriosa]()_

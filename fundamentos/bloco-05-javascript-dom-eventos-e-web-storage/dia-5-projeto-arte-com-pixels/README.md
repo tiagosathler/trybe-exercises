@@ -8,4 +8,4 @@ Este projeto teve como objetivo criar uma página com uma paleta com 4 cores, se
 
 > O resultado do Projeto pode ser visto neste Pull Request: [Project Pixels Art - Pull Request from TIAGO-SATHLER](https://github.com/tryber/sd-014-a-project-pixels-art/pull/13)
 
-![]()
+![](fundamentos/bloco-05-javascript-dom-eventos-e-web-storage/dia-5-projeto-arte-com-pixels/Project Pixel Art.png)

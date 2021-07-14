@@ -8,12 +8,40 @@ function populateStates() {
     optionElement.value = stateAbbr[i];
     selectStateElement.appendChild(optionElement);
   }
+}
 
+function previewData() {
+  const nameValue = document.querySelector('#name').value;
+  const emailValue = document.querySelector('#email').value;
+  const cpfValue = document.querySelector('#cpf').value;
+  const stateValue = document.querySelector('#state').value;
+  const curriculumValue = document.querySelector('#curriculum').value;
+  const positionValue = document.querySelector('#position').value;
+  const dateValue = document.querySelector('#date').value;
+  const formData = {name: nameValue,
+                    email:emailValue,
+                    cpf:cpfValue,
+                    state: stateValue,
+                    curriculum: curriculumValue,
+                    position: positionValue,
+                    date: dateValue,
+                    }
+  const divElement = document.querySelector('#consolidate');
+  
+
+
+}
+
+function getData(event) {
+  event.preventDefault();
+  previewData();
 }
 
 
 function initiate() {
   populateStates();
+  document.querySelector('#submit').addEventListener('click', getData );
+
 
 }
 

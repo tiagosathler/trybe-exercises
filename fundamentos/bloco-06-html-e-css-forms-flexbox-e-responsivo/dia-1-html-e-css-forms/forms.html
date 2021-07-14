@@ -9,7 +9,7 @@
 </head>
 <body>
   <form id="personal-record" action="" method="GET" enctype="multipart/form-data" autocomplete="on">
-    <fieldset form="personal-record">
+    <fieldset>
       <legend>Dados pessoais</legend>
       <label for="name">Nome:
         <input type="text" name="name" id="name" maxlength="40" placeholder="Digite seu nome" required autofocus>        
@@ -32,16 +32,29 @@
         </select>
       </label>
     </fieldset>
-    <fieldset form="personal-record">
-      <legend>Último emprego</legend>
-      <label for="curriculum"></label>
-      <textarea name="curriculum" id="curriculum" cols="30" rows="10" placeholder="Descreva um resumo de seu currículo" required maxlength="1000"></textarea>
 
+    <fieldset>
+      <legend>Último emprego</legend>
+      <label for="curriculum">Currículo:</label>
+      <br>
+      <textarea name="curriculum" id="curriculum" cols="30" rows="10" placeholder="Descreva um resumo de seu currículo" required maxlength="1000"></textarea>
+      <br>
+      <label for="position">Cargo:</label>
+      <input type="text" name="position" id="position" maxlength="500" placeholder="Descreva seu cargo" required>
+      <br>
+      <label for="date">Data:</label>
+       <input type="text" name="date" id="date" placeholder="dd/mm/aaaa" pattern="\d{1,2}/\d{1,2}/\d{4}" maxlength="10" required>
     </fieldset>
     
-    
-    
+    <fieldset>
+      <legend>Controle</legend>
+      <button form="personal-record" type="reset" id="btn-clear">Limpar</button>
+      <button form="personal-record" type="submit" id="submit">Enviar</button>      
+    </fieldset>    
   </form>
+  <section>
+    <div id="consolidate"></div>
+  </section>
 
   <script src="script.js"></script>
 </body>

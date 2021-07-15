@@ -32,6 +32,37 @@ function previewData() {
 
 }
 
+function checkDateFormat (element) {
+  const regex = /\d{4}|\d{1,2}/g;
+  const stringValue = element.target.value;
+  const dateArray = stringValue.match(regex);
+  const year = parseInt(dateArray[2], 10);
+  const month = parseInt(dateArray[1]);
+  const day = parseInt(dateArray[0]);
+
+  if (year < 1000 || year > 3000 || month == 0 || month > 12) {
+    return false;
+  }
+
+  var daysInMonths = [ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 ];
+  
+  if (year % 400 === 0 || ( year % 100 !== 0 && year % 4 === 0) ) {
+    daysInMonths[1] = 29;
+  }
+
+  if (day > 0 && day <= daysInMonths[month - 1]) {
+    return true;
+  } else {
+    return false;
+  }
+
+
+  const date = new Date(year, month, day);
+
+  console.log(date);
+
+}
+
 function getData(event) {
   event.preventDefault();
   previewData();
@@ -41,6 +72,7 @@ function getData(event) {
 function initiate() {
   populateStates();
   document.querySelector('#submit').addEventListener('click', getData );
+  document.querySelector('#date').addEventListener('change', checkDateFormat );
 
 
 }

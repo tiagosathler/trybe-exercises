@@ -58,7 +58,7 @@ function checkDateFormat (string) {
         console.log('today = ' + today);
         console.log('date = ' + date)
         if (Number(date) > Number(today)) {
-          window.alert('Você está no futuro... corrija a data!')
+          window.alert('Você está um pouco no futuro... corrija a data!')
         } else {
           result = true;
         }        

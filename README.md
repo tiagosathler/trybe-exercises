@@ -54,7 +54,7 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 
 ##### :hourglass_flowing_sand: Bloco 6 - HTML e CSS: Forms, Flexbox e Responsivo
 
-- [ ] 6-1: _HTML & CSS - Forms_
+- [x] 6-1: [_HTML & CSS - Forms_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-06-html-e-css-forms-flexbox-e-responsivo/dia-1-html-e-css-forms)
 - [ ] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
 - [ ] 6-3: _CSS Flexbox - Part 1_
 - [ ] 6-4: _CSS Flexbox - Part 2_

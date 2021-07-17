@@ -32,47 +32,56 @@ function previewData() {
 
 }
 
-function checkDateFormat (element) {
-  const regex = /\d{4}|\d{1,2}/g;
-  const stringValue = element.target.value;
-  const dateArray = stringValue.match(regex);
-  const year = parseInt(dateArray[2], 10);
-  const month = parseInt(dateArray[1]);
-  const day = parseInt(dateArray[0]);
-
-  if (year < 1000 || year > 3000 || month == 0 || month > 12) {
-    return false;
+function checkDateFormat (string) {
+  let result = false;
+  if ( string !== '' ) {
+    const regex = /\d{4}|\d{1,2}/g;  
+    const dateArray = string.match(regex);
+    const year = parseInt(dateArray[2], 10);
+    const month = parseInt(dateArray[1], 10);
+    const day = parseInt(dateArray[0], 10);
+    const today = new Date();
+    const yearToday = today.getFullYear();
+    if (year < yearToday-100 || year > yearToday) {
+      window.alert("Ano fora do intervalo! Insira a data no formato 'dd/mm/aaaa'");
+    } else if (month <= 0 || month > 12) {
+      window.alert("Mês fora do intervalo! Insira a data no formato 'dd/mm/aaaa'");
+    } else {
+      const daysInMonths = [ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 ];
+      if ( (year % 400 === 0) || ( year % 100 !== 0 && year % 4 === 0) ) {
+        daysInMonths[1] = 29;
+      }
+      if (!(day > 0 && day <= daysInMonths[month - 1])) {
+        window.alert('O dia não confere ao mês!')        
+      } else {
+        const date = new Date(year, month - 1 , day);
+        console.log('today = ' + today);
+        console.log('date = ' + date)
+        if (Number(date) > Number(today)) {
+          window.alert('Você está no futuro... corrija a data!')
+        } else {
+          result = true;
+        }        
+      }
+    }    
   }
-
-  var daysInMonths = [ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 ];
-  
-  if (year % 400 === 0 || ( year % 100 !== 0 && year % 4 === 0) ) {
-    daysInMonths[1] = 29;
-  }
-
-  if (day > 0 && day <= daysInMonths[month - 1]) {
-    return true;
-  } else {
-    return false;
-  }
-
-
-  const date = new Date(year, month, day);
-
-  console.log(date);
-
+  return result;
 }
 
 function getData(event) {
   event.preventDefault();
-  previewData();
+  const stringDateValue = document.querySelector('#date').value;
+  if (checkDateFormat (stringDateValue)) {
+    console.log(stringDateValue);
+    previewData();
+  } 
 }
 
 
 function initiate() {
   populateStates();
   document.querySelector('#submit').addEventListener('click', getData );
-  document.querySelector('#date').addEventListener('change', checkDateFormat );
+//  document.querySelector('#date').addEventListener('change', checkDateFormat );
 
 
 }

@@ -9,6 +9,6 @@ Para o exercício do dia, foi necessário fazer um *fork* do repositório deste 
 
 > Os requisitos do exercício podem ser lidos no repositório: [Exercise Tech Gallery](https://github.com/tryber/exercise-tech-gallery)
 
-> A página pode ser testada diretamente de uma cópia hospedada no GitHub Pages: [Exercise Tech Gallery](https://tiagosathler.github.io/exercises/exercise-tech-gallery/tech-gallery.html)
+> A página pode ser testada diretamente de uma cópia hospedada no GitHub Pages: [Exercise Tech Gallery](https://tiagosathler.github.io/exercises/exercise-tech-gallery/index.html)
 
 > O resultado do exercício pode ser visto neste Pull Request: [Exercise Tech Gallery - Pull Request from TIAGO-SATHLER](https://github.com/tryber/exercise-tech-gallery/pull/150)

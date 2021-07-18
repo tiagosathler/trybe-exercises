@@ -1,6 +1,6 @@
 # Bloco 06 - Dia 3a - CSS Flexbox - Parte 1
 
-Este dia foi introduzido **Flexbox** e suas principais aplicações (`display: flex`): a orientação dos eixos *axis* e *cross* (`flex-direction` com `row` ou `colunm`), quebra de linhas (`flex-wrap`), as formas de justificar os elementos dentro do container ao longo do eixo *axis* (`justify-content`), alinhamentos ao longo do eixo cross (`align-items`), alinhamento de linhas (`align-content`).
+Este dia foi introduzido **Flexbox** e suas principais aplicações (`display: flex`): a orientação dos eixos *axis* e *cross* (`flex-direction` com `row` ou `colunm`), quebra de linhas (`flex-wrap`), as formas de justificar os elementos dentro do container ao longo do eixo *axis* (`justify-content`), alinhamentos ao longo do eixo *cross* (`align-items`), alinhamento de linhas (`align-content`).
 
 Outro conceito visto neste dia foi a realização de um **fork** a partir de um repositório existente. 
 

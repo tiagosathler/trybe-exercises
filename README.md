@@ -48,15 +48,15 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 - [x] 5-4: _JavaScript - Web Storage_
 - [x] 5-5: _[Projeto - Arte com Pixels](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-05-javascript-dom-eventos-e-web-storage/dia-5-projeto-arte-com-pixels)_
 - [x] 5-6: _[Projeto - Lista de tarefas](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-05-javascript-dom-eventos-e-web-storage/dia-6-projeto-lista-de-tarefas)_
-- [ ] 5-7: _[(Bônus) Projeto - Meme Generator]()_
+- [x] 5-7: _[(Bônus) Projeto - Meme Generator](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-05-javascript-dom-eventos-e-web-storage/dia-7a-b%C3%B4nus-projeto-meme-generator)_
 - [ ] 5-7: _[(Bônus) Projeto - Adivinhe a Cor]()_
 - [ ] 5-7: _[(Bônus) Projeto - Carta Misteriosa]()_
 
 ##### :hourglass_flowing_sand: Bloco 6 - HTML e CSS: Forms, Flexbox e Responsivo
 
 - [x] 6-1: [_HTML & CSS - Forms_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-06-html-e-css-forms-flexbox-e-responsivo/dia-1-html-e-css-forms)
-- [ ] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
-- [ ] 6-3: _CSS Flexbox - Part 1_
+- [x] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
+- [x] 6-3: _CSS Flexbox - Part 1_
 - [ ] 6-4: _CSS Flexbox - Part 2_
 - [ ] 6-5: _CSS Responsivo - Mobile First_
 - [ ] 6-6: _[Projeto - Trybewarts]()_

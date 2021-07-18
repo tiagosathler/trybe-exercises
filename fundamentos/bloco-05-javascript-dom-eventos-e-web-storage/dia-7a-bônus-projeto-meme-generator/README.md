@@ -1,5 +1,5 @@
 # Bloco 05 - Dia 7 - (Bônus) Projeto - Meme Generator
-Este projeto teve como objetivo construir uma página para criar um **meme**. A ideia é usar uma imagem a partir de um arquivo ou de quatro opções pré-definidas da página. Um texto é escrito sobre a imagem e é possível estilizar as bordas através de três opções. :roquet: VQV
+Este projeto teve como objetivo construir uma página para criar um **meme**. A ideia é usar uma imagem a partir de um arquivo ou de quatro opções pré-definidas da página. Um texto é escrito sobre a imagem e é possível estilizar as bordas através de três opções. Aqui foram abordadas as tags `input` nos tipos `text` e `file`, *eventos* e técnicas de CSS. VQV
 
 > Os requisitos do projeto podem ser lidos no repositório: [Project Meme Generator](https://github.com/tryber/sd-014-a-project-meme-generator)
 

@@ -4,3 +4,5 @@ Neste dia revimos o já havíamos aprendindo no JavaScript até aqui porém com 
 
 ## Exercícios do dia
 
+### Parte I:
+1. Exercício 1: melhorar uma função retirando o vazamento de escopo de variável, transformando-a em *arrow function* e usando *template literals*;

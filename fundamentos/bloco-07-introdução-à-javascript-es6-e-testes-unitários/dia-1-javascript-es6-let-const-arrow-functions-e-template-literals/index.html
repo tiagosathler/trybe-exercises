@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador</title>
+</head>
+<body>
+  <p>Clique no botão:</p>
+  <br>
+  <input type="button" id="btn" value="0">
+  <script>
+      let clickCount = 0;      
+      const counter = document.querySelector('#btn');
+      counter.addEventListener('click', () => counter.value = clickCount += 1);
+  </script>
+</body>
+</html>

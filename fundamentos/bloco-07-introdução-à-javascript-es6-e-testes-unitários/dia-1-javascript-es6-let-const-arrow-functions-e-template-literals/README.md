@@ -8,3 +8,6 @@ Neste dia revimos o já havíamos aprendindo no JavaScript até aqui porém com 
 1. Exercício 1: melhorar uma função retirando o vazamento de escopo de variável, transformando-a em *arrow function* e usando *template literals*;
 
 2. Exercício 2: criar uma função que tenha como entrada um *array* de números e devolva uma *string* com o *array* ordenados em ordem crescente. Usando *arrow function* e *template literals*.
+
+### Parte II:
+1. Exercício 1: desenvolva uma função que receba um número e calcule o fatorial dele. Suponha que o este número é inteiro mas teste se é possível calcular o fatorial (o número tem que ser maior que zero). Use *arrow function* e *teste unitário* para simplificar a solução.

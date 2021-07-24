@@ -6,3 +6,5 @@ Neste dia revimos o já havíamos aprendindo no JavaScript até aqui porém com 
 
 ### Parte I:
 1. Exercício 1: melhorar uma função retirando o vazamento de escopo de variável, transformando-a em *arrow function* e usando *template literals*;
+
+2. Exercício 2: criar uma função que tenha como entrada um *array* de números e devolva uma *string* com o *array* ordenados em ordem crescente. Usando *arrow function* e *template literals*.

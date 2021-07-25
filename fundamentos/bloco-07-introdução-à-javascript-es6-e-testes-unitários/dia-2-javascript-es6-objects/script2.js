@@ -63,7 +63,13 @@ const counterStudents = object => {
 }
 console.log(counterStudents(allLessons));
 
-// EXERÍCIO 7:
+// EXERCÍCIO 7:
 const getValueByNumber = (object, index) => Object.values(object)[index];
 
 console.log(getValueByNumber(lesson1, 0));
+
+// EXERCÍCIO 8:
+const verifyPair = (object, key, value) => object[key] === value ? true : false;
+
+console.log(verifyPair(lesson3, 'turno', 'noite'));
+console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));

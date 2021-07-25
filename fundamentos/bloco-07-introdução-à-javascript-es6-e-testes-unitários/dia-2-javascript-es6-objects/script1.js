@@ -38,15 +38,15 @@ const order = {
   },
 };
 
+// EXERCÍCIO 1:
 const customerInfo = (order) => 
-  `Olá ${order.order.delivery.deliveryPerson}, entrega para: ${order.name}, Telefone: ${order.phoneNumber}, ${order.address.street}, Nº: ${order.address.number}, APT: ${order.address.apartment}`;
-
+  `Olá ${order.order.delivery.deliveryPerson}, entrega para: ${order.name}, Telefone: ${order.phoneNumber}, ${order.address.street}, Nº: ${order.address.number}, APT: ${order.address.apartment}.`;
 console.log(customerInfo(order));
 
-
+// EXERCÍCIO 2:
 const orderModifier = (order) => {
-  // Adicione abaixo as informações necessárias.
-
+  order.name = 'Luiz Silva';
+  order.payment.total = 50;  
+  return `Olá ${order.name}, o total do seu pedido de ${Object.keys(order.order.pizza).join(', ')} e ${order.order.drinks.coke.type} é R$ ${order.payment.total.toFixed(2).replace('.', ',')}.`;
 }
-
-orderModifier(order);
+console.log(orderModifier(order));

@@ -26,3 +26,6 @@ const addTurnToLesson = (object, key, value) => object[key] = value;
 addTurnToLesson(lesson2, 'turno', 'noite')
 console.table(lesson2);
 
+// EXERCÍCIO 2:
+const listKeysInObject = object => Object.keys(object);
+console.log(listKeysInObject(lesson2));

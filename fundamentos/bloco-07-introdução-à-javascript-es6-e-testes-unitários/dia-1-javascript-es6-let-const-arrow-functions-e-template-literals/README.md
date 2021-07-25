@@ -3,6 +3,8 @@
 Neste dia revimos o já havíamos aprendindo no JavaScript até aqui porém com foco nas modificações importantes feitas no [ECMAScript ES6](https://www.w3schools.com/js/js_es6.asp), que incluiu o `let`, `const`, *arrow function* e *template literals* e testes unitários. 
 
 ## Exercícios do dia
+> Os exercícios estão no arquivo [script.js](https://github.com/tiagosathler/trybe-exercises/blob/bloco-07-dia-1/fundamentos/bloco-07-introdu%C3%A7%C3%A3o-%C3%A0-javascript-es6-e-testes-unit%C3%A1rios/dia-1-javascript-es6-let-const-arrow-functions-e-template-literals/script.js) exceto o Exercício 3 da Parte II que está no arquivo [index.html](https://github.com/tiagosathler/trybe-exercises/blob/bloco-07-dia-1/fundamentos/bloco-07-introdu%C3%A7%C3%A3o-%C3%A0-javascript-es6-e-testes-unit%C3%A1rios/dia-1-javascript-es6-let-const-arrow-functions-e-template-literals/index.html).
+
 
 ### Parte I:
 1. Melhorar a função dada abaixo retirando o vazamento de escopo de variável, transformando-a em *arrow function* e usando *template literals*;

@@ -16,7 +16,7 @@ Neste dia revimos o já havíamos aprendindo no JavaScript até aqui porém com 
 
 3. Desenvolva uma simples página HTML que contenha um botão para incrementar um contador `clickCount` e mostre seu valor na página a medida que se clica no botão. Use um código JavaScript no próprio HTML.
 
-4. Desenvolva duas funções: a primeira substituirá em *uma frase* qualquer *um caracter específico* pelo *nome de uma pessoa*. Exemplo: substituir o *x* de `"Tryber x aqui!"` por `"Bebeto"`. Já a segunda função usará a primeira e acrescentrá à nova frase cada *skill* que está em um *array global* chamado `skills`. Por exemplo, dado o array `const skills = ['JavaScript', 'HTML', 'CSS', 'React', 'Arduino', 'Run'];` retorna a frase da primeira função e acrescenta:
+4. Desenvolva duas funções: a primeira substituirá em *uma frase* qualquer *um caracter específico* pelo *nome de uma pessoa*. Exemplo: substituir o `x` de `"Tryber x aqui!"` por `"Bebeto"`. Já a segunda função usará a primeira e acrescentrá à nova frase cada *skill* que está em um *array global* chamado `skills`. Por exemplo, dado o array `const skills = ['JavaScript', 'HTML', 'CSS', 'React', 'Arduino', 'Run'];` retorna a frase da primeira função e acrescenta:
 ``` 
 Tryber Bebeto aqui!
 

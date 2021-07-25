@@ -12,5 +12,6 @@ Neste dia revimos o já havíamos aprendindo no JavaScript até aqui porém com 
 ### Parte II:
 1. Desenvolva uma função que receba um número e calcule o fatorial dele. Suponha que o este número é inteiro mas teste se é possível calcular o fatorial (o número tem que ser maior que zero). Use *arrow function* e *teste unitário* para simplificar a solução.
 
+2. Faça uma função `longestWord` que retorne a maior palavra de uma frase.
 
 3. Desenvolva uma simples página HTML que contenha um botão para incrementar um contador `clickCount` e mostre seu valor na página a medida que se clica no botão. Use um código JavaScript no próprio HTML.

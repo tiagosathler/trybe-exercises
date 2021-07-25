@@ -103,3 +103,27 @@
 
 // let x = 5;
 // console.log(x >= 0 ? factorial(x) : `Não existe fatorial de ${x}!!!`);
+
+// ///////////////////////////////////////////////////////////////
+
+// ///////////////////////////////////////////////////////////////
+// PARTE II: EXERCÍCIO 2:
+
+// SOLUÇÃO 1:
+// let biggestWord = "";
+// const longestWord = string => string.split(' ').forEach(word => word.length > biggestWord.length ? biggestWord = word : null);
+// longestWord("Antônio foi no banheiro e não sabemos o que aconteceu");
+// console.log(biggestWord);
+
+
+// SOLUÇÃO 2:
+// const reducer = (biggestWord, wordTest) => wordTest.length > biggestWord.length ? wordTest : biggestWord;
+// const phrase = "Antônio foi no banheiro e não sabemos o que aconteceu";
+//console.log(phrase.split(' ').reduce(reducer));
+
+// SOLUÇÃO 3:
+// const longestWord = phrase => 
+//   phrase.split(' ').reduce( (biggestWord, wordTest) =>
+//     wordTest.length > biggestWord.length ? wordTest : biggestWord);
+
+// console.log(longestWord("Antônio foi no banheiro e não sabemos o que aconteceu"));

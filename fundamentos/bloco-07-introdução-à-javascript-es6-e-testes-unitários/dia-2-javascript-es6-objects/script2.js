@@ -62,3 +62,8 @@ const counterStudents = object => {
   return counter;
 }
 console.log(counterStudents(allLessons));
+
+// EXERÍCIO 7:
+const getValueByNumber = (object, index) => Object.values(object)[index];
+
+console.log(getValueByNumber(lesson1, 0));

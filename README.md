@@ -63,7 +63,7 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 
 ##### :hourglass_flowing_sand: Bloco 07: Introdução à JavaScript ES6 e Testes Unitários
 
-- [ ] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
+- [x] 7-1: [_JavaScript ES6 - let, const, arrow functions e template literals_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-07-introdu%C3%A7%C3%A3o-%C3%A0-javascript-es6-e-testes-unit%C3%A1rios/dia-1-javascript-es6-let-const-arrow-functions-e-template-literals)
 - [ ] 7-2: _JavaScript ES6 - Objects_
 - [ ] 7-3: _Testes unitários em JavaScript_
 - [ ] 7-4: _[Projeto - JavaScript Testes Unitários]()_

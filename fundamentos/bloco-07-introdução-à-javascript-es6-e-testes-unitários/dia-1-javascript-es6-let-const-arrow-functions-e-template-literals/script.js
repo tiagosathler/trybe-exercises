@@ -14,7 +14,7 @@
 //   console.log(ifScope + ' o que estou fazendo aqui ? :O'); // Se necessário esta linha pode ser removida.
 // }
 //
-// EXERCÍCIO 1: retirar o vazamento de escopo:
+// 1º passo: retirar o vazamento de escopo:
 // function testingScope(escopo) {
 //   if (escopo === true) {
 //     let ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
@@ -27,7 +27,7 @@
 //   //console.log(elseScope + ' o que estou fazendo aqui ? :O');
 // }
 //
-// EXERCÍCIO 1: transformar em arrow function e template literals
+// 2º passo: transformar em arrow function e template literals
 // const testingScope = (escopo) => {
 //   if (escopo === true) {
 //     let ifScope = `Não devo ser utilizada fora do meu escopo (if)`;
@@ -100,7 +100,6 @@
 
 // SOLUÇÃO 4:
 // const factorial = number => number > 1 ? number * factorial (number -1) : 1;
-
 // let x = 5;
 // console.log(x >= 0 ? factorial(x) : `Não existe fatorial de ${x}!!!`);
 
@@ -127,3 +126,30 @@
 //     wordTest.length > biggestWord.length ? wordTest : biggestWord);
 
 // console.log(longestWord("Antônio foi no banheiro e não sabemos o que aconteceu"));
+
+// ///////////////////////////////////////////////////////////////
+
+// ///////////////////////////////////////////////////////////////
+// PARTE II: EXERCÍCIO 4:
+const skills = ['JavaScript', 'HTML', 'CSS', 'React', 'Arduino', 'Run'];
+
+const newPhrase = (phrase, symbol, name) => phrase.replace(new RegExp(symbol, 'ig'), name);
+const newPhraseWithSkills = (phrase, symbol, name, skills) => {
+  let composite = `${newPhrase(phrase, symbol, name)}
+
+  Minhas ${skills.length} principais habilidades são:`
+
+  skills.sort( (a, b) => a - b).forEach(skill => {
+    composite = `${composite}
+    - ${skill}`});
+    composite = `${composite}
+
+  #goTrybe
+  `;
+  return composite;
+}
+console.log('-- Função 1:\n')
+console.log(newPhrase('Tryber x aqui!', 'x', 'Bebeto'));
+
+console.log('\n-- Função 2:\n')
+console.log(newPhraseWithSkills('Tryber x aqui!', 'x', 'Bebeto', skills));

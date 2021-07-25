@@ -40,16 +40,25 @@ console.log(listValuesOfObject(lesson1));
 
 // EXERCÍCIO 5:
 // solução a:
-const allLessons1 = (object1, object2, object3) => {
+const allLessonsFunction = (object1, object2, object3) => {
   const returnObject = { lesson1: {}, lesson2: {}, lesson3: {} };
   Object.assign(returnObject.lesson1, object1);
   Object.assign(returnObject.lesson2, object2);
   Object.assign(returnObject.lesson3, object3);
   return returnObject;
 }
-console.log(allLessons1(lesson1, lesson2, lesson3));
+console.log(allLessonsFunction(lesson1, lesson2, lesson3));
 
 // solução b:
-const allLessons2 = Object.assign({}, {lesson1, lesson2, lesson3});
-console.log(allLessons2);
+const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
+console.log(allLessons);
 
+// EXERCÍCIO 6:
+const counterStudents = object => {
+  let counter = 0;
+  for (let lesson in object) {
+    counter += object[lesson].numeroEstudantes;
+  }
+  return counter;
+}
+console.log(counterStudents(allLessons));

@@ -15,93 +15,92 @@
 // }
 //
 // 1º passo: retirar o vazamento de escopo:
-// function testingScope(escopo) {
-//   if (escopo === true) {
-//     let ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
-//     ifScope = ifScope + ' ótimo, fui utilizada no escopo !';
-//     console.log(ifScope);
-//   } else {
-//     let elseScope = 'Não devo ser utilizada fora meu escopo (else)';
-//     console.log(elseScope);
-//   }
-//   //console.log(elseScope + ' o que estou fazendo aqui ? :O');
-// }
+function testingScope(escopo) {
+  if (escopo === true) {
+    let ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
+    ifScope = ifScope + ' ótimo, fui utilizada no escopo !';
+    console.log(ifScope);
+  } else {
+    let elseScope = 'Não devo ser utilizada fora meu escopo (else)';
+    console.log(elseScope);
+  }
+//  console.log(elseScope + ' o que estou fazendo aqui ? :O');
+}
 //
 // 2º passo: transformar em arrow function e template literals
-// const testingScope = (escopo) => {
-//   if (escopo === true) {
-//     let ifScope = `Não devo ser utilizada fora do meu escopo (if)`;
-//     ifScope = `${ifScope}, ótimo, fui utilizada no escopo !`;
-//     console.log(ifScope);
-//   } else {
-//     let elseScope = `Não devo ser utilizada fora meu escopo (else)`;
-//     console.log(elseScope);
-//   }
-//   //console.log(elseScope + ' o que estou fazendo aqui ? :O');
-// }
-//
-// testingScope(false);
+const testingScope = (escopo) => {
+  if (escopo === true) {
+    let ifScope = `Não devo ser utilizada fora do meu escopo (if)`;
+    ifScope = `${ifScope}, ótimo, fui utilizada no escopo !`;
+    console.log(ifScope);
+  } else {
+    let elseScope = `Não devo ser utilizada fora meu escopo (else)`;
+    console.log(elseScope);
+  }
+  //console.log(elseScope + ' o que estou fazendo aqui ? :O');
+}
+
+testingScope(false);
 // ///////////////////////////////////////////////////////////////
 
 // ///////////////////////////////////////////////////////////////
 // PARTE I: EXERCÍCIO 2:
-// const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 
-// // Seu código aqui:
-// const sortAndWriteArray = array => `Os números ${array.sort((a, b) => a - b).join(', ')} se encontram ordenados de forma crescente!`;
+const sortAndWriteArray = array => `Os números ${array.sort((a, b) => a - b).join(', ')} se encontram ordenados de forma crescente!`;
 
-// console.log(sortAndWriteArray(oddsAndEvens)); // será necessário alterar essa linha 😉
+console.log(sortAndWriteArray(oddsAndEvens)); // será necessário alterar essa linha 😉
 // ///////////////////////////////////////////////////////////////
 
 // ///////////////////////////////////////////////////////////////
 // PARTE II: EXERCÍCIO 1:
  
 // SOLUÇÃO 1:
-// const factorial = number => {
-//   let result;
-//   if (number >= 0) {
-//     result = 1;
-//     for(let i = 1; i <= number; i += 1) {
-//       result *= i;
-//     }
-//   } else {
-//     result = `Não existe fatorial de ${number}!!!`;
-//   }
-//   return result;
-// }
-// console.log(factorial(3))
+const factorial = number => {
+  let result;
+  if (number >= 0) {
+    result = 1;
+    for(let i = 1; i <= number; i += 1) {
+      result *= i;
+    }
+  } else {
+    result = `Não existe fatorial de ${number}!!!`;
+  }
+  return result;
+}
+console.log(factorial(3))
 
 // SOLUÇÃO 2:
-// const factorial = number => {
-//   let result;  
-//   if (number >= 0) {
-//     result = number;    
-//     while(number > 2) {
-//      result *= --number;
-//     }
-//   } else {
-//     result = `Não existe fatorial de ${number}!!!`;
-//   }
-//   return result;
-// }
-// console.log(factorial(3))
+const factorial = number => {
+  let result;  
+  if (number >= 0) {
+    result = number;    
+    while(number > 2) {
+     result *= --number;
+    }
+  } else {
+    result = `Não existe fatorial de ${number}!!!`;
+  }
+  return result;
+}
+console.log(factorial(3))
 
 // SOLUÇÃO 3:
-// const multiply = n => { 
-//   let result = n;
-//   while (n > 2) {
-//     result *= --n;
-//   }
-//   return result;
-// }
+const multiply = n => { 
+  let result = n;
+  while (n > 2) {
+    result *= --n;
+  }
+  return result;
+}
 
-// const factorial = number => number >= 0 ? multiply(number) : `Não existe fatorial de ${number}!!!`;
-// console.log(factorial(3))
+const factorial = number => number >= 0 ? multiply(number) : `Não existe fatorial de ${number}!!!`;
+console.log(factorial(3))
 
 // SOLUÇÃO 4:
-// const factorial = number => number > 1 ? number * factorial (number -1) : 1;
-// let x = 5;
-// console.log(x >= 0 ? factorial(x) : `Não existe fatorial de ${x}!!!`);
+const factorial = number => number > 1 ? number * factorial (number -1) : 1;
+let x = 5;
+console.log(x >= 0 ? factorial(x) : `Não existe fatorial de ${x}!!!`);
 
 // ///////////////////////////////////////////////////////////////
 
@@ -109,23 +108,23 @@
 // PARTE II: EXERCÍCIO 2:
 
 // SOLUÇÃO 1:
-// let biggestWord = "";
-// const longestWord = string => string.split(' ').forEach(word => word.length > biggestWord.length ? biggestWord = word : null);
-// longestWord("Antônio foi no banheiro e não sabemos o que aconteceu");
-// console.log(biggestWord);
+let biggestWord = "";
+const longestWord = string => string.split(' ').forEach(word => word.length > biggestWord.length ? biggestWord = word : null);
+longestWord("Antônio foi no banheiro e não sabemos o que aconteceu");
+console.log(biggestWord);
 
 
 // SOLUÇÃO 2:
-// const reducer = (biggestWord, wordTest) => wordTest.length > biggestWord.length ? wordTest : biggestWord;
-// const phrase = "Antônio foi no banheiro e não sabemos o que aconteceu";
-//console.log(phrase.split(' ').reduce(reducer));
+const reducer = (biggestWord, wordTest) => wordTest.length > biggestWord.length ? wordTest : biggestWord;
+const phrase = "Antônio foi no banheiro e não sabemos o que aconteceu";
+console.log(phrase.split(' ').reduce(reducer));
 
-// SOLUÇÃO 3:
-// const longestWord = phrase => 
-//   phrase.split(' ').reduce( (biggestWord, wordTest) =>
-//     wordTest.length > biggestWord.length ? wordTest : biggestWord);
+// SOLUÇÃO 3 (em uma única linha):
+const longestWord = phrase => 
+  phrase.split(' ').reduce( (biggestWord, wordTest) =>
+    wordTest.length > biggestWord.length ? wordTest : biggestWord);
 
-// console.log(longestWord("Antônio foi no banheiro e não sabemos o que aconteceu"));
+console.log(longestWord("Antônio foi no banheiro e não sabemos o que aconteceu"));
 
 // ///////////////////////////////////////////////////////////////
 

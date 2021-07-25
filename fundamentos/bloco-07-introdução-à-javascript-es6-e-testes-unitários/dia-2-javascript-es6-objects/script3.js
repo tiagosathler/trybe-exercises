@@ -33,3 +33,17 @@ const countStudentsInSubject = (object, subject) => {
   return counter;
 }
 console.log(countStudentsInSubject(allLessons, "Matemática"));
+
+// EXERCÍCIO 2:
+const createReport = (object, teacher) => {
+  const materias = [];
+  let counter = 0;
+  for (let lesson in object) {
+    if (object[lesson].professor === teacher) {
+      materias.push(object[lesson].materia);
+      counter += object[lesson].numeroEstudantes;
+    }
+  }
+  return {professor: teacher, aulas: materias, estudantes: counter }
+}
+console.log(createReport(allLessons, 'Maria Clara'));

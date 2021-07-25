@@ -26,6 +26,8 @@ function testingScope(escopo) {
   }
 //  console.log(elseScope + ' o que estou fazendo aqui ? :O');
 }
+testingScope(false);
+
 //
 // 2º passo: transformar em arrow function e template literals
 const testingScope = (escopo) => {
@@ -39,7 +41,6 @@ const testingScope = (escopo) => {
   }
   //console.log(elseScope + ' o que estou fazendo aqui ? :O');
 }
-
 testingScope(false);
 // ///////////////////////////////////////////////////////////////
 

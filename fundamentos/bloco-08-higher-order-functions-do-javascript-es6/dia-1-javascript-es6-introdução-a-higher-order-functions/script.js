@@ -6,7 +6,7 @@ const coffee = () => 'Bora tomar café!!';
 const sleep = () => 'Partiu dormir!!';
 
 // Ao chamar a função doingThings:
-const doingThings = (func) => console.log(func);
+const doingThings = (func) => console.log(func); //HOF
 
 doingThings(wakeUp()); // Ela deve retornar o valor do respectivo parâmetro, neste caso:
 // Acordando!!
@@ -19,12 +19,12 @@ doingThings(sleep()); // Ela deve retornar o valor do respectivo parâmetro, nes
 // EXERCÍCIOS PÓS-AULA AO VIVO:
 
 // EXERCÍCIO 1:
-const makeObjectFunction = (nomeCompleto) => {
+const makeObjectFunction = (nomeCompleto) => {  // Minha função como parâmetro da HOF
   const emailAddress = `${nomeCompleto.replace(' ', '').toLowerCase()}@email.com`;
   return { fullName: nomeCompleto, email: emailAddress};
 }
 
-const newEmployees = (funcaoDeRetorno) => {
+const newEmployees = (funcaoDeRetorno) => {  // HOF: funcaoDeRetorno (callback)
   const employees = {
     id1: funcaoDeRetorno('Pedro Guerra'), 
     // Nome: Pedro Guerra -> Chame sua função passando o nome Pedro Guerra como parâmetro, substituindo as aspas
@@ -37,3 +37,11 @@ const newEmployees = (funcaoDeRetorno) => {
 };
 
 console.log(newEmployees(makeObjectFunction));
+
+// EXERCÍCIO 2:
+
+const isEqual = (number) => number === Math.round((Math.random()*5));;
+
+const estouComSorte = (number, callback) => callback(number) ? 'Parabéns você ganhou' : 'Tente novamente'; //hof
+
+console.log(estouComSorte(3, isEqual));

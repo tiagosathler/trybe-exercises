@@ -39,9 +39,11 @@ const newEmployees = (funcaoDeRetorno) => {  // HOF: funcaoDeRetorno (callback)
 console.log(newEmployees(makeObjectFunction));
 
 // EXERCÍCIO 2:
+// fn que compara com um numero number com outro gerado aleatoriamente entre 1 e 5 (inteiro)
+const isEqual = (number) => number === Math.ceil((Math.random()*5)); 
 
-const isEqual = (number) => number === Math.round((Math.random()*5));;
+// hof que chama a função de comparação que retorna true ou false e depois retorna conforme o teste
+const estouComSorte = (number, callback) => callback(number) ? 'Parabéns você ganhou!' : 'Tente novamente...';
 
-const estouComSorte = (number, callback) => callback(number) ? 'Parabéns você ganhou' : 'Tente novamente'; //hof
+console.log(estouComSorte(5, isEqual));
 
-console.log(estouComSorte(3, isEqual));

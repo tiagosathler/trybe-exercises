@@ -2,9 +2,8 @@
 // 29/07/21
 // EXERCÍCIOS PRÉ-AULA AO VIVO
 
-// forEach
+// array.forEach
 // 1.
-
 const emailListInData = [
   'roberta@email.com',
   'paulo@email.com',
@@ -16,5 +15,11 @@ const showEmailList = (email) => {
   console.log(`O email ${email} esta cadastrado em nosso banco de dados!`);
 };
 
-// Adicione seu código aqui
 emailListInData.forEach( (element) => showEmailList(element));
+
+// array.find
+// 1:
+const numbers = [19, 21, 30, 3, 45, 22, 15];
+const findDivisibleBy3And5 = (array) => array.find((element) => !(element % 3) && !(element % 5) );
+console.log(findDivisibleBy3And5(numbers))
+

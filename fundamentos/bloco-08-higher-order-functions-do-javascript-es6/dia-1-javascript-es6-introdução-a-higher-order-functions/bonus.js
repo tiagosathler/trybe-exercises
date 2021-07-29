@@ -25,11 +25,15 @@ const battleMembers = { mage, warrior, dragon };
 
 // PARTE 1:
 
-const gensDamage = (min, max) => Math.round(Math.random()*(max-min))+min;
+const randomDamage = (min, max) => Math.round(Math.random()*(max-min))+min;
 
 const damageSimulator = (figure, a, b, callback) => {
   figure.damage = callback(a, b);
 }
 
-damageSimulator(dragon, 15, dragon.strength, gensDamage);
-console.log(dragon.damage);
+damageSimulator(dragon, 15, dragon.strength, randomDamage);
+console.log(`Dano do 'dragon': ${dragon.damage}`);
+
+// PARTE 2:
+damageSimulator(warrior, warrior.strength, warrior.strength*warrior.weaponDmg, randomDamage);
+console.log(`Dano do 'warrior': ${warrior.damage}`);

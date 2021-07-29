@@ -37,3 +37,27 @@ const findFirstNameWithNLetters = (array, n) => {
     return templateNegativeAnswer(n);
 }
 console.log(findFirstNameWithNLetters(names, 5));
+
+//3:
+const musicas = [
+  { id: '31031685', title: 'Partita in C moll BWV 997' },
+  { id: '31031686', title: 'Toccata and Fugue, BWV 565' },
+  { id: '31031687', title: 'Chaconne, Partita No. 2 BWV 1004' },
+]
+
+function findMusic(id) {
+  let idFounded;
+  let musica;
+  Object.keys(musicas).forEach((key) => {
+    idFounded = Object.values(musicas[key]).find((element) => element === id);
+    if (idFounded) {
+      musica = musicas[key].title;      
+    }
+  });
+  if (musica === undefined) {
+    return `Não há música com o 'id' = ${id} em 'músicas'`;
+  }  
+  return musica;
+}
+
+console.log(findMusic('31031688'))

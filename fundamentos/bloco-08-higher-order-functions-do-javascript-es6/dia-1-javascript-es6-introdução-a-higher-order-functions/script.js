@@ -20,7 +20,7 @@ doingThings(sleep()); // Ela deve retornar o valor do respectivo parâmetro, nes
 
 // EXERCÍCIO 1:
 const makeObjectFunction = (nomeCompleto) => {  // Minha função como parâmetro da HOF
-  const emailAddress = `${nomeCompleto.replace(' ', '').toLowerCase()}@email.com`;
+  const emailAddress = `${nomeCompleto.replace(' ', '_').toLowerCase()}@email.com`;
   return { fullName: nomeCompleto, email: emailAddress};
 }
 
@@ -36,6 +36,7 @@ const newEmployees = (funcaoDeRetorno) => {  // HOF: funcaoDeRetorno (callback)
   return employees;
 };
 
+console.log(`Exercício 1: Employees:`);
 console.log(newEmployees(makeObjectFunction));
 
 // EXERCÍCIO 2:
@@ -45,5 +46,30 @@ const isEqual = (number) => number === Math.ceil((Math.random()*5));
 // hof que chama a função de comparação que retorna true ou false e depois retorna conforme o teste
 const estouComSorte = (number, callback) => callback(number) ? 'Parabéns você ganhou!' : 'Tente novamente...';
 
-console.log(estouComSorte(5, isEqual));
+console.log(`Exercício 2: Estou com sorte?? ${estouComSorte(5, isEqual)}`);
 
+// EXERCÍCIO 3:
+
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C']; // gabarito
+const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B']; // respostas
+
+// funcao de comparacao e retorna o ponto equivalente
+const compare = (answer, rightAnswer) => {
+  if (answer === rightAnswer) {
+    return 1;
+  } else if( answer === 'N.A') {
+    return 0;    
+  }
+  return -0.5;
+}
+
+// hof que chama a fn compare para comparar cada resposta com o gabarito e retornar o ponto equivalente
+const checkAnswers = (answers, template, callback) => {
+  let points = 0;
+  for(let index in answers) {
+    points += callback(answers[index], template[index]);
+  }
+  return points;
+}
+const phrase = `Exercício 3: Sua pontuação, de até 10, foi `
+console.log(`${phrase}${checkAnswers(STUDENT_ANSWERS, RIGHT_ANSWERS, compare)}.`);

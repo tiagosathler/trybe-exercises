@@ -23,8 +23,7 @@ const dragon = {
 
 const battleMembers = { mage, warrior, dragon };
 
-// PARTE 1:
-
+// PARTE 1 - EXERCÍCIO 1:
 const randomDamage = (min, max) => Math.round(Math.random()*(max-min))+min;
 
 const damageSimulator = (figure, a, b, callback) => {
@@ -34,6 +33,18 @@ const damageSimulator = (figure, a, b, callback) => {
 damageSimulator(dragon, 15, dragon.strength, randomDamage);
 console.log(`Dano do 'dragon': ${dragon.damage}`);
 
-// PARTE 2:
+// PARTE 1 - EXERCÍCIO 2:
 damageSimulator(warrior, warrior.strength, warrior.strength*warrior.weaponDmg, randomDamage);
 console.log(`Dano do 'warrior': ${warrior.damage}`);
+
+// PARTE 1 - EXERCÍCIO 3:
+const getMageTurn = (callback) => {
+  if (mage.mana < 15) {
+    mage.damage = 'Não possui mana suficiente';    
+  } {
+    mage.mana -= 15;
+    damageSimulator(mage, mage.intelligence, mage.intelligence*2, callback);
+  }
+  return { damage: mage.damage, mana: mage.mana }
+}
+console.log(getMageTurn(randomDamage));

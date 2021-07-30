@@ -226,18 +226,33 @@ assert.deepStrictEqual(oldBooks(), expectedResult);
 
 // 7:
 expectedResult = 'O Senhor dos Anéis';
+// SOLUÇÃO 1:
+// (minha solução foobar)
 
-const regexp = /[A-Z][.] [A-Z][.] [A-Z][.]/g
-const filterAbrName = (string) => {
-  if (string.search(regexp) >= 0) {
-    return true;
-  }
-  return false;
-}
+// const regexp = /[A-Z][.] [A-Z][.] [A-Z][.]/g
+// const filterAbrName = (string) => {
+//   if (string.search(regexp) >= 0) {
+//     return true;
+//   }
+//   return false;
+// }
+
+// const authorWith3DotsOnName = () => {
+//   const bookFounded = books.filter((obj) => filterAbrName(obj.author.name));
+//   return bookFounded[0].name;
+// }
+
+// SOLUÇÃO GABARITO:
+// mérito do gabarito da Trybe.
+
+const getArrayWithDotsIn = (prhase) => prhase.split(' ').filter((wordInArray) => wordInArray.endsWith('.')); 
+// esta fn retorna um array com os elementos filtrados de um array obtido de uma frase
+// aqui vale observar que o split separa os elementos da frase que estão separados por espaço, aí o macete é que "T. H. S. Sathler" é transformado em um array com 4 elementos, e depois um filter com um teste endsWith filtra aqueles elementos que terminam com '.'. No fim, neste exemplo, a função retorna um array cotendo apenas 3 elementos, ou seja, 3 abreviações. 
+
 
 const authorWith3DotsOnName = () => {
-  const bookFounded = books.filter((obj) => filterAbrName(obj.author.name));
-  return bookFounded[0].name;
+  return books.find((book) => getArrayWithDotsIn(book.author.name).length === 3).name;
 }
+// esta função principal do exercício procura ('find') em cada elemento de book o primeiro que atende se a propriedade book.author.name (string) passada à segunda função tem tamanho 3. observe que o retorno da função getArrayWithDotsIn, que recebe a frase (string) é um array filtrado com elementos com '.' (veja exeplicação da função acima). Observe também que o retorno de 'find' é o objeto que passou no teste, então é necessário, por fim, retornar a propriedade 'name', pois queremos devolver o nome do livro.
 
 assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);

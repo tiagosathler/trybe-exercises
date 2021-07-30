@@ -10,20 +10,24 @@ const emailListInData = [
   'anaroberta@email.com',
   'fabiano@email.com',
 ];
-
+console.log("'forEach - Exercício 1:")
 const showEmailList = (email) => {
-  console.log(`O email ${email} esta cadastrado em nosso banco de dados!`);
+  console.log(`O email ${email} esta cadastrado em nosso banco de dados!`);  
 };
-
 emailListInData.forEach( (element) => showEmailList(element));
 
 // array.find
 // 1:
+console.log('-------------------------------------');
+console.log("'find' - Exercicio 1:")
 const numbers = [19, 21, 30, 3, 45, 22, 15];
 const findDivisibleBy3And5 = (array) => array.find((element) => !(element % 3) && !(element % 5) );
 console.log(findDivisibleBy3And5(numbers))
 
+// array.find
 //2:
+console.log('-------------------------------------');
+console.log("'find' - Exercicio 2:")
 const names = ['João', 'Irene', 'Fernando', 'Maria'];
 
 const isWordWithNLetters = (word, n) => word.length > n;
@@ -37,8 +41,11 @@ const findFirstNameWithNLetters = (array, n) => {
     return templateNegativeAnswer(n);
 }
 console.log(findFirstNameWithNLetters(names, 5));
+console.log('-------------------------------------');
 
+// array.find
 //3:
+console.log("'find' - Exercicio 3:")
 const musicas = [
   { id: '31031685', title: 'Partita in C moll BWV 997' },
   { id: '31031686', title: 'Toccata and Fugue, BWV 565' },
@@ -46,24 +53,19 @@ const musicas = [
 ]
 
 function findMusic(id) {
-  let idFounded;
-  let musica;
-  Object.keys(musicas).forEach((key) => {
-    idFounded = Object.values(musicas[key]).find((element) => element === id);
-    if (idFounded) {
-      musica = musicas[key].title;      
-    }
-  });
-  if (musica === undefined) {
-    return `Não há música com o 'id' = ${id} em 'músicas'`;
-  }  
-  return musica;
+  const objFounded = musicas.find( (obj) => obj.id === id);
+  if (objFounded) {
+    return objFounded.title;
+  } 
+  return `Não há música com o 'id' = ${id} em 'músicas'`;   
 }
-console.log(findMusic('31031687'))
+console.log(findMusic('31031685'))
+
 
 // array.some e array.every
 // 1:
-
+console.log('-------------------------------------');
+console.log("'some e every' - Exercicio 1:")
 const names2 = ['Mateus', 'José', 'Ana', 'Cláudia', 'Bruna'];
 
 const hasName = (arr, name) => {
@@ -72,7 +74,10 @@ const hasName = (arr, name) => {
 
 console.log(hasName(names2, 'Ana'))
 
+
 // 2:
+console.log('-------------------------------------');
+console.log("'some e every' - Exercicio 2:")
 const people = [
   { name: 'Mateus', age: 18 },
   { name: 'José', age: 16 },

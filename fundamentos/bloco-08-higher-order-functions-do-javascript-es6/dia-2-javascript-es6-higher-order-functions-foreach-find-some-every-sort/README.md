@@ -22,3 +22,32 @@ const musicas = [
   { id: '31031687', title: 'Chaconne, Partita No. 2 BWV 1004' },
 ]
 ```
+#### Exercícios para `some` e `every`:
+
+1. Escreva uma função que dado um *array* de nomes e um nome retorne `true` se ele estiver contido e caso contrário, retorne `false`, use `some`: `const names = ['Mateus', 'José', 'Ana', 'Cláudia', 'Bruna'];`.
+
+2. Escreva uma função que dado um *array* de pessoas e uma idade mínima retorne `true` se todas tiverem a idade maior ou igual a mínima e caso contrário `false`, use `every`:
+```
+const people = [
+  { name: 'Mateus', age: 18 },
+  { name: 'José', age: 16 },
+  { name: 'Ana', age: 23 },
+  { name: 'Cláudia', age: 20 },
+  { name: 'Bruna', age: 19 },
+];
+```
+ #### Exercícios para `sort`:
+
+ 1. Utilize a `sort` para ordenar o *array* pela __idade__ das pessoas em ordem __crescente__:
+```
+ const people = [
+  { name: 'Mateus', age: 18 },
+  { name: 'José', age: 16 },
+  { name: 'Ana', age: 23 },
+  { name: 'Cláudia', age: 20 },
+  { name: 'Bruna', age: 19 },
+];
+```
+2. Modifique o `sort` do exercício anterior para que ordene o *array* pela __idade__ das pessoas em ordem __decrescente__.
+
+3. (EXTRA) Modifique o `sort` do exercício anterior para que ordene o *array* pelo __nome__ das pessoas em ordem __decrescente__.

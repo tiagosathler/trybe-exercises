@@ -191,14 +191,16 @@ expectedResult = [
   },
 ];
 
+const olderThan60YearsAgo = (obj) => 2021 - obj.releaseYear > 60;
+
 const oldBooksOrdered = () =>
   books
-    .filter((obj) => 2021 - obj.releaseYear > 60)
+    .filter((obj) => olderThan60YearsAgo(obj))
     .sort((a, b) => a.releaseYear - b.releaseYear);
 
 assert.deepStrictEqual(oldBooksOrdered(), expectedResult);
 
-// 6:
+// 5:
 expectedResult = [
   "Frank Herbert",
   "George R. R. Martin",
@@ -213,3 +215,11 @@ const fantasyOrScienceFictionAuthors = () =>
     .sort();
 
 assert.deepStrictEqual(fantasyOrScienceFictionAuthors(), expectedResult);
+
+// 6:
+expectedResult = ["O Senhor dos Anéis", "Fundação", "O Chamado de Cthulhu"];
+
+const oldBooks = () =>
+  books.filter((obj) => olderThan60YearsAgo(obj)).map((obj) => obj.name);
+
+assert.deepStrictEqual(oldBooks(), expectedResult);

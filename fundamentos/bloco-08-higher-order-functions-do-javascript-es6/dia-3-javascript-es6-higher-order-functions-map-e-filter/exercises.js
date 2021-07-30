@@ -197,3 +197,19 @@ const oldBooksOrdered = () =>
     .sort((a, b) => a.releaseYear - b.releaseYear);
 
 assert.deepStrictEqual(oldBooksOrdered(), expectedResult);
+
+// 6:
+expectedResult = [
+  "Frank Herbert",
+  "George R. R. Martin",
+  "Isaac Asimov",
+  "J. R. R. Tolkien",
+];
+
+const fantasyOrScienceFictionAuthors = () =>
+  books
+    .filter((obj) => filterCondition(obj))
+    .map((obj) => obj.author.name)
+    .sort();
+
+assert.deepStrictEqual(fantasyOrScienceFictionAuthors(), expectedResult);

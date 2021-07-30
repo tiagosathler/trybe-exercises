@@ -173,3 +173,12 @@ const everyoneWasBornOnSecXX = () => {
 
 assert.strictEqual(everyoneWasBornOnSecXX(), expectedResult);
 
+// 6:
+expectedResult = true;
+
+const someBookWasReleaseOnThe80s = () => {
+  // escreva seu código aqui
+  return books.some( (obj) => obj.releaseYear >= 1980 && obj.releaseYear <= 1989 );
+}
+
+assert.strictEqual(someBookWasReleaseOnThe80s(), expectedResult);

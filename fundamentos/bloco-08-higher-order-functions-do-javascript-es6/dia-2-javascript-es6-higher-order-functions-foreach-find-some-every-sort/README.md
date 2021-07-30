@@ -54,7 +54,7 @@ const people = [
 
 ### Exercícios pós-aula ao vivo:
 
-> *Usar as contantes dfininidas no arquivo [exercise1.js](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-2-javascript-es6-higher-order-functions-foreach-find-some-every-sort/exercise1.js) para executar os exercícios*
+> *Usar a contante `books` defininida no arquivo [exercise1.js](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-2-javascript-es6-higher-order-functions-foreach-find-some-every-sort/exercise1.js) para executar os exercícios. Aqui foram usadas testes unitários através do assert para verficar o retorno esperado de cada função*
 
 1. Encontre o nome da primeira pessoa autora do livro nascida no ano de __1947__.
 

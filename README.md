@@ -65,13 +65,13 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 
 - [x] 7-1: [_JavaScript ES6 - let, const, arrow functions e template literals_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-07-introdu%C3%A7%C3%A3o-%C3%A0-javascript-es6-e-testes-unit%C3%A1rios/dia-1-javascript-es6-let-const-arrow-functions-e-template-literals)
 - [x] 7-2: [_JavaScript ES6 - Objects_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-07-introdu%C3%A7%C3%A3o-%C3%A0-javascript-es6-e-testes-unit%C3%A1rios/dia-2-javascript-es6-objects)
-- [ ] 7-3: _Testes unitários em JavaScript_
-- [ ] 7-4: _[Projeto - JavaScript Testes Unitários]()_
+- [x] 7-3: _Testes unitários em JavaScript_
+- [x] 7-4: _[Projeto - JavaScript Testes Unitários]()_
 
 ##### :hourglass_flowing_sand: Bloco 08: Higher Order Functions do JavaScript ES6
 
-- [ ] 8-1: _JavaScript ES6 - Introdução a Higher Order Functions_
-- [ ] 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
+- [x] 8-1: _JavaScript ES6 - Introdução a Higher Order Functions_
+- [x] [8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-2-javascript-es6-higher-order-functions-foreach-find-some-every-sort)
 - [ ] 8-3: _JavaScript ES6 - Higher Order Functions - map e filter_
 - [ ] 8-4: _JavaScript ES6 - Higher Order Functions - reduce_
 - [ ] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_

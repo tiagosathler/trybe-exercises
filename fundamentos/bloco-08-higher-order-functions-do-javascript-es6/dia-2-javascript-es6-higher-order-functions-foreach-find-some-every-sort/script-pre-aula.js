@@ -87,7 +87,7 @@ const people = [
 ];
 
 const verifyAges = (arr, minimumAge) => {
-  return arr.every((element) => element >= minimumAge);
+  return arr.every((obj) => obj.age >= minimumAge);
 }
 
-console.log(verifyAges(people,15));
+console.log(verifyAges(people,12));

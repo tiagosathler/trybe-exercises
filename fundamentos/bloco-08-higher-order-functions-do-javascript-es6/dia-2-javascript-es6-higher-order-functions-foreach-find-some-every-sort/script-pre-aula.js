@@ -74,7 +74,7 @@ const hasName = (arr, name) => {
 
 console.log(hasName(names2, 'Ana'))
 
-
+// array.some e array.every
 // 2:
 console.log('-------------------------------------');
 console.log("'some e every' - Exercicio 2:")
@@ -91,3 +91,34 @@ const verifyAges = (arr, minimumAge) => {
 }
 
 console.log(verifyAges(people,12));
+
+// array.sort
+// 1:
+console.log('-------------------------------------');
+console.log("'sort' - Exercicio 1:")
+console.log(' Ordenando por ordem crescente de idade:')
+
+// Adicione se código aqui
+people.sort( (a, b) => a.age - b.age);
+console.log(people);
+
+// array.sort
+// 2:
+console.log('-------------------------------------');
+console.log("'sort' - Exercicio 2:")
+console.log(' Ordenando por ordem decrescente de idade:')
+
+// Adicione se código aqui
+people.sort( (a, b) => b.age - a.age);
+console.log(people);
+
+// array.sort
+// 3 (extra):
+console.log('-------------------------------------');
+console.log("'sort' - Exercicio 3 (extra):")
+console.log(' Ordenando por ordem decrescente de nome:')
+
+// Adicione se código aqui
+people.sort();
+people.reverse();
+console.log(people);

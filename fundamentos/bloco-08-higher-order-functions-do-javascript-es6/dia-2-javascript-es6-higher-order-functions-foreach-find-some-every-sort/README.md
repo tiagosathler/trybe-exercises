@@ -54,13 +54,13 @@ const people = [
 
 ### Exercícios pós-aula ao vivo:
 
-> *Usar a contante `books` defininida no arquivo [exercise1.js](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-2-javascript-es6-higher-order-functions-foreach-find-some-every-sort/exercise1.js) para executar os exercícios. Aqui foram usadas testes unitários através do assert para verficar o retorno esperado de cada função*
+> *Usar a contante `books` defininida no arquivo [exercise1.js](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-2-javascript-es6-higher-order-functions-foreach-find-some-every-sort/exercise1.js) para executar os exercícios. Aqui foram usadas testes unitários através do `assert` para verficar o retorno esperado de cada função*
 
-1. Encontre o nome da primeira pessoa autora do livro nascida no ano de __1947__.
+1. Encontre o nome da __primeira pessoa__ autora do livro nascida no ano de __1947__.
 
-2. Retorne o nome do livro de __menor__ nome.
+2. Retorne o __nome__ do livro de __menor__ nome.
 
-3. Encontre o primeiro livro cujo nome possui __26__ caracteres.
+3. Encontre o __primeiro livro__ cujo nome possui __26__ caracteres.
 
 4. Ordene os livros por __data de lançamento__ em ordem __decrescente__.
 
@@ -68,4 +68,4 @@ const people = [
 
 6. Faça uma função que retorne `true`, se __algum__ livro foi lançado na __década de 80__, e `false`, caso contrário.
 
-7 - Faça uma função que retorne `true`, caso __nenhum__ *author* tenha nascido no __mesmo ano__, e `false`, caso contrário.
+7. Faça uma função que retorne `true`, caso __nenhum__ *author* tenha nascido no __mesmo ano__, e `false`, caso contrário.

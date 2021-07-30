@@ -223,3 +223,21 @@ const oldBooks = () =>
   books.filter((obj) => olderThan60YearsAgo(obj)).map((obj) => obj.name);
 
 assert.deepStrictEqual(oldBooks(), expectedResult);
+
+// 7:
+expectedResult = 'O Senhor dos Anéis';
+
+const regexp = /[A-Z][.] [A-Z][.] [A-Z][.]/g
+const filterAbrName = (string) => {
+  if (string.search(regexp) >= 0) {
+    return true;
+  }
+  return false;
+}
+
+const authorWith3DotsOnName = () => {
+  const bookFounded = books.filter((obj) => filterAbrName(obj.author.name));
+  return bookFounded[0].name;
+}
+
+assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);

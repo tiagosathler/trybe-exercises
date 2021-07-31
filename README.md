@@ -72,7 +72,7 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 
 - [x] 8-1: _JavaScript ES6 - Introdução a Higher Order Functions_
 - [x] [8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-2-javascript-es6-higher-order-functions-foreach-find-some-every-sort)
-- [ ] 8-3: _JavaScript ES6 - Higher Order Functions - map e filter_
+- [x] 8-3: [_JavaScript ES6 - Higher Order Functions - map e filter_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-3-javascript-es6-higher-order-functions-map-e-filter)
 - [ ] 8-4: _JavaScript ES6 - Higher Order Functions - reduce_
 - [ ] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
 - [ ] 8-6: _[Projeto - Zoo functions]()_

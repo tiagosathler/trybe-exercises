@@ -189,7 +189,7 @@ expectedResult = [
   },
 ];
 
-const olderThan60YearsAgo = (obj) => 2021 - obj.releaseYear > 60;
+const olderThan60YearsAgo = (obj) => new Date().getFullYear() - obj.releaseYear > 60;
 
 const oldBooksOrdered = () =>
   books

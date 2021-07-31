@@ -113,12 +113,10 @@ expectedResult = [
   },
 ];
 
-const newObjectTemplate = (obj) => {
-  return {
+const newObjectTemplate = (obj) => ({  
     age: obj.releaseYear - obj.author.birthYear,
     author: obj.author.name,
-  };
-};
+  });
 
 const nameAndAge = () =>
   books.map((obj) => newObjectTemplate(obj)).sort((a, b) => a.age - b.age);

@@ -40,7 +40,7 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 - [x] 4-4: _[JavaScript - Objetos e funções](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-04-introdu%C3%A7%C3%A3o-%C3%A0-javascript-e-l%C3%B3gica-de-programa%C3%A7%C3%A3o/dia-4-javascript-objetos-e-fun%C3%A7%C3%B5es)_
 - [x] 4-5: _[Projeto - Playground Functions](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-04-introdu%C3%A7%C3%A3o-%C3%A0-javascript-e-l%C3%B3gica-de-programa%C3%A7%C3%A3o/dia-5-projeto-playground-functions)_
 
-##### :hourglass_flowing_sand: Bloco 5 - JavaScript: DOM, Eventos e Web Storage
+##### :white_check_mark: Bloco 5 - JavaScript: DOM, Eventos e Web Storage
 
 - [x] 5-1: _[JavaScript - DOM e seletores](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-05-javascript-dom-eventos-e-web-storage/dia-1-javascript-dom-e-seletores)_
 - [x] 5-2: _[JavaScript - Trabalhando com elementos](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-05-javascript-dom-eventos-e-web-storage/dia-2-javascript-trabalhando-com-elementos)_
@@ -52,7 +52,7 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 - [ ] 5-7: _[(Bônus) Projeto - Adivinhe a Cor]()_
 - [ ] 5-7: _[(Bônus) Projeto - Carta Misteriosa]()_
 
-##### :hourglass_flowing_sand: Bloco 6 - HTML e CSS: Forms, Flexbox e Responsivo
+##### :white_check_mark: Bloco 6 - HTML e CSS: Forms, Flexbox e Responsivo
 
 - [x] 6-1: [_HTML & CSS - Forms_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-06-html-e-css-forms-flexbox-e-responsivo/dia-1-html-e-css-forms)
 - [x] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
@@ -61,7 +61,7 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 - [ ] 6-5: _CSS Responsivo - Mobile First_
 - [ ] 6-6: _[Projeto - Trybewarts]()_
 
-##### :hourglass_flowing_sand: Bloco 07: Introdução à JavaScript ES6 e Testes Unitários
+##### :white_check_mark: Bloco 07: Introdução à JavaScript ES6 e Testes Unitários
 
 - [x] 7-1: [_JavaScript ES6 - let, const, arrow functions e template literals_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-07-introdu%C3%A7%C3%A3o-%C3%A0-javascript-es6-e-testes-unit%C3%A1rios/dia-1-javascript-es6-let-const-arrow-functions-e-template-literals)
 - [x] 7-2: [_JavaScript ES6 - Objects_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-07-introdu%C3%A7%C3%A3o-%C3%A0-javascript-es6-e-testes-unit%C3%A1rios/dia-2-javascript-es6-objects)
@@ -70,7 +70,7 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 
 ##### :hourglass_flowing_sand: Bloco 08: Higher Order Functions do JavaScript ES6
 
-- [x] 8-1: _JavaScript ES6 - Introdução a Higher Order Functions_
+- [x] 8-1: [_JavaScript ES6 - Introdução a Higher Order Functions_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-1-javascript-es6-introdu%C3%A7%C3%A3o-a-higher-order-functions)
 - [x] 8-2: [_JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-2-javascript-es6-higher-order-functions-foreach-find-some-every-sort)
 - [x] 8-3: [_JavaScript ES6 - Higher Order Functions - map e filter_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-3-javascript-es6-higher-order-functions-map-e-filter)
 - [ ] 8-4: _JavaScript ES6 - Higher Order Functions - reduce_

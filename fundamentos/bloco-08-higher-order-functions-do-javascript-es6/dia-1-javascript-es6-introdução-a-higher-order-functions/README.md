@@ -14,8 +14,6 @@ Vamos praticar com os seguintes exercícios:
 
 ### Exercícios pós-aula ao vivo:
 
-#### Parte I
-
 1. Crie uma função que retorne um objeto no formato `{ nomeCompleto, email }` representando uma nova pessoa contratada. Passe sua função como parâmetro da *HOF* `newEmployees` para criar cada pessoa contratada em seu respectivo `id`. A sua função deve receber como parâmetro o nome completo da pessoa funcionária e a partir dele gerar automaticamente um email no formato `nome_da_pessoa@trybe.com`.
 ```
 const newEmployees = () => {
@@ -46,10 +44,10 @@ const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
     * O dano será um número aleatório entre 15 (dano mínimo) e o valor do atributo `strength` (dano máximo).
 
 2. Crie uma função que retorna o dano causado pelo **warrior**.
-    *   O dano será um número aleatório entre o valor do atributo strength (dano mínimo) e o valor de `strength` * `weaponDmg` (dano máximo).
+    *   O dano será um número aleatório entre o valor do atributo strength (dano mínimo) e o valor de `strength * weaponDmg` (dano máximo).
 
 3. Crie uma função que retorna um objeto com duas chaves e dois valores contendo o dano e a mana gasta pelo **mage** em um turno.
-    * O dano será um número aleatório entre o valor do atributo `intelligence` (dano mínimo) e o valor de `intelligence` * 2 (dano máximo).
+    * O dano será um número aleatório entre o valor do atributo `intelligence` (dano mínimo) e o valor de `intelligence * 2` (dano máximo).
     *A `mana` consumida por turno é 15. Além disto a função deve ter uma condicional, caso o mago tenha menos de 15 de mana o valor de dano recebe uma mensagem (Ex: "Não possui mana suficiente") e a mana gasta é 0.
 
 ##### Parte II:
@@ -63,3 +61,5 @@ Agora que você já possui a implementação das funções relativas aos três e
 3. Crie a terceira *HOF* que compõe o objeto `gameActions` . Ela será a função que simula o turno do monstro `dragon` . Esta HOF receberá como parâmetro a função que calcula o dano deferido pelo monstro `dragon` e atualizará os `healthPoints` dos personagens `mage` e `warrior`. Além disto ela também deve atualizar o valor da chave `damage` do monstro.
 
 4. Adicione ao objeto `gameActions` uma função que retorne o objeto `battleMembers` atualizado e faça um `console.log` para visualizar o resultado final do turno.
+
+5. (EXTRA) Criar uma simulação de um jogo completo, com turnos necessários até que algum personagem zere ou fique com `healthPoints` negativo. Atualize a situação dos players em cada rodada.

@@ -8,4 +8,4 @@ Projeto feito em dupla com o colega @Victor-veloso. Aqui dividimos tarefas e as 
 
 > Os resultados do Projeto podem ser vistos neste Pull Request: [Project Trybewarts - Pull Request from TIAGO-SATHLER](https://github.com/tryber/sd-014-a-project-trybewarts/pull/113)
 
-![](https://github.com/tiagosathler/trybe-exercises/blob/bloco-06-dia-6/fundamentos/bloco-06-html-e-css-forms-flexbox-e-responsivo/dia-6-projeto-trybewarts/Results-Trybewarts-Project.png)
+![](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-06-html-e-css-forms-flexbox-e-responsivo/dia-6-projeto-trybewarts/Results-Trybewarts-Project.png)

@@ -2,7 +2,7 @@
 Neste dia estudei o que são __*first class functions*__ (funções de primeria classe) e __*Higher Order Functions*__ - HOF (funções de ordem superior). São conceitos simples, mas um tanto complexo por sua abstração, então precisam ser bem compreendidos. Os exercícios a seguir são para fixar estes conceitos, especialmente as *HOF*.
 
 ## Exercícios do dia
-> Os exercícios estão no arquivo `script.js`.
+> Os exercícios do dia estão no arquivo [`script.js`](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-1-javascript-es6-introdu%C3%A7%C3%A3o-a-higher-order-functions/script.js). 
 
 ### Exercícios pré-aula ao vivo
 
@@ -13,6 +13,8 @@ Vamos praticar com os seguintes exercícios:
 4. Agora desenvolva uma *HOF* chamada `doingThings` e configure esta função para que imprima no console o resultado da execução das funções que você criou nos exemplos anteriores.
 
 ### Exercícios pós-aula ao vivo:
+
+#### Parte I
 
 1. Crie uma função que retorne um objeto no formato `{ nomeCompleto, email }` representando uma nova pessoa contratada. Passe sua função como parâmetro da *HOF* `newEmployees` para criar cada pessoa contratada em seu respectivo `id`. A sua função deve receber como parâmetro o nome completo da pessoa funcionária e a partir dele gerar automaticamente um email no formato `nome_da_pessoa@trybe.com`.
 ```
@@ -33,3 +35,31 @@ const newEmployees = () => {
 const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
 const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
 ```
+
+#### Bônus - Game Actions Simulator
+
+> Nestes exercícios você irá implementar HOFs que simulam um turno de batalha em um jogo. Você irá criar funções que calculam dano, atualizam status, e ao final, retornam os resultados da rodada. O código está no arquivo [`bonus.js`](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-1-javascript-es6-introdu%C3%A7%C3%A3o-a-higher-order-functions/bonus.js)
+
+##### Parte I:
+
+1. Crie uma função que retorna o dano do **dragão**.
+    * O dano será um número aleatório entre 15 (dano mínimo) e o valor do atributo `strength` (dano máximo).
+
+2. Crie uma função que retorna o dano causado pelo **warrior**.
+    *   O dano será um número aleatório entre o valor do atributo strength (dano mínimo) e o valor de `strength` * `weaponDmg` (dano máximo).
+
+3. Crie uma função que retorna um objeto com duas chaves e dois valores contendo o dano e a mana gasta pelo **mage** em um turno.
+    * O dano será um número aleatório entre o valor do atributo `intelligence` (dano mínimo) e o valor de `intelligence` * 2 (dano máximo).
+    *A `mana` consumida por turno é 15. Além disto a função deve ter uma condicional, caso o mago tenha menos de 15 de mana o valor de dano recebe uma mensagem (Ex: "Não possui mana suficiente") e a mana gasta é 0.
+
+##### Parte II:
+
+Agora que você já possui a implementação das funções relativas aos três exercícios anteriores, passe-as como parâmetro para outras funções que irão compor um objeto `gameActions`. O objeto será composto por ações do jogo e cada ação é por denifição uma *HOF*, pois neste caso, são funções que recebem como parâmetro outra função.
+
+1. Crie a primeira HOF que compõe o objeto `gameActions` . Ela será a função que simula o turno do personagem `warrior`. Esta *HOF* receberá como parâmetro a função que calcula o dano deferido pelo personagem `warrior` e atualizará os `healthPoints` do monstro `dragon`. Além disto ela também deve atualizar o valor da chave `damage` do `warrior`.
+
+2. Crie a segunda HOF que compõe o objeto `gameActions` . Ela será a função que simula o turno do personagem `mage` . Esta HOF receberá como parâmetro a função que calcula o dano deferido pelo personagem `mage` e atualizará os `healthPoints` do monstro `dragon` . Além disto ela também deve atualizar o valor das chaves `damage` e `mana` do `mage`.
+
+3. Crie a terceira *HOF* que compõe o objeto `gameActions` . Ela será a função que simula o turno do monstro `dragon` . Esta HOF receberá como parâmetro a função que calcula o dano deferido pelo monstro `dragon` e atualizará os `healthPoints` dos personagens `mage` e `warrior`. Além disto ela também deve atualizar o valor da chave `damage` do monstro.
+
+4. Adicione ao objeto `gameActions` uma função que retorne o objeto `battleMembers` atualizado e faça um `console.log` para visualizar o resultado final do turno.

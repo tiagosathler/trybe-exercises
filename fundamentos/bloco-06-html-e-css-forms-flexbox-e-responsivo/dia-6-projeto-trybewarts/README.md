@@ -4,7 +4,7 @@ Projeto feito em dupla com o colega @Victor-veloso. Aqui dividimos tarefas e as 
 
 > Os requisitos do projeto podem ser lidos no repositório: [Project Trybewarts](https://github.com/tryber/sd-014-a-project-trybewarts)
 
-> A página pode ser testada diretamente de uma cópia hospedada no GitHub Pages: Projeto Trybewarts
+> A página pode ser testada diretamente de uma cópia hospedada no GitHub Pages: [Projeto Trybewarts](https://tiagosathler.github.io/projects/trybewarts/index.html)
 
 > Os resultados do Projeto podem ser vistos neste Pull Request: [Project Trybewarts - Pull Request from TIAGO-SATHLER](https://github.com/tryber/sd-014-a-project-trybewarts/pull/113)
 

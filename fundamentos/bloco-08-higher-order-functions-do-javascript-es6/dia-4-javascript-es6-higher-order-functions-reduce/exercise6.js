@@ -13,10 +13,9 @@ function studentAverage() {
   return students.map((aluno, index) => {
     return {
       name: aluno,
-      average: parseFloat(
+      average:
         grades[index].reduce((sum, grade) => (sum += grade), 0) /
-          grades[index].length.toFixed(1)
-      ),
+        grades[index].length,
     };
   });
 }

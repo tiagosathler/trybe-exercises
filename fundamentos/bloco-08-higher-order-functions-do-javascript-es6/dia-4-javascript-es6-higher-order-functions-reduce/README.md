@@ -4,7 +4,7 @@ Neste dia aprendemos uma das mais poderesas HOF para *arrays* em JS ES6, o `redu
 
 ## Exercícios do dia
 
-> Os exercícios estão divididos em arquivos conforme o seu número. Exemplo, `exercise1.js` para o *Exercício 1*. Aqui aplicou-se o módulo *Assert* do Node.JS para validar os exercícios.
+> Os exercícios estão divididos em arquivos conforme o seu número. Exemplo, `exercise1.js` para o *Exercício 1*. Aqui aplicou-se o módulo *Assert* do *Node.JS* para validar os exercícios, isso implica que as funções foram desenvolvidas para passar no teste, portanto é importante entender o que se compara em cada teste.
 
 1. Dada uma matriz, transforme-a em um array.
 ```
@@ -96,4 +96,8 @@ const names = [
 ];
 ```
 
-6. 
+6. Agora vamos criar um novo array de objetos a partir das informações abaixo, onde cada objeto terá o formato `{ name: nome do aluno, average: media das notas }`. Para isso vamos assumir que a posição 0 de `notas` refere-se ao aluno na posição 0 de `alunos`, aqui além de `reduce` será necessário utilizar também a função `map`. Dica: Você pode acessar o index do array dentro de `map`, e você pode ver o objeto esperado na constante `expected`.
+```
+const students = ['Pedro Henrique', 'Miguel', 'Maria Clara'];
+const grades = [[9, 8, 10, 7, 5], [10, 9, 9, 10, 8], [10, 7, 10, 8, 9]];
+```

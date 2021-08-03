@@ -74,7 +74,7 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 - [x] 8-2: [_JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-2-javascript-es6-higher-order-functions-foreach-find-some-every-sort)
 - [x] 8-3: [_JavaScript ES6 - Higher Order Functions - map e filter_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-3-javascript-es6-higher-order-functions-map-e-filter)
 - [x] 8-4: [_JavaScript ES6 - Higher Order Functions - reduce_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-4-javascript-es6-higher-order-functions-reduce)
-- [ ] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
+- [x] 8-5: [_JavaScript ES6 - spread operator, rest parameter, destructuring e mais_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-5-javascript-es6-sprend-operator-par%C3%A2metro-rest-destructuring-e-mais)
 - [ ] 8-6: _[Projeto - Zoo functions]()_
 
 ##### :hourglass_flowing_sand: Bloco 09: JavaScript Assíncrono e Promises

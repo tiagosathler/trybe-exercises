@@ -1,6 +1,6 @@
 # Bloco 08 - Dia 3 - JavaScript ES 6 - Higher Order Functions - `reduce`
 
-Neste dia aprendemos uma das mais poderesas HOF para *arrays* em JS ES6, o `reduce`. Método importantíssimo que percorre todo *array* através de uma *callback* e acumula o resultado a cada iteração no parâmetro *acumulattor*, que é usado na própria *callback*. Isto abre caminho para diversas possibilidades...
+Neste dia aprendemos uma das mais poderesas HOF para *arrays* em JS ES6, o `reduce`. Método importantíssimo que percorre todo *array* através de uma *callback* e acumula o resultado a cada iteração no primeiro parâmetro *accumulator*, que é usado na própria *callback*. Isto abre caminho para diversas possibilidades...
 
 ## Exercícios do dia
 
@@ -15,7 +15,7 @@ const arrays = [
 ];
 ```
 
-> Dado do *array* `book` abaixo, faça os exercícios de 2 a 4:
+> Dado do *array* `books` abaixo, faça os exercícios de 2 a 4:
 ```
 const books = [
   {
@@ -85,7 +85,7 @@ const books = [
 
 3. Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados. [__exercise3.js__](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-4-javascript-es6-higher-order-functions-reduce/exercise3.js)
 
-4. Encontre o livro com o maior nome. [exercise4.js](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-4-javascript-es6-higher-order-functions-reduce/exercise4.js)
+4. Encontre o livro com o maior nome. [__exercise4.js__](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-4-javascript-es6-higher-order-functions-reduce/exercise4.js)
 
 5. Dada o *array* de nomes, retorne a quantidade de vezes em que aparecem a letra `a` maiúscula ou minúscula. [__exercise5.js__](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-4-javascript-es6-higher-order-functions-reduce/exercise5.js)
 ```

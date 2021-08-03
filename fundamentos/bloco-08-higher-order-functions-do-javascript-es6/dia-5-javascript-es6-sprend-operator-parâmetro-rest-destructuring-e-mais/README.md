@@ -7,7 +7,7 @@ Neste dia aprendemos novas *features* do JS ES6 que são *spread operator*, par�
 > Os exercícios estão divididos em arquivos conforme o número. Aqui aplicou-se o módulo Assert do Node.JS para validar os exercícios, isso implica que as funções foram desenvolvidas para passar no teste, portanto é importante entender o que se compara em cada teste.
 
 __1.__ Dado o código abaixo, complete-o de forma que seja impressa a área dos 3 retângulos. O código deve retornar em sequência `2`, `15` e `54`. 
->_* Dica: use `spread operator`._
+> _* Dica: use `spread operator`._
 
 > [__exercise1.js__](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-5-javascript-es6-sprend-operator-par%C3%A2metro-rest-destructuring-e-mais/exercise1.js)
 
@@ -27,7 +27,7 @@ rectangles.forEach((rectangle) => {
 ```
 
 __2.__ Crie uma função `sum` que dado um número variável de elementos retorna a soma desses elementos. Ou seja:
->_* Dica: use `parâmetro rest`._
+> _* Dica: use `parâmetro rest`._
 
 > [__exercise2.js__](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-5-javascript-es6-sprend-operator-par%C3%A2metro-rest-destructuring-e-mais/exercise2.js)
 
@@ -44,7 +44,7 @@ assert.strictEqual(sum(1, 2, 3, 4), 10);
 
 ```
 __3.__ Escreva a função `personLikes`, que dado um objeto de parâmetro que representa uma pessoa, retorna todos os gostos daquela pessoa, conforme mostrado abaixo: 
->_* Dica: use `object destructuring`._
+> _* Dica: use `object destructuring`._
 
 > [__exercise3.js__](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-5-javascript-es6-sprend-operator-par%C3%A2metro-rest-destructuring-e-mais/exercise3.js)
 
@@ -73,7 +73,7 @@ assert.strictEqual(personLikes(gunnar), 'Gunnar is 30 years old and likes hiking
 ```
 
 __4.__ Escreva uma função `filterPeople` que, dada uma lista de pessoas, retorna todas as pessoas australianas que nasceram no século 20:
->_* Dica: use `object destructuring`._
+> _* Dica: use `object destructuring`._
 
 > [__exercise4.js__](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-5-javascript-es6-sprend-operator-par%C3%A2metro-rest-destructuring-e-mais/exercise4.js)
 
@@ -117,7 +117,7 @@ assert.deepStrictEqual(filteredPeople[1], { name: 'Toby', bornIn: 1901, national
 ```
 
 __5.__ Escreva a função `swap`, que dado um *array* de 3 elementos, retorna um novo *array* com o primeiro e terceiro elementos trocados. Detalhe: você precisa fazer essa função gastando 1 linha só: 
->_* Dica: use `array destructuring`._
+> _* Dica: use `array destructuring`._
 
 > [__exercise5.js__](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-5-javascript-es6-sprend-operator-par%C3%A2metro-rest-destructuring-e-mais/exercise5.js)
 
@@ -136,7 +136,7 @@ assert.strictEqual(swappedList[2], 1);
 ```
 
 __6.__ Suponha que você esteja lidando com carros e, da forma como o problema lhe foi entregue, cada carro é modelado como um array. Porém, essa modelagem está baixo nível. Cria uma função `toObject` que, dada uma lista, retorna um objeto representando o carro: 
->_* Dica: use `array destructuring` e `abbreviation object literal`._
+> _* Dica: use `array destructuring` e `abbreviation object literal`._
 
 > [__exercise6.js__](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-5-javascript-es6-sprend-operator-par%C3%A2metro-rest-destructuring-e-mais/exercise6.js)
 
@@ -155,7 +155,7 @@ assert.deepStrictEqual(toObject(chiron), { name: 'Chiron', brand: 'Bugatti', yea
 ```
 
 __7.__ Escreva uma função `shipLength` que, dado um objeto representando um navio, retorna o comprimento dele, mostrando também a devida unidade de comprimento:
->_* Dica: use `object destructuring`._
+> _* Dica: use `object destructuring`._
 
 > [__exercise7.js__](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-5-javascript-es6-sprend-operator-par%C3%A2metro-rest-destructuring-e-mais/exercise7.js)
 
@@ -188,7 +188,7 @@ assert.strictEqual(shipLength(ships[2]), 'Yamato is 256 meters long');
 ```
 
 __8.__ Escreva uma função `greet` que, dado o nome de uma pessoa, retorna uma mensagem de cumprimento:
->_* Dica: use `default params`. _
+> _* Dica: use `default params`._
 
 > [__exercise8.js__](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-5-javascript-es6-sprend-operator-par%C3%A2metro-rest-destructuring-e-mais/exercise8.js)
 

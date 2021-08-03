@@ -28,6 +28,7 @@ rectangles.forEach((rectangle) => {
 
 2. Crie uma função `sum` que dado um número variável de elementos retorna a soma desses elementos. Ou seja:
 >_* Dica: use `parâmetro rest`._
+
 > [__exercise2.js__](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-5-javascript-es6-sprend-operator-par%C3%A2metro-rest-destructuring-e-mais/exercise2.js)
 
 ```

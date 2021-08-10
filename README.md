@@ -68,7 +68,7 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 - [x] 7-3: _Testes unitários em JavaScript_
 - [x] 7-4: _[Projeto - JavaScript Testes Unitários](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-07-introdu%C3%A7%C3%A3o-%C3%A0-javascript-es6-e-testes-unit%C3%A1rios/dia-4-projeto-javascript-testes-unit%C3%A1rios)_
 
-##### :hourglass_flowing_sand: Bloco 08: Higher Order Functions do JavaScript ES6
+##### :white_check_mark: Bloco 08: Higher Order Functions do JavaScript ES6
 
 - [x] 8-1: [_JavaScript ES6 - Introdução a Higher Order Functions_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-1-javascript-es6-introdu%C3%A7%C3%A3o-a-higher-order-functions)
 - [x] 8-2: [_JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-2-javascript-es6-higher-order-functions-foreach-find-some-every-sort)

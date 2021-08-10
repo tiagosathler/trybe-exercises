@@ -4,6 +4,7 @@ Este projeto é uma simulação de um sistema de gestão de um zoológico, conte
 Aplicamos, prioritariamente as HOF (*high order functions*) aos *arrays*. Também usou-se os conceitos de *spread* de *arrays* e objetos, *rest* de parâmetros e o *destructuring* de *arrays* e objetos. Foi um excelente projeto em que usamos exaustivamente os conhecimentos já adquiridos do JavaScript ES6.
 
 > Os requisitos do projeto podem ser lidos no repositório da [Trybe](https://www.betrybe.com/): [Project Zoo Functions](https://github.com/tryber/sd-014-a-project-zoo-functions)
+
 > Os resultados do projeto podem ser vistos neste *Pull Request*: [Zoo Functions Project - Pull Request from TIAGO-SATHLER](https://github.com/tryber/sd-014-a-project-zoo-functions/pull/31)
 
 ![](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-6-projeto-zoo-functions/Results-Zoo-Functions-Project.png)

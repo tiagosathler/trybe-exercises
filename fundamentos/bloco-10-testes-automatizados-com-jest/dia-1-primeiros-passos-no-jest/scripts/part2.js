@@ -23,11 +23,9 @@ function techList(array, nome) {
 }
 
 function hydrate(string) {
-  const count = string.split(' ').reduce((acc, word) => {
-    return (!isNaN(word*1))
-      ? acc + word*1
-      : acc;
-  }, 0);
+  const count = string
+    .split(' ')
+    .reduce((acc, word) => (!isNaN(word * 1) ? acc + word * 1 : acc), 0);
   return count > 1 ? `${count} copos de água` : `${count} copo de água`;
 }
 

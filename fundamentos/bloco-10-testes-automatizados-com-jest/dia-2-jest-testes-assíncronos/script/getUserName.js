@@ -4,13 +4,13 @@ const users = [
 ];
 
 const findUserById = (id) => new Promise((resolve, reject) => {
-  const result = users.find((user) => user.id === id);
-
-  if (result) {
-    return resolve(result);
-  }
-
-  return reject(new Error(`User with ${id} not found.`));
+  setTimeout(() => {
+    const result = users.find((user) => user.id === id);
+    if (result) {
+      return resolve(result);
+    }  
+    return reject(new Error(`User with ${id} not found.`));
+  }, 500);  
 });
 
 const getUserName = (userId) => findUserById(userId).then((user) => user.name);

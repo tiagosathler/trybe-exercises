@@ -8,11 +8,11 @@ function encode(string) {
 }
 
 function decode(string) {
-  string = string.replace(/1/gi, "a");
-  string = string.replace(/2/gi, "e");
-  string = string.replace(/3/gi, "i");
-  string = string.replace(/4/gi, "o");
-  string = string.replace(/5/gi, "u");
+  string = string.replace(/1/g, "a");
+  string = string.replace(/2/g, "e");
+  string = string.replace(/3/g, "i");
+  string = string.replace(/4/g, "o");
+  string = string.replace(/5/g, "u");
   return string;
 }
 

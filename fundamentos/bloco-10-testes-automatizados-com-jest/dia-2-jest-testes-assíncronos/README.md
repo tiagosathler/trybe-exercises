@@ -6,24 +6,24 @@ Neste dia aprendemos a fazer testes unitários através do Jest em *callbacks* e
 
 > Os exercícios estão em arquivos do tipo *test.js* correspondente a cada função que se deseja testar.
 
-1. Escreva um teste que verifique a chamada do *callback* de uma função `uppercase`, que transforma as letras de uma palavra em letras maiúsculas. Lembre-se de ter cuidado com os **falso-positivos** em testes assíncronos.
+**1.** Escreva um teste que verifique a chamada do *callback* de uma função `uppercase`, que transforma as letras de uma palavra em letras maiúsculas. Lembre-se de ter cuidado com os **falso-positivos** em testes assíncronos.
 > Função: [**upperCase**](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-10-testes-automatizados-com-jest/dia-2-jest-testes-ass%C3%ADncronos/script/uppercase.js) / Teste: [**upperCase.test.js**](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-10-testes-automatizados-com-jest/dia-2-jest-testes-ass%C3%ADncronos/tests/uppercase.test.js)
 
-2. Utilizando a sintaxe de *Promise*, faça um teste que verifique o resultado da função `getUserName` para o caso em que o usuário é encontrado, e também um teste para o caso em que o usuário não é encontrado.
+**2.** Utilizando a sintaxe de *Promise*, faça um teste que verifique o resultado da função `getUserName` para o caso em que o usuário é encontrado, e também um teste para o caso em que o usuário não é encontrado.
 > Dica: Veja os dados falsos utilizados no banco de dados, disponíveis na variável `users`, para saber quais IDs existem.
 
 > Função: [**getUserName.js**](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-10-testes-automatizados-com-jest/dia-2-jest-testes-ass%C3%ADncronos/script/getUserName.js) / Teste: [**getUserName.test.js**](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-10-testes-automatizados-com-jest/dia-2-jest-testes-ass%C3%ADncronos/tests/getUserName.test.js)
 
-3. Reescreva o teste do exercício anterior, desta vez utilizando a sintaxe de *async/await*.
+**3.** Reescreva o teste do exercício anterior, desta vez utilizando a sintaxe de *async/await*.
 > Dica: Utilize o *try/catch* para o caso de erro.
 
-4. A função `getRepos` busca no *GitHub* de um usuário seus repositórios, de acordo com a URL, e retorna uma lista como resultado. Dada a URL `'https://api.github.com/orgs/tryber/repos'`, faça um teste que verifique que os repositórios `'sd-01-week4-5-project-todo-list'` e `'sd-01-week4-5-project-meme-generator'` se encontram nessa lista.
+**4.** A função `getRepos` busca no *GitHub* de um usuário seus repositórios, de acordo com a URL, e retorna uma lista como resultado. Dada a URL `'https://api.github.com/orgs/tryber/repos'`, faça um teste que verifique que os repositórios `'sd-01-week4-5-project-todo-list'` e `'sd-01-week4-5-project-meme-generator'` se encontram nessa lista.
 > Função: [**getRepos**](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-10-testes-automatizados-com-jest/dia-2-jest-testes-ass%C3%ADncronos/script/getRepos.js) / Teste: [**getRepos.test.js**](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-10-testes-automatizados-com-jest/dia-2-jest-testes-ass%C3%ADncronos/tests/getRepos.test.js)
 
-5. Para este exercício, no teste `afterBefore`, tente adivinhar a saída dos `console.log` dos testes abaixo sem executá-los, e veja se compreendeu bem o funcionamento do `beforeEach` e do `afterEach`.
+**5.** Para este exercício, no teste `afterBefore`, tente adivinhar a saída dos `console.log` dos testes abaixo sem executá-los, e veja se compreendeu bem o funcionamento do `beforeEach` e do `afterEach`.
 > Teste: [**afterBefore.test.js**](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-10-testes-automatizados-com-jest/dia-2-jest-testes-ass%C3%ADncronos/tests/afterBefore.test.js)
 
-6. Nesse exercício, você irá criar funções parecidas com código abaixo - o mesmo que foi usado como exemplo sobre os testes de promise.
+**6.** Nesse exercício, você irá criar funções parecidas com código abaixo - o mesmo que foi usado como exemplo sobre os testes de promise.
 > Função: [**getAnimal**](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-10-testes-automatizados-com-jest/dia-2-jest-testes-ass%C3%ADncronos/script/getAnimal.js) / Teste: [**getAnimal.test.js**](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-10-testes-automatizados-com-jest/dia-2-jest-testes-ass%C3%ADncronos/tests/getAnimal.test.js)
 ```
 const Animals = [
@@ -49,7 +49,8 @@ const getListAnimals = (type) => (
   findAnimalsByType(type).then(list => list)
 );
 ```
-    6.1. Adicione a função `getAnimalByName` para buscar pelo nome do animal, ou seja criar uma função que deverá passar no teste de `getAnimal.test`.
+  6.1. Adicione a função `getAnimalByName` para buscar pelo nome do animal, ou seja criar uma função que deverá passar no teste de `getAnimal.test`.
+
 > Dica: use o código do exemplo dado para criar uma nova função, analise os testes antes de iniciar.
 
-    6.2. Adicione a função `getAnimalsByAge` para buscar pela idade dos animais. O retorno deve ser um array de objetos, mas, caso não ache nenhum, retorne uma mensagem de erro. Escreva tanto a função como o seu teste.
+  6.2. Adicione a função `getAnimalsByAge` para buscar pela idade dos animais. O retorno deve ser um array de objetos, mas, caso não ache nenhum, retorne uma mensagem de erro. Escreva tanto a função como o seu teste.

@@ -11,7 +11,7 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 >O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
 
 
-## Fundamentos do Desenvolvimento Web :hourglass_flowing_sand:
+## Fundamentos do Desenvolvimento Web :white_check_mark:
 
 ##### :white_check_mark: Bloco 1: Introdução - Unix & Shell
 
@@ -77,18 +77,18 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 - [x] 8-5: [_JavaScript ES6 - spread operator, rest parameter, destructuring e mais_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-5-javascript-es6-sprend-operator-par%C3%A2metro-rest-destructuring-e-mais)
 - [x] 8-6: _[Projeto - Zoo functions](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-08-higher-order-functions-do-javascript-es6/dia-6-projeto-zoo-functions)_
 
-##### :hourglass_flowing_sand: Bloco 09: JavaScript Assíncrono e Promises
+##### :white_check_mark: Bloco 09: JavaScript Assíncrono e Promises
 
-- [ ] 9-1: _JavaScript Assíncrono e Callbacks_
-- [ ] 9-2: _JavaScript Promises_
-- [ ] 9-3: _[Projeto - Carrinho de Compras]()_
+- [x] 9-1: _JavaScript Assíncrono e Callbacks_
+- [x] 9-2: _JavaScript Promises_
+- [x] 9-3: _[Projeto - Carrinho de Compras]()_
 
-##### :hourglass_flowing_sand: Bloco 10: Testes automatizados com Jest
+##### :white_check_mark: Bloco 10: Testes automatizados com Jest
 
-- [ ] 10-1: _Primeiros passos no Jest_
-- [ ] 10-2: _Jest - Testes Assíncronos_
-- [ ] 10-3: _Jest - Simulando comportamentos_
-- [ ] 10-4: _[Projeto - Jest Assíncrono e Mocking]()_
+- [x] 10-1: [_Primeiros passos no Jest_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-10-testes-automatizados-com-jest/dia-1-primeiros-passos-no-jest)
+- [x] 10-2: [_Jest - Testes Assíncronos_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-10-testes-automatizados-com-jest/dia-2-jest-testes-ass%C3%ADncronos)
+- [x] 10-3: _Jest - Simulando comportamentos_
+- [x] 10-4: _[Projeto - Jest Assíncrono e Mocking]()_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 

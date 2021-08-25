@@ -15,10 +15,11 @@ Nste dia fomos apresentados ao *framework* **Jest** de testes unitários para Ja
 > No Bloco 4 foi feito o projeto [*Playground functions*](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-04-introdu%C3%A7%C3%A3o-%C3%A0-javascript-e-l%C3%B3gica-de-programa%C3%A7%C3%A3o/dia-5-projeto-playground-functions). Nos exercícios a seguir, você irá trabalhar com os testes para algumas funções que você criou! Aproveite para refatorá-las e usar todos os recursos que já aprendemos até aqui, como as *Higher Order Functions* e as *features* do Javascript ES6.
 
 1. Para as funções encode e decode crie os seguintes testes:
-  1.1. Teste se `encode` e `decode` são funções;
-  1.2. Para a função encode teste se as vogais *a*, *e*, *i*, *o*, *u* são convertidas em *1*, *2*, *3*, *4* e *5*, respectivamente;
-  1.3. Para a função decode teste se os números *1*, *2*, *3*, *4* e *5* são convertido nas vogais *a*, *e*, *i*, *o*, *u*, respectivamente;
-  1.4. Teste se as demais letras/números não são convertidos para cada caso;
+
+   1.1. Teste se `encode` e `decode` são funções;
+   1.2. Para a função encode teste se as vogais *a*, *e*, *i*, *o*, *u* são convertidas em *1*, *2*, *3*, *4* e *5*, respectivamente;
+   1.3. Para a função decode teste se os números *1*, *2*, *3*, *4* e *5* são convertido nas vogais *a*, *e*, *i*, *o*, *u*, respectivamente;
+   1.4. Teste se as demais letras/números não são convertidos para cada caso;
   1.5. Teste se a *string* que é retornada pelas funções têm o mesmo número de caracteres que a *string* passada como parâmetro.
 
 2. A função `techList` recebe como parâmetros um *array* contendo uma lista de tecnologias e uma *string* com um nome. Para cada tecnologia no *array* a função cria, em ordem alfabética, um objeto com a seguinte estrutura:
@@ -114,7 +115,7 @@ describe('Testa a função hydrate', () => {
 1. Neste exercício, você irá praticar o desenvolvimento orientado a testes (TDD) implementando:
   * A função;
   * Os testes para essa função;
-  
+
 Considere os dados abaixo. Você deve criar uma função que receba dois parâmetros: o `id` do funcionário e a informação disponível sobre ele ( `firstName`, `lastName`, `specialities`). Você também deverá criar os testes para essa função. Sua função deverá então retornar os resultados da busca pelo id para aquele funcionário e a informação consultada. Caso o `id` não conste no quadro de funcionários, sua função deve retornar o erro `"ID não identificada"`. Se a informação que se quer acessar não existir, a função deve retornar o erro `"Informação indisponível"`.
 ```
 // Dados

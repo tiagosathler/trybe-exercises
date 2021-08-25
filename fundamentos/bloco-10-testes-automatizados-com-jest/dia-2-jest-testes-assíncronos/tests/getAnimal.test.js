@@ -1,4 +1,4 @@
-const { getAnimalByName, getAnimalsByAge } = require('../script/getAnimal');
+const { getAnimalByName, getAnimalsByAge , getListAnimals } = require('../script/getAnimal');
 
 describe('Testando promise - findAnimalByName', () => {
   describe('Quando existe o animal com o nome procurado', () => {
@@ -36,6 +36,26 @@ describe('Testando promise - findAnimalsByAge', () => {
       return getAnimalsByAge(10).catch(error =>
         expect(error).toEqual('Nenhum animal encontrado!')
       );
+    });
+  });
+});
+
+describe('Testando promise - findAnimalsByType', () => {
+  describe('Quando existem os animais com o tipo procurado', () => {
+    test('Retorne a lista de animais por tipo', () => {
+      expect.assertions(1);
+      const expected = [
+        { name: 'Dorminhoco', age: 1, type: 'Dog' },
+        { name: 'Soneca', age: 2, type: 'Dog' }
+      ];
+      return expect(getListAnimals('Dog')).resolves.toEqual(expected);
+      });
+    });
+  
+  describe('Quando não existe o animal com o tipo procurado', () => {
+    test('Retorna um erro', () => {
+      expect.assertions(1);
+      return expect(getListAnimals('Bob')).rejects.toEqual({ error: 'Não possui esse tipo de animal.'});  
     });
   });
 });

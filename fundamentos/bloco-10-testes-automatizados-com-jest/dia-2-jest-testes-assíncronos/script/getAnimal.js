@@ -28,6 +28,23 @@ const findAnimalsByAge = (age) => (
   })
 );
 
+const findAnimalsByType = (type) => (
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const arrayAnimals = animals.filter((animal) => animal.type === type);
+      if (arrayAnimals.length !== 0) {
+        return resolve(arrayAnimals);
+      };
+
+      return reject({ error: 'Não possui esse tipo de animal.' });
+    }, 100);
+  })
+);
+
+const getListAnimals = (type) => (
+  findAnimalsByType(type).then(list => list)
+);
+
 const getAnimalByName = (name) => {
   return findAnimalByName(name).then((result) => result);
 };
@@ -36,4 +53,4 @@ const getAnimalsByAge = (age) => {
   return findAnimalsByAge(age).then((result) => result);
 }
 
-module.exports = { getAnimalByName, getAnimalsByAge };
+module.exports = { getAnimalByName, getAnimalsByAge, getListAnimals }

@@ -9,10 +9,15 @@ Nste dia fomos apresentados ao *framework* **Jest** de testes unitários para Ja
 ### Parte I
 
 1. Refaça os exercícios 1 a 5 do conteúdo de *Testes unitários em JavaScript*, dessa vez utilizando **Jest**.
+> Funções: [**part1.js**](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-10-testes-automatizados-com-jest/dia-1-primeiros-passos-no-jest/scripts/part1.js)
+> Testes: [**part1.test.js**](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-10-testes-automatizados-com-jest/dia-1-primeiros-passos-no-jest/tests/part1.test.js)
 
 ### Parte II
 
 > No Bloco 4 foi feito o projeto [*Playground functions*](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-04-introdu%C3%A7%C3%A3o-%C3%A0-javascript-e-l%C3%B3gica-de-programa%C3%A7%C3%A3o/dia-5-projeto-playground-functions). Nos exercícios a seguir, você irá trabalhar com os testes para algumas funções que você criou! Aproveite para refatorá-las e usar todos os recursos que já aprendemos até aqui, como as *Higher Order Functions* e as *features* do Javascript ES6.
+
+> Funções: [**part2.js**](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-10-testes-automatizados-com-jest/dia-1-primeiros-passos-no-jest/scripts/part2.js)
+> Testes: [**part2.test.js**](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-10-testes-automatizados-com-jest/dia-1-primeiros-passos-no-jest/tests/part2.test.js)
 
 1. Para as funções encode e decode crie os seguintes testes:
 
@@ -121,6 +126,9 @@ describe('Testa a função hydrate', () => {
   * Os testes para essa função;
 
 > Considere os dados abaixo. Você deve criar uma função que receba dois parâmetros: o `id` do funcionário e a informação disponível sobre ele ( `firstName`, `lastName`, `specialities`). Você também deverá criar os testes para essa função. Sua função deverá então retornar os resultados da busca pelo id para aquele funcionário e a informação consultada. Caso o `id` não conste no quadro de funcionários, sua função deve retornar o erro `"ID não identificada"`. Se a informação que se quer acessar não existir, a função deve retornar o erro `"Informação indisponível"`.
+
+> Função: [**bonus.js**](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-10-testes-automatizados-com-jest/dia-1-primeiros-passos-no-jest/scripts/bonus.js)
+> Teste: [**bonus.test.js**](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-10-testes-automatizados-com-jest/dia-1-primeiros-passos-no-jest/tests/bonus.test.js)
 ```
 // Dados
 const professionalBoard = [

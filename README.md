@@ -80,7 +80,7 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 ##### :white_check_mark: Bloco 09: JavaScript Assíncrono e Promises
 
 - [x] 9-1: [_JavaScript Assíncrono e Callbacks_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-09-javascript-ass%C3%ADncrono-e-promises/dia-1-javascript-ass%C3%ADncrono-e-callbacks)
-- [x] 9-2: _JavaScript Promises_
+- [x] 9-2: [_JavaScript Promises_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-09-javascript-ass%C3%ADncrono-e-promises/dia-2-javascript-promises)
 - [x] 9-3: _[Projeto - Carrinho de Compras]()_
 
 ##### :white_check_mark: Bloco 10: Testes automatizados com Jest

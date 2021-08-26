@@ -8,4 +8,4 @@ Este projeto reuni o conhecimento já adquirido incorporando agora os resultados
 
 > Os resultados do projeto podem ser vistos neste Pull Request: [Project Shopping Cart - Pull Request from TIAGO-SATHLER](https://github.com/tryber/sd-014-a-project-shopping-cart/pull/6)
 
-![]()
+![](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-09-javascript-ass%C3%ADncrono-e-promises/dia-3-projeto-carrinho-de-compras/Results-Project-Shopping-Cart.png)

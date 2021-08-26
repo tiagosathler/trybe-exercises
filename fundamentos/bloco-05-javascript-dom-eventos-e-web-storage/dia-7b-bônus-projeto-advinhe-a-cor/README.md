@@ -8,4 +8,4 @@ Este projeto teve como objetivo sortear, inicialmente, 6 círculos com cores dif
 
 > O resultado do Projeto pode ser visto neste Pull Request: [Project Color Guess - Pull Request from TIAGO-SATHLER](https://github.com/tryber/sd-014-a-project-color-guess/pull/41)
 
-![](https://github.com/tiagosathler/trybe-exercises/raw/master/fundamentos/bloco-05-javascript-dom-eventos-e-web-storage/dia-7a-b%C3%B4nus-projeto-adivinhe-a-cor/Results-Project-Color-Guess.png)
+![](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-05-javascript-dom-eventos-e-web-storage/dia-7b-b%C3%B4nus-projeto-advinhe-a-cor/Results-Project-Color-Guess.png)

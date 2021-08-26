@@ -50,7 +50,7 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 - [x] 5-6: _[Projeto - Lista de tarefas](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-05-javascript-dom-eventos-e-web-storage/dia-6-projeto-lista-de-tarefas)_
 - [x] 5-7: _[(Bônus) Projeto - Meme Generator](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-05-javascript-dom-eventos-e-web-storage/dia-7a-b%C3%B4nus-projeto-meme-generator)_
 - [x] 5-7: _[(Bônus) Projeto - Adivinhe a Cor](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-05-javascript-dom-eventos-e-web-storage/dia-7b-b%C3%B4nus-projeto-advinhe-a-cor)_
-- [ ] 5-7: _[(Bônus) Projeto - Carta Misteriosa]()_
+- [ ] 5-7: _(Bônus) Projeto - Carta Misteriosa_
 
 ##### :white_check_mark: Bloco 6 - HTML e CSS: Forms, Flexbox e Responsivo
 

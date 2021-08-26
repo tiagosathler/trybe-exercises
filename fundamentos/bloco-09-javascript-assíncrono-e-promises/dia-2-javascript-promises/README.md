@@ -8,11 +8,11 @@ As **Promises**, embora não sejam muito intuitivas a princípio, foram criadas 
 
 > Este exercício é uma sequencia de testes para observar como uma função assíncrona se comporta. É necessário tratá-la como uma *promise* encadeando-a ao `then / catch` ou invocando-a através de `async / await`. Invocar uma função assíncrona sem estes cuidados o resultado esperado é apenas uma promessa não concluída, ou seja, o código síncrono não espera a conclusão e segue sem tratar o resultado.
 
-> [exercises-pre-aula.js]()
+> [exercises-pre-aula.js](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-09-javascript-ass%C3%ADncrono-e-promises/dia-2-javascript-promises/exercises-pre-aula.js)
 
 ### Exercícios pós-aula ao vivo
 
-> Este exercício é dinâmico sendo visualizado através do carregamento da página [**jokes.html**]() e do seu inspetor/console. O script desta página é o [**apiScript.js**](). O objetivo são dois: (1) usar a *API* de piadas [**icanhazdadjoke**](https://icanhazdadjoke.com/api) para buscar uma piada aleatória e jogá-la na página através da manipulação do *DOM* (2) enquanto que o código síncrono é executado fazendo chamadas para funções assíncronas.
+> Este exercício é dinâmico sendo visualizado através do carregamento da página [**jokes.html**](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-09-javascript-ass%C3%ADncrono-e-promises/dia-2-javascript-promises/jokes.html) e do seu inspetor/console. O script desta página é o [**apiScript.js**](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-09-javascript-ass%C3%ADncrono-e-promises/dia-2-javascript-promises/apiScript.js). O objetivo são dois: (1) usar a *API* de piadas [**icanhazdadjoke**](https://icanhazdadjoke.com/api) para buscar uma piada aleatória e jogá-la na página através da manipulação do *DOM* (2) enquanto que o código síncrono é executado fazendo chamadas para funções assíncronas.
 
 **1.** Como primeiro exercício, vamos usar a função `fetch`, para criar um site simples com um gerador de piadas ruins! Vamos usar a API do site [icanhazdadjoke.com](https://icanhazdadjoke.com/). Ele esclarece como fazer as requisições ao serviço de piadas. Usemos como base o script abaixo:
 

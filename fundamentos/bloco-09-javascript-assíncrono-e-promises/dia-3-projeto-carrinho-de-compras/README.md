@@ -4,7 +4,7 @@ Este projeto reuniu o conhecimento já adquirido incorporando agora os resultado
 
 > Os requisitos do projeto podem ser lidos no repositório da [**Trybe**](https://www.betrybe.com/): [Project Shopping Cart](https://github.com/tryber/sd-014-a-project-shopping-cart)
 
-> A página pode ser testada diretamente de uma cópia hospedada no GitHub Pages: [Projeto Carrinho de Compras]()
+> A página pode ser testada diretamente de uma cópia hospedada no GitHub Pages: [Projeto Carrinho de Compras](https://tiagosathler.github.io/projects/shopping-cart/index.html)
 
 > Os resultados do projeto podem ser vistos neste Pull Request: [Project Shopping Cart - Pull Request from TIAGO-SATHLER](https://github.com/tryber/sd-014-a-project-shopping-cart/pull/6)
 

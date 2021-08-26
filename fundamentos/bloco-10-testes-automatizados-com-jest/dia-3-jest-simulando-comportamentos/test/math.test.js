@@ -82,30 +82,5 @@ describe("5. Testando 'subtrair'", () => {
     expect(mockSubtrair).toHaveBeenCalled();
     expect(mockSubtrair).toHaveBeenCalledTimes(1);
     expect(mockSubtrair).toHaveBeenCalledWith(4, 2);
-  })
-
-  
-
-  // it("se retorna '8'", () => {
-  //   expect(mockSubtrair(2, 4)).toBe(8);
-  // });
-  // it("se foi chamada anteriormente", () => {
-  //   expect(mockSubtrair).toHaveBeenCalledTimes(1);
-  // });
-  // it("se os argumentos foram passados corretamente", () => {
-  //   expect(mockSubtrair).toHaveBeenCalledWith(2, 4);
-  // });
-
-  // mockSubtrair.mockRestore();
-  // mockSubtrair.mockReturnValue(8);
-
-  // it("se retorna '20'", () => {
-  //   expect(mockSubtrair(10, 2)).toBe(8);
-  // });
-  // it("se foi chamada anteriormente", () => {
-  //   expect(mockSubtrair).toHaveBeenCalledTimes(1);
-  // });
-  // it("se os argumentos foram passados corretamente", () => {
-  //   expect(mockSubtrair).toHaveBeenCalledWith(10, 2);
-  // });
+  })  
 });

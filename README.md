@@ -87,7 +87,7 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 
 - [x] 10-1: [_Primeiros passos no Jest_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-10-testes-automatizados-com-jest/dia-1-primeiros-passos-no-jest)
 - [x] 10-2: [_Jest - Testes Assíncronos_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-10-testes-automatizados-com-jest/dia-2-jest-testes-ass%C3%ADncronos)
-- [x] 10-3: _Jest - Simulando comportamentos_
+- [x] 10-3: [_Jest - Simulando comportamentos_](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-10-testes-automatizados-com-jest/dia-3-jest-simulando-comportamentos)
 - [x] 10-4: _[Projeto - Jest Assíncrono e Mocking](https://github.com/tiagosathler/trybe-exercises/tree/master/fundamentos/bloco-10-testes-automatizados-com-jest/dia-4-projeto-jest-ass%C3%ADncrono-e-mocking)_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:

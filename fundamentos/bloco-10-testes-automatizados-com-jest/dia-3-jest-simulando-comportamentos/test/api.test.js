@@ -18,15 +18,11 @@ const requestReturn = [
   }
 ];
 
-test("testando requisição caso a promise resolva", async () => {
-  apiURL = jest.fn().mockResolvedValue(requestReturn);
-
-  // Mesma aplicação dos testes do exemplo anterior...
-});
-
 describe("testando a requisição", () => {
   const apiURL = jest.spyOn( api, "fetchURL");
-  afterEach(apiURL.mockReset);
+  afterEach(() => {
+    apiURL.mockReset();
+  });
 
   test("testando requisição caso a promise resolva", async () => {
     apiURL.mockResolvedValue('requisição realizada com sucesso');
@@ -45,4 +41,12 @@ describe("testando a requisição", () => {
     expect(apiURL()).rejects.toMatch('a requisição falhou');
     expect(apiURL).toHaveBeenCalledTimes(1);
   });
+
+  test("testando o retorno de um objeto JSON", () => {
+    apiURL.mockResolvedValue(requestReturn);
+
+    expect(apiURL).toHaveBeenCalledTimes(0);
+    expect(apiURL()).resolves.toEqual(requestReturn);
+    expect(apiURL).toHaveBeenCalledTimes(1);
+  })
 });

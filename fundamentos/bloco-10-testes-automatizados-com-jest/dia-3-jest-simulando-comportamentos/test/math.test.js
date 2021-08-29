@@ -17,19 +17,19 @@ describe("2. Testando 'multiplicar'...", () => {
   it("se retorna um valor padrão", () => {
     expect(math.multiplicar()).toBe(10);
   });
+  it("se foi chamada duas vezes", () => {
+    expect(math.multiplicar).toHaveBeenCalledTimes(2);
+  });
 });
 
 describe("3. Testando 'somar'...", () => {
-  math.somar = jest.fn().mockImplementation((a, b) => a + b);
-  it("se foi chamada", () => {
-    math.somar(3, 4);
-    expect(math.somar).toHaveBeenCalled();
-  });
-  it("se retorna a soma", () => {
-    expect(math.somar(5, 6)).toBe(11);
+  math.somar = jest.fn().mockResolvedValue(5);
+
+  it("se resolve", async () => {
+    await expect(math.somar(1, 3)).resolves.toBe(5);
   });
   it("se os argumentos foram passados corretamente", () => {
-    expect(math.somar).toHaveBeenCalledWith(5, 6);
+    expect(math.somar).toHaveBeenCalledWith(1, 3);
   });
 });
 
@@ -55,19 +55,19 @@ describe("4. Testando 'dividir'", () => {
   });
   it("se na terceira chamada o retorno é o padrão", () => {
     expect(math.dividir()).toBe(15);
-  })
+  });
 });
 
 describe("5. Testando 'subtrair'", () => {
   const mockSubtrair = jest.spyOn(math, "subtrair");
 
   beforeEach(() => {
-    mockSubtrair.mockImplementation((a, b) => a * b);
-  })
+    
+  });
   
   afterEach(() => {
     mockSubtrair.mockRestore();
-  })
+  });
 
   it("...spy mock com returnvalue", () => {    
     mockSubtrair.mockReturnValue(20);
@@ -75,12 +75,17 @@ describe("5. Testando 'subtrair'", () => {
     expect(mockSubtrair).toHaveBeenCalled();
     expect(mockSubtrair).toHaveBeenCalledTimes(1);
     expect(mockSubtrair).toHaveBeenCalledWith(10, 5);
-  })
+  });
   
   it("...spy mock depois de restore com implementation", () => {
-    expect(mockSubtrair(4, 2)).toBe(8);
+    mockSubtrair.mockImplementation((a, b) => a * b);
+    expect(mockSubtrair(4, 2)).toBe(8);    
     expect(mockSubtrair).toHaveBeenCalled();
     expect(mockSubtrair).toHaveBeenCalledTimes(1);
     expect(mockSubtrair).toHaveBeenCalledWith(4, 2);
-  })  
+  });
+
+  it("...testa função original", () => {
+    expect(math.subtrair(5,2)).toBe(3);    
+  });
 });

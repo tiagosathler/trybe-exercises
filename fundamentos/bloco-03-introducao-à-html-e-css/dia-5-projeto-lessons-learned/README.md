@@ -10,3 +10,4 @@ Hora de aplicar os primeiros conhecimentos adquiridos até aqui: uso do Git e Gi
 
 > Os resultados do projeto podem ser vistos neste Pull Request: [Pull Request from TIAGO-SATHLER](https://github.com/tryber/sd-014-a-project-lessons-learned/pull/42)
 
+![](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-03-introducao-%C3%A0-html-e-css/dia-5-projeto-lessons-learned/Results-Project-Lessons-Learned.png)

@@ -9,6 +9,8 @@ Nste dia aprendemos a fazer *mock* de funções, especialmente quando queremos t
 #### Parte I
 
 > Mock de uma função API. Usando a função `fetchURL` do arquivo `api.js` retorna um array de 200 objetos. Testar esta função com mocks.
+> Função [api.js](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-10-testes-automatizados-com-jest/dia-3-jest-simulando-comportamentos/script/api.js) / Teste: [api.test.js](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-10-testes-automatizados-com-jest/dia-3-jest-simulando-comportamentos/test/api.test.js)
+
 ```
 function fetchURL() {
   return fetch('https://ghibliapi.herokuapp.com/species').then(response =>
@@ -25,6 +27,8 @@ module.exports = { fetchURL };
 #### Parte II
 
 > Utilize as funções do arquivo 'math.js' para realizar os exercícios:
+> Funções: [math.js](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-10-testes-automatizados-com-jest/dia-3-jest-simulando-comportamentos/script/math.js) / Testes [math.test.js](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-10-testes-automatizados-com-jest/dia-3-jest-simulando-comportamentos/test/math.test.js)
+
 ```
 const sleep = (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -49,6 +53,8 @@ module.exports = { somar, subtrair, multiplicar, dividir };
 5. Faça o *mock* da função __subtrair__ de maneira que seja possível restaurar sua implementação original. Defina como retorno padrão o valor '20'. Teste o número de chamadas e o retorno. Restaure a implementação original da função e teste sua execução.
 
 ### Exercícios pós-aula ao vivo
+
+> Funções: [exercises.js](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-10-testes-automatizados-com-jest/dia-3-jest-simulando-comportamentos/script/exercises.js) / Testes: [exercises.test.js](https://github.com/tiagosathler/trybe-exercises/blob/master/fundamentos/bloco-10-testes-automatizados-com-jest/dia-3-jest-simulando-comportamentos/test/exercises.test.js)
 
 1. Crie uma função que gere um número aleatório entre 0 e 100. Você irá criar também os testes para essa função. Utilizando o mock, defina o retorno padrão como 10. Teste se a função foi chamada, qual seu retorno e quantas vezes foi chamada.
 

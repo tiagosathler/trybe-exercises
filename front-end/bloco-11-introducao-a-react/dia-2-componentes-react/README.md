@@ -8,7 +8,7 @@ Neste dia aprendemos a criar componentes em __React__ usando *class*, fazer o us
 
 ### Exercícios pré-aula ao vivo
 
-Os exercícios do conteúdo asíncrono, antes da aula ao vivo foram feitos em uma uníca aplicação *React*. Basicamente, eles foram executados para fixar as *props*, composição de componentes, lista de componentes (criação dinâmica), *proptypes* e checagem de tipos.
+Os exercícios do conteúdo assíncrono, antes da aula ao vivo foram feitos em uma uníca aplicação *React*. Basicamente, eles foram executados para fixar as *props*, composição de componentes, lista de componentes (criação dinâmica), *proptypes* e checagem de tipos.
 
 > App React: [pre-aula](https://github.com/tiagosathler/trybe-exercises/tree/master/front-end/bloco-11-introducao-a-react/dia-2-componentes-react/pre-aula)
 

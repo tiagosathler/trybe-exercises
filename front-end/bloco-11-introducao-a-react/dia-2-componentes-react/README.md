@@ -6,14 +6,19 @@ Neste dia aprendemos a criar componentes em __React__ usando *class*, fazer o us
 
 > Os exercícios foram feitos a partir da criação de novas *app* em React, um para o conteúdo *pré-aula* e outro para os exercícios do *pós-aula ao vivo*.
 
-## Exercícios pré-aula ao vivo
+### Exercícios pré-aula ao vivo
 
 Os exercícios do conteúdo asíncrono, antes da aula ao vivo foram feitos em uma uníca aplicação *React*. Basicamente, eles foram executados para fixar as *props*, composição de componentes, lista de componentes (criação dinâmica), *proptypes* e checagem de tipos.
 
-## Exercícios pós-aula ao vivo
+> App React: [pre-aula](https://github.com/tiagosathler/trybe-exercises/tree/master/front-end/bloco-11-introducao-a-react/dia-2-componentes-react/pre-aula)
+
+### Exercícios pós-aula ao vivo
 
 Crie um novo projeto utilizando `npx create-react-app my-pokedex`
 Para realizar esse exercício, crie um arquivo chamado `data.js` no diretório `.src/` do projeto que você acabou de criar. Copie para esse arquivo o seguinte conteúdo:
+
+> App React: [my-pokedex](https://github.com/tiagosathler/trybe-exercises/tree/master/front-end/bloco-11-introducao-a-react/dia-2-componentes-react/my-pokedex)
+
 ```
 const pokemons = [
   {

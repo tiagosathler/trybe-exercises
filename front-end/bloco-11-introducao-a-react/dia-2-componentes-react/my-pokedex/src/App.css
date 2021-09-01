@@ -1,0 +1,22 @@
+.pokemons-container {
+  display: flex;
+  flex-flow: row wrap;    
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+  
+}
+
+.pokemon-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid black;
+  margin: 6px;
+  padding: 2px;
+  border-radius: 10px;
+  flex-basis: 50vh;
+  background-color: lightgrey;
+  box-shadow: 0 0 3px black;
+}

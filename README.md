@@ -92,11 +92,11 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
-##### :hourglass_flowing_sand: Bloco 11: Introdução - React
+##### :white_check_mark: Bloco 11: Introdução - React
 
 - [x] 11-1: _'Hello, world!' no React!_
 - [x] 11-2: [_Componentes React_](https://github.com/tiagosathler/trybe-exercises/tree/master/front-end/bloco-11-introducao-a-react/dia-2-componentes-react)
-- [ ] 11-3: _[Projeto - Movie Cards Library]()_
+- [x] 11-3: _[Projeto - Movie Cards Library](https://github.com/tiagosathler/trybe-exercises/tree/master/front-end/bloco-11-introducao-a-react/dia-3-projeto-movie-cards-library)_
 
 ##### :hourglass_flowing_sand: Bloco 12: React
 

@@ -8,4 +8,4 @@ Este é o primeiro projeto no __Módulo 2 - Front End__ com o uso de __React__. 
 
 > Os resultados do projeto podem ser vistos neste Pull Request: [Movie Cards Library Project](https://github.com/tryber/sd-014-a-project-movie-cards-library/pull/17)
 
-![](https://github.com/tiagosathler/trybe-exercises/tree/master/front-end/bloco-11-introducao-a-react/dia-3-projeto-movie-cards-library/Results-Movie-Cards-Library.png)
+![](https://github.com/tiagosathler/trybe-exercises/blob/master/front-end/bloco-11-introducao-a-react/dia-3-projeto-movie-cards-library/Results-Movie-Cards-Library.png)

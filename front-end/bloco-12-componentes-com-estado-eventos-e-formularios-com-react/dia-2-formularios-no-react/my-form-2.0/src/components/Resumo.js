@@ -1,27 +1,25 @@
 import React from 'react';
 
-class Endereco extends React.Component {
+class Resumo extends React.Component {
   render() {
     const { name, value, eventListener } = this.props;
     return (
-      <label htmlFor="faddress">
-        Endereço:
+      <label htmlFor="fcurriculum">
+        Currículo:
         <textarea
-          id="faddress"
+          id="fcurriculum"
           name={ name }
           value={ value }
           onChange={ eventListener }
-          placeholder="Seu endereço"
-          maxLength="200"
-          autoComplete="true"
-          rows="2"
+          placeholder="Descreva sua experiência"
+          maxLength="1000"
+          rows="5"
           cols="30"
           required
         />
       </label>
-
     );
   }
 }
 
-export default Endereco;
+export default Resumo;

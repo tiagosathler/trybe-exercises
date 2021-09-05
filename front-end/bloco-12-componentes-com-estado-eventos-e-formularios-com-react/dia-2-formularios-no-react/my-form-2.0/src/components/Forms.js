@@ -6,6 +6,9 @@ import Endereco from './Endereco';
 import Cidade from './Cidade';
 import Estado from './Estado';
 import Housing from './Housing';
+import Resumo from './Resumo';
+import Cargo from './Cargo';
+import DescricaoCargo from './DescricaoCargo';
 
 class Forms extends React.Component {
   constructor(props) {
@@ -19,16 +22,19 @@ class Forms extends React.Component {
       city: '',
       state: '',
       housing: '',
+      curriculum: '',
+      role: '',
+      mouseStatus: false,
+      roleDescription: '',
     };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleBlur = this.handleBlur.bind(this);
+    this.handleMouseEnter = this.handleMouseEnter.bind(this);
   }
 
   handleChange({ target }) {
     const { name, value } = target;
-    // console.log(target);
-    // const value = target.checked ? checked : target.value;
     this.setState({
       [name]: value,
     });
@@ -42,8 +48,28 @@ class Forms extends React.Component {
     });
   }
 
+  handleMouseEnter() {
+    const { mouseStatus } = this.state;
+    if (!mouseStatus) {
+      window.alert('Preencha com cuidado esta informação');
+      this.setState({ mouseStatus: true });
+    }
+  }
+
   render() {
-    const { fullName, email, cpf, address, city, state, housing } = this.state;
+    const {
+      fullName,
+      email,
+      cpf,
+      address,
+      city,
+      state,
+      housing,
+      curriculum,
+      role,
+      mouseStatus,
+      roleDescription } = this.state;
+
     return (
       <form className="my-form">
         <fieldset>
@@ -89,6 +115,29 @@ class Forms extends React.Component {
           <Housing
             name="housing"
             checked={ housing }
+            eventListener={ this.handleChange }
+          />
+        </fieldset>
+        <fieldset>
+          <legend>Dados sobre o último emprego</legend>
+          <Resumo
+            name="curriculum"
+            value={ curriculum }
+            eventListener={ this.handleChange }
+          />
+          <br />
+          <Cargo
+            name="role"
+            value={ role }
+            mouseStatus={ mouseStatus }
+            eventListeners={ {
+              change: this.handleChange,
+              mouseEnter: this.handleMouseEnter } }
+          />
+          <br />
+          <DescricaoCargo
+            name="roleDescription"
+            value={ roleDescription }
             eventListener={ this.handleChange }
           />
         </fieldset>

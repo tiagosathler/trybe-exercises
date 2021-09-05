@@ -1,5 +1,8 @@
 import React from 'react';
 import Nome from './Nome';
+import Email from './Email';
+import Cpf from './Cpf';
+import Endereco from './Endereco';
 
 class Forms extends React.Component {
   constructor(props) {
@@ -7,6 +10,12 @@ class Forms extends React.Component {
 
     this.state = {
       fullName: '',
+      email: '',
+      cpf: '',
+      address: '',
+      // city: '',
+      // state: '',
+      // housing: 'house',
     };
 
     this.handleClick = this.handleClick.bind(this);
@@ -20,7 +29,7 @@ class Forms extends React.Component {
   }
 
   render() {
-    const { fullName } = this.state;
+    const { fullName, email, cpf, address } = this.state;
     return (
       <form className="my-form">
         <fieldset>
@@ -30,6 +39,25 @@ class Forms extends React.Component {
             value={ fullName }
             eventListener={ this.handleClick }
           />
+          <br />
+          <Email
+            name="email"
+            value={ email }
+            eventListener={ this.handleClick }
+          />
+          <br />
+          <Cpf
+            name="cpf"
+            value={ cpf }
+            eventListener={ this.handleClick }
+          />
+          <br />
+          <Endereco
+            name="address"
+            value={ address }
+            eventListener={ this.handleClick }
+          />
+
         </fieldset>
       </form>
     );

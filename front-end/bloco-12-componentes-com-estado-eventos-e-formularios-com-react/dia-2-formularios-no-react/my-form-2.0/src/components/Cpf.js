@@ -1,19 +1,19 @@
 import React from 'react';
 
-class Email extends React.Component {
+class Cpf extends React.Component {
   render() {
     const { value, eventListener } = this.props;
     return (
-      <label htmlFor="femail">
-        Email:
+      <label htmlFor="fcpf">
+        CPF:
         <input
-          id="femail"
-          type="email"
-          name="email"
+          id="fcpf"
+          type="text"
+          name="cpf"
           value={ value }
           onChange={ eventListener }
-          placeholder="Seu email"
-          maxLength="50"
+          placeholder="Somente números"
+          maxLength="11"
           required="true"
         />
       </label>
@@ -22,4 +22,4 @@ class Email extends React.Component {
   }
 }
 
-export default Email;
+export default Cpf;

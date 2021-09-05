@@ -14,7 +14,7 @@ class Nome extends React.Component {
           value={ value.toUpperCase() }
           placeholder="Escreva seu nome completo"
           onChange={ eventListener }
-          required="true"
+          required
         />
       </label>
     );

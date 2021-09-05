@@ -2,18 +2,18 @@ import React from 'react';
 
 class Endereco extends React.Component {
   render() {
-    const { value, eventListener } = this.props;
+    const { name, value, eventListener } = this.props;
     return (
       <label htmlFor="faddress">
         Endereço:
         <textarea
           id="faddress"
-          name="address"
+          name={ name }
           value={ value }
           onChange={ eventListener }
           placeholder="Seu endereço"
           maxLength="200"
-          required="true"
+          required
           autoComplete="true"
           rows="2"
           cols="30"

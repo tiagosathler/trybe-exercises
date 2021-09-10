@@ -1,4 +1,4 @@
-# Bloco 13 - Dia 3 - Projeto - Movie Cards Library Stateful
+# Bloco 12 - Dia 3 - Projeto - Movie Cards Library Stateful
 
 Este projeto é semelhante ao anterior ([Movie Cards Library](https://github.com/tiagosathler/trybe-exercises/tree/master/front-end/bloco-11-introducao-a-react/dia-3-projeto-movie-cards-library)), porém agora usando componenentes com estado e uso de formulários em React. 
 
@@ -14,4 +14,4 @@ Eu adicionei outra funcionalidade que não estava nos requisitos que é a altern
 
 > Os resultados do projeto podem ser vistos neste Pull Request: [Movie Cards Library Project](https://github.com/tryber/sd-014-a-project-movie-cards-library-stateful/pull/24)
 
-![]()
+![](https://github.com/tiagosathler/trybe-exercises/blob/master/front-end/bloco-12-componentes-com-estado-eventos-e-formularios-com-react/dia-3-projeto-movie-cards-library-stateful/Results-Movie-Cards-Library-Stateful.png)

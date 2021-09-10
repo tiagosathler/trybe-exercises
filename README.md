@@ -98,11 +98,11 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 - [x] 11-2: [_Componentes React_](https://github.com/tiagosathler/trybe-exercises/tree/master/front-end/bloco-11-introducao-a-react/dia-2-componentes-react)
 - [x] 11-3: _[Projeto - Movie Cards Library](https://github.com/tiagosathler/trybe-exercises/tree/master/front-end/bloco-11-introducao-a-react/dia-3-projeto-movie-cards-library)_
 
-##### :hourglass_flowing_sand: Bloco 12: React
+##### :white_check_mark: Bloco 12: React
 
-- [ ] 12-1: _Components com estado_
-- [ ] 12-2: _Eventos e formulários no React_
-- [ ] 12-3: _[Projeto - Movie Cards Library Stateful]()_
+- [x] 12-1: _Components com estado_
+- [x] 12-2: _Eventos e formulários no React_
+- [x] 12-3: _[Projeto - Movie Cards Library Stateful]()_
 
 ##### :hourglass_flowing_sand: Bloco 13: React
 

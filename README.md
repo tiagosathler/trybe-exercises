@@ -102,7 +102,7 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 
 - [x] 12-1: _Components com estado_
 - [x] 12-2: _Eventos e formulários no React_
-- [x] 12-3: _[Projeto - Movie Cards Library Stateful]()_
+- [x] 12-3: _[Projeto - Movie Cards Library Stateful](https://github.com/tiagosathler/trybe-exercises/tree/master/front-end/bloco-12-componentes-com-estado-eventos-e-formularios-com-react/dia-3-projeto-movie-cards-library-stateful)_
 
 ##### :hourglass_flowing_sand: Bloco 13: React
 

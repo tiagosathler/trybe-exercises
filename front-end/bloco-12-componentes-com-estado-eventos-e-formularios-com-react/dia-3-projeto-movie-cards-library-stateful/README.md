@@ -12,6 +12,6 @@ Eu adicionei outra funcionalidade que não estava nos requisitos que é a altern
 
 > A página pode ser testada diretamente de uma cópia hospedada no GitHub Pages: [Projeto Movie Cards Library Stateful](https://tiagosathler.github.io/projects/movie-cards-library-stateful/index.html)
 
-> Os resultados do projeto podem ser vistos neste Pull Request: [Movie Cards Library Project](https://github.com/tryber/sd-014-a-project-movie-cards-library-stateful/pull/24)
+> Os resultados do projeto podem ser vistos neste Pull Request: [Movie Cards Library Stateful Project](https://github.com/tryber/sd-014-a-project-movie-cards-library-stateful/pull/24)
 
 ![](https://github.com/tiagosathler/trybe-exercises/blob/master/front-end/bloco-12-componentes-com-estado-eventos-e-formularios-com-react/dia-3-projeto-movie-cards-library-stateful/Results-Movie-Cards-Library-Stateful.png)

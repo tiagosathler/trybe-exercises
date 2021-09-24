@@ -104,19 +104,19 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 - [x] 12-2: _Eventos e formulários no React_
 - [x] 12-3: _[Projeto - Movie Cards Library Stateful](https://github.com/tiagosathler/trybe-exercises/tree/master/front-end/bloco-12-componentes-com-estado-eventos-e-formularios-com-react/dia-3-projeto-movie-cards-library-stateful)_
 
-##### :hourglass_flowing_sand: Bloco 13: React
+##### :white_check_mark: Bloco 13: React
 
 - [x] 13-1: _Melhorando o reuso de componentes: props.children e PropTypes_
 - [x] 13-2: _Ciclo de vida de componentes em React_
 - [x] 13-3: _React Router_
 - [x] 13-4: _[Projeto - Movie Cards Library CRUD]()_
 
-##### :hourglass_flowing_sand: Bloco 14: Metodologias Ágeis
+##### :white_check_mark: Bloco 14: Metodologias Ágeis
 
 - [x] 14-1: _Metodologias Ágeis_
 - [x] 14-2: _[Projeto - Frontend Online Store]()_
 
-##### :hourglass_flowing_sand: Bloco 15: Testes em React
+##### :white_check_mark: Bloco 15: Testes em React
 
 - [ ] 15-1: _Testando React com a React Testing Library_
 - [ ] 15-2: _Testando React com a React Testing Library - Parte 2_

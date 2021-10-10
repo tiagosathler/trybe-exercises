@@ -101,7 +101,7 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 ##### :white_check_mark: Bloco 12: React
 
 - [x] 12-1: _Components com estado_
-- [x] 12-2: _[Eventos e formulários no React]_(https://github.com/tiagosathler/trybe-exercises/tree/master/front-end/bloco-12-componentes-com-estado-eventos-e-formularios-com-react/dia-2-formularios-no-react/my-form-2.0)
+- [x] 12-2: _[Eventos e formulários no React](https://github.com/tiagosathler/trybe-exercises/tree/master/front-end/bloco-12-componentes-com-estado-eventos-e-formularios-com-react/dia-2-formularios-no-react/my-form-2.0)_
 - [x] 12-3: _[Projeto - Movie Cards Library Stateful](https://github.com/tiagosathler/trybe-exercises/tree/master/front-end/bloco-12-componentes-com-estado-eventos-e-formularios-com-react/dia-3-projeto-movie-cards-library-stateful)_
 
 ##### :white_check_mark: Bloco 13: React

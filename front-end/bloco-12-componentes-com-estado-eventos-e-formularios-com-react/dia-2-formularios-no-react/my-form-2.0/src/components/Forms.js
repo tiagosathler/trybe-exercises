@@ -13,8 +13,8 @@ import Submit from './Submit';
 import Results from './Results';
 
 class Forms extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
 
     this.state = {
       fullName: '',
@@ -29,12 +29,12 @@ class Forms extends React.Component {
       mouseStatus: false,
       roleDescription: '',
       submit: false,
+      user: {},
     };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleBlur = this.handleBlur.bind(this);
     this.handleMouseEnter = this.handleMouseEnter.bind(this);
-    // this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange({ target }) {
@@ -60,30 +60,6 @@ class Forms extends React.Component {
     }
   }
 
-  // handleSubmit() {
-  //   const {
-  //     fullName,
-  //     // email,
-  //     // cpf,
-  //     // address,
-  //     // city,
-  //     // state,
-  //     // housing,
-  //     // curriculum,
-  //     // role,
-  //     // mouseStatus,
-  //     // roleDescription
-  //   } = this.state;
-  //   return (
-  //     <div>
-  //       <p>
-  //         Nome:
-  //         { fullName }
-  //       </p>
-  //     </div>
-  //   );
-  // }
-
   render() {
     const {
       fullName,
@@ -98,6 +74,7 @@ class Forms extends React.Component {
       mouseStatus,
       roleDescription,
       submit,
+      user,
     } = this.state;
 
     return (
@@ -106,7 +83,21 @@ class Forms extends React.Component {
           className="my-form"
           onSubmit={ (event) => {
             event.preventDefault();
-            this.setState({ submit: true });
+            const saveUser = { ...this.state };
+            this.setState({
+              fullName: '',
+              email: '',
+              cpf: '',
+              address: '',
+              city: '',
+              state: '',
+              housing: '',
+              curriculum: '',
+              role: '',
+              roleDescription: '',
+              submit: true,
+              user: { ...saveUser },
+            });
           } }
         >
           <fieldset>
@@ -179,14 +170,34 @@ class Forms extends React.Component {
             />
             <Submit
               name="submit"
-              eventListener={ this.handleSubmit }
             />
+            <button
+              type="button"
+              onClick={ () => {
+                this.setState({
+                  fullName: '',
+                  email: '',
+                  cpf: '',
+                  address: '',
+                  city: '',
+                  state: '',
+                  housing: '',
+                  curriculum: '',
+                  role: '',
+                  roleDescription: '',
+                  submit: false,
+                  user: { },
+                });
+              } }
+            >
+              Limpar
+            </button>
           </fieldset>
         </form>
         <section>
           <Results
             submit={ submit }
-            form={ this.state }
+            form={ user }
           />
         </section>
       </main>

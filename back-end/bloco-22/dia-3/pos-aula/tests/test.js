@@ -6,11 +6,11 @@ const {
 } = require('../services/index');
 
 describe("1. Testando 'testNumberSign'", () => {
-  it("1.1. se o parametro 'number' existe"), () => {
+  it("1.1. retorna 'null' se o parametro 'number' não for passado", () => {
     const result = testNumberSign();
     expect(result).to.be.equal(null);
-  }
-  it("1.2. se o parametro 'number' é um número", () => {
+  })
+  it("1.2. retorna 'null' se o parametro 'number' não for número", () => {
     const result = testNumberSign('oi');
     expect(result).to.be.equal(null);
   })

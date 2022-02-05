@@ -1,5 +1,5 @@
 {
-  "name": "b22-d3-hello-express",
+  "name": "b22-d4-recipes-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,10 +10,10 @@
   "keywords": [],
   "author": "Tiago Sathler",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.2"
-  },
   "devDependencies": {
     "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.2"
   }
 }

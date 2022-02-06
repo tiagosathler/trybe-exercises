@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const bodyParser = require('body-parser');
 const app = express();
 
 const recipes = [
@@ -17,14 +18,31 @@ const drinks = [
   { id: 6, name: 'Água Mineral 500 ml', price: 5.0 },
 ];
 
-app.use(cors());
+app.use(cors(), bodyParser.json());
 
+app
+  .route('/validateToken')
+  .get((req, res) => {
+    console.log('Authorization: ', req.headers.authorization);
+    const token = req.headers.authorization;
+    if(token === undefined) return res.status(401).json({ message: 'Token is required'});
+    if(token.length !== 16) return res.status(401).json({ message: 'Invalid Token'});
+    res.status(200).json({ message: 'Valid Token! Welcome again'});
+  });
+
+
+  //ROUTE: RECIPES
 app
   .route('/recipes')
   .get((_req, res) => {
     const ptColl = new Intl.Collator('pt');
     res.json(recipes.sort((a, b) => ptColl.compare(a.name, b.name)));
-  });
+  })
+  .post((req, res) => {
+    const { body: { id, name, price, waitTime }} = req;
+    recipes.push({ id, name, price, waitTime });
+    res.status(201).json({ message: 'Recipe created successfully! '});
+  })
 
 app
   .route('/recipes/search')
@@ -46,14 +64,36 @@ app
     const found = recipes.find(({id: drinkId}) => drinkId === +id);
     if(!found) return res.status(404).json({message: 'Recipe not found!'})
     res.status(200).json(found);
+  })
+  .put((req, res) => {
+    const { params: { id } } = req;
+    const { name, price, waitTime } = req.body;
+    const index = recipes.findIndex(({ id: recipeId }) => recipeId === +id );
+    if (index < 0) return res.status(404).json({ message: 'Recipe not found!'});
+    recipes[index] = { id: +id, name, price, waitTime };
+    res.status(204).end();
+  })
+  .delete((req, res) => {
+    const { params: { id } } = req;    
+    const index = recipes.findIndex(({ id: recipeId }) => recipeId === +id );
+    if (index < 0) return res.status(404).json({ message: 'Recipe not found!'});
+    recipes.splice(index, 1);
+    res.status(204).end();
   });
 
+
+  //ROUTE: DRINKS
 app
   .route('/drinks')
   .get((_req, res) => {
-  const ptColl = new Intl.Collator('pt');
-  res.status(200).json(drinks.sort((a, b) => ptColl.compare(a.name, b.name)));
-})
+    const ptColl = new Intl.Collator('pt');
+    res.status(200).json(drinks.sort((a, b) => ptColl.compare(a.name, b.name)));
+  })
+  .post((req, res) => {
+    const { body: { id, name, price }} = req;
+    drinks.push({ id, name, price });
+    res.status(201).json({ message: 'Drink created successfully! '});
+  })
 
 app
   .route('/drinks/search')
@@ -74,6 +114,26 @@ app
     if(!found) return res.status(404).json({ message: 'Drink not found'});
     res.status(200).json(found);
   })
+  .put((req, res) => {
+    const { params: { id } } = req;
+    const { name, price } = req.body;
+    const index = drinks.findIndex(({ id: recipeId }) => recipeId === +id );
+    if (index < 0) return res.status(404).json({ message: 'Recipe not found!'});
+    drinks[index] = { id: +id, name, price };
+    res.status(204).end();
+  })
+  .delete((req, res) => {
+    const { params: { id } } = req;    
+    const index = drinks.findIndex(({ id: recipeId }) => recipeId === +id );
+    if (index < 0) return res.status(404).json({ message: 'Recipe not found!'});
+    drinks.splice(index, 1);
+    res.status(204).end();
+  });
+
+  // UNDEFINED ROUTE
+app.all('*', (req, res) => {
+  res.status(404).json({ message: `'${req.path}' doesn't exist!`})
+})
 
 app.listen(3001, () => {
   console.log('Aplicação ouvindo na porta 3001')

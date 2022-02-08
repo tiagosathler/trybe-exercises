@@ -5,6 +5,7 @@ const {
   authMiddleware,
   validadeName,
   validadePrice,
+  errorLog,
 } = require('../middlewares');
 
 const router = express.Router();
@@ -15,7 +16,7 @@ const recipes = [
   { id: 3, name: 'Macarrão com molho branco', price: 35.0, waitTime: 25 },
 ];
 
-router.use(authMiddleware);
+router.use(authMiddleware, errorLog);
 
 router.get('/', (_req, res) => {
   res.status(200).json(recipes);

@@ -2,8 +2,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
+const authMiddleware = require('./middlewares/auth-middleware');
+
 const app = express();
-app.use(cors, bodyParser.json());
+app.use(cors(), bodyParser.json());
 
 const recipes = [
   { id: 1, name: 'Lasanha', price: 40.0, waitTime: 30 },
@@ -11,7 +13,31 @@ const recipes = [
   { id: 3, name: 'Macarrão com molho branco', price: 35.0, waitTime: 25 },
 ];
 
-app.get('/recipes', (req, res) => {
+const validadeName = (req, res, next) => {
+  const { name } = req.body;
+  if (name === undefined || name === '') {
+    return res.status(400).json({ message: 'Invalid name!' });
+  }
+  next();
+};
+
+const validadePrice = (req, res, next) => {
+  const { body: { price } } = req;
+  if (price === undefined) return res.status(400).json({ message: 'Price is required!' });
+  if (Number.isNaN(Number(price))) {
+    return res.status(400).json({ message: 'Price must be a number!' });
+  }
+  if (+price < 0) return res.status(400).json({ message: 'Price must be a positive number!' });
+  next();
+};
+
+app.get('/open', (req, res) => {
+  res.send('open!');
+});
+
+app.use(authMiddleware);
+
+app.get('/recipes', (_req, res) => {
   res.status(200).json(recipes);
 });
 
@@ -30,23 +56,29 @@ app.get('/recipes/:id', (req, res) => {
   res.status(200).json(recipe);
 });
 
-app.post('/recipes', (req, res) => {
-  const { id, name, price, waitTime } = req.body;
-  recipes.push({ id, name, price, waitTime });
-  res.status(201).json({ message: 'Recipe created successfully!' });
-});
+app.post('/recipes/:id',
+  validadeName,
+  validadePrice,
+  (req, res, _next) => {
+    const { id, name, price, waitTime } = req.body;
+    recipes.push({ id, name, price, waitTime });
+    res.status(201).json({ message: 'Recipe created successfully!' });
+  });
 
-app.put('/recipes/:id', (req, res) => {
-  const { id } = req.params;
-  const { name, price, waitTime } = req.body;
-  const recipeIndex = recipes.findIndex((r) => r.id === parseInt(id, 10));
+app.put('/recipes/:id',
+  validadeName,
+  validadePrice,
+  (req, res) => {
+    const { id } = req.params;
+    const { name, price, waitTime } = req.body;
+    const recipeIndex = recipes.findIndex((r) => r.id === parseInt(id, 10));
 
-  if (recipeIndex === -1) return res.status(404).json({ message: 'Recipe not found!' });
+    if (recipeIndex === -1) return res.status(404).json({ message: 'Recipe not found!' });
 
-  recipes[recipeIndex] = { ...recipes[recipeIndex], name, price, waitTime };
+    recipes[recipeIndex] = { ...recipes[recipeIndex], name, price, waitTime };
 
-  res.status(204).end();
-});
+    res.status(204).end();
+  });
 
 app.delete('/recipes/:id', (req, res) => {
   const { id } = req.params;

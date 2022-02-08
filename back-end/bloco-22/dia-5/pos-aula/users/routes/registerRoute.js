@@ -4,12 +4,15 @@ const {
   validateEmail,
   validatePassword,
   createUser,
+  createToken,
 } = require('../middlewares');
 
 const router = express.Router();
 
-router.use(validateName, validateEmail, validatePassword);
+router.use(validateEmail, validatePassword);
 
-router.post('/register', createUser);
+router.post('/register', validateName, createUser);
+
+router.post('/login', createToken);
 
 module.exports = router;

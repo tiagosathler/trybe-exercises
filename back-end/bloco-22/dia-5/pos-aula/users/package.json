@@ -19,6 +19,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.2",
     "express-rescue": "^1.1.31",
+    "node-fetch": "^2.6.7",
     "validator": "^13.7.0"
   }
 }

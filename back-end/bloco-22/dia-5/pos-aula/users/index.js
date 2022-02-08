@@ -2,13 +2,16 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
-const router = require('./routes/registerRoute');
+const registerRoute = require('./routes/registerRoute');
+const btcRoute = require('./routes/btcRoute');
 
 const app = express();
 
 app.use(cors(), bodyParser.json());
 
-app.use('/user', router);
+app.use('/user', registerRoute);
+
+app.use('/btc', btcRoute);
 
 app.all('/*', (req, res) => {
   res.status(404).json({ message: 'Endpoint not found' });

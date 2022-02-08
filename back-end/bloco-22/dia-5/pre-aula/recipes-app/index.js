@@ -14,7 +14,7 @@ const recipes = [
 ];
 
 const validadeName = (req, res, next) => {
-  const { name } = req.body;
+  const { body: name } = req;
   if (name === undefined || name === '') {
     return res.status(400).json({ message: 'Invalid name!' });
   }
@@ -60,8 +60,10 @@ app.post('/recipes/:id',
   validadeName,
   validadePrice,
   (req, res, _next) => {
-    const { id, name, price, waitTime } = req.body;
-    recipes.push({ id, name, price, waitTime });
+    const { id } = req.params;
+    const { name, price, waitTime } = req.body;
+    const { username } = req.user;
+    recipes.push({ id: +id, name, price, waitTime, chef: username });
     res.status(201).json({ message: 'Recipe created successfully!' });
   });
 

@@ -2,21 +2,16 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
-const Author = require('./models/Author');
+const Routes = require('./routes');
 
 const app = express();
 
-const PORT = process.env.PORT || 3001;
-
 app.use(cors(), bodyParser.json());
 
-app.get('/authors',
-  async (req, res) => {
-    const authors = await Author.getAll();
+app.use('/authors', Routes.authors);
+app.use('/books', Routes.books);
 
-    res.status(200).json(authors);
-  },
-);
+const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, () => {
   console.log(`ouvindo na porta ${PORT}`);

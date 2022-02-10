@@ -19,11 +19,30 @@ const serialeze = (authorData) => ({
   });
 
 const getAll = async () => {
-  const [result] = await connection
-    .execute('SELECT id, first_name, last_name, middle_name, last_name FROM authors');
-  return result.map(serialeze).map(getNewAuthor);  
+  try {
+    const [rows] = await connection
+      .execute('SELECT id, first_name, last_name, middle_name, last_name FROM authors');
+    return rows.map(serialeze).map(getNewAuthor);  
+  } catch (err) {
+    console.log('MySQL: ', err.message);
+    return { err };
+  }
+};
+
+const getById = async (id) => {
+  try {
+    const [rows] = await connection
+      .execute('SELECT id, first_name, last_name, middle_name, last_name FROM authors WHERE id = ?',
+        [id]);
+    if (rows.length === 0) return null;
+    return rows.map(serialeze).map(getNewAuthor)[0];
+  } catch (err) {
+    console.log('MySQL: ', err.message);
+    return { err };
+  }
 };
 
 module.exports = {
   getAll,
+  getById,
 };

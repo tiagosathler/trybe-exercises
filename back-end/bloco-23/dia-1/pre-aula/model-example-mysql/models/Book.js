@@ -8,11 +8,33 @@ const serealize = ((obj) => ({
 );
 
 const getAll = async () => {
-  const [rows] = await connection.execute('SELECT id, title, author_id FROM books');
+  try {
+    const [rows] = await connection
+      .execute('SELECT id, title, author_id FROM books');
   
-  return rows.map(serealize);
+    if (rows.length === 0) return null;
+    
+    return rows.map(serealize);
+  } catch (err) {
+    console.log('MySQL: ', err.message);
+    return { err };
+  }
+};
+
+const getByAuhorId = async (id) => {
+  try {
+    const [rows] = await connection
+      .execute('SELECT id, title, author_id FROM books WHERE id = ?', [id]);
+  
+    if (rows.length === 0) return null;
+    return rows.map(serealize);
+  } catch (err) {
+    console.log('MySQL: ', err.message);
+    return { err };
+  }
 };
 
 module.exports = {
   getAll,
+  getByAuhorId,
 };

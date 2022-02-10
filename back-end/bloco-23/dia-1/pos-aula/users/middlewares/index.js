@@ -8,11 +8,11 @@ const handleError = (err, _req, res, _next) => {
   }
 
   console.log(err);
-  
+
   return res.status(500).json({ error: true, message: 'internal error ' });
 };
 
-const validadeId = (req, _res, next) => {
+const idValidate = (req, _res, next) => {
   const { params: { id } } = req;
 
   if (Number.isNaN(Number(id))) {
@@ -103,7 +103,7 @@ const updateUser = async (req, res, next) => {
 
 module.exports = {
   handleError,
-  validadeId,
+  idValidate,
   nameValidate,
   emailValidate,
   passwordValidate,

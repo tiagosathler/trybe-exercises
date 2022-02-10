@@ -6,7 +6,7 @@ router.get('/',
 Middlewares.getAllUsers);
 
 router.get('/:id',
-  Middlewares.validadeId,
+  Middlewares.idValidate,
   Middlewares.checkUserId,
   Middlewares.getUserById);
 
@@ -20,7 +20,7 @@ router.post('/',
   Middlewares.createUser);
 
 router.put('/:id',
-  Middlewares.validadeId,
+  Middlewares.idValidate,
   Middlewares.checkUserId,
   Middlewares.updateUser);
 

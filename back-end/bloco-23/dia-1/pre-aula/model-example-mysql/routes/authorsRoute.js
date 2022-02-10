@@ -2,6 +2,14 @@ const router = require('express').Router();
 
 const Author = require('../models/Author');
 
+/* eslint complexity: ["error", 7] */
+const isValid = ({ firstName, middleName = undefined, lastName }) => {
+  if (!firstName || typeof firstName !== 'string') return false;
+  if (!lastName || typeof lastName !== 'string') return false;
+  if (middleName && typeof middleName !== 'string') return false;
+  return true;
+};
+
 router.get('/',
   async (_req, res, next) => {
     const authors = await Author.getAll();
@@ -31,8 +39,23 @@ router.get('/:id',
     if (author.err) {
       return next({ statusCode: 500, message: 'internal error accessing the database' });
     }
-    
+
     res.status(200).json(author);
+  });
+
+router.post('/',
+  async (req, res, next) => {
+    const { body: { firstName, middleName, lastName } } = req;
+    if (!isValid({ firstName, lastName, middleName })) {
+      return next({ statusCode: 400, message: 'invalid body requisition' });
+    }
+    const author = await Author.createAuthor({ firstName, middleName, lastName });
+    
+    if (author.err) {
+      return next({ statusCode: 500, message: 'internal error creating date into the database' });
+    }
+
+    res.status(201).json({ message: 'author was create' });
   });
 
 module.exports = router;

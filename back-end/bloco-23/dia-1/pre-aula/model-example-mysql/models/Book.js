@@ -16,7 +16,7 @@ const getAll = async () => {
     
     return rows.map(serealize);
   } catch (err) {
-    console.log('MySQL: ', err.message);
+    console.log('MySQL select: ', err.message);
     return { err };
   }
 };
@@ -29,7 +29,19 @@ const getByAuhorId = async (id) => {
     if (rows.length === 0) return null;
     return rows.map(serealize);
   } catch (err) {
-    console.log('MySQL: ', err.message);
+    console.log('MySQL select: ', err.message);
+    return { err };
+  }
+};
+
+const createBook = async ({ authorId, title }) => {
+  try {
+    const query = 'INSERT INTO model_example.books'
+      + '(title, author_id) VALUES (?, ?)';
+    const [rows] = await connection.execute(query, [title, authorId]);
+    return rows;
+  } catch (err) {
+    console.log('MySQL insert: ', err.message);
     return { err };
   }
 };
@@ -37,4 +49,5 @@ const getByAuhorId = async (id) => {
 module.exports = {
   getAll,
   getByAuhorId,
+  createBook,
 };

@@ -6,12 +6,15 @@ const handleError = (err, _req, res, _next) => {
   if (err.statusCode && err.message) {
     return res.status(err.statusCode).json({ error: true, message: err.message });
   }
+
   console.log(err);
+  
   return res.status(500).json({ error: true, message: 'internal error ' });
 };
 
 const validadeId = (req, _res, next) => {
   const { params: { id } } = req;
+
   if (Number.isNaN(Number(id))) {
     return next({ statusCode: 400, message: 'id is not a number' });
   }
@@ -41,7 +44,7 @@ const emailValidate = (req, _res, next) => {
   next();
 };
 
-const passwordValidate = (req, res, next) => {
+const passwordValidate = (req, _res, next) => {
   const { body: { password } } = req;
   if (!password) {
     return next({ statusCode: 400, message: 'password is required' });
@@ -61,7 +64,7 @@ const createUser = async (req, res, next) => {
   res.status(201).json({ id: user.insertId, firstName, lastName, email });
 };
 
-const getAllUsers = async (req, res, next) => {
+const getAllUsers = async (_req, res, next) => {
   const users = await Users.getAllUsers();
 
   if (users.err) return next(users.err);

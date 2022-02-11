@@ -4,6 +4,8 @@
   },
   "extends": "trybe-backend",
   "rules": {
-    "sonarjs/no-duplicate-string": ["error", 5]
+    "sonarjs/no-duplicate-string": ["error", 5],
+    "sonarjs/cognitive-complexity": ["error", 7],
+    "complexity": ["error", 7]
   }
 }

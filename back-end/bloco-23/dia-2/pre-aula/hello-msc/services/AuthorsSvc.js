@@ -29,7 +29,14 @@ const getAll = async () => {
 const findById = async (id) => {
   const author = await AuthorsMod.findById(id);
 
-  if (!author) return null;
+  if (!author) {
+    return {
+      error: {
+        code: 404,
+        message: `Não foi possível encontrar uma pessoa autora com o id ${id}`,
+      },
+    };
+  }
 
   return getNewAuthor(author);
 };
@@ -44,7 +51,7 @@ const createAuthor = async (firstName, middleName, lastName) => {
   if (existingAuthor) {
     return {
       error: {
-        code: 'alreadyExists',
+        code: 400,
         message: 'Uma pessoa autora já existe com esse nome completo',
       },
     };

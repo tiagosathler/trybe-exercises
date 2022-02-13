@@ -2,6 +2,8 @@
 
 const AuthorsMod = require('../models/AuthorsMod');
 
+const Validations = require('../schemas/Validations');
+
 const getNewAuthor = (authorData) => {
   const { id, firstName, middleName, lastName } = authorData;
 
@@ -18,14 +20,6 @@ const getNewAuthor = (authorData) => {
   };
 };
 
-const isValid = (firstName, middleName, lastName) => {
-  if (!firstName || typeof firstName !== 'string') return false;
-  if (!lastName || typeof lastName !== 'string') return false;
-  if (middleName && typeof middleName !== 'string') return false;
-
-  return true;
-  };
-
 const getAll = async () => {
   const authors = await AuthorsMod.getAll();
 
@@ -41,12 +35,23 @@ const findById = async (id) => {
 };
 
 const createAuthor = async (firstName, middleName, lastName) => {
-  const validAuthor = isValid(firstName, middleName, lastName);
+  const isValidAuthor = Validations.isValidName(firstName, middleName, lastName);
 
-  if (!validAuthor) return false;
+  if (!isValidAuthor) return false;
 
-  const [author] = await AuthorsMod.createAuthor(firstName, middleName, lastName);
+  const existingAuthor = await AuthorsMod.findByName(firstName, middleName, lastName);
+    
+  if (existingAuthor) {
+    return {
+      error: {
+        code: 'alreadyExists',
+        message: 'Uma pessoa autora já existe com esse nome completo',
+      },
+    };
+  }
 
+  const author = await AuthorsMod.createAuthor(firstName, middleName, lastName);
+  
   const authorId = author.insertId;
 
   return getNewAuthor({

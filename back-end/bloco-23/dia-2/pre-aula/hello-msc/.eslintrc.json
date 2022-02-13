@@ -6,6 +6,7 @@
   "rules": {
     "sonarjs/no-duplicate-string": ["error", 5],
     "sonarjs/cognitive-complexity": ["error", 7],
+    "max-lines-per-function" : ["error", 30],
     "complexity": ["error", 7]
   }
 }

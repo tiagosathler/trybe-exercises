@@ -18,9 +18,11 @@ const findById = async (req, res) => {
 };
 
 const create = async (req, res) => {
-  const { first_name, middle_name, last_name } = req.body;
+  const { firstName, middleName, lastName } = req.body;
 
-  const author = await AuthorsSvc.createAuthor(first_name, middle_name, last_name);
+  console.log(firstName, middleName, lastName);
+  
+  const author = await AuthorsSvc.createAuthor(firstName, middleName, lastName);
 
   if (!author) return res.status(400).json({ message: 'Dados inválidos' });
 

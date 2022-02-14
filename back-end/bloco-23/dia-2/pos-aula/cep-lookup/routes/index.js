@@ -1,4 +1,7 @@
 const { Router } = require('express');
+
+const CepRoute = require('./cepRoute');
+
 const middlewares = require('../middlewares');
 
 const pingRoute = Router();
@@ -11,4 +14,5 @@ notFoundRoute.use(middlewares.endpointNotFound);
 module.exports = {
   pingRoute,
   notFoundRoute,
+  CepRoute,
 };

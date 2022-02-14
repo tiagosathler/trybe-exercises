@@ -15,6 +15,15 @@ const findByCep = async (cep) => {
   return rows.map(serialize)[0];
 };
 
+const createCep = async (data) => {
+  const { cep, logradouro, bairro, localidade, uf } = data;
+  const query = 'INSERT INTO cep_lookup.ceps (cep, logradouro, bairro, localidade, uf) '
+  + 'VALUES (?, ?, ?, ?, ?);';
+  const [rows] = await connection.execute(query, [cep, logradouro, bairro, localidade, uf]);
+  return rows.insertId;
+};
+
 module.exports = {
   findByCep,
+  createCep,
 };

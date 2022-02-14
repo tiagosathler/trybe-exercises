@@ -1,6 +1,8 @@
 const codes = {
   invalidData: 400,
   notFound: 404,
+  alreadyExists: 409,
+  failedCreate: 500,
 };
 
 const endpointNotFound = (_req, res) => {

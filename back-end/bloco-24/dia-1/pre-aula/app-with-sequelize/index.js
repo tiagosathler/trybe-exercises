@@ -3,7 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
-const UserRoute = require('./controllers/userController');
+const UserRoute = require('./src/controllers/userController');
 
 const app = express();
 

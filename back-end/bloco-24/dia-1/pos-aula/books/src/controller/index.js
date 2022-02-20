@@ -2,6 +2,7 @@ const { Router } = require('express');
 const { Book } = require('../models');
 
 const BooksRoute = Router();
+const BookRoute = Router();
 
 BooksRoute
   .get('/', async (_req, res) => {
@@ -12,7 +13,9 @@ BooksRoute
       console.log(e.message);
       return res.status(500).json({ message: e.message });
     }
-  })
+  }); 
+  
+  BookRoute
   .get('/:id', async (req, res) => {
     try {
       const { params: { id } } = req;
@@ -37,13 +40,14 @@ BooksRoute
       return res.status(500).json({ message: e.message });
     }
   })
-  .post('/', async (req, res) => {
+  .delete('/:id', async (req, res) => {
     try {
-      const { body: { title, author, pageQuantity } } = req;
-      const created = await Book.create({ title, author, pageQuantity });
-      // if (response === 0) return res.status(406).json({ message: 'Não adcionado' });
-
-      return res.status(201).json({ created });
+      const { params: { id } } = req;
+      const response = await Book
+      .destroy({ where: { id } });
+      if (response === 0) return res.status(406).json({ message: 'Não apagado' });
+      
+      return res.status(202).json({ message: 'Apagado com sucesso' });
     } catch (e) {
       console.log(e.message);
       return res.status(500).json({ message: e.message });
@@ -62,18 +66,20 @@ BooksRoute
       return res.status(500).json({ message: e.message });
     }
   })
-  .delete('/:id', async (req, res) => {
+  .post('/', async (req, res) => {
     try {
-      const { params: { id } } = req;
-      const response = await Book
-        .destroy({ where: { id } });
-      if (response === 0) return res.status(406).json({ message: 'Não apagado' });
+      const { body: { title, author, pageQuantity } } = req;
+      const created = await Book.create({ title, author, pageQuantity });
+      // if (response === 0) return res.status(406).json({ message: 'Não adcionado' });
 
-      return res.status(202).json({ message: 'Apagado com sucesso' });
+      return res.status(201).json({ created });
     } catch (e) {
       console.log(e.message);
       return res.status(500).json({ message: e.message });
     }
   });
 
-module.exports = BooksRoute;
+module.exports = {
+  BooksRoute,
+  BookRoute,
+};

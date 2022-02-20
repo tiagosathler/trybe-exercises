@@ -18,7 +18,7 @@ router.get('/', async (_req, res) => {
 router.get('/:id', async (req, res) => {
   try {
     const { id } = req.params;
-    const user = await User.findByPk(+id);
+    const user = await User.findByPk(id);
 
     if (!user) return res.status(404).json({ message: 'Usuário não encontrado' });
 
@@ -35,7 +35,7 @@ router.get('/search/:id', async (req, res) => {
   try {
     const { id } = req.params;
     const { email } = req.query;
-    const user = await User.findOne({ where: { id: +id, email }});
+    const user = await User.findOne({ where: { id, email }});
 
     if (!user) return res.status(404).json({ message: 'Usuário não encontrado' });
 

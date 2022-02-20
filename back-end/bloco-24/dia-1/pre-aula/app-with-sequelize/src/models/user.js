@@ -4,6 +4,9 @@ const User = (sequelize, DataTypes) => {
     fullName: DataTypes.STRING,
     email: DataTypes.STRING,
     phone_num: DataTypes.STRING,
+  }, {
+    freezeTableName: false,
+    tableName: 'Users',
   });
 
   return User;

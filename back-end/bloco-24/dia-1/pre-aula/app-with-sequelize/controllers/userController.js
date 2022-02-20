@@ -18,7 +18,7 @@ router.get('/', async (_req, res) => {
 router.get('/:id', async (req, res) => {
   try {
     const { id } = req.params;
-    const user = await User.findByPk(id);
+    const user = await User.findByPk(+id);
 
     if (!user) return res.status(404).json({ message: 'Usuário não encontrado' });
 
@@ -35,7 +35,7 @@ router.get('/search/:id', async (req, res) => {
   try {
     const { id } = req.params;
     const { email } = req.query;
-    const user = await User.findOne({ where: { id, email }});
+    const user = await User.findOne({ where: { id: +id, email }});
 
     if (!user) return res.status(404).json({ message: 'Usuário não encontrado' });
 
@@ -49,8 +49,8 @@ router.get('/search/:id', async (req, res) => {
 // Este endpoint usa o método create do Sequelize para salvar um usuário no banco.
 router.post('/', async (req, res) => {
   try {
-    const { fullName, email, phone } = req.body;
-    const newUser = await User.create({ fullName, email, phone_num: phone });
+    const { fullName, email, phoneNumber } = req.body;
+    const newUser = await User.create({ fullName, email, phone_num: phoneNumber });
 
     return res.status(201).json(newUser);
   } catch (e) {
@@ -62,15 +62,15 @@ router.post('/', async (req, res) => {
 // Este endpoint usa o método update do Sequelize para alterar um usuário no banco.
 router.put('/:id', async (req, res) => {
   try {
-    const { fullName, email, phone } = req.body;
+    const { fullName, email, phoneNumber } = req.body;
     const { id } = req.params;
 
     const [updateUser] = await User.update(
-      { fullName, email, phone_num: phone },
+      { fullName, email, phone_num: phoneNumber },
       { where: { id } },
     );
 
-    console.log(updateUser); // confira o que é retornado quando o user com o id é ou não encontrado;
+    console.log('Update report: ', updateUser); // confira o que é retornado quando o user com o id é ou não encontrado;
 
     if(!updateUser) return res.status(404).json({ message: 'Usuário não encontrado' });
 
@@ -89,7 +89,7 @@ router.delete('/:id', async (req, res) => {
       { where: { id } },
     );
 
-    console.log(deleteUser) // confira o que é retornado quando o user com o id é ou não encontrado;
+    console.log('Delete report: ', deleteUser) // confira o que é retornado quando o user com o id é ou não encontrado;
 
     return res.status(200).json({ message: 'Usuário excluído com sucesso!' });
   } catch (e) {

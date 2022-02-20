@@ -11,6 +11,6 @@ app.use(bodyParser.json(), cors());
 
 app.use('/users', UserRoute);
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.API_PORT || 3000;
 
 app.listen(PORT, () => console.log(`App online listening at PORT ${PORT}`));

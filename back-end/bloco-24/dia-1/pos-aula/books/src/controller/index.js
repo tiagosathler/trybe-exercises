@@ -7,7 +7,7 @@ const BookRoute = Router();
 BooksRoute
   .get('/', async (_req, res) => {
     try {
-      const books = await Book.findAll();
+      const books = await Book.findAll({ order: [['title', 'ASC'], ['createdAt', 'ASC']] });
       return res.status(200).json(books);
     } catch (e) {
       console.log(e.message);
@@ -30,8 +30,19 @@ BooksRoute
   .get('/search/:id', async (req, res) => {
     try {
       const { query: { title }, params: { id } } = req;
-      console.log(title);
       const books = await Book.findOne({ where: { id, title } });
+      if (books === null) return res.status(404).json({ message: 'Livro não encontrado' });
+
+      return res.status(200).json(books);
+    } catch (e) {
+      console.log(e.message);
+      return res.status(500).json({ message: e.message });
+    }
+  })
+  .get('/search/:id', async (req, res) => {
+    try {
+      const { query: { author }, params: { id } } = req;
+      const books = await Book.findOne({ where: { id, author } });
       if (books === null) return res.status(404).json({ message: 'Livro não encontrado' });
 
       return res.status(200).json(books);

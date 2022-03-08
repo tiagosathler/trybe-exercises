@@ -26,17 +26,35 @@ const getPatient = async (patientId) => {
 // -------------------------------------------
 // LIST ALL PATIENTS AND PLANS:
 
-// LAZY LOADING:
+// LAZY LOADING: METODO 1
+// const listAllPatientsAndPlans = async () => {
+//   const patients = await listAllPatients();
+  
+//   const results = await Promise.all(patients.map(async ({ patientId, planId, fullname }) => {
+//     const plan = await Model.Plan.findOne({
+//       where: { planId },
+//       attributes: ['planId', 'coverage', 'price'],
+//     });
+//     return { patientId, fullname, plan: { ...plan.dataValues } };
+//   }));
+
+//   return results;
+// };
+
+// LAZY LOADING: METODO 2
 const listAllPatientsAndPlans = async () => {
   const patients = await listAllPatients();
   
-  const results = await Promise.all(patients.map(async ({ patientId, planId, fullname }) => {
-    const plan = await Model.Plan.findOne({
-      where: { planId },
-      attributes: ['planId', 'coverage', 'price'],
-    });
-    return { patientId, fullname, plan: { ...plan.dataValues } };
-  }));
+  const results = await Promise.all(
+    patients.map(async ({ patientId, fullname }) => (
+      Model.Patient.findByPk(patientId)
+        .then((patient) => 
+          patient.getPlan()
+            .then((plan) => {
+              const { planId, coverage, price } = plan;
+              return { patientId, fullname, plan: { planId, coverage, price } };
+            })))),
+  );
 
   return results;
 };

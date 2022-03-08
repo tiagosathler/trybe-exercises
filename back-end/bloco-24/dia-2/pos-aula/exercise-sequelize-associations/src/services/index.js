@@ -91,44 +91,44 @@ const listAllPatientsAndPlans = async () => {
 //   }));
 
   // LAZY LOADING: MÉTODO 2
-const listAllPatientsAndSurgeries = async () => {
-  const patients = await listAllPatients();
+// const listAllPatientsAndSurgeries = async () => {
+//   const patients = await listAllPatients();
   
-  const results = await Promise.all(
-    patients.map(async ({ patientId }) => (
-      Model.Patient.findByPk(patientId)
-        .then((patient) => 
-          patient.getSurgeries()
-            .then((surg) => {
-              const { fullname } = patient;
-              const surgeries = surg.map(({ surgeryId, doctor, specialty }) => (
-                { surgeryId, doctor, specialty }));
-              return { patientId, fullname, surgeries };
-            })))),
-  );
+//   const results = await Promise.all(
+//     patients.map(async ({ patientId }) => (
+//       Model.Patient.findByPk(patientId)
+//         .then((patient) => 
+//           patient.getSurgeries()
+//             .then((surg) => {
+//               const { fullname } = patient;
+//               const surgeries = surg.map(({ surgeryId, doctor, specialty }) => (
+//                 { surgeryId, doctor, specialty }));
+//               return { patientId, fullname, surgeries };
+//             })))),
+//   );
 
-  return results;
-};
+//   return results;
+// };
 
   // EAGER LOADING:
-// const listAllPatientsAndSurgeries = async () => {
-//   const patients = Model.Patient.findAll({
-//       attributes: ['patientId', 'fullname'],
-//       include: [{
-//         model: Model.Surgery,
-//         as: 'surgeries',
-//         through: { attributes: [] },
-//         attributes: ['surgeryId', 'doctor', 'specialty'],
-//       }],
-//   });
+const listAllPatientsAndSurgeries = async () => {
+  const patients = Model.Patient.findAll({
+      attributes: ['patientId', 'fullname'],
+      include: [{
+        model: Model.Surgery,
+        as: 'surgeries',
+        through: { attributes: [] },
+        attributes: ['surgeryId', 'doctor', 'specialty'],
+      }],
+  });
   
-//   return patients;
-// };
+  return patients;
+};
 
 // -------------------------------------------
 // LIST ALL PATIENTS ALL INFORMATION:
 
-// LAZY LOADING:
+// LAZY LOADING: MÉTODO 1
 // const listAllPatientsInformation = async () => {
 //   const patiensAndPlans = await listAllPatientsAndPlans();
 //   const patientAndSurgeries = await listAllPatientsAndSurgeries();

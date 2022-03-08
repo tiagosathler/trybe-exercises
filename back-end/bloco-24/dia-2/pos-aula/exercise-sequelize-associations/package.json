@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js",
-    "test": "NODE_ENV=test mocha ./src/tests/**/*$NAME*.test.js --exit"
+    "test": "clear && NODE_ENV=dev mocha ./src/tests/**/*$NAME*.test.js --exit"  
   },
   "repository": {
     "type": "git",

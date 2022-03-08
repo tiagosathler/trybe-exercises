@@ -9,9 +9,9 @@ const { expect } = chai;
 const app = require('../../../index');
 
 // omitir os `console.log`s dos testes gerando um `stub` pra função
-// const consoleLogStub = stub(console, 'log');
-// before(()=> consoleLogStub.returns(true));
-// after(()=> consoleLogStub.restore());
+const consoleLogStub = stub(console, 'log');
+before(()=> consoleLogStub.returns(true));
+after(()=> consoleLogStub.restore());
 
 describe('Rota POST /patients', () => {
   describe('quando os dados do `body` são válidos', () => {
@@ -27,14 +27,15 @@ describe('Rota POST /patients', () => {
             planId: 2,
           });
 
-        console.log('=== postPatient', postPatient.body);
+        // console.log('=== postPatient', postPatient.body);
 
         const { patientId } = postPatient.body;
+        // console.log(patientId);
         
         getPatient = await chai.request(app)
-          .get(`/patients/16`);
+          .get(`/patients/${patientId}`);
 
-        console.log('--- getPatient: ', getPatient.body);
+        // console.log('--- getPatient: ', getPatient.body);
 
       } catch (error) {
         console.error('ERROR: ', error.message);

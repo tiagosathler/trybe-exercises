@@ -1,8 +1,8 @@
 const { User } = require('../models');
 
-module.exports = async (req, res) => {
+module.exports = async (_req, res) => {
   try {
-    const users = await User.findAll();
+    const users = await User.findAll({ attributes: { exclude: ['password']}});
 
     if (!users) throw Error;
 

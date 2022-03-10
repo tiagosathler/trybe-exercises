@@ -3,11 +3,19 @@ const { User } = require('../models');
 module.exports = async (req, res) => {
   try {
     const { username, password } = req.body;
-    const user = await User.create({username, password});
 
-    if (!user) throw Error;
+    const [{ id }, created] = await User.findOrCreate({
+        where: { username },
+        defaults: { 
+          username,
+          password,
+        },
+    });
 
-    res.status(201).json({ message: 'Novo usuário criado com sucesso', user: username });
+    if (!created) return res.status(409).json({ message: 'username already exists', user: {id, username}});
+
+    res.status(201).json({ message: 'Novo usuário criado com sucesso', user: {id, username} });
+
   } catch (err) {
     res
       .status(500)

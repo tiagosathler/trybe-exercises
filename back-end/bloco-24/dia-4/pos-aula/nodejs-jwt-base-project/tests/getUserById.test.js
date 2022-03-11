@@ -22,7 +22,7 @@ describe.only('-- Rota /api/users/:id', () => {
     sinon.stub(User, 'findOne').callsFake(userMock.findOne);
     sinon.stub(User, 'findByPk').callsFake(userMock.findByPk);
   });
-    
+
   after(() => {
     User.findOne.restore();
     User.findByPk.restore();
@@ -30,17 +30,17 @@ describe.only('-- Rota /api/users/:id', () => {
 
   describe('- requisição sem token', () => {
     let result;
-  
+
     before(async () => {
       const { body: { token } } = await chai
         .request(server)
         .post(ENDPOINT_LOGIN)
-        .send({ 
+        .send({
           '_method': 'post',
           'username': 'Saul Reixas',
           'password': 'tocasaul',
         });
-        
+
       result = await chai
         .request(server)
         .get(ENDPOINT_AUTO_USER)
@@ -52,7 +52,7 @@ describe.only('-- Rota /api/users/:id', () => {
       result = undefined;
     });
 
-    
+
     it('Essa requisição deve retornar código de status 400', () => {
       expect(result).to.have.status(400);
     });
@@ -72,17 +72,17 @@ describe.only('-- Rota /api/users/:id', () => {
 
   describe('- requisição com token inválido', () => {
     let result;
-  
+
     before(async () => {
       const { body: { token } } = await chai
         .request(server)
         .post(ENDPOINT_LOGIN)
-        .send({ 
+        .send({
           '_method': 'post',
           'username': 'Saul Reixas',
           'password': 'tocasaul',
         });
-        
+
       result = await chai
         .request(server)
         .get(ENDPOINT_AUTO_USER)
@@ -94,7 +94,7 @@ describe.only('-- Rota /api/users/:id', () => {
       result = undefined;
     });
 
-    
+
     it('Essa requisição deve retornar código de status 500', () => {
       expect(result).to.have.status(500);
     });
@@ -124,17 +124,17 @@ describe.only('-- Rota /api/users/:id', () => {
 
   describe('- requisição com token válido mas username não autorizado pelo id', () => {
     let result;
-  
+
     before(async () => {
       const { body: { token } } = await chai
         .request(server)
         .post(ENDPOINT_LOGIN)
-        .send({ 
+        .send({
           '_method': 'post',
           'username': 'Saul Reixas',
           'password': 'tocasaul',
         });
-        
+
       result = await chai
         .request(server)
         .get(ENDPOINT_OTHER_USER)
@@ -146,7 +146,7 @@ describe.only('-- Rota /api/users/:id', () => {
       result = undefined;
     });
 
-    
+
     it('Essa requisição deve retornar código de status 401', () => {
       expect(result).to.have.status(401);
     });
@@ -163,20 +163,20 @@ describe.only('-- Rota /api/users/:id', () => {
       expect(result.body.message).to.be.equal('Acesso negado');
     });
   });
-    
+
   describe('- requisição com token válido e quando a pesquisa não encontra o usuário', () => {
     let result;
-  
+
     before(async () => {
       const { body: { token } } = await chai
         .request(server)
         .post(ENDPOINT_LOGIN)
-        .send({ 
+        .send({
           '_method': 'post',
           'username': 'Saul Reixas',
           'password': 'tocasaul',
         });
-        
+
       result = await chai
         .request(server)
         .get(ENDPOINT_USER_NOT_FOUND)
@@ -188,7 +188,7 @@ describe.only('-- Rota /api/users/:id', () => {
       result = undefined;
     });
 
-    
+
     it('Essa requisição deve retornar código de status 404', () => {
       expect(result).to.have.status(404);
     });
@@ -209,18 +209,18 @@ describe.only('-- Rota /api/users/:id', () => {
   });
 
   describe('- requisição com token válido e quando a pesquisa encontra o usuário', () => {
-    let result;
-  
+    let result = undefined;
+
     before(async () => {
       const { body: { token } } = await chai
         .request(server)
         .post(ENDPOINT_LOGIN)
-        .send({ 
+        .send({
           '_method': 'post',
           'username': 'Saul Reixas',
           'password': 'tocasaul',
         });
-        
+
       result = await chai
         .request(server)
         .get(ENDPOINT_AUTO_USER)
@@ -232,7 +232,6 @@ describe.only('-- Rota /api/users/:id', () => {
       result = undefined;
     });
 
-    
     it('Essa requisição deve retornar código de status 200', () => {
       expect(result).to.have.status(200);
     });
@@ -258,5 +257,5 @@ describe.only('-- Rota /api/users/:id', () => {
         'Saul Reixas',
       );
     });
-  }); 
+  });
 });

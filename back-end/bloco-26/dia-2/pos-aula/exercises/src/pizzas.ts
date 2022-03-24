@@ -85,6 +85,3 @@ export const main = ():void => {
   
   console.log(calabresa, margherita, nutela, common1, common2, common3, vegetarian1, vegetarian2, vegetarian3, sweet1, sweet2, sweet3);
 };
-
-
-

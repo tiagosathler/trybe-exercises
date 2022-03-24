@@ -1,4 +1,5 @@
 import { Car, Colors, Doors, Directions } from './cars';
+import { main } from './pizzas';
 
 let myCar = new Car('Ford', 'Focus', Colors.black, 4);
 console.log(myCar);
@@ -98,3 +99,6 @@ myCar.turnOff();
 myCar.openTheDoor(Doors.rf);
 myCar.closeTheDoor(Doors.rf);
 console.log('...');
+
+// exercício 3 e 4:
+main();

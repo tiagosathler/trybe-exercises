@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const cars_1 = require("./cars");
+const pizzas_1 = require("./pizzas");
 let myCar = new cars_1.Car('Ford', 'Focus', cars_1.Colors.black, 4);
 console.log(myCar);
 // myCar.honk();
@@ -84,3 +85,5 @@ myCar.turnOff();
 myCar.openTheDoor(cars_1.Doors.rf);
 myCar.closeTheDoor(cars_1.Doors.rf);
 console.log('...');
+// exercício 3 e 4:
+(0, pizzas_1.main)();

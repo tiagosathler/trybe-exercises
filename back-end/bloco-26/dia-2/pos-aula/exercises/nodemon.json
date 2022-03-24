@@ -1,6 +1,6 @@
 {
   "verbose": true,
-  "ignore": ["*.test.js", "fixtures/*", "**/src/*.ts"],
+  "ignore": ["*.test.js", "fixtures/*", "**/src/**/*.ts"],
   "watch": ["**/dist/**/*.js"],
   "delay": "1000ms",
   "execMap": {

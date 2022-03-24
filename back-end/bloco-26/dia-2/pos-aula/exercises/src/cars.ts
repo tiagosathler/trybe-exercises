@@ -58,7 +58,7 @@ export class Car {
       console.log(`Abrindo a porta ${door} do carro ${this._model} da ${this._brand}`);
     }
   }
-
+  
   closeTheDoor(door: Doors): void {
     if (this.validateDoors(door)) {
       console.log(`Fechando a porta ${door} do carro ${this._model} da ${this._brand}`);

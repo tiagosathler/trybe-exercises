@@ -1,5 +1,5 @@
 import { config } from 'dotenv';
-import * as express from 'express';
+import express from 'express';
 import { Express, Request, Response, NextFunction } from 'express';
 const cors = require('cors');
 
@@ -9,8 +9,7 @@ import handleError from '../middlewares/handleError';
 import insertBook from '../controllers/insertBook';
 
 config();
-const PORT:string = process.env.PORT;
-
+const PORT = process.env.PORT;
 
 const app: Express = express();
 

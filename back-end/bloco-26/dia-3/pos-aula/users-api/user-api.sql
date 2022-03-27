@@ -1,18 +1,19 @@
-CREATE DATABASE IF NOT EXISTS books_api;
+CREATE DATABASE IF NOT EXISTS users_api;
 
-USE books_api;
+USE users_api;
 
-CREATE TABLE IF NOT EXISTS  books
+CREATE TABLE IF NOT EXISTS users
 (
     id INT NOT NULL AUTO_INCREMENT,
-    title VARCHAR(30) NOT NULL,
-    price DECIMAL(10, 2),
-    author VARCHAR(100) NOT NULL,
-    isbn VARCHAR(100),
+    first_name VARCHAR(30) NOT NULL,
+    last_name VARCHAR(30) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    `password` VARCHAR(50) NOT NULL,
     PRIMARY KEY(id)
 );
 
-INSERT INTO books (title, price, author, isbn)
-VALUES ('Código Limpo', 125.9, 'Robert C Martin', '8576082675'),
-    ('Refatoração', 129.9, 'Martin Fowler', '8575227246'),
-    ('Padrões de Projetos', 141.98, 'Erich Gamma', '8573076100');           
+INSERT INTO
+    users (first_name, last_name, email, `password`)
+VALUES
+    ('Machado', 'de Assis', 'deassis@gmail.com', 'trybe12345'),
+    ('Clarice', 'Lispector', 'lispector@gmail.com', '8575227246');          

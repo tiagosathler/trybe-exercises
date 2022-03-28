@@ -1,38 +1,39 @@
-import * as model from '../models';
+import UserModel from '../models/userModel';
 import connection from '../models/connection';
+// import connection from '../models/connection';
 import IUser from '../typescript/interfaces/IUser';
 import Boom from 'boom';
 
-export default class User {
-  private model: model.User;
+export default class UserService {
+  private model: UserModel;
 
   constructor() {
-    this.model = new model.User(connection);
+    this.model = new UserModel(connection);
   }
 
-  public async getAll(): Promise<IUser[]> {
+  public getAll = async (): Promise<IUser[]> => {
     const users = await this.model.getAll();
     return users;
   }
 
-  public async getById(id: number): Promise<IUser> {
+  public getById = async (id: number): Promise<IUser> => {
     const user = await this.model.getById(id);
     return user;
   }
 
-  public async create(user: IUser): Promise<IUser> {
+  public create = async (user: IUser): Promise<IUser> => {
     const newUser = await this.model.create(user);
     return newUser;
   }
 
-  public async update(id: number, user: IUser): Promise<void> {
+  public update = async (id: number, user: IUser): Promise<void> => {
     const updatedUser: boolean = await this.model.update(id, user);
     if (!updatedUser) {
       throw Boom.badRequest('User not found');
     }
   }
 
-  public async delete(id: number): Promise<void> {
+  public delete = async (id: number): Promise<void> => {
     const deletedUser: boolean = await this.model.delete(id);
     if (!deletedUser) {
       throw Boom.badRequest('User not found');

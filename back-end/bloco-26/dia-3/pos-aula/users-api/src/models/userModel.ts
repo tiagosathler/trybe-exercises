@@ -6,15 +6,15 @@ export default class UserModel {
   private connection: Pool;
 
   constructor(connection: Pool) {
-    this.connection = connection;
+    this.connection = connection;   
   }
 
-  public async getAll(): Promise<IUser[]> {
+  public getAll = async(): Promise<IUser[]> => {
     const query: string = `
     SELECT 
       id,
-      first_name AS firtName,
-      last_name, AS lastName,
+      first_name AS firstName,
+      last_name AS lastName,
       email,
       password
     FROM users`;
@@ -22,12 +22,12 @@ export default class UserModel {
     return rows as IUser[];
   }
 
-  public async getById(id: number): Promise<IUser> {
+  public getById = async (id: number): Promise<IUser> =>{
     const query:string = `
     SELECT 
       id,
-      first_name AS firtName,
-      last_name, AS lastName,
+      first_name AS firstName,
+      last_name AS lastName,
       email,
       password
     FROM users
@@ -38,7 +38,7 @@ export default class UserModel {
     return user;
   }
 
-  public async create(user: IUser): Promise<IUser> {
+  public create = async (user: IUser): Promise<IUser> => {
     const { firstName, lastName, email, password } = user;
     const query:string = `
     INSERT INTO users
@@ -49,7 +49,7 @@ export default class UserModel {
     return { id: insertId, ...user };
   }
 
-  public async update(id: number, user: IUser): Promise<boolean> {
+  public update = async (id: number, user: IUser): Promise<boolean> =>{
     const { firstName, lastName, email, password } = user;
     const query:string = `
     UPDATE users
@@ -64,7 +64,7 @@ export default class UserModel {
     return true;
   }
 
-  public async delete(id: number): Promise<boolean> {
+  public delete = async (id: number): Promise<boolean> => {
     const query: string = `DELETE FROM users WHERE id = ?`;
     const params: number[] = [id];
     const [rows] = await this.connection.execute<ResultSetHeader>(query, params);

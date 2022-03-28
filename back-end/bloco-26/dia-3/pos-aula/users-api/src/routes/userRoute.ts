@@ -1,10 +1,10 @@
 import { Router } from 'express';
-import UserController from '../controllers/userController';
+import * as controller from '../controllers';
 import { Request, Response, NextFunction } from 'express';
 
 export const userRoute: Router = Router();
 
-const userController = new UserController();
+const userController = new controller.User();
 
 userRoute
   .get('/', userController.getAll)

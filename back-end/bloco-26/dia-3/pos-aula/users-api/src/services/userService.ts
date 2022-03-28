@@ -1,14 +1,14 @@
-import UserModel from '../models/userModel';
-import connection from '../models/connection';
+import * as model from '../models';
+// import connection from '../models/connection';
 // import connection from '../models/connection';
 import IUser from '../typescript/interfaces/IUser';
 import Boom from 'boom';
 
-export default class UserService {
-  private model: UserModel;
+export class User {
+  private model: model.User;
 
   constructor() {
-    this.model = new UserModel(connection);
+    this.model = new model.User(model.connection);
   }
 
   public getAll = async (): Promise<IUser[]> => {

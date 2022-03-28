@@ -2,7 +2,7 @@ import { Pool, ResultSetHeader } from 'mysql2/promise';
 
 import IUser from '../typescript/interfaces/IUser';
 
-export default class UserModel {
+export class User {
   private connection: Pool;
 
   constructor(connection: Pool) {

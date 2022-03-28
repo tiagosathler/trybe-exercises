@@ -1,12 +1,12 @@
-import UserService from '../services/userService';
+import * as service from '../services';
 import { Request, Response } from 'express';
 import IUser from '../typescript/interfaces/IUser';
 
-class UserController {
-  private userService: UserService;
+export class User {
+  private userService: service.User;
 
   constructor() {
-    this.userService = new UserService();
+    this.userService = new service.User();
    }
 
   public getAll = async (_req: Request, res: Response) => {
@@ -39,5 +39,3 @@ class UserController {
     return res.status(200).end();
   }
 }
-
-export default UserController;

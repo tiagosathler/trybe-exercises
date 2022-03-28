@@ -1,7 +1,2 @@
-import handleError from "./handleError";
-import handleInvalidEndpoint from "./handleInvalidEndpoint";
-
-export {
-  handleError,
-  handleInvalidEndpoint,
-};
+export * from './handleError';
+export * from './handleInvalidEndpoint';

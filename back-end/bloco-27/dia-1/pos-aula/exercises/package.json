@@ -2,7 +2,7 @@
   "name": "exercises",
   "version": "1.0.0",
   "description": "bloco-27-dia-1",
-  "main": "index.js",
+  "main": "src/index.ts",
   "scripts": {
     "start": "ts-node src/index.ts",
     "dev": "nodemon --watch \"./src/**\" --ext \"ts,js\" --ignore \"src/**/*.spec.ts,src/**/*.json\" --exec \"ts-node src/index.ts\"",

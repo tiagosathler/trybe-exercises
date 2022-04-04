@@ -19,23 +19,23 @@ export default class Email {
     this._message = message;
   }
 
-  set subject(newSubject: string) {
+  public set subject(newSubject: string) {
     if (newSubject.length <= 40) this._subject = newSubject;
   }
 
-  get subject():string {
+  public get subject():string {
     return this._subject;
   }
 
-  get from():string {
+  public get from():string {
     return this._from;
   }
 
-  get to():string {
+  public get to():string {
     return this._from;
   }
 
-  get content():string {
+  public get content():string {
     const phrase = `
       From ${this._from} to ${this._to};
       Subject: ${this._subject};

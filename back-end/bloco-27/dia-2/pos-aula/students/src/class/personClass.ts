@@ -1,6 +1,6 @@
-import { IPerson } from '../interfaces';
+import { IPerson, IPersonClass } from '../interfaces';
 
-export default class Person {
+export default class Person implements IPersonClass {
   private _name: string;
 
   private _birthday: Date;
@@ -34,6 +34,12 @@ export default class Person {
     } else {
       throw new Error('Name must be provided');
     }
+  }
+
+  public getAge(): number {
+    const now: Date = new Date();
+    const diff: number = now.valueOf() - this._birthday.valueOf();
+    return Math.floor(diff / (365.25 * 24 * 60 * 60 * 1000));
   }
 
   get name(): string {

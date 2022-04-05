@@ -6,6 +6,7 @@ import Teacher from './class/teacherClass';
 
 const person1 = new Person({ name: 'Tiago', birthday: new Date('1980/07/23') });
 console.log(person1);
+console.log(`${person1.name} is ${person1.getAge()} years old`);
 
 const studentOne = new Student(
   person1,

@@ -2,7 +2,11 @@ import { TExamsGrade, TWorksGrade } from '../types';
 
 export interface IPerson {
   name?: string;
-  birthday?: Date;
+  birthday?: Date;  
+}
+
+export interface IPersonClass {
+  getAge: () => number;
 }
 
 export interface IStudent extends IPerson {

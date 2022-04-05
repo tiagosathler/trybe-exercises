@@ -42,27 +42,27 @@ export default class Student extends Person implements IStudentClass {
     this._enrollment = enrollment;
   }
 
-  public get enrollment(): string {
+  get enrollment(): string {
     return this._enrollment;
   }
 
-  public set enrollment(enrollment: string) {
+  set enrollment(enrollment: string) {
     this.validateEnrollment(enrollment);
   }
 
-  public get examsGrades(): TExamsGrade {
+  get examsGrades(): TExamsGrade {
     return this._examsGrade;
   }
 
-  public set examsGrades(grades: TExamsGrade) {
+  set examsGrades(grades: TExamsGrade) {
     this.validateGrades(grades);
   }
 
-  public get workskGrades(): TWorksGrade {
+  get workskGrades(): TWorksGrade {
     return this._worksGrade;
   }
 
-  public set workskGrades(grades: TWorksGrade) {
+  set workskGrades(grades: TWorksGrade) {
     this.validateGrades(grades);
   }
 

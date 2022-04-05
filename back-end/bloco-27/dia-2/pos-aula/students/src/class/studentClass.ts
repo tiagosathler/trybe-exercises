@@ -35,7 +35,6 @@ export default class Student extends Person {
   }
 
   validateEnrollment(enrollment: string) {
-    console.log(enrollment.length);
     if (enrollment.length > 16 || !enrollment.length) {
       throw new Error('Invalid enrollment');
     }

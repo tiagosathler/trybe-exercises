@@ -1,8 +1,8 @@
 import Person from './personClass';
 import { TExamsGrade, TWorksGrade } from '../types';
-import { IStudent } from '../interfaces';
+import { IStudent, IStudentClass, IPerson } from '../interfaces';
 
-export default class Student extends Person {
+export default class Student extends Person implements IStudentClass {
   private _enrollment: string;
 
   private _examsGrade: TExamsGrade;
@@ -10,17 +10,19 @@ export default class Student extends Person {
   private _worksGrade: TWorksGrade;
 
   constructor(
+    person: IPerson,
     {
-      name, birthday, enrollment, examsGrade, worksGrade,
+      enrollment, examsGrade, worksGrade,
     }: IStudent,
   ) {
+    const { name, birthday } = person;
     super({ name, birthday });
     this.validateGrades(examsGrade);
     this.validateGrades(worksGrade);
     this.validateEnrollment(enrollment);      
   }
-
-  validateGrades(array: TExamsGrade | TWorksGrade) {
+  
+  private validateGrades(array: TExamsGrade | TWorksGrade) {
     array.forEach((grade) => {
       if (grade < 0 || grade > 100) {
         throw new Error(`Invalid grade ${grade}`);
@@ -34,7 +36,7 @@ export default class Student extends Person {
     }
   }
 
-  validateEnrollment(enrollment: string) {
+  private validateEnrollment(enrollment: string) {
     if (enrollment.length > 16 || !enrollment.length) {
       throw new Error(`Invalid enrollment ${enrollment}`);
     }
@@ -70,7 +72,7 @@ export default class Student extends Person {
       .reduce((acc, grade) => acc + grade, 0);
   }
 
-  public avergeGrades(): number {
+  public averageGrades(): number {
     const average = this.sumGrades() / (this._examsGrade.length + this._worksGrade.length);
     return Math.round(average);
   }

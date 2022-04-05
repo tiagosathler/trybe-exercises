@@ -35,7 +35,16 @@ const employee1 = new Employee(
 console.log(employee1);
 
 const math = new Lesson('Matemática');
+const english = new Lesson('Inglês');
 
 const teacher1 = new Teacher(person1, employee1, math);
 console.log(teacher1);
 console.log(`Matéria lecionada por ${teacher1.name}: ${teacher1.getSubjectName()}`);
+
+teacher1.subject = english;
+console.log(teacher1);
+console.log(`Nova matéria lecionada por ${teacher1.name}: ${teacher1.subject.name}`);
+
+english.name = 'English';
+console.log(teacher1);
+console.log(`Nova matéria lecionada por ${teacher1.name}: ${teacher1.subject.name}`);

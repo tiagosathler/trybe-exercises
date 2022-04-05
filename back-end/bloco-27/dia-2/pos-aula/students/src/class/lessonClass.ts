@@ -1,5 +1,5 @@
 export default class Lesson {
-  _subject: string;
+  private _name: string;
 
   constructor(name: string) {
     this.validateLessonName(name);
@@ -9,14 +9,14 @@ export default class Lesson {
     if (name.length < 3) {
       throw new Error('Lesson name must be at least 3 characters long');
     }
-    this._subject = name;    
+    this._name = name;    
   }
 
-  get subject(): string {
-    return this._subject;
+  get name(): string {
+    return this._name;
   }
 
-  set subject(name: string) {
+  set name(name: string) {
     this.validateLessonName(name);
   }
 }

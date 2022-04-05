@@ -23,6 +23,6 @@ export default class Teacher extends Employee implements ITeacherClass {
   }
 
   public getSubjectName(): string {
-    return this._lesson.subject;
+    return this._lesson.name;
   }
 }

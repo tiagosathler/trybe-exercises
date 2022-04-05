@@ -1,6 +1,8 @@
 import Student from './class/studentClass';
 import Person from './class/personClass';
 import Employee from './class/employeeClass';
+import Lesson from './class/lessonClass';
+import Teacher from './class/teacherClass';
 
 const person1 = new Person({ name: 'Tiago', birthday: new Date('1980/07/23') });
 console.log(person1);
@@ -31,3 +33,9 @@ const employee1 = new Employee(
 );
 
 console.log(employee1);
+
+const math = new Lesson('Matemática');
+
+const teacher1 = new Teacher(person1, employee1, math);
+console.log(teacher1);
+console.log(`Matéria lecionada por ${teacher1.name}: ${teacher1.getSubjectName()}`);

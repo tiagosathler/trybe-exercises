@@ -25,3 +25,7 @@ export interface IStudentClass {
   sumGrades: () => number;
   averageGrades: () => number;
 }
+
+export interface ITeacherClass {
+  getSubjectName: () => string;
+}

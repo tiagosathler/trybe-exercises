@@ -16,7 +16,7 @@ export default class Person {
     const now: Date = new Date();
     const diff: number = now.valueOf() - date.valueOf();
     if (diff < 0 || diff > 120 * 365.25 * 24 * 60 * 60 * 1000) {
-      throw new Error('Invalid date');
+      throw new Error('Invalid date: must be between now and 120 years');
     }
     this._birthday = date;
   }

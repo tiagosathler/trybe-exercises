@@ -23,7 +23,7 @@ export default class Student extends Person {
   validateGrades(array: TExamsGrade | TWorksGrade) {
     array.forEach((grade) => {
       if (grade < 0 || grade > 100) {
-        throw new Error('Invalid grade');
+        throw new Error(`Invalid grade ${grade}`);
       }
     });
     if (array.length === 4) {
@@ -36,7 +36,7 @@ export default class Student extends Person {
 
   validateEnrollment(enrollment: string) {
     if (enrollment.length > 16 || !enrollment.length) {
-      throw new Error('Invalid enrollment');
+      throw new Error(`Invalid enrollment ${enrollment}`);
     }
     this._enrollment = enrollment;
   }

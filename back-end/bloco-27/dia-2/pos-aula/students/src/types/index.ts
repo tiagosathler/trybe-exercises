@@ -1,7 +1,7 @@
 type TExamsGrade = [number, number, number, number];
-type TWorskGrade = [number, number];
+type TWorksGrade = [number, number];
 
 export {
   TExamsGrade,
-  TWorskGrade,
+  TWorksGrade,
 };

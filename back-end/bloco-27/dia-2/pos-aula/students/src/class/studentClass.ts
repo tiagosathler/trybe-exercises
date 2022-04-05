@@ -1,35 +1,45 @@
-import { TExamsGrade, TWorskGrade } from '../types/types';
+import Person from './personClass';
+import { TExamsGrade, TWorksGrade } from '../types';
+import { IStudent } from '../interfaces';
 
-export default class Student {
-  private _name: string;
-
+export default class Student extends Person {
   private _enrollment: string;
 
-  private _examsGrades: TExamsGrade;
+  private _examsGrade: TExamsGrade;
 
-  private _workskGrades: TWorskGrade;
+  private _worksGrade: TWorksGrade;
 
   constructor(
-    name: string,
-    enrollment: string,
-    examsGrades: TExamsGrade = [0, 0, 0, 0],
-    worksGrades: TWorskGrade = [0, 0],
+    {
+      name, birthday, enrollment, examsGrade, worksGrade,
+    }: IStudent,
   ) {
-    this._name = name;
-    this._enrollment = enrollment;
-    this._examsGrades = examsGrades;
-    this._workskGrades = worksGrades;
+    super({ name, birthday });
+    this.validateGrades(examsGrade);
+    this.validateGrades(worksGrade);
+    this.validateEnrollment(enrollment);      
   }
 
-  public get name(): string {
-    return this._name;
-  }
-
-  public set name(name: string) {
-    if (name.length > 3) {
-      throw new Error('Name must be at least 3 characters long');
+  validateGrades(array: TExamsGrade | TWorksGrade) {
+    array.forEach((grade) => {
+      if (grade < 0 || grade > 100) {
+        throw new Error('Invalid grade');
+      }
+    });
+    if (array.length === 4) {
+      this._examsGrade = array;
     }
-    this._name = name;
+    if (array.length === 2) {
+      this._worksGrade = array;
+    }
+  }
+
+  validateEnrollment(enrollment: string) {
+    console.log(enrollment.length);
+    if (enrollment.length > 16 || !enrollment.length) {
+      throw new Error('Invalid enrollment');
+    }
+    this._enrollment = enrollment;
   }
 
   public get enrollment(): string {
@@ -37,32 +47,32 @@ export default class Student {
   }
 
   public set enrollment(enrollment: string) {
-    this._enrollment = enrollment;
+    this.validateEnrollment(enrollment);
   }
 
   public get examsGrades(): TExamsGrade {
-    return this._examsGrades;
+    return this._examsGrade;
   }
 
   public set examsGrades(grades: TExamsGrade) {
-    this._examsGrades = grades;
+    this.validateGrades(grades);
   }
 
-  public get workskGrades(): TWorskGrade {
-    return this._workskGrades;
+  public get workskGrades(): TWorksGrade {
+    return this._worksGrade;
   }
 
-  public set workskGrades(grades: TWorskGrade) {
-    this._workskGrades = grades;
+  public set workskGrades(grades: TWorksGrade) {
+    this.validateGrades(grades);
   }
 
   public sumGrades(): number {
-    return [...this._examsGrades, ...this._workskGrades]
+    return [...this._examsGrade, ...this._worksGrade]
       .reduce((acc, grade) => acc + grade, 0);
   }
 
   public avergeGrades(): number {
-    const average = this.sumGrades() / (this._examsGrades.length + this._workskGrades.length);
+    const average = this.sumGrades() / (this._examsGrade.length + this._worksGrade.length);
     return Math.round(average);
   }
 }

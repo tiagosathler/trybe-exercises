@@ -15,8 +15,7 @@ export default class Student extends Person implements IStudentClass {
       enrollment, examsGrade, worksGrade,
     }: IStudent,
   ) {
-    const { name, birthday } = person;
-    super({ name, birthday });
+    super(person);
     this.validateGrades(examsGrade);
     this.validateGrades(worksGrade);
     this.validateEnrollment(enrollment);      

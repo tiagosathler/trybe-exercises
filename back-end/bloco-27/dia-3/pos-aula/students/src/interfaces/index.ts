@@ -5,9 +5,9 @@ export interface IPerson {
   birthday?: Date;  
 }
 
-export interface IPersonClass {
-  getAge: () => number;
-}
+// export interface IPersonClass {
+//   protected getAge: () => number;
+// }
 
 export interface IStudent extends IPerson {
   enrollment: string;

@@ -16,7 +16,7 @@ export default abstract class Person {
   }
 
   public static get count(): number {
-    return this._count;
+    return Person._count;
   }
 
   private validadeDate(date: Date | undefined): void {
@@ -43,25 +43,25 @@ export default abstract class Person {
     }
   }
 
-  protected getAge(): number {
+  public getAge(): number {
     const now: Date = new Date();
     const diff: number = now.valueOf() - this._birthday.valueOf();
     return Math.floor(diff / (365.25 * 24 * 60 * 60 * 1000));
   }
 
-  protected get name(): string {
+  public get name(): string {
     return this._name;
   }
 
-  protected set name(newName: string) {
+  public set name(newName: string) {
     this.validadeName(newName);
   }
 
-  protected get birthday(): Date {
+  public get birthday(): Date {
     return this._birthday;
   }
 
-  protected set birthday(newBirthday: Date) {
+  public set birthday(newBirthday: Date) {
     this.validadeDate(newBirthday);
   }
 }

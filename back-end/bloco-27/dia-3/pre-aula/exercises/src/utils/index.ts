@@ -1,5 +1,5 @@
-import Person from '../class/person';
+import { IPerson } from '../interfaces';
 
-export default function showDetails(person: Person):void {
+export default function showDetails(person: IPerson):void {
   person.showIdentification();
 }

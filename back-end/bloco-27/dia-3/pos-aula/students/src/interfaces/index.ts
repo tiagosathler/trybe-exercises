@@ -5,31 +5,39 @@ export interface IPerson {
   birthday?: Date;  
 }
 
-// export interface IPersonClass {
-//   protected getAge: () => number;
-// }
-
-export interface IStudent extends IPerson {
+export interface IEnrollable {
   enrollment: string;
+  generateEnrollment: () => string;
+}
+
+export interface IEnrollableClass {
+  enrollment: string;
+  generateEnrollment: () => string;
+}
+
+export interface IStudent {
+  enrollment?: string;
+  examsGrade: TExamsGrade;
+  worksGrade: TWorksGrade;  
+}
+
+export interface IStudentClass extends IPerson, IEnrollable {
   examsGrade: TExamsGrade;
   worksGrade: TWorksGrade;
-}
-
-export interface IEmployee extends IPerson {
-  registration?: number;
-  salary: number;
-  admissionDate: Date;
-}
-
-export interface IEmployeeClass {
-  generateRegistration: () => number;
-}
-
-export interface IStudentClass {
   sumGrades: () => number;
   averageGrades: () => number;
 }
 
+export interface IEmployee {
+  enrollment?: string;
+  salary: number;
+  admissionDate: Date;
+}
+
+export interface IEmployeeClass extends IPerson, IEnrollable {
+  salary: number;
+  admissionDate: Date;
+}
 export interface ITeacherClass {
   getSubjectName: () => string;
 }

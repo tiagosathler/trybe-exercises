@@ -1,24 +1,39 @@
+import { v4 as uuid, validate as uuidValidate } from 'uuid';
 import Person from './personClass';
 import { TExamsGrade, TWorksGrade } from '../types';
 import { IStudent, IStudentClass, IPerson } from '../interfaces';
 
 export default class Student extends Person implements IStudentClass {
-  private _enrollment: string;
-
   private _examsGrade: TExamsGrade;
 
   private _worksGrade: TWorksGrade;
 
+  private _enrollment: string;
+
   constructor(
     person: IPerson,
-    {
-      enrollment, examsGrade, worksGrade,
-    }: IStudent,
+    { enrollment, examsGrade, worksGrade }: IStudent,
   ) {
     super(person);
     this.validateGrades(examsGrade);
     this.validateGrades(worksGrade);
-    this.validateEnrollment(enrollment);      
+    if (enrollment) {
+      this.validateEnrollment(enrollment);
+    } else {
+      this.generateEnrollment();
+    }
+  }
+  
+  private validateEnrollment(enrollment: string) {
+    if (!uuidValidate(enrollment)) {
+      throw new Error(`Invalid enrollment ${enrollment}`);
+    }
+    this._enrollment = enrollment;
+  }
+  
+  generateEnrollment(): string {
+    this._enrollment = uuid();
+    return this._enrollment;
   }
   
   private validateGrades(array: TExamsGrade | TWorksGrade) {
@@ -35,34 +50,27 @@ export default class Student extends Person implements IStudentClass {
     }
   }
 
-  private validateEnrollment(enrollment: string) {
-    if (enrollment.length > 16 || !enrollment.length) {
-      throw new Error(`Invalid enrollment ${enrollment}`);
-    }
-    this._enrollment = enrollment;
-  }
-
   get enrollment(): string {
-    return this._enrollment;
+    return this.enrollment;
   }
 
   set enrollment(enrollment: string) {
     this.validateEnrollment(enrollment);
   }
 
-  get examsGrades(): TExamsGrade {
+  get examsGrade(): TExamsGrade {
     return this._examsGrade;
   }
 
-  set examsGrades(grades: TExamsGrade) {
+  set examsGrade(grades: TExamsGrade) {
     this.validateGrades(grades);
   }
 
-  get workskGrades(): TWorksGrade {
+  get worksGrade(): TWorksGrade {
     return this._worksGrade;
   }
 
-  set workskGrades(grades: TWorksGrade) {
+  set worksGrade(grades: TWorksGrade) {
     this.validateGrades(grades);
   }
 

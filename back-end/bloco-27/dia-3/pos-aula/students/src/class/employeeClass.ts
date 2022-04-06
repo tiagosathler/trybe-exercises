@@ -1,8 +1,9 @@
+import { v4 as uuid, validate as uuidValidate } from 'uuid';
 import Person from './personClass';
 import { IEmployee, IEmployeeClass, IPerson } from '../interfaces';
 
 export default class Employee extends Person implements IEmployeeClass {
-  private _registration: number;
+  private _enrrolment: string;
 
   private _salary: number;
 
@@ -13,16 +14,37 @@ export default class Employee extends Person implements IEmployeeClass {
     {
       salary,
       admissionDate,
+      enrollment,
     }: IEmployee,
   ) {
     super(person);
-    this.generateRegistration();
     this.validateSalary(salary);
-    this.validateAdmissionDate(admissionDate);  
+    this.validateAdmissionDate(admissionDate);
+    if (enrollment) {
+      this.validateEnrollment(enrollment);
+    } else {
+      this.generateEnrollment();
+    }
+  }
+  
+  private validateEnrollment(enrollment: string) {
+    if (!uuidValidate(enrollment)) {
+      throw new Error(`Invalid enrollment ${enrollment}`);
+    }
+    this._enrrolment = enrollment;
   }
 
-  get registration(): number {
-    return this._registration;
+  generateEnrollment(): string {
+    this._enrrolment = uuid();
+    return this._enrrolment;
+  }
+
+  get enrollment(): string {
+    return this._enrrolment;
+  }
+
+  set enrollment(enrollment: string) {
+    this.validateEnrollment(enrollment);
   }
 
   get salary(): number {
@@ -41,14 +63,6 @@ export default class Employee extends Person implements IEmployeeClass {
     this.validateAdmissionDate(admissionDate);
   }
    
-  public generateRegistration(): number {
-    if (this._registration) {
-      return this._registration;
-    }
-    this._registration = Math.floor(Math.random() * 100000);
-    return this._registration;
-  }
-
   private validateSalary(salary: number) {
     if (salary < 0) {
       throw new Error(`Invalid salary ${salary}`);

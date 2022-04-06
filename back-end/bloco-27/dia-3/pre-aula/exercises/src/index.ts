@@ -4,6 +4,8 @@ import PhysicalPerson from './class/physicalPerson';
 import LegalPerson from './class/legalPerson';
 import showDetails from './utils';
 import Contract from './class/contract';
+import Deamon from './class/deamon';
+import DeamonsModel from './class/deamonsModel';
 
 const melee = new MeleeCharacter('Melee');
 melee.talk();
@@ -32,3 +34,10 @@ console.log(c1.broker.cpf);
 
 const c2: Contract<LegalPerson> = new Contract(lp0);
 console.log(c2.broker.cnpj);
+
+const lyra = new Deamon('Lyra', 'Salt');
+
+const deamonsDB = new DeamonsModel();
+
+console.log(deamonsDB.create(lyra));
+console.log(deamonsDB.read());

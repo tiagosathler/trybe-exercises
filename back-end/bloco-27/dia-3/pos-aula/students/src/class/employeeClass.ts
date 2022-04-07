@@ -19,8 +19,8 @@ export default class Employee extends Person implements IEmployeeClass {
       info: IEmployee,
     },
   ) {
-    const { enrollment, salary, admissionDate } = info;
     super(person);
+    const { enrollment, salary, admissionDate } = info;
     this.validateSalary(salary);
     this.validateAdmissionDate(admissionDate);
     if (enrollment) {

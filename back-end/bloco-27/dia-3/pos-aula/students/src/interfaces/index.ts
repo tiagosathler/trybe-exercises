@@ -1,6 +1,4 @@
 import { TExamsGrade, TWorksGrade } from '../types';
-import Teacher from '../class/teacherClass';
-import Evaluation from '../class/evaluationClass';
 
 export interface IPerson {
   name?: string;
@@ -42,15 +40,4 @@ export interface IEmployeeClass extends IPerson, IEnrollable {
 }
 export interface ITeacherClass {
   getSubjectName: () => string;
-}
-
-export interface IEvaluation {
-  score: number;
-  teacher: Teacher;
-  type: 'prova' | 'trabalho';
-}
-
-export interface IEvaluationResult {
-  score: number;
-  evaluation: Evaluation;
 }

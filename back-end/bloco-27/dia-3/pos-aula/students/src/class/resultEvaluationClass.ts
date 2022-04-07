@@ -1,8 +1,8 @@
-import Evaluation from './evaluationClass';
-import { IEvaluationResult } from '../interfaces';
+import Work from './workClass';
+import Exam from './examClass';
 
 export default class EvaluationResult {
-  private _evaluation: Evaluation;
+  private _evaluation: Work | Exam;
 
   private _score: number;
 
@@ -10,7 +10,10 @@ export default class EvaluationResult {
     {
       evaluation,
       score,
-    }: IEvaluationResult,
+    }: {
+      evaluation: Work | Exam,
+      score: number,
+    },
   ) {
     this._evaluation = evaluation;
     this.validateScore(score);
@@ -33,11 +36,11 @@ export default class EvaluationResult {
     this.validateScore(score);
   }
 
-  get evaluation(): Evaluation {
+  get evaluation(): Work | Exam {
     return this._evaluation;
   }
 
-  set evaluation(evaluation: Evaluation) {
+  set evaluation(evaluation: Work | Exam) {
     this._evaluation = evaluation;
   }
 }

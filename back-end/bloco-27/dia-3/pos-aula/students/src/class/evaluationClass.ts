@@ -1,60 +1,38 @@
 import Teacher from './teacherClass';
-import { IEvaluation } from '../interfaces';
 
-import compareScore from '../utils';
+export default abstract class Evaluation {
+  protected _score: number;
 
-export default class Evaluation {
-  private _score: number;
-
-  private _teacher: Teacher;
-
-  private _type: 'prova' | 'trabalho';
+  protected _teacher: Teacher;
 
   constructor({
-    score,
     teacher,
-    type,
-  }: IEvaluation) {
-    this.validateScore(score, type);
+    score,
+  }: { teacher: Teacher, score: number }) {
     this._teacher = teacher;
-    this._type = type; 
+    this.validateScore(score);
   }
 
-  private validateScore(score: number, type: 'prova' | 'trabalho') {
-    switch (type) {
-      case 'prova':
-        this._score = compareScore(score, 25, type);
-        break;
-      case 'trabalho':
-        this._score = compareScore(score, 50, type);
-        break;
-      default:
-        throw new Error(`Invalid type '${type}'`);
+  protected validateScore(score: number): void {
+    if (score <= 0) {
+      throw new Error('Nota inválida: deve ser maior que 0!');
     }
     this._score = score;
   }
 
-  get score(): number {
+  public get score(): number {
     return this._score;
   }
 
-  set score(score: number) {
-    this.validateScore(score, this._type);
+  public set score(score: number) {
+    this.validateScore(score);
   }
 
-  get teacher(): Teacher {
+  public get teacher(): Teacher {
     return this._teacher;
   }
 
-  set teacher(teacher: Teacher) {
+  public set teacher(teacher: Teacher) {
     this._teacher = teacher;
-  }
-
-  get type(): 'prova' | 'trabalho' {
-    return this._type;
-  }
-
-  set type(type: 'prova' | 'trabalho') {
-    this.validateScore(this._score, type);
-  }
+  }  
 }

@@ -1,6 +1,6 @@
 import { v4 as uuid, validate as uuidValidate } from 'uuid';
 import Person from './personClass';
-import { IEmployee, IEmployeeClass, IPerson } from '../interfaces';
+import { IEmployee, IEmployeeClass } from '../interfaces';
 
 export default class Employee extends Person implements IEmployeeClass {
   private _enrrolment: string;
@@ -10,13 +10,16 @@ export default class Employee extends Person implements IEmployeeClass {
   private _admissionDate: Date;
 
   constructor(
-    person: IPerson,
     {
-      salary,
-      admissionDate,
-      enrollment,
-    }: IEmployee,
+      person,
+      info,
+    }:
+    {
+      person: { name: string, birthday: Date },
+      info: IEmployee,
+    },
   ) {
+    const { enrollment, salary, admissionDate } = info;
     super(person);
     this.validateSalary(salary);
     this.validateAdmissionDate(admissionDate);

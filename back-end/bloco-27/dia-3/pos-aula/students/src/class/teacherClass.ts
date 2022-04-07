@@ -1,16 +1,18 @@
 import Employee from './employeeClass';
 import Lesson from './lessonClass';
-import { IEmployee, IPerson, ITeacherClass } from '../interfaces';
+import { ITeacherClass } from '../interfaces';
 
 export default class Teacher extends Employee implements ITeacherClass {
   _lesson: Lesson;
   
-  constructor(
-    person: IPerson,
-    employee: IEmployee,
-    lesson: Lesson,
-  ) {
-    super(person, employee);
+  constructor({
+    employee,
+    lesson,
+  }: { employee: Employee, lesson: Lesson }) {
+    const { name, birthday, salary, admissionDate, enrollment } = employee;
+    const person = { name, birthday };
+    const info = { salary, admissionDate, enrollment };
+    super({ person, info });
     this._lesson = lesson;
   }
 

@@ -3,14 +3,15 @@ import Person from './class/personClass';
 import Employee from './class/employeeClass';
 import Lesson from './class/lessonClass';
 import Teacher from './class/teacherClass';
-import Evaluation from './class/evaluationClass';
+import Exam from './class/examClass';
+import Work from './class/workClass';
 import EvaluationResult from './class/resultEvaluationClass';
 
 const MY_BIRTHDAY = new Date('1980-07-23');
 const LINE = '------------------------------------------------------';
 
 const studentOne = new Student(
-  { name: 'Tiago Heringer', birthday: MY_BIRTHDAY },
+  { name: 'João da Silva', birthday: MY_BIRTHDAY },
   {
     examsGrade: [90, 85, 90, 100],
     worksGrade: [60, 74],
@@ -30,14 +31,14 @@ console.log('Média de todas as notas: ', studentOne.averageGrades());
 
 console.log(LINE);
 
-const employee1 = new Employee(
-  { name: 'Tiago Sathler', birthday: MY_BIRTHDAY },
-  {
-    salary: 8000,
+const employee1 = new Employee({
+  person: { name: 'Tiago Sathler', birthday: MY_BIRTHDAY },
+  info: {
+    salary: 4000,
     admissionDate: new Date('2021/07/23'),
   },
-);
-
+});
+  
 console.log(employee1);
 console.log(
   'Name:', 
@@ -62,33 +63,40 @@ console.log(LINE);
 const math = new Lesson('Matemática');
 const english = new Lesson('Inglês');
 
-const teacher1 = new Teacher(
-  { name: 'Tiago Siqueira', birthday: MY_BIRTHDAY },
-  { salary: 3500, admissionDate: new Date('2020/08/31') },
-  math,
-);
-console.log(teacher1);
-console.log(`Matéria lecionada por ${teacher1.name}: ${teacher1.getSubjectName()}`);
+const mathTeacher = new Teacher({ employee: employee1, lesson: math });
+console.log(mathTeacher);
+console.log(`Matéria lecionada por ${mathTeacher.name}: ${mathTeacher.getSubjectName()}`);
 
-// teacher1.subject = english;
-// console.log(teacher1);
-// console.log(`Nova matéria lecionada por ${teacher1.name}: ${teacher1.subject.name}`);
+const employee2 = new Employee({
+  person:
+    { name: 'Amélia Siqueira', birthday: new Date('1945-11-13') },
+  info: {
+    salary: 4000,
+    admissionDate: new Date('1988/03/01'),
+  },
+});
 
-// english.name = 'English';
-// console.log(teacher1);
-// console.log(`Nova matéria lecionada por ${teacher1.name}: ${teacher1.subject.name}`);
+const englishTeacher = new Teacher({ employee: employee2, lesson: english });
+
 console.log(`Instâncias de 'Person': ${Person.count}`);
 
 console.log(LINE);
 
-const mathWork = new Evaluation({ score: 50, teacher: teacher1, type: 'trabalho' });
-const mathExam = new Evaluation({ score: 25, teacher: teacher1, type: 'prova' });
+const mathWork = new Work({ score: 50, teacher: mathTeacher });
+const mathExam = new Exam({ score: 25, teacher: mathTeacher });
+
+const englishWork = new Work({ score: 30, teacher: englishTeacher });
+const englishExam = new Exam({ score: 20, teacher: englishTeacher });
 
 const studentOneMathWork = new EvaluationResult({ score: 49, evaluation: mathWork });
 const studentOneMathExam = new EvaluationResult({ score: 20, evaluation: mathExam });
+const studentOneEnglishWork = new EvaluationResult({ score: 30, evaluation: englishWork });
+const studentOneEnglishExam = new EvaluationResult({ score: 20, evaluation: englishExam });
 
 studentOne.addEvaluation(studentOneMathWork);
 studentOne.addEvaluation(studentOneMathExam);
+studentOne.addEvaluation(studentOneEnglishWork);
+studentOne.addEvaluation(studentOneEnglishExam);
 console.log(studentOne);
 console.log('Soma das notas', studentOne.sumEvaulationGrades());
 console.log('Média das notas', studentOne.averageEvaulationGrades());

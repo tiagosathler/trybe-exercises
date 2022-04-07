@@ -97,6 +97,8 @@ studentOne.addEvaluation(studentOneMathWork);
 studentOne.addEvaluation(studentOneMathExam);
 studentOne.addEvaluation(studentOneEnglishWork);
 studentOne.addEvaluation(studentOneEnglishExam);
+
 console.log(studentOne);
+console.log(studentOne.evaluations);
 console.log('Soma das notas', studentOne.sumEvaulationGrades());
 console.log('Média das notas', studentOne.averageEvaulationGrades());

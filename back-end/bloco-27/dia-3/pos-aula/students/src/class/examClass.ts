@@ -15,10 +15,14 @@ export default class Exam extends Evaluation {
     this.validateExam(score);
   }
 
+  set score(score: number) {
+    this.validateExam(score);
+  }
+
   private validateExam(score: number): void {
     if (score > 25) {
       throw new Error('Nota de prova inválida: deve ser de 0 a 25');
     }
-    this._score = score;
+    super.score = score;
   }
 }

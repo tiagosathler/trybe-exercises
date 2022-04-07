@@ -2,11 +2,14 @@ import { v4 as uuid, validate as uuidValidate } from 'uuid';
 import Person from './personClass';
 import { TExamsGrade, TWorksGrade } from '../types';
 import { IStudent, IStudentClass, IPerson } from '../interfaces';
+import EvaluationResult from './resultEvaluationClass';
 
 export default class Student extends Person implements IStudentClass {
   private _examsGrade: TExamsGrade;
 
   private _worksGrade: TWorksGrade;
+
+  private _evaluationResults: EvaluationResult[] = [];
 
   private _enrollment: string;
 
@@ -22,6 +25,14 @@ export default class Student extends Person implements IStudentClass {
     } else {
       this.generateEnrollment();
     }
+  }
+
+  public addEvaluation(evaluation: EvaluationResult) {
+    this._evaluationResults.push(evaluation);
+  }
+
+  public get evaluations(): EvaluationResult[] {
+    return this._evaluationResults;
   }
   
   private validateEnrollment(enrollment: string) {
@@ -81,6 +92,15 @@ export default class Student extends Person implements IStudentClass {
 
   public averageGrades(): number {
     const average = this.sumGrades() / (this._examsGrade.length + this._worksGrade.length);
-    return Math.round(average);
+    return Number(average.toFixed(2));
+  }
+
+  public sumEvaulationGrades(): number {
+    return this._evaluationResults.reduce((acc, evaluation) => acc + evaluation.score, 0);
+  }
+
+  public averageEvaulationGrades(): number {
+    const average = this.sumEvaulationGrades() / this._evaluationResults.length;
+    return Number(average.toFixed(2));
   }
 }

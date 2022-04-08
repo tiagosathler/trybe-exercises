@@ -18,43 +18,47 @@ enum FileType {
   opsInfo
 }
 
+enum Countries {
+  Argentina = 7,
+  Brazil = 8,
+}
+
 // callbacks
-const plantsNeedsSunCb = (id: string) => (plant: IPlant) => {
+const plantsNeedsSunCb = (id: string) => (plant: IPlant): boolean => {
   const needsSunById = (plant.needsSun === true) && plant.id === id;
   const specialCare = plant.specialCare === undefined || plant.specialCare.waterFrequency > 2;
 
-  if (needsSunById && specialCare) return true;
-  return false;
+  return needsSunById && specialCare;
 };
 
 // Plants Class
-class Plants {
-  private readonly PLANTS_PATH = path.join(__dirname, 'data', 'plants.json');
+export default class Plants {
+  private static readonly PLANTS_PATH = path.join(__dirname, 'data', 'plants.json');
   
-  private readonly OPS_INFO_PATH = path.join(__dirname, 'data', 'opsInfo.json');
+  private static readonly OPS_INFO_PATH = path.join(__dirname, 'data', 'opsInfo.json');
 
-  private async updateOpsInfo(incrementAmount: number = 1) {
-    const opsInfoRaw = await fs.readFile(this.OPS_INFO_PATH, { encoding: 'utf8' });
+  private static async updateOpsInfo(incrementAmount: number = 1) {
+    const opsInfoRaw = await fs.readFile(Plants.OPS_INFO_PATH, { encoding: 'utf8' });
     const opsInfo: IOpsInfo = JSON.parse(opsInfoRaw);
     opsInfo.createdPlants += incrementAmount;
-    this.saveFile(FileType.opsInfo, opsInfo);
+    Plants.saveFile(FileType.opsInfo, opsInfo);
   }
 
-  private async saveFile(type: FileType, data: IPlant[] | IOpsInfo) {
+  private static async saveFile(type: FileType, data: IPlant[] | IOpsInfo) {
     let filePath: string;
-    if (type === FileType.plants) filePath = this.PLANTS_PATH;
-    else if (type === FileType.opsInfo) filePath = this.OPS_INFO_PATH;
+    if (type === FileType.plants) filePath = Plants.PLANTS_PATH;
+    else if (type === FileType.opsInfo) filePath = Plants.OPS_INFO_PATH;
     else return null;
 
     await fs.writeFile(filePath, JSON.stringify(data));
   }
 
-  private initPlant(plant: IPlant) {
+  private static initPlant(plant: IPlant) {
     const { id, breed, needsSun, origin, specialCare, size } = plant;
 
     const waterFrequency = needsSun
-      ? size * 0.77 + (origin === 'Brazil' ? 8 : 7)
-      : (size / 2) * 1.33 + (origin === 'Brazil' ? 8 : 7);
+      ? size * 0.77 + Number(Countries[origin as any])
+      : (size / 2) * 1.33 + Number(Countries[origin as any]);
 
     const newPlant: IPlant = {
       id,
@@ -70,13 +74,13 @@ class Plants {
     return newPlant;
   }
 
-  public async getPlants() {
-    const plantsRaw = await fs.readFile(this.PLANTS_PATH, { encoding: 'utf8' });
+  public async getPlants(): Promise<IPlant[]> {
+    const plantsRaw = await fs.readFile(Plants.PLANTS_PATH, { encoding: 'utf8' });
     const plants: IPlant[] = JSON.parse(plantsRaw);
     return plants;
   }
 
-  public async getPlantById(id: string) {
+  public async getPlantById(id: string): Promise<IPlant | null> {
     const plants = await this.getPlants();
 
     const plantById = plants.find((plant) => plant.id === id);
@@ -84,51 +88,49 @@ class Plants {
     return plantById;
   }
 
-  public async removePlantById(id: string) {
+  public async removePlantById(id: string): Promise<IPlant | null> {
     const plants = await this.getPlants();
 
     const removedPlant = plants.find((plant) => plant.id === id);
     if (!removedPlant) return null;
 
     const newPlants = plants.filter((plant) => plant.id !== id);
-    this.saveFile(FileType.plants, newPlants);
+    Plants.saveFile(FileType.plants, newPlants);
 
-    await this.updateOpsInfo(-1);
+    await Plants.updateOpsInfo(-1);
 
     return removedPlant;
   }
 
-  public async getPlantsThatNeedsSunWithId(id: string) {
+  public async getPlantsThatNeedsSunWithId(id: string): Promise<IPlant[]> {
     const plants = await this.getPlants();
 
     const filteredPlants = plants.filter(plantsNeedsSunCb(id));
     return filteredPlants;
   }
 
-  public async editPlant(plantId: string, newPlant: IPlant) {
+  public async editPlant(plantId: string, newPlant: IPlant): Promise<IPlant> {
     const plants = await this.getPlants();
 
     const updatedPlants = plants.map((plant) => (
       (plant.id === plantId) ? { ...newPlant, id: plant.id } : plant));
 
-    this.saveFile(FileType.plants, updatedPlants);
+    Plants.saveFile(FileType.plants, updatedPlants);
     return newPlant;
   }
 
-  public async savePlant(plant: IPlant) {
+  public async savePlant(plant: IPlant): Promise<IPlant> {
     const plants = await this.getPlants();
 
-    const newPlant = this.initPlant({ ...plant, id: randomUUID() });
+    const newPlant = Plants.initPlant({ ...plant, id: randomUUID() });
     plants.push(newPlant);
-    this.saveFile(FileType.plants, plants);
+    Plants.saveFile(FileType.plants, plants);
 
-    await this.updateOpsInfo(1);
+    await Plants.updateOpsInfo(1);
 
     return newPlant;
   }
 }
-
-export default Plants;
 
 // import fs from 'fs/promises';
 

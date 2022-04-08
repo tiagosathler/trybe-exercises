@@ -27,13 +27,11 @@ const plantsNeedsSunCb = (id: string) => (plant: IPlant) => {
   return false;
 };
 
-console.log(__dirname);
-
 // Plants Class
 class Plants {
-  private PLANTS_PATH = path.join(__dirname, 'plants.json');
-
-  private OPS_INFO_PATH = path.join(__dirname, 'opsInfo.json');
+  private readonly PLANTS_PATH = path.join(__dirname, 'data', 'plants.json');
+  
+  private readonly OPS_INFO_PATH = path.join(__dirname, 'data', 'opsInfo.json');
 
   private async updateOpsInfo(incrementAmount: number = 1) {
     const opsInfoRaw = await fs.readFile(this.OPS_INFO_PATH, { encoding: 'utf8' });

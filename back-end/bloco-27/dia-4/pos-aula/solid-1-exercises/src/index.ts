@@ -1,5 +1,5 @@
 import express, { Request, Response } from 'express';
-import Plants from './class/Plants';
+import Plants from './class/plants';
 
 const app = express();
 

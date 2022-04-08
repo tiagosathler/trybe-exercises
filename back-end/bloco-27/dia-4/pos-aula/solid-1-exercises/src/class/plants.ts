@@ -21,6 +21,7 @@ enum FileType {
 enum Countries {
   Argentina = 7,
   Brazil = 8,
+  Europe = 9
 }
 
 // callbacks
@@ -109,7 +110,10 @@ export default class Plants {
     return filteredPlants;
   }
 
-  public async editPlant(plantId: string, newPlant: IPlant): Promise<IPlant> {
+  public async editPlant(plantId: string, newPlant: IPlant): Promise<IPlant | null> {
+    const plant = await this.getPlantById(plantId);
+    if (!plant) return null;
+
     const plants = await this.getPlants();
 
     const updatedPlants = plants.map((plant) => (

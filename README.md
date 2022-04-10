@@ -152,9 +152,9 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 ##### :white_check_mark: Bloco 19: Docker: Utilizando Containers
 
 - [x] 19-1: _Introdução - Back-end_
-- [x] 19-1: _Utilizando Containers_
+- [x] 19-1: _Utilizando Containers - Docker_
 - [x] 19-2: _Manipulação e Criação de Imagens no Docker_
-- [x] 19-3: _Filtrando dados de forma específica_
+- [x] 19-3: _Orquestrando Containers com Docker Compose_
 - [x] 20-4: _[Projeto - Docker Todo-List]()_
 
 ##### :white_check_mark: Bloco 20: Introdução à SQL
@@ -165,49 +165,50 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 - [x] 20-4: _Manipulando tabelas_
 - [x] 20-5: _[Projeto - All For One]()_
 
-##### :hourglass_flowing_sand: Bloco 21: Funções SQL, JOINs e Normalização
+##### :white_check_mark: Bloco 21: Introdução à SQL
 
-- [ ] 21-1: _Funções mais usadas no SQL_
-- [ ] 21-2: _Descomplicando JOINs_
-- [ ] 21-3: _Transformando ideias em um modelo de banco de dados_
-- [ ] 21-4: _[Projeto - One For All]()_
+- [x] 21-1: _Introdução - Banco de dados relacionais_
+- [x] 21-1: _Bando de dados SQL_
+- [x] 21-2: _Encontrando dados em um bando de dados_
+- [x] 21-3: _Transformando ideias em um modelo de banco de dados_
+- [x] 21-4: _[Projeto - One For All]()_
 
-##### :hourglass_flowing_sand: Bloco 22: Introdução ao desenvolvimento Web com Node.js
+##### :white_check_mark: Bloco 22: Introdução ao desenvolvimento Web com Node.js
 
-- [ ] 22-1: _Intro - Node.js - Um motor JavaScript_
-- [ ] 22-2: _Node.js - Fluxo Assíncrono_
-- [ ] 22-3: _Mocha, Chai e Sinon - Testes de Back-end com Node.js_
-- [ ] 22-4: _Express - HTTP com Node.js_
-- [ ] 22-5: _Express - Middlewares_
-- [ ] 22-6: _[Projeto - Talker Manager]()_
+- [x] 22-1: _Intro - Node.js - Um motor JavaScript_
+- [x] 22-2: _Node.js - Fluxo Assíncrono_
+- [x] 22-3: _Mocha, Chai e Sinon - Testes de Back-end com Node.js_
+- [x] 22-4: _Express - HTTP com Node.js_
+- [x] 22-5: _Express - Middlewares_
+- [x] 22-6: _[Projeto - Talker Manager]()_
 
-##### :hourglass_flowing_sand: Bloco 23: Introdução - NoSQL
+##### :white_check_mark: Bloco 23: Introdução - NoSQL
 
-- [ ] 23-1: _MongoDB - Introdução_
-- [ ] 23-2: _Filter Operators_
-- [ ] 23-3: _[Projeto - Data Flights]()_
+- [x] 23-1: _MongoDB - Introdução_
+- [x] 23-2: _Filter Operators_
+- [x] 23-3: _[Projeto - Data Flights]()_
 
-##### :hourglass_flowing_sand: Bloco 24: Updates
+##### :white_check_mark: Bloco 24: Updates
 
-- [ ] 24-1: _Updates Simples_
-- [ ] 24-2: _Updates Complexos - Arrays - Parte 1_
-- [ ] 24-3: _Updates Complexos - Arrays - Parte 2_
-- [ ] 24-4: _[Projeto - Commerce]()_
+- [x] 24-1: _Updates Simples_
+- [x] 24-2: _Updates Complexos - Arrays - Parte 1_
+- [x] 24-3: _Updates Complexos - Arrays - Parte 2_
+- [x] 24-4: _[Projeto - Commerce]()_
 
-##### :hourglass_flowing_sand: Bloco 25: Aggregation Framework
+##### :white_check_mark: Bloco 25: Aggregation Framework
 
 - [ ] 25-1: _Aggregation Framework - Part 1_
 - [ ] 25-2: _Aggregation Framework - Part 2_
 - [ ] 25-3: _[Projeto - Aggregations]()_
 
-##### :hourglass_flowing_sand: Bloco 26: Intro - NodeJS
+##### :white_check_mark: Bloco 26: Intro - NodeJS
 
 - [ ] 26-1: _NodeJS - Introdução_
 - [ ] 26-2: _NodeJS - Fluxo Assíncrono_
 - [ ] 26-3: _NodeJS - Arquitetura_
 - [ ] 26-4: _[Projeto - A CLI of Ice and Fire]()_
 
-##### :hourglass_flowing_sand: Bloco 27: NodeJS
+##### :white_check_mark: Bloco 27: NodeJS
 
 - [ ] 27-1: _Express: HTTP com Node.js_
 - [ ] 27-2: _Arquitetura de Software - Introdução ao MVC_

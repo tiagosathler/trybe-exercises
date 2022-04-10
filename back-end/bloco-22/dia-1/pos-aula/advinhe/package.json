@@ -1,0 +1,16 @@
+{
+  "name": "b22-d1-pos-aula-advinhe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sorteio": "node index.js"
+  },
+  "keywords": [],
+  "author": "Tiago Sathler",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}

@@ -1,26 +1,25 @@
 require('dotenv').config();
 
+const common = {
+  username: process.env.MYUSERNAME,
+  password: process.env.PASSWORD,
+  host: process.env.HOSTNAME,
+  dialect: process.env.DIALECT,
+};
+
 module.exports = {
   development: {
-    username: process.env.MYUSERNAME,
-    password: process.env.PASSWORD,
-    database: process.env.DATABASE_DEV,
-    host: process.env.HOSTNAME,
-    dialect: process.env.DIALECT,
+    ...common,
+    database: process.env.DATABASE_DEV,    
   },
   test: {
-    username: process.env.MYUSERNAME,
-    password: process.env.PASSWORD,
+    ...common,
     database: process.env.DATABASE_TEST,
-    host: process.env.HOSTNAME,
-    dialect: process.env.DIALECT,
     logging: false,
   },
   production: {
-    username: process.env.MYUSERNAME,
-    password: process.env.PASSWORD,
+    ...common,
     database: process.env.DATABASE_PROD,
-    host: process.env.HOSTNAME,
-    dialect: process.env.DIALECT,
+    logging: false,
   },
 };

@@ -26,58 +26,59 @@ const getPatient = async (patientId) => {
 // -------------------------------------------
 // LIST ALL PATIENTS AND PLANS:
 
-// LAZY LOADING:
-const listAllPatientsAndPlans = async () => {
-  const patients = await listAllPatients();
+// LAZY LOADING: METODO 1
+// const listAllPatientsAndPlans = async () => {
+//   const patients = await listAllPatients();
   
-  const results = await Promise.all(patients.map(async ({ patientId, planId, fullname }) => {
-    const plan = await Model.Plan.findOne({
-      where: { planId },
-      attributes: ['planId', 'coverage', 'price'],
-    });
-    return { patientId, fullname, plan: { ...plan.dataValues } };
-  }));
+//   const results = await Promise.all(patients.map(async ({ patientId, planId, fullname }) => {
+//     const plan = await Model.Plan.findOne({
+//       where: { planId },
+//       attributes: ['planId', 'coverage', 'price'],
+//     });
+//     return { patientId, fullname, plan: { ...plan.dataValues } };
+//   }));
 
-  return results;
-};
+//   return results;
+// };
+
+// LAZY LOADING: METODO 2
+// const listAllPatientsAndPlans = async () => {
+//   const patients = await listAllPatients();
+  
+//   const results = await Promise.all(
+//     patients.map(async ({ patientId, fullname }) => (
+//       Model.Patient.findByPk(patientId)
+//         .then((patient) => 
+//           patient.getPlan()
+//             .then((plan) => {
+//               const { planId, coverage, price } = plan;
+//               return { patientId, fullname, plan: { planId, coverage, price } };
+//             })))),
+//   );
+
+//   return results;
+// };
 
 // EAGER LOADING:
-// const listAllPatientsAndPlans = async () => {
-//   const patients = await Model.Patient.findAll({
-//     attributes: ['patientId', 'fullname'],
-//     include: { model: Model.Plan, as: 'plan', attributes: ['planId', 'coverage', 'price'] },
-//   });
+const listAllPatientsAndPlans = async () => {
+  const patients = await Model.Patient.findAll({
+    attributes: ['patientId', 'fullname'],
+    include: { model: Model.Plan, as: 'plan', attributes: ['planId', 'coverage', 'price'] },
+  });
   
-//   return patients;
-// };
+  return patients;
+};
 
 // -------------------------------------------
 // LIST ALL PATIENTS AND SURGERIES:
 
-// LAZY LOADING:
-const listAllPatientsAndSurgeries = async () => {
-  const patients = await listAllPatients();
-  
-  const results = await Promise.all(patients.map(async ({ patientId }) => {
-    const patient = await Model.Patient.findOne({
-      where: { patientId },
-      attributes: ['patientId', 'fullname'],
-      include: [{
-        model: Model.Surgery,
-        as: 'surgeries',
-        through: { attributes: [] },
-        attributes: ['surgeryId', 'doctor', 'specialty'],
-      }],
-    });
-    return { ...patient.dataValues };
-  }));
-
-  return results;
-};
-
-  // EAGER LOADING:
+// LAZY LOADING: MÉTODO 1
 // const listAllPatientsAndSurgeries = async () => {
-//   const patients = Model.Patient.findAll({
+//   const patients = await listAllPatients();
+  
+//   const results = await Promise.all(patients.map(async ({ patientId }) => {
+//     const patient = await Model.Patient.findOne({
+//       where: { patientId },
 //       attributes: ['patientId', 'fullname'],
 //       include: [{
 //         model: Model.Surgery,
@@ -85,15 +86,49 @@ const listAllPatientsAndSurgeries = async () => {
 //         through: { attributes: [] },
 //         attributes: ['surgeryId', 'doctor', 'specialty'],
 //       }],
-//   });
+//     });
+//     return { ...patient.dataValues };
+//   }));
+
+  // LAZY LOADING: MÉTODO 2
+// const listAllPatientsAndSurgeries = async () => {
+//   const patients = await listAllPatients();
   
-//   return patients;
+//   const results = await Promise.all(
+//     patients.map(async ({ patientId }) => (
+//       Model.Patient.findByPk(patientId)
+//         .then((patient) => 
+//           patient.getSurgeries()
+//             .then((surg) => {
+//               const { fullname } = patient;
+//               const surgeries = surg.map(({ surgeryId, doctor, specialty }) => (
+//                 { surgeryId, doctor, specialty }));
+//               return { patientId, fullname, surgeries };
+//             })))),
+//   );
+
+//   return results;
 // };
+
+  // EAGER LOADING:
+const listAllPatientsAndSurgeries = async () => {
+  const patients = Model.Patient.findAll({
+      attributes: ['patientId', 'fullname'],
+      include: [{
+        model: Model.Surgery,
+        as: 'surgeries',
+        through: { attributes: [] },
+        attributes: ['surgeryId', 'doctor', 'specialty'],
+      }],
+  });
+  
+  return patients;
+};
 
 // -------------------------------------------
 // LIST ALL PATIENTS ALL INFORMATION:
 
-// LAZY LOADING:
+// LAZY LOADING: MÉTODO 1
 // const listAllPatientsInformation = async () => {
 //   const patiensAndPlans = await listAllPatientsAndPlans();
 //   const patientAndSurgeries = await listAllPatientsAndSurgeries();

@@ -12,10 +12,5 @@ module.exports = (sequelize, DataTypes) => {
     tableName: 'Surgeries',
   });
 
-  // Surgery.associate = (models) => {
-  //   Surgery.hasOne(models.Plan,
-  //     { foreignKey: 'planId', as: 'plans' });
-  // };
-
   return Surgery;
 };

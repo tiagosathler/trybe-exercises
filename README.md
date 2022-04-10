@@ -182,18 +182,23 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 - [x] 22-5: _Express - Middlewares_
 - [x] 22-6: _[Projeto - Talker Manager]()_
 
-##### :white_check_mark: Bloco 23: Introdução - NoSQL
+##### :white_check_mark: Bloco 23: Node.js: Camada de Serviço e Arquitetura Rest e Restful
 
-- [x] 23-1: _MongoDB - Introdução_
-- [x] 23-2: _Filter Operators_
-- [x] 23-3: _[Projeto - Data Flights]()_
+- [x] 23-1: _Introdução - Arquitetura de Software_
+- [x] 23.1: _Arquitetura de Software - Camada de Model_
+- [x] 23-2: _Arquitetura de Software - Camada de Controller e Service_
+- [x] 23-3: _Arquitetura Web - Rest e Restful_
+- [x] 23-4: _Arquitetura de Software - Testando as Camadas MSC_
+- [x] 23-5: _[Projeto - Store Manager]()_
 
-##### :white_check_mark: Bloco 24: Updates
+##### :white_check_mark: Bloco 24: Node.js - ORM e Autenticação
 
-- [x] 24-1: _Updates Simples_
-- [x] 24-2: _Updates Complexos - Arrays - Parte 1_
-- [x] 24-3: _Updates Complexos - Arrays - Parte 2_
-- [x] 24-4: _[Projeto - Commerce]()_
+- [x] 24-1: _Introdução - Node.js: ORM e Autenticação_
+- [x] 24-1: _ORM - Interface da aplicação com o banco de dados_
+- [x] 24-2: _ORM - Associations_
+- [x] 24-3: _JWT - (JSON Web Token)_
+- [x] 24-4: _Testando APIs com Testes de Integração_
+- [x] 24-5: _[Projeto - API de Blogs]()_
 
 ##### :white_check_mark: Bloco 25: Aggregation Framework
 

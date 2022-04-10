@@ -1,0 +1,14 @@
+{
+  "name": "hello-typescript",
+  "version": "1.0.0",
+  "description": "hello typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tiago Sathler",
+  "license": "ISC",
+  "dependencies": {
+    "@tsconfig/node14": "^1.0.1"
+  }
+}

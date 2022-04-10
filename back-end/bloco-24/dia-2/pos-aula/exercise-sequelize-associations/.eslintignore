@@ -1,0 +1,6 @@
+node_modules
+test
+tests
+migrations
+seeders
+src/models/index.js

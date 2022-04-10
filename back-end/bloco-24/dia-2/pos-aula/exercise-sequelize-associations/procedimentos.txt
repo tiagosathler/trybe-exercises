@@ -1,0 +1,12 @@
+-- receita de bolo do express
+-- receita de bolo do dotenv
+-- receita de bolo do msc
+-- receita de bolo do sequelize
+-- receita de bolo do es-lint
+-- receita de bolo handleErrors e handleEndpointNotFound
+-- receita de bolos dos testes
+-- package.json:
+	- devDependencies: nyc mocha chai sinon chai-http eslint-config-trybe-backend nodemon sequelize-cli sequelize-test-helpers
+	- dependencies: express, mysql2, sequelize, express-rescue, dotenv, body-parser, cors
+	- tests: "NODE_ENV=test mocha ./tests/**/*$NAME*.test.js --exit"
+	

@@ -1,0 +1,24 @@
+{
+  "name": "b22-d1-pos-aula-users",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Tiago Sathler",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint-config-trybe-backend": "^1.0.4",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "mysql2": "^2.3.3",
+    "validator": "^13.7.0"
+  }
+}

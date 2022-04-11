@@ -160,35 +160,36 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 ##### :white_check_mark: Bloco 20: Introdução à SQL
 
 - [x] 20-1: _Banco de dados SQL_
+- [x] 20-1: _Introdução - Bancos de dados relacionais_
 - [x] 20-2: _Encontrando dados em um banco de dados_
-- [x] 20-3: _Filtrando dados de forma específica_
-- [x] 20-4: _Manipulando tabelas_
+- [x] 20-3: _[Filtrando dados de forma específica](https://github.com/tiagosathler/trybe-exercises/tree/master/back-end/bloco-20/dia-3)_
+- [x] 20-4: _[Manipulando tabelas](https://github.com/tiagosathler/trybe-exercises/tree/master/back-end/bloco-20/dia-4)_
 - [x] 20-5: _[Projeto - All For One]()_
 
-##### :white_check_mark: Bloco 21: Introdução à SQL
+##### :white_check_mark: Bloco 21: Funções SQL, JOINs e Normalização
 
-- [x] 21-1: _Introdução - Banco de dados relacionais_
-- [x] 21-1: _Bando de dados SQL_
-- [x] 21-2: _Encontrando dados em um bando de dados_
+- [x] 21-1: _[Funções mais usadas no SQL](https://github.com/tiagosathler/trybe-exercises/tree/master/back-end/bloco-21/dia-1)_
+- [x] 21-2: _[Descomplicando JOINs](https://github.com/tiagosathler/trybe-exercises/tree/master/back-end/bloco-21/dia-2)_
 - [x] 21-3: _Transformando ideias em um modelo de banco de dados_
 - [x] 21-4: _[Projeto - One For All]()_
 
 ##### :white_check_mark: Bloco 22: Introdução ao desenvolvimento Web com Node.js
 
 - [x] 22-1: _Intro - Node.js - Um motor JavaScript_
-- [x] 22-2: _Node.js - Fluxo Assíncrono_
-- [x] 22-3: _Mocha, Chai e Sinon - Testes de Back-end com Node.js_
-- [x] 22-4: _Express - HTTP com Node.js_
-- [x] 22-5: _Express - Middlewares_
+- [x] 22-1: _[Node.js - Um motor JavaScript](https://github.com/tiagosathler/trybe-exercises/tree/master/back-end/bloco-22/dia-1)_
+- [x] 22-2: _[Node.js - Fluxo Assíncrono](https://github.com/tiagosathler/trybe-exercises/tree/master/back-end/bloco-22/dia-2)_
+- [x] 22-3: _[Mocha, Chai e Sinon - Testes de Back-end com Node.js](https://github.com/tiagosathler/trybe-exercises/tree/master/back-end/bloco-22/dia-3)_
+- [x] 22-4: _[Express - HTTP com Node.js](https://github.com/tiagosathler/trybe-exercises/tree/master/back-end/bloco-22/dia-4]_
+- [x] 22-5: _[Express - Middlewares](https://github.com/tiagosathler/trybe-exercises/tree/master/back-end/bloco-22/dia-5)_
 - [x] 22-6: _[Projeto - Talker Manager]()_
 
 ##### :white_check_mark: Bloco 23: Node.js: Camada de Serviço e Arquitetura Rest e Restful
 
 - [x] 23-1: _Introdução - Arquitetura de Software_
-- [x] 23.1: _Arquitetura de Software - Camada de Model_
-- [x] 23-2: _Arquitetura de Software - Camada de Controller e Service_
-- [x] 23-3: _Arquitetura Web - Rest e Restful_
-- [x] 23-4: _Arquitetura de Software - Testando as Camadas MSC_
+- [x] 23.1: _[Arquitetura de Software - Camada de Model](https://github.com/tiagosathler/trybe-exercises/tree/master/back-end/bloco-23/dia-1)_
+- [x] 23-2: _[Arquitetura de Software - Camada de Controller e Service](https://github.com/tiagosathler/trybe-exercises/tree/master/back-end/bloco-23/dia-2)_
+- [x] 23-3: _[Arquitetura Web - Rest e Restful](https://github.com/tiagosathler/trybe-exercises/tree/master/back-end/bloco-23/dia-3)_
+- [x] 23-4: _[Arquitetura de Software - Testando as Camadas MSC](https://github.com/tiagosathler/trybe-exercises/tree/master/back-end/bloco-23/dia-4/pos-aula/movies_exercises)_
 - [x] 23-5: _[Projeto - Store Manager]()_
 
 ##### :white_check_mark: Bloco 24: Node.js - ORM e Autenticação
@@ -200,36 +201,43 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 - [x] 24-4: _Testando APIs com Testes de Integração_
 - [x] 24-5: _[Projeto - API de Blogs]()_
 
-##### :white_check_mark: Bloco 25: Aggregation Framework
+##### :white_check_mark: Bloco 25: Deployment
 
-- [ ] 25-1: _Aggregation Framework - Part 1_
-- [ ] 25-2: _Aggregation Framework - Part 2_
-- [ ] 25-3: _[Projeto - Aggregations]()_
+- [x] 25-1: _Introdução - Deploy_
+- [x] 25-1: _Infraestrutura - Deploy com Heroku_
+- [x] 25-2: _Deploy Docker & Heroku_
+- [x] 25-3: _Projeto - Stranger Things_
 
-##### :white_check_mark: Bloco 26: Intro - NodeJS
+##### :white_check_mark: Bloco 26: Typescript
 
-- [ ] 26-1: _NodeJS - Introdução_
-- [ ] 26-2: _NodeJS - Fluxo Assíncrono_
-- [ ] 26-3: _NodeJS - Arquitetura_
-- [ ] 26-4: _[Projeto - A CLI of Ice and Fire]()_
+- [x] 26-1: _Introdução - TypeScript_
+- [x] 26-1: _[Introdução ao TypeScript](https://github.com/tiagosathler/trybe-exercises/tree/master/back-end/bloco-26/dia-1)_
+- [x] 26-2: _[Tipagem Estática e Generics](https://github.com/tiagosathler/trybe-exercises/tree/master/back-end/bloco-26/dia-2)_
+- [x] 26-3: _[Express com TypeScript](https://github.com/tiagosathler/trybe-exercises/tree/master/back-end/bloco-26/dia-3)_
+- [x] 26-4: _[Projeto - Trybe Smith]()_
 
-##### :white_check_mark: Bloco 27: NodeJS
+##### :white_check_mark: Bloco 27: Programação Orientada a Objetos (POO) e SOLID
 
-- [ ] 27-1: _Express: HTTP com Node.js_
-- [ ] 27-2: _Arquitetura de Software - Introdução ao MVC_
-- [ ] 27-3: _[Projeto - Cookmaster]()_
+- [x] 27-1: _[Introdução à Orientação a Objetos](https://github.com/tiagosathler/trybe-exercises/tree/master/back-end/bloco-27/dia-1)_
+- [x] 27-2: _[Herança e Interfaces](https://github.com/tiagosathler/trybe-exercises/tree/master/back-end/bloco-27/dia-2/pos-aula/students)_
+- [x] 27-3: _[Polimorfismo](https://github.com/tiagosathler/trybe-exercises/tree/master/back-end/bloco-27/dia-3)_
+- [x] 27-4: _[SOLID - Introdução e Princípios S, O e D](https://github.com/tiagosathler/trybe-exercises/tree/master/back-end/bloco-27/dia-4)_
+- [x] 27-5: _[SOLID - Princípios L e I](https://github.com/tiagosathler/trybe-exercises/tree/master/back-end/bloco-27/dia-5)_
+- [ ] 27-6: _[Projeto - Trybers and Dragons]()_
 
-##### :hourglass_flowing_sand: Bloco 28: NodeJS
+##### :hourglass_flowing_sand: Projeto - TFC - Trybe Futebol Clube
 
-- [ ] 28-1: _Arquitetura de Software - Camada de Serviço_
-- [ ] 28-2: _Arquitetura web - Rest e Restful_
-- [ ] 28-3: _[Projeto - Store Manager]()_
+- [ ] 28-1: _[Projeto - TFC - Trybe Futebol Clube]()_
 
-##### :hourglass_flowing_sand: Bloco 29: NodeJS
+##### :hourglass_flowing_sand: Bloco 29: Introdução ao MongoDB
 
-- [ ] 29-1: _NodeJS - JWT - (JSON Web Token)_
-- [ ] 29-2: _NodeJS - Upload de arquivos com Multer_
-- [ ] 29-3: _[Projeto - Cookmaster V2]()_
+- [ ] 29-1: _Introdução - NoSQL_
+- [ ] 29-1: _MongoDB - Introdução_
+- [ ] 29-2: _Filter Operators_
+- [ ] 23-3: _Operadores de consulta_
+- [ ] 23-4: _Updates Simples_
+- [ ] 23-5: _Updates Complexos - Arrays_
+- [ ] 29-6: _[Projeto - Commerce]()_
 
 ##### :hourglass_flowing_sand: Bloco 30: Introdução - Deploy
 
@@ -237,43 +245,59 @@ Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvid
 - [ ] 30-2: _Deploy - Gerenciadores de Processos_
 - [ ] 30-3: _[Projeto - Stranger Things]()_
 
-##### :hourglass_flowing_sand: Bloco 31: Projeto
+##### :hourglass_flowing_sand: Bloco 31: MasterClass - VPS, CI/CD
 
-- [ ] 31-1: _[Projeto - Trybeer]()_
+- [ ] 31-1: _Dia 1_
+- [ ] 31-2: _Dia 2_
 
-##### :hourglass_flowing_sand: Bloco 32: Arquitetura de Software
+##### :hourglass_flowing_sand: Bloco 32: Projeto - App de Delivery
 
-- [ ] 32-1: _Arquitetura - Princípios SOLID_
-- [ ] 32-2: _ORM - Interface da aplicação com o banco de dados_
-- [ ] 32-3: _Arquitetura de Software - DDD_
-- [ ] 32-4: _Boas práticas na escrita de testes_
-- [ ] 32-3: _[Projeto - API de Blogs]()_
+- [ ] 32-1: _[Projeto Em Grupo - App de Delivery]()_
 
-##### :hourglass_flowing_sand: Bloco 33: Sockets
-
-- [ ] 30-1: _Sockets - TCP/UDP & NET_
-- [ ] 30-2: _Sockets - Socket.io_
-- [ ] 30-3: _[Projeto - Webchat]()_
-
-##### :hourglass_flowing_sand: Bloco 34: Projeto
-
-- [ ] 34-1: _[Projeto - Trybeer V2]()_
 
 ## Ciência da Computação :hourglass_flowing_sand:
 
-##### :hourglass_flowing_sand: Bloco 35: Introdução - Ciência da Computação
+##### :hourglass_flowing_sand: Bloco 33: Introdução à Python
 
-- [ ] 35-1: _Arquitetura de Computadores_
-- [ ] 35-2: _Arquitetura de redes_
-- [ ] 35-3: _Redes de computadores, ferramentas e segurança_
-- [ ] 35-4: _[Projeto - Explorando os protocolos]()_
+- [ ] 33-1: _Introdução - Ciência da Computação_
+- [ ] 33-1: _Aprendendo Python_
+- [ ] 33-2: _Entrada e Saída de Dados_
+- [ ] 33-3: _Testes_
+- [ ] 33-4: _[Projeto - Job Insights]()_
 
-##### :hourglass_flowing_sand: Bloco 36: Python
+##### :hourglass_flowing_sand: Bloco 34: Programação Orientada a Objetos e Padrões de Projeto
 
-- [ ] 35-1: _Aprendendo Python_
-- [ ] 35-2: _Testes e Exceções_
-- [ ] 35-3: _Entrada e Saída de dados_
-- [ ] 36-4: _Entrada e Saída de dados_
-- [ ] 35-5: _[Projeto - Tech news]()_
+- [ ] 34-1: _Introdução à programação orientada a objetos_
+- [ ] 34-2: _Herança, Composição e Interfaces_
+- [ ] 34-3: _Padrões de projeto_
+- [ ] 34-4: _[Projeto - Relatórios de Estoque]()_
+
+##### :hourglass_flowing_sand: Bloco 35: Redes e Raspagem de Dados
+
+- [ ] 35-1: _Arquitetura de redes_
+- [ ] 35-2: _Redes de computadores, ferramentas e segurança_
+- [ ] 35-3: _Raspagem de Dados_
+- [ ] 35-4: _[Projeto - Tech news]()_
+
+##### :hourglass_flowing_sand: Bloco 36: Algoritmos
+
+- [ ] 36-1: _Complexidade de Algoritmos_
+- [ ] 36-2: _Recursividade e Estratégias para solução de problemas_
+- [ ] 36-3: _Algoritmos de ordenação e busca_
+- [ ] 36-4: _[Projeto - Algoritmos]()_
+
+##### :hourglass_flowing_sand: Bloco 37: Estrutura de Dados I: Arrays, Hashmaps e Sets
+
+- [ ] 37-1: _Arquitetura de Computadores_
+- [ ] 37-2: _Arrays_
+- [ ] 37-3: _Hashmap e Dict_
+- [ ] 37-4: _Set_
+- [ ] 37-5: _[Projeto - Restaurant Orders]()_
+
+##### :hourglass_flowing_sand: Bloco 38: Estrutura de Dados II: Listas, Filas e Pilhas
+
+- [ ] 38-1: _Nó e Listas Encadeadas_
+- [ ] 38-2: _Pilhas e Filas_
+- [ ] 38-3: _[Projeto - TING - Trybe Is Not Google]()_
 
 # [...]

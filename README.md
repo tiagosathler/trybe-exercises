@@ -4,7 +4,7 @@
 
 Meu nome é ***Tiago H. S. Sathler*** (_[LinkedIn](https://www.linkedin.com/in/tiagosathler/)_ / _[tiagosathler.github.io](https://tiagosathler.github.io/)_), sou estutande da _[Trybe](https://www.betrybe.com/)_ desde *07/06/21* na *Turma 14*. Sou de [Alto Jequitibá](https://goo.gl/maps/DebkomfY3KbV7QhW9), uma pequena cidade perdida na região leste de Minas Gerais, próximo ao [Parque Nacional do Caparaó](https://www.icmbio.gov.br/parnacaparao/guia-do-visitante.html) e da divisa com o estado do ES. Sou formado em *engenharia elétrica*, tendo atuado durante alguns anos na área de mineração, mas agora mudei de carreira para ser um _desenvolvedor da Web *full-stack*_.
 
-Este reposítorio contém todas as minhas atividades de aprendizagem desenvolvidas ao longo do curso na [Trybe](https://www.betrybe.com/) :rocket:
+Este repositório contém todas as minhas atividades de aprendizagem desenvolvidas ao longo do curso na [Trybe](https://www.betrybe.com/) :rocket:
 
 *"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho."*
 

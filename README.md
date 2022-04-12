@@ -104,36 +104,36 @@ Este repositório contém todas as minhas atividades de aprendizagem desenvolvid
 - [x] 12-2: _[Eventos e formulários no React](https://github.com/tiagosathler/trybe-exercises/tree/master/front-end/bloco-12-componentes-com-estado-eventos-e-formularios-com-react/dia-2-formularios-no-react/my-form-2.0)_
 - [x] 12-3: _[Projeto - Movie Cards Library Stateful](https://github.com/tiagosathler/trybe-exercises/tree/master/front-end/bloco-12-componentes-com-estado-eventos-e-formularios-com-react/dia-3-projeto-movie-cards-library-stateful)_
 
-##### :white_check_mark: Bloco 13: React
+##### :white_check_mark: Bloco 13: Ciclo de Vida de Componentes e React Router
 
-- [x] 13-1: _Melhorando o reuso de componentes: props.children e PropTypes_
-- [x] 13-2: _Ciclo de vida de componentes em React_
-- [x] 13-3: _React Router_
-- [x] 13-4: _[Projeto - Movie Cards Library CRUD]()_
+- [x] 13-1: _Ciclo de vida de componentes em React_
+- [x] 13-2: _React Router_
+- [x] 13-3: _[Projeto - TrybeTunes]()_
 
 ##### :white_check_mark: Bloco 14: Metodologias Ágeis
 
 - [x] 14-1: _Metodologias Ágeis_
-- [x] 14-2: _[Projeto - Frontend Online Store]()_
+- [x] 14-2: _[Projeto em Grupo - Frontend Online Store]()_
 
-##### :white_check_mark: Bloco 15: Testes em React
+##### :white_check_mark: Bloco 15: Testes automatizados com React Testing Library
 
-- [x] 15-1: _Testando React com a React Testing Library_
-- [x] 15-2: _Testando React com a React Testing Library - Parte 2_
+- [x] 15-1: _RTL - Primeiros passos_
+- [ ] 15-2: _RTL - Mocks e Inputs_
+- [x] 15-2: _Testando React Router_
 - [x] 15-3: _[Projeto - Testes em React]()_
 
 ##### :white_check_mark: Bloco 16: Introdução ao Redux
 
-- [x] 16-1: _Introdução ao Redux_
-- [x] 16-2: _React com Redux - Parte 1_
-- [x] 16-3: _React com Redux - Prática_
-- [x] 16-4: _React com Redux - Parte 2_
-- [x] 16-5: _Testes síncronos com React-Redux_
-- [x] 16-6: _[Projeto - Tabela com filtros de dados]()_
+- [x] 16-1: _Introdução ao Redux - O estado global da aplicação_
+- [x] 16-2: _Usando o Redux no React_
+- [x] 16-3: _Usando o Redux no React - Prática_
+- [x] 16-4: _Usando o Redux no React - Actions Assíncronas_
+- [x] 16-5: _Testes em React-Redux_
+- [x] 16-6: _[Projeto - Trybe Wallet]()_
 
 ##### :white_check_mark: Bloco 17: Projeto React
 
-- [x] 17-1: _[Projeto - Jogo de Trivia]()_
+- [x] 17-1: _[Projeto em Grupo - Jogo de Trivia]()_
 
 ##### :white_check_mark: Bloco 18: React & Context API
 
@@ -144,7 +144,7 @@ Este repositório contém todas as minhas atividades de aprendizagem desenvolvid
 
 ##### :white_check_mark: Bloco 19: Projeto Final de Front-end
 
-- [x] 19-1: _[Projeto - App de Receitas]()_
+- [x] 19-1: _[Projeto em Grupo - App de Receitas]()_
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 > NOVA NUMERAÇÃO

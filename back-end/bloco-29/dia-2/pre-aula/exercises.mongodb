@@ -38,3 +38,111 @@ db.restaurants.countDocuments({
     $nin: [5, 6, 7],
   },
 });
+
+// 2.1
+db.restaurants.find({
+  rating: {
+    $not: {
+      $lte: 5,
+    },
+  },
+});
+
+// 2.2
+db.restaurants.countDocuments({
+  $or: [
+    {
+      rating: {
+        $gte: 6,
+      },
+    },
+    {
+      borough: 'Brooklyn',
+    },
+  ],
+});
+
+// 2.3.
+db.restaurants.countDocuments({
+  $and: [
+    {
+      borough: {
+        $in: ['Queens', 'Staten Island', 'Bronx'],
+      },
+    },
+    {
+      rating: {
+        $gt: 4,
+      },
+    },
+  ],
+});
+
+// 2.4
+db.restaurants.countDocuments({
+  $nor: [
+    {
+      rating: {
+        $eq: 1,
+      },
+    },
+    {
+      cuisine: 'American',
+    },    
+  ],
+});
+
+// 2.5
+db.restaurants.countDocuments({
+  $and: [
+    {
+      $or: [
+        {
+          rating: {
+            $lt: 10,
+            $gt: 6,
+          },
+        },
+      ],
+    },
+    {
+      $or: [
+        {
+          borough: 'Brooklyn',
+        },
+        {
+          cuisine: {
+            $ne: 'Delicatessen',
+          },
+        },
+      ],
+    },
+  ],
+});
+
+// 3.1
+db.restaurants
+  .find({}, { name: true, '_id': false })
+  .sort({
+    name: 1,
+  });
+
+// 3.2
+db.restaurants
+  .find({ rating: { $exists: true }}, { name: true, rating: true, '_id': false })
+  .sort({
+    rating: -1,
+    name: 1,
+  });
+
+// 4.2
+db.restaurants.find({}, { name: true, cuisine: true });
+
+db.restaurants.deleteOne({
+  cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+});
+
+// 4.3
+db.restaurants.deleteMany({
+  cuisine: 'American',
+});

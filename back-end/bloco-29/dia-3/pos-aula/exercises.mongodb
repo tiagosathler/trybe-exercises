@@ -1,0 +1,151 @@
+use cinema;
+
+// 1
+db.movies.find({
+  category: { $all: [ 'action', 'adventure' ] },
+});
+
+// 2 🚀
+db.movies.find({
+  category: { $all: [ 'action', 'sci-fi' ] },
+  imdbRating: { $gt: 7 },
+});
+
+// 3
+db.movies.find(
+  {
+    ratings: { $elemMatch: { $gt: 103 }},
+  },
+  {
+    _id: 0,
+    title: 1,
+    ratings: 1,
+  },
+);
+
+// 4 🚀
+db.movies.find(
+  {
+    ratings: { $elemMatch: { $gte: 100, $lte: 105 }},
+  },
+  {
+    _id: 0,
+    title: 1,
+    ratings: 1,
+  },
+);
+
+// 5 🚀
+db.movies.find(
+  {
+    ratings: { $elemMatch: { $gte: 64, $lte: 105, $mod: [ 9, 0 ] }},
+  },
+  {
+    _id: 0,
+    title: 1,
+    ratings: 1,
+  },
+);
+
+// 6
+db.movies.find(
+  {
+    ratings: { $elemMatch: { $gt: 103 }},
+    category: 'adventure',
+  },
+  {
+    _id: 0,
+    title: 1,
+    ratings: 1,
+    category: 1,
+  },
+);
+
+  // db.movies.find(
+  //   {
+  //     ratings: { $elemMatch: { $gt: 103 } },
+  //     category: { $all: ["adventure"] },
+  //   },
+  //   {
+  //     _id: 0,
+  //     title: 1,
+  //     ratings: 1,
+  //     category: 1
+  //   }
+  // );
+
+// 7
+db.movies.find(
+  {
+    category: { $size: 2 },
+  },
+  {
+    _id: 0,
+    title: 1,
+  },
+);
+
+// 8 🚀
+db.movies.find(
+  {
+    ratings: { $size: 4 },
+  },
+  {
+    _id: 0,
+    title: 1,
+  },
+);
+
+// 9
+db.movies.find({
+  budget: { $mod: [ 5, 0 ] },
+  category: { $size: 2 },
+});
+
+// 10 🚀
+db.movies.find(
+  {
+    $or: [
+      { category: { $all: ['sci-fi']} },
+      { ratings: { $elemMatch: { $gt: 199 } } },
+    ],
+  },
+  {
+    _id: 0,
+    title: 1,
+    ratings: 1,
+    category: 1,
+  },
+);
+
+// 11
+db.movies.find({
+  ratings: { $size: 4 },
+  $or: [
+    { category: 'adventure' },
+    { category: 'family' },
+  ],
+  $nor: [
+    { imdbRating: { $lt: 7 } },
+  ],
+});
+
+  // db.movies.find({ $and: [
+  //   { ratings: { $size: 4 } },
+  //   { category: { $in: ["adventure", "family"] } },
+  //   { imdbRating: { $not: { $lt: 7 } }}
+  // ]});
+
+// 12 🚀
+db.movies.find({
+  description: {
+    $regex: /^The/ig,
+  },
+});
+
+// 13
+db.movies.find({
+  description: {
+    $regex: /humanity.$/ig,
+  },
+});

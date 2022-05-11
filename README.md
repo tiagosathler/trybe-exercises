@@ -225,15 +225,15 @@ Este repositório contém todas as minhas atividades de aprendizagem desenvolvid
 - [x] 27-5: _[SOLID - Princípios L e I](https://github.com/tiagosathler/trybe-exercises/tree/master/back-end/bloco-27/dia-5)_
 - [ ] 27-6: _[Projeto - Trybers and Dragons]()_
 
-##### :hourglass_flowing_sand: Projeto - TFC - Trybe Futebol Clube
+##### :white_check_mark: Projeto - TFC - Trybe Futebol Clube
 
-- [ ] 28-1: _[Projeto - TFC - Trybe Futebol Clube]()_
+- [x] 28-1: _[Projeto - TFC - Trybe Futebol Clube]()_
 
 ##### :hourglass_flowing_sand: Bloco 29: Introdução ao MongoDB
 
-- [ ] 29-1: _Introdução - NoSQL_
-- [ ] 29-1: _MongoDB - Introdução_
-- [ ] 29-2: _Filter Operators_
+- [x] 29-1: _Introdução - NoSQL_
+- [x] 29-1: _MongoDB - Introdução_
+- [x] 29-2: _Filter Operators_
 - [ ] 23-3: _Operadores de consulta_
 - [ ] 23-4: _Updates Simples_
 - [ ] 23-5: _Updates Complexos - Arrays_

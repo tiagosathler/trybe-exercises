@@ -223,7 +223,7 @@ Este repositório contém todas as minhas atividades de aprendizagem desenvolvid
 - [x] 27-3: _[Polimorfismo](https://github.com/tiagosathler/trybe-exercises/tree/master/back-end/bloco-27/dia-3)_
 - [x] 27-4: _[SOLID - Introdução e Princípios S, O e D](https://github.com/tiagosathler/trybe-exercises/tree/master/back-end/bloco-27/dia-4)_
 - [x] 27-5: _[SOLID - Princípios L e I](https://github.com/tiagosathler/trybe-exercises/tree/master/back-end/bloco-27/dia-5)_
-- [ ] 27-6: _[Projeto - Trybers and Dragons]()_
+- [x] 27-6: _[Projeto - Trybers and Dragons]()_
 
 ##### :white_check_mark: Projeto - TFC - Trybe Futebol Clube
 

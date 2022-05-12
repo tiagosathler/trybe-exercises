@@ -134,3 +134,125 @@ db.movies.find(
     ],
   },
 );
+
+// BONUS
+// 14 🚀
+db.xmen.find({}).limit(2);
+
+db.xmen.updateMany(
+  { 
+    class: 'unknown',
+  },
+  { 
+    $unset: { class: '' },
+    $currentDate: { lastUpdate: { $type: 'timestamp'} },
+  },
+);
+
+// 15 🚀
+db.xmen.find({}).limit(2);
+
+db.xmen.updateMany(
+  { },
+  { 
+    $rename: { name: 'hero_name', true_name: 'full_name' },
+    $set: { power: 100 },
+    $currentDate: { lastUpdate: { $type: 'timestamp'} },
+  },
+);
+
+// 16 🚀
+db.xmen.updateMany(
+  {
+    $or: [
+      { class: 'omega' },
+      { class: 'gama' },
+    ],
+  },
+  {
+    $max: { power: 500 },
+    $currentDate: { lastUpdate: { $type: 'timestamp'} },
+  }
+);
+
+db.xmen.find(
+  {
+    $or: [
+      { class: 'omega' },
+      { class: 'gama' },
+    ],
+  },
+);
+
+// 17 🚀
+db.xmen.updateMany(
+  {
+    class: 'gama',
+  },
+  {
+    $min: { power: 300 },
+    $currentDate: { lastUpdate: { $type: 'timestamp'} },
+  },
+);
+
+db.xmen.find({ class: 'gama' });
+
+// 18 🚀
+db.xmen.updateMany(
+  {
+    class: { $exists: false },
+  },
+  {
+    $inc: { power: -100 },
+    $currentDate: { lastUpdate: { $type: 'timestamp'} },
+  },
+);
+
+db.xmen.find({
+  class: { $exists: false },
+});
+
+// 19 🚀
+db.xmen.updateMany(
+  {
+    $or: [
+      { occupation: 'Senior Staff', power: { $gt: 100 } },
+      { occupation: 'Junior Staff', power: { $gt: 200 } },
+    ],
+  },
+  {
+    $set: { areas: ['Students Room'] },
+    $currentDate: { lastUpdate: { $type: 'timestamp'} },
+  }
+);
+
+db.xmen.find(
+  {
+    $or: [
+      { occupation: 'Senior Staff', power: { $gt: 100 } },
+      { occupation: 'Junior Staff', power: { $gt: 200 } },
+    ],
+  },
+);
+
+// 20 🚀
+db.xmen.find({
+    occupation: 'Junior Staff',
+    areas: { $exists: false },
+});
+
+db.xmen.updateMany(
+  {
+    occupation: 'Junior Staff',
+    areas: { $exists: false },
+  },
+  {
+    $set: { areas: ['Outside'] },
+    $currentDate: { lastUpdate: { $type: 'timestamp'} },
+  },
+);
+
+db.xmen.find({
+    occupation: 'Junior Staff',
+    areas: { $exists: true },
+});

@@ -118,7 +118,7 @@ Este repositório contém todas as minhas atividades de aprendizagem desenvolvid
 ##### :white_check_mark: Bloco 15: Testes automatizados com React Testing Library
 
 - [x] 15-1: _RTL - Primeiros passos_
-- [ ] 15-2: _RTL - Mocks e Inputs_
+- [x] 15-2: _RTL - Mocks e Inputs_
 - [x] 15-2: _Testando React Router_
 - [x] 15-3: _[Projeto - Testes em React]()_
 
@@ -234,8 +234,8 @@ Este repositório contém todas as minhas atividades de aprendizagem desenvolvid
 - [x] 29-1: _Introdução - NoSQL_
 - [x] 29-1: _MongoDB - Introdução_
 - [x] 29-2: _Filter Operators_
-- [ ] 23-3: _Operadores de consulta_
-- [ ] 23-4: _Updates Simples_
+- [x] 23-3: _Operadores de consulta_
+- [x] 23-4: _Updates Simples_
 - [ ] 23-5: _Updates Complexos - Arrays_
 - [ ] 29-6: _[Projeto - Commerce]()_
 

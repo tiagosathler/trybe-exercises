@@ -236,7 +236,7 @@ Este repositório contém todas as minhas atividades de aprendizagem desenvolvid
 - [x] 29-2: _Filter Operators_
 - [x] 23-3: _Operadores de consulta_
 - [x] 23-4: _Updates Simples_
-- [ ] 23-5: _Updates Complexos - Arrays_
+- [x] 23-5: _Updates Complexos - Arrays_
 - [ ] 29-6: _[Projeto - Commerce]()_
 
 ##### :hourglass_flowing_sand: Bloco 30: Introdução - Deploy

@@ -1,5 +1,5 @@
 import { config } from 'dotenv';
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 config();
 
@@ -15,8 +15,8 @@ const CONFIG = {
   pass: DB_PASS,
   autoIndex: true,
   dbName: DB_NAME,
-}
+};
 
-const connection = () => mongoose.connect(DB_URI, CONFIG, function(error) { console.log(error)});
+const connection = () => mongoose.connect(DB_URI, CONFIG, (error) => { console.log(error); });
 
 export default connection;

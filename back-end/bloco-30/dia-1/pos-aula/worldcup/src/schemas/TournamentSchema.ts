@@ -7,9 +7,9 @@ export interface ITournament {
   runnerUp: string;
   editionGoals: number;
   editionStrikers: string[],
-  bestPlayer: string;
+  bestPlayer?: string;
   bestGoalkeeper?: string;
-  bestYoungPlayer: string;
+  bestYoungPlayer?: string;
 }
 
 export const TournamentSchema = new Schema<ITournament>(
@@ -19,10 +19,10 @@ export const TournamentSchema = new Schema<ITournament>(
     champions: { type: String, required: true },
     runnerUp: { type: String, required: true },
     editionGoals: { type: Number, required: true },
-    editionStrikers: { type: [String], required: true },
-    bestPlayer: { type: String, required: true },
+    editionStrikers: { type: [{ type: String }], required: true },
+    bestPlayer: { type: String, required: false },
     bestGoalkeeper: { type: String, required: false },
-    bestYoungPlayer: { type: String, required: true },
+    bestYoungPlayer: { type: String, required: false },
   },
   {
     versionKey: false,

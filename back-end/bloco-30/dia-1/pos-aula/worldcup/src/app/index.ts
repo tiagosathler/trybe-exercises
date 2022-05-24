@@ -3,7 +3,7 @@ import { Mongoose } from 'mongoose';
 import routes from './routes';
 import connection from '../models/connection';
 
-export default class Api {
+export default class App {
   private _app: Express;
 
   private _connection: Promise<Mongoose>;

@@ -4,11 +4,17 @@ import MongoModel from './MongoModel';
 
 interface LensDocument extends Lens, Document { }
 
-const lensSchema = new Schema<LensDocument>({
-  degree: Number,
-  antiGlare: Boolean,
-  blueLightFilter: Boolean,
-});
+const lensSchema = new Schema<LensDocument>(
+  {
+    degree: Number,
+    antiGlare: Boolean,
+    blueLightFilter: Boolean,
+  },
+  {
+    versionKey: false,
+    timestamps: true,
+  },
+);
 
 class LensModel extends MongoModel<Lens> {
   constructor(model = createModel('Lenses', lensSchema)) {

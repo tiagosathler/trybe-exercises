@@ -1,5 +1,8 @@
 import express, { Router } from 'express';
+import { config } from 'dotenv';
 import connectToDatabase from './models/connection';
+
+config();
 
 class App {
   private app: express.Application;
@@ -11,7 +14,7 @@ class App {
 
   public startServer(port = 3001) {
     connectToDatabase();
-    const actualPort = process.env.PORT || port;
+    const actualPort = process.env.API_PORT || port;
     return this.app.listen(
       actualPort,
       () => console.log('Estamos online na porta: ', actualPort),

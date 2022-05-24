@@ -1,5 +1,5 @@
 import { config } from 'dotenv';
-import mongoose from 'mongoose';
+import mongoose, { Mongoose } from 'mongoose';
 
 config();
 
@@ -10,6 +10,14 @@ const DB_USER = process.env.DB_USER || '';
 const DB_PASS = process.env.DB_PASS || '';
 
 const DB_URI = `${DB_HOST}:${DB_PORT}`;
+
+console.log('DB_HOST', DB_HOST);
+console.log('DB_PORT', DB_PORT);
+console.log('DB_NAME', DB_NAME);
+console.log('DB_USER', DB_USER);
+console.log('DB_PASS', DB_PASS);
+console.log('DB_URI', DB_URI);
+
 const CONFIG = {
   user: DB_USER,
   pass: DB_PASS,
@@ -17,6 +25,6 @@ const CONFIG = {
   dbName: DB_NAME,
 };
 
-const connection = () => mongoose.connect(DB_URI, CONFIG, (error) => { console.log(error); });
+const connection = (uri: string = DB_URI):Promise<Mongoose> => mongoose.connect(uri, CONFIG);
 
 export default connection;

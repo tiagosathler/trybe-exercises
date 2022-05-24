@@ -1,6 +1,7 @@
-import { Schema } from 'mongoose';
+import { Schema, ObjectId } from 'mongoose';
 
 export interface ITournament {
+  _id?: { $oid: string };
   year: number;
   hostCountry: string;
   champions: string;

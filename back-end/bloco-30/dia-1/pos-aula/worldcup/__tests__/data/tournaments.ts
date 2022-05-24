@@ -1,4 +1,6 @@
-const tournaments = [
+import { ITournament } from '../../src/schemas/TournamentSchema';
+
+const tournaments: ITournament[] = [
   {
     _id: {
       $oid: '628c17b2f40684b83e8c77fd',

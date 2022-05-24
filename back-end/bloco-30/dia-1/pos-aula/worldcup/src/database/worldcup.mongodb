@@ -1,5 +1,5 @@
 use('world_cups');
-  db.tournaments.insertMany([
+ db.tournaments.insertMany([
     {
       year: 2018,
       hostCountry: "Russia",
@@ -118,3 +118,6 @@ use('world_cups');
       bestYoungPlayer: "Enzo Scifo",
     },
   ]);
+
+  use('world_cups');
+  db.tournaments.find();

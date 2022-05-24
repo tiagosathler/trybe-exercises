@@ -1,13 +1,16 @@
 {
+    "root": true,
     "env": {
-        "browser": true,
+        "browser": false,
         "es2021": true,
-        "node": true
+        "node": true,
+        "jest": true
     },
     "extends": [
         "plugin:@typescript-eslint/recommended",
         "airbnb-base",
         "plugin:editorconfig/noconflict",
+        "plugin:mocha/recommended",
         "airbnb-typescript/base"
     ],
     "parser": "@typescript-eslint/parser",
@@ -16,10 +19,18 @@
         "sourceType": "module",
         "project": "./tsconfig.json"
     },
+    "overrides": [
+        {
+          "files": [
+            "*.ts"
+          ]
+        }
+    ],
     "plugins": [
         "@typescript-eslint",
         "sonarjs",
-        "editorconfig"
+        "editorconfig",
+        "mocha"
     ],
     "rules": {
         "class-methods-use-this": 0,

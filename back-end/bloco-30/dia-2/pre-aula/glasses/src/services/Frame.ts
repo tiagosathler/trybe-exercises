@@ -7,13 +7,22 @@ class FrameService extends Service<Frame> {
     super(model);
   }
 
-  create = async (obj: Frame): Promise<Frame | ServiceError | null> => {
+  public async create(obj: Frame): Promise<Frame | ServiceError | null> {
     const parsed = FrameSchema.safeParse(obj);
     if (!parsed.success) {
       return { error: parsed.error };
     }
     return this.model.create(obj);
-  };
+  }
+
+  public async update(id: string, obj: Frame)
+    : Promise<Frame | null | ServiceError> {
+    const parsed = FrameSchema.safeParse(obj);
+    if (!parsed.success) {
+      return { error: parsed.error };
+    }
+    return this.model.update(id, obj);
+  }
 }
 
 export default FrameService;

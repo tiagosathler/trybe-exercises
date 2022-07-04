@@ -1,4 +1,5 @@
 from src.exercises import validate_email, check_emails_list
+from src.sorting import sort_by
 
 wrong_emails = [
     "email.domain.com",
@@ -36,3 +37,22 @@ print(checked)
 checked_list = check_emails_list(emails_list)
 print(emails_list)
 print(checked_list)
+
+
+jobs = [
+    {"min_salary": 1000, "max_salary": 25000, "date_posted": "2020-05-05"},
+    {"min_salary": 500, "max_salary": 20000, "date_posted": "2019-05-05"},
+    {"min_salary": 2000, "max_salary": 30000, "date_posted": "2021-05-05"},
+]
+
+sort_by(jobs, "min_salary")
+print("===> SORTING BY 'min_salary:'\n", jobs)
+
+sort_by(jobs, "max_salary")
+print("===> SORTING BY 'max_salary:'\n", jobs)
+
+sort_by(jobs, "date_posted")
+print("===> SORTING BY 'date_posted':'\n", jobs)
+
+print("===> RAINSING ERROR:")
+sort_by(jobs, "xablau")

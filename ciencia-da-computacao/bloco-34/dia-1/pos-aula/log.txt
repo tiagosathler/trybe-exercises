@@ -1,0 +1,5 @@
+[INFO - 06/07/2022 20:52:45]: Exemplo de 'info'
+[ALERTA - 06/07/2022 20:52:45]: Exemplo de 'alerta'
+[ALERTA - 06/07/2022 20:52:45]: Exemplo de 'alerta'
+[ERRO - 06/07/2022 20:52:45]: Exemplo de 'erro'
+[DEBUG - 06/07/2022 20:52:45]: Exemplo de 'debug'

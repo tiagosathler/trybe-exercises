@@ -1,0 +1,243 @@
+{
+	"info": {
+		"_postman_id": "4a41fde8-b504-4f41-b1cc-99f582acbf34",
+		"name": "GlassesTrybe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19575085"
+	},
+	"item": [
+		{
+			"name": "Get Frames",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/frames",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"frames"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Lenses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/lenses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"lenses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Frame",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"material\": \"aluminumn\",\n    \"color\": \"gray\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/frames/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"frames",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Lens",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"degree\": 1,\n    \"antiGlare\": true,\n    \"blueLightFilter\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/lenses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"lenses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Frame By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/frames/628d36e8c558e9460c688e40",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"frames",
+						"628d36e8c558e9460c688e40"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Lens By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/lenses/628d2ae4d664c6b8e106d51c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"lenses",
+						"628d2ae4d664c6b8e106d51c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Frame By Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"material\": \"aluminum\",\n    \"color\": \"gold\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/frames/628d36e8c558e9460c688e40",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"frames",
+						"628d36e8c558e9460c688e40"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Lens By Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"degree\": 0.5,\n    \"antiGlare\": true,\n    \"blueLightFilter\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/lenses/628d609c3be2389efd774898",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"lenses",
+						"628d609c3be2389efd774898"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Frame By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/frames/628d2adbd664c6b8e106d51a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"frames",
+						"628d2adbd664c6b8e106d51a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Lens By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/lenses/628d2ae4d664c6b8e106d51c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"lenses",
+						"628d2ae4d664c6b8e106d51c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,4 @@
+-r requirements.txt
+
+pytest==7.0.1
+black==22.6.0

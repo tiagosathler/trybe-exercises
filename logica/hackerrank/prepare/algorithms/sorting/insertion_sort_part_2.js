@@ -46,12 +46,10 @@ let previous = arr[0];
 for (let i=1; i<n; i++) {
     let j = i;
     while (arr[j] < arr[j-1] && j > 0) {
-        if (arr[j] < arr[j-1]) {
-            previous = arr[j-1]
-            arr[j-1] = arr[j]
-            arr[j] = previous
-            j -= 1
-        }
+        previous = arr[j-1]
+        arr[j-1] = arr[j]
+        arr[j] = previous
+        j -= 1
     }
     console.log(arr.join(' '))
 }

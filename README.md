@@ -270,7 +270,7 @@ Este repositório contém todas as minhas atividades de aprendizagem desenvolvid
 - [x] 34-1: _P.O.O. em Python_
 - [x] 34-2: _Padrões - Iterator, Adapter, Strategy_
 - [x] 34-3: _Padrões - Decorator, Observer, Factory_
-- [x] 34-4: _[Projeto - Relatórios de Estoque]()_
+- [x] 34-4: _[Projeto - Relatórios de Estoque](https://github.com/tiagosathler/34-project-inventory-report)_
 
 ##### :white_check_mark: Bloco 35: Redes e Raspagem de Dados
 

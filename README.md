@@ -285,7 +285,7 @@ Este repositório contém todas as minhas atividades de aprendizagem desenvolvid
 - [x] 36-1: _Complexidade de Algoritmos_
 - [x] 36-2: _Recursividade e Estratégias para solução de problemas_
 - [x] 36-3: _Algoritmos de ordenação e busca_
-- [x] 36-4: _[Projeto - Algoritmos](https://github.com/tiagosathler/36-algorithms-project)_
+- [x] 36-4: _[Projeto - Algoritmos](https://github.com/tiagosathler/36-project-algorithms)_
 
 ##### :hourglass_flowing_sand: Bloco 37: Estrutura de Dados I: Arrays, Hashmaps e Sets
 

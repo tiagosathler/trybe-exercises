@@ -255,8 +255,6 @@ Este repositório contém todas as minhas atividades de aprendizagem desenvolvid
 - [x] 31-2: _Dia 2_
 
 
-
-
 ## Ciência da Computação :hourglass_flowing_sand:
 
 ##### :white_check_mark: Bloco 33: Introdução à Python
@@ -278,7 +276,7 @@ Este repositório contém todas as minhas atividades de aprendizagem desenvolvid
 
 - [x] 35-1: _Arquitetura de redes, ferramentas e segurunça_
 - [x] 35-2: _Raspagem de dados_
-- [x] 35-3: _[Projeto - Tech news]()_
+- [x] 35-3: _[Projeto - Tech news](https://github.com/tiagosathler/35-project-tech-news)_
 
 ##### :white_check_mark: Bloco 36: Algoritmos
 

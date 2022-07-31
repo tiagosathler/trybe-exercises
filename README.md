@@ -263,7 +263,7 @@ Este repositório contém todas as minhas atividades de aprendizagem desenvolvid
 - [x] 33-1: _Aprendendo Python_
 - [x] 33-2: _Entrada e Saída de Dados_
 - [x] 33-3: _Testes_
-- [x] 33-4: _[Projeto - Job Insights]()_
+- [x] 33-4: _[Projeto - Job Insights](https://github.com/tiagosathler/33-project-job-insights)_
 
 ##### :white_check_mark: Bloco 34: Padrões de Projeto
 

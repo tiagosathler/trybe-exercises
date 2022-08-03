@@ -11,7 +11,6 @@ RANDOM_NUMBERS = ["36912", "84300"] * 100
 print(RANDOM_NUMBERS)
 
 
-
 def timer(string, initial_time):
     """Função auxiliar para print temporizado"""
     print(string)

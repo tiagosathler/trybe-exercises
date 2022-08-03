@@ -22,11 +22,11 @@ def stable_frequency(arr: list[int]) -> int:
 
     result -> int
     """
-    instable_moments = arr.count(1)
+    stable_moments = arr.count(1)
 
-    if not instable_moments:
+    if not stable_moments:
         return 0
-    elif instable_moments == 1:
+    elif stable_moments == 1:
         return 1
 
     length = len(arr)

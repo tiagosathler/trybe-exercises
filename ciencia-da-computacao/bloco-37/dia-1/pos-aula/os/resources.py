@@ -1,7 +1,10 @@
 from subprocess import check_output
 
-# Processador
+# Processador - comando 'lscpu' do terminal
 cpu_information = check_output("lscpu").decode("UTF-8").split("\n")
+
+print("INFORMAÇÕES CAPTURADAS:\n")
+
 for information in cpu_information:
     print(information)
 
@@ -16,7 +19,7 @@ desired_cpu_information = {
     "cache de L3": "Cache L3",
 }
 
-print("SUMÁRIO:\n")
+print("SUMÁRIO DESEJADO:\n")
 
 for key, value in desired_cpu_information.items():
     for information in cpu_information:
@@ -25,7 +28,7 @@ for key, value in desired_cpu_information.items():
             information = information[-1].strip()
             print(f"{value}: {information}")
 
-# Memória
+# Memória - comando 'free' do terminal
 memory_information = [
     information
     for information in check_output("free")

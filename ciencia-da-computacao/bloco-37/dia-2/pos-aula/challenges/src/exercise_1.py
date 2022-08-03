@@ -42,6 +42,18 @@ def stable_frequency(arr: list[int]) -> int:
             current = 1
     return max_frequency
 
+    # SOLUÇÃO DO GABARITO:
+    # max_time = 0
+    # current_time = 0
+    # for value in arr:
+    #     if value == 1:
+    #         current_time += 1
+    #     else:
+    #         current_time = 0
+    #     if current_time >= max_time:
+    #         max_time = current_time
+    # return max_time
+
 
 def test_stable_frequency():
     assert stable_frequency([0, 0, 0, 0, 0, 0]) == 0

@@ -30,7 +30,7 @@ def shuffle(numbers: list[int], n: int) -> list[int]:
     answer = []
     new_array_index = 0
 
-    if (len(numbers) % 2):
+    if (len(numbers) % 2 == 1) or (n != len(numbers) // 2):
         return None
 
     for index in range(n):
@@ -43,6 +43,9 @@ def shuffle(numbers: list[int], n: int) -> list[int]:
 
 
 def test_shuffle():
+    assert shuffle([2, 5], 1) == [2, 5]
     assert shuffle([2, 6, 4, 5], 2) == [2, 4, 6, 5]
     assert shuffle([1, 4, 4, 7, 6, 6], 3) == [1, 7, 4, 6, 4, 6]
     assert shuffle([1, 4, 4, 5, 7, 6, 6], 3) is None
+    assert shuffle([2, 6, 4, 5], 3) is None
+    assert shuffle([2, 6, 4, 5], 1) is None

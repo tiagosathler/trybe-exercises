@@ -30,7 +30,7 @@ def shuffle(numbers: list[int], n: int) -> list[int]:
     answer = []
     new_array_index = 0
 
-    if (len(numbers) % 2 == 1) or (n != len(numbers) // 2):
+    if (len(numbers) % 2) or (n != len(numbers) // 2):
         return None
 
     for index in range(n):

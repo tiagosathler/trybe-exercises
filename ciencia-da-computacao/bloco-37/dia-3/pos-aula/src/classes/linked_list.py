@@ -31,17 +31,23 @@ class LinkedList:
         current_node.next = last_node
         self.__length += 1
 
+    def __get_node_at(self, position) -> tuple[Node, int]:
+        node_to_be_returned = self.head_node
+
+        if node_to_be_returned:
+            while position > 0 and node_to_be_returned.next:
+                node_to_be_returned = node_to_be_returned.next
+                position -= 1
+
+        return node_to_be_returned, position
+
     def insert_at(self, value: int, position: int) -> None:
         if position < 1:
             return self.insert_first(value)
         if position >= len(self):
             return self.insert_last(value)
 
-        current_node = self.head_node
-
-        while position > 1:
-            current_node = current_node.next
-            position -= 1
+        current_node, _ = self.__get_node_at(position - 1)
 
         next_node = Node(value)
         next_node.next = current_node.next
@@ -62,12 +68,9 @@ class LinkedList:
         if len(self) <= 1:
             return self.remove_first()
 
-        previous_to_be_removed = self.head_node
-
-        while previous_to_be_removed.next.next:
-            previous_to_be_removed = previous_to_be_removed.next
-
+        previous_to_be_removed, _ = self.__get_node_at(len(self) - 2)
         node_to_be_removed = previous_to_be_removed.next
+
         previous_to_be_removed.next = None
         self.__length -= 1
         return node_to_be_removed
@@ -78,13 +81,9 @@ class LinkedList:
         if position >= len(self):
             return self.remove_last()
 
-        previous_to_be_removed = self.head_node
-
-        while position > 1:
-            previous_to_be_removed = previous_to_be_removed.next
-            position -= 1
-
+        previous_to_be_removed, _ = self.__get_node_at(position - 1)
         node_to_be_removed = previous_to_be_removed.next
+
         previous_to_be_removed.next = node_to_be_removed.next
         node_to_be_removed.next = None
         self.__length -= 1
@@ -93,15 +92,10 @@ class LinkedList:
 
     def get_element_at(self, position: int) -> int:
         node_returned = None
-        node_to_be_returned = self.head_node
+        node_to_be_returned, p = self.__get_node_at(position)
 
-        if self.head_node:
-            while position > 0 and node_to_be_returned.next:
-                node_to_be_returned = node_to_be_returned.next
-                position -= 1
-
-            if position == 0:
-                node_returned = node_to_be_returned
+        if p == 0:
+            node_returned = node_to_be_returned
 
         return node_returned
 

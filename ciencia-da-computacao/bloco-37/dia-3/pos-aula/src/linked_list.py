@@ -19,14 +19,15 @@ class LinkedList:
         self.__length += 1
 
     def insert_last(self, value: int) -> None:
-        last_node = Node(value)
-        current_node = self.head_node
-
         if self.is_empty():
             return self.insert_first(value)
 
+        last_node = Node(value)
+        current_node = self.head_node
+
         while current_node.next:
             current_node = current_node.next
+
         current_node.next = last_node
         self.__length += 1
 
@@ -35,10 +36,13 @@ class LinkedList:
             return self.insert_first(value)
         if position >= len(self):
             return self.insert_last(value)
+
         current_node = self.head_node
+
         while position > 1:
             current_node = current_node.next
             position -= 1
+
         next_node = Node(value)
         next_node.next = current_node.next
         current_node.next = next_node
@@ -46,10 +50,12 @@ class LinkedList:
 
     def remove_first(self) -> Node:
         node_to_be_removed = self.head_node
+
         if node_to_be_removed:
             self.head_node = self.head_node.next
             node_to_be_removed.next = None
             self.__length -= 1
+
         return node_to_be_removed
 
     def remove_last(self) -> Node:
@@ -85,15 +91,18 @@ class LinkedList:
 
         return node_to_be_removed
 
-    def get_element_at(self, position: int) -> Node:
+    def get_element_at(self, position: int) -> int:
         node_returned = None
         node_to_be_returned = self.head_node
-        if node_to_be_returned:
+
+        if self.head_node:
             while position > 0 and node_to_be_returned.next:
                 node_to_be_returned = node_to_be_returned.next
                 position -= 1
-            if node_to_be_returned:
-                node_returned = Node(node_to_be_returned.node)
+
+            if position == 0:
+                node_returned = node_to_be_returned
+
         return node_returned
 
     def is_empty(self) -> bool:

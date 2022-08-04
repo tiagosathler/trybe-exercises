@@ -43,5 +43,7 @@ if __name__ == "__main__":
     linked_list.insert_at(7, 2)
     linked_list.insert_at(8, 3)
     linked_list.insert_at(9, 4)
-    print(linked_list.get_element_at(3))
+
+    print(linked_list)
+    print(linked_list.get_element_at(4))
     # saída: Node(node=8 next=None)

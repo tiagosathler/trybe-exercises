@@ -107,3 +107,7 @@ class LinkedList:
 
     def is_empty(self) -> bool:
         return not self.__length
+
+    def clear(self) -> None:
+        while not self.is_empty():
+            self.remove_first()

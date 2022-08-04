@@ -47,3 +47,6 @@ if __name__ == "__main__":
     print(linked_list)
     print(linked_list.get_element_at(4))
     # saída: Node(node=8 next=None)
+
+    linked_list.clear()
+    print(linked_list)

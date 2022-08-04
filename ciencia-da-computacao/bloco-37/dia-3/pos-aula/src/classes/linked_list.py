@@ -7,31 +7,43 @@ class LinkedList:
         self.__length = 0
 
     def __str__(self) -> str:
+        """
+        Complexidade: O(1)
+        """
         return f"LinkedList(len={self.__length}, nodes={self.head_node})"
 
     def __len__(self) -> int:
+        """
+        Complexidade: O(1)
+        """
         return self.__length
 
     def insert_first(self, value: int) -> None:
+        """
+        Complexidade: O(1)
+        """
         first_node = Node(value)
         first_node.next = self.head_node
         self.head_node = first_node
         self.__length += 1
 
     def insert_last(self, value: int) -> None:
+        """
+        Complexidade: O(1) ??
+        """
         if self.is_empty():
             return self.insert_first(value)
 
         last_node = Node(value)
-        current_node = self.head_node
-
-        while current_node.next:
-            current_node = current_node.next
+        current_node = self.__get_node_at(len(self) - 1)
 
         current_node.next = last_node
         self.__length += 1
 
     def __get_node_at(self, position) -> tuple[Node, int]:
+        """
+        Complexidade: O(n)
+        """
         node_to_be_returned = self.head_node
 
         if node_to_be_returned:
@@ -42,6 +54,9 @@ class LinkedList:
         return node_to_be_returned, position
 
     def insert_at(self, value: int, position: int) -> None:
+        """
+        Complexidade: O(n)
+        """
         if position < 1:
             return self.insert_first(value)
         if position >= len(self):
@@ -55,6 +70,9 @@ class LinkedList:
         self.__length += 1
 
     def remove_first(self) -> Node:
+        """
+        Complexidade: O(1)
+        """
         node_to_be_removed = self.head_node
 
         if node_to_be_removed:
@@ -65,6 +83,9 @@ class LinkedList:
         return node_to_be_removed
 
     def remove_last(self) -> Node:
+        """
+        Complexidade: O(1) ??
+        """
         if len(self) <= 1:
             return self.remove_first()
 
@@ -76,6 +97,9 @@ class LinkedList:
         return node_to_be_removed
 
     def remove_at(self, position: int) -> Node:
+        """
+        Complexidade: O(n)
+        """
         if position < 1:
             return self.remove_first()
         if position >= len(self):
@@ -91,6 +115,9 @@ class LinkedList:
         return node_to_be_removed
 
     def get_element_at(self, position: int) -> int:
+        """
+        Complexidade: O(n)
+        """
         node_returned = None
         node_to_be_returned, p = self.__get_node_at(position)
 
@@ -100,8 +127,14 @@ class LinkedList:
         return node_returned
 
     def is_empty(self) -> bool:
+        """
+        Complexidade: O(1)
+        """
         return not self.__length
 
     def clear(self) -> None:
+        """
+        Complexidade: O(n)
+        """
         while not self.is_empty():
             self.remove_first()

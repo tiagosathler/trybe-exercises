@@ -1,4 +1,4 @@
-def good_pairs(entrance: list[int], exit: list[int], instant: int) -> int:
+def moments_parser(entrance: list[int], exit: list[int], instant: int) -> int:
     """
     Você têm dois arrays de números inteiros que representam:
     (I) instantes de entrada e saídas em uma biblioteca
@@ -43,8 +43,8 @@ def good_pairs(entrance: list[int], exit: list[int], instant: int) -> int:
     return acc
 
 
-def test_good_pairs():
-    assert good_pairs([1, 2, 3], [3, 7], 4) is None
-    assert good_pairs([1, 2, 3], [3, 2, 7], 4) == 1
-    assert good_pairs([1, 4, 3], [3, 4, 7], 4) == 2
-    assert good_pairs([1, 4, 3], [10, 4, 7], 4) == 3
+def test_moments_parser():
+    assert moments_parser([1, 2, 3], [3, 7], 4) is None
+    assert moments_parser([1, 2, 3], [3, 2, 7], 4) == 1
+    assert moments_parser([1, 4, 3], [3, 4, 7], 4) == 2
+    assert moments_parser([1, 4, 3], [10, 4, 7], 4) == 3

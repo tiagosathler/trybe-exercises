@@ -7,7 +7,7 @@ def good_pairs(numbers: list[int]) -> int:
     que o anterior. Esta combinação pode ser utilizada para modificar
     os produtos de uma página.
 
-    Complexidade:
+    Complexidade: O(n²)
 
     Entrada:
     --------

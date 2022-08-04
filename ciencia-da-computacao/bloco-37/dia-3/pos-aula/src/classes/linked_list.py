@@ -1,4 +1,4 @@
-from src.node import Node
+from src.classes.node import Node
 
 
 class LinkedList:

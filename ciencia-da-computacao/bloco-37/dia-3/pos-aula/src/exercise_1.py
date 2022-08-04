@@ -1,4 +1,4 @@
-from src.linked_list import LinkedList
+from src.classes.linked_list import LinkedList
 
 # Para testar, apenas rode o arquivo com: `python3 linked_list_content.py` :)
 if __name__ == "__main__":

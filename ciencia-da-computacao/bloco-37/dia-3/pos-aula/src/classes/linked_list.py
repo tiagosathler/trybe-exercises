@@ -114,7 +114,7 @@ class LinkedList:
 
         return node_to_be_removed
 
-    def get_element_at(self, position: int) -> int:
+    def get_element_at(self, position: int) -> Node:
         """
         Complexidade: O(n)
         """

@@ -1,4 +1,6 @@
 from src.classes.linked_list import LinkedList
+from src.classes.stack import Stack
+
 
 # Para testar, apenas rode o arquivo com: `python3 linked_list_content.py` :)
 if __name__ == "__main__":
@@ -101,3 +103,34 @@ if __name__ == "__main__":
     print(f"16. {linked_list}")
     # saída:
     # 16. LinkedList(len=0, nodes=None)
+
+    stack = Stack()
+    stack.push(2)
+    stack.push(4)
+    stack.push(6)
+    print(f"17. {stack.is_empty()}")
+    # saída:
+    # 17. False
+
+    print(f"18. {stack.peek()}")
+    # saída:
+    # 18. Node(value=6, next=None)
+
+    stack.pop()
+    print(f"19. {stack.peek()}")
+    # saída:
+    # 19. Node(value=4, next=None)
+
+    stack.pop()
+    print(f"20. {stack.peek()}")
+    # saída:
+    # 20. Node(value=2, next=None)
+
+    stack.pop()
+    print(f"21. {stack.peek()}")
+    # saída:
+    # 21. None
+
+    print(f"22. {stack.is_empty()}")
+    # saída:
+    # 22. True

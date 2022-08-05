@@ -1,13 +1,13 @@
 from src.classes.stack import Stack
 
 
-def add_vehicle():
+def add_vehicle() -> None:
     plate_number = input("plate number: ")
     garage.push(plate_number)
     print("Vehicle " + plate_number + " parked")
 
 
-def remove_vehicle():
+def remove_vehicle() -> None:
     vehicle_plate = input("plate number: ")
     street = Stack()
     removed = False
@@ -27,11 +27,14 @@ def remove_vehicle():
         print("There is no vehicle parked with this plate")
 
 
-def list_vehicles():
+def list_vehicles() -> None:
     print("Parked vehicles: " + str(garage))
 
 
 if __name__ == "__main__":
+    """
+    Complexidade: O(n) por causa do loop - pop = O(1) e push = O(1)
+    """
     garage = Stack()
 
     option = None

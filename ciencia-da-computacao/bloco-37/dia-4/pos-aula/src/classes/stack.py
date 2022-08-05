@@ -8,10 +8,10 @@ class Stack:
     def is_empty(self) -> bool:
         return not bool(self.size())
 
-    def push(self, value) -> None:
+    def push(self, value: int | float | str) -> None:
         self._data.append(value)
 
-    def pop(self) -> None | int:
+    def pop(self) -> None | int | float | str:
         if self.is_empty():
             return None
 
@@ -21,13 +21,13 @@ class Stack:
         del self._data[-1]
         return value
 
-    def peek(self) -> None | int:
+    def peek(self) -> None | int | float | str:
         if self.is_empty():
             return None
         value = self._data[-1]
         return value
 
-    def min_value(self) -> None | int:
+    def min_value(self) -> None | int | float | str:
         if self.is_empty():
             return None
 

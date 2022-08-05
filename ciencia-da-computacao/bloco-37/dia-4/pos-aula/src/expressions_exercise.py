@@ -4,6 +4,7 @@ from src.classes.stack import Stack
 def solve_expression(expr: str) -> float:
     """
     Calculadora do tipo RPN usando pilhas
+    Complexidade: O(1) - pop e push
     """
     stack = Stack()
     tokens_list = expr.split(" ")

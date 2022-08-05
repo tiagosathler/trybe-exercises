@@ -35,6 +35,10 @@ if __name__ == "__main__":
     # saída:
     # 9
 
+    """
+    min_value
+    Complexidade: O(n)
+    """
     print(content_stack.min_value())
     # saída:
     # 1
@@ -46,6 +50,10 @@ if __name__ == "__main__":
     print(content_stack.size())
     # saída: 0
 
+    """
+    LimitStack:
+    Complexidade: O(1)
+    """
     content_stack = LimitStack(3)
     content_stack.push(1)
     content_stack.push(2)

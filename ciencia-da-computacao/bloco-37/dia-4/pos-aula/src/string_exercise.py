@@ -2,6 +2,9 @@ from src.classes.stack import Stack
 
 
 def reverse_word(stack: Stack) -> None:
+    """
+    Complexidade: O(n) por causa do loop - pop = O(1) e push = O(1)
+    """
     char = ")"
     reversed_word = []
     while char != "(":
@@ -14,6 +17,9 @@ def reverse_word(stack: Stack) -> None:
 
 
 def reverse_letters(phrase: str) -> str:
+    """
+    Complexidade: O(n) por causa do loop - pop = O(1) e push = O(1)
+    """
     stack = Stack()
     for char in phrase:
         if char != ")":

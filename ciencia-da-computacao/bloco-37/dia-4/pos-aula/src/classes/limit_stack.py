@@ -7,7 +7,7 @@ class LimitStack(Stack):
         super().__init__()
         self.limit = limit
 
-    def push(self, value) -> None:
+    def push(self, value: int | float | str) -> None:
         if self.size() + 1 > self.limit:
             raise StackOverflow()
         super().push(value)

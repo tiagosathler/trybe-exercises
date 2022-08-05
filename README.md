@@ -285,18 +285,18 @@ Este repositório contém todas as minhas atividades de aprendizagem desenvolvid
 - [x] 36-3: _Algoritmos de ordenação e busca_
 - [x] 36-4: _[Projeto - Algoritmos](https://github.com/tiagosathler/36-project-algorithms)_
 
-##### :hourglass_flowing_sand: Bloco 37: Estrutura de Dados I: Arrays, Hashmaps e Sets
+##### :hourglass_flowing_sand: Bloco 37: Estrutura de Dados I: Arrays, Listas, Filas e Pilhas
 
 - [x] 37-1: _Arquitetura de Computadores_
 - [x] 37-2: _Arrays_
-- [x] 37-3: _Hashmap e Dict_
-- [ ] 37-4: _Set_
-- [ ] 37-5: _[Projeto - Restaurant Orders]()_
+- [x] 37-3: _Nó e Listas Encadeadas_
+- [x] 37-4: _Pilhas e Filas_
+- [ ] 37-5: _[Projeto - TING - Tryber Is Not Google]()_
 
-##### :hourglass_flowing_sand: Bloco 38: Estrutura de Dados II: Listas, Filas e Pilhas
+##### :hourglass_flowing_sand: Bloco 38: Estrutura de Dados II: Hashmaps e Sets
 
-- [ ] 38-1: _Nó e Listas Encadeadas_
-- [ ] 38-2: _Pilhas e Filas_
-- [ ] 38-3: _[Projeto - TING - Trybe Is Not Google]()_
+- [ ] 38-1: _Hashmap e Dict_
+- [ ] 38-2: _Set_
+- [ ] 38-3: _[Projeto - Restaurant Orders]()_
 
 # [...]

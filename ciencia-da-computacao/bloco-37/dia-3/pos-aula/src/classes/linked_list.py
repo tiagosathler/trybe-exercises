@@ -153,3 +153,23 @@ class LinkedList:
             index += 1
 
         return -1
+
+    def delete_duplicates(self) -> None:
+        """
+        Complexidade: O(n²)
+        """
+        list_of_nodes = []
+
+        for index in range(self.__length):
+            node, _ = self.__get_node_at(index)
+            list_of_nodes.append((node.value, index))
+
+        values = [value for (value, _) in list_of_nodes]
+
+        trim = 0
+
+        for (value, index) in list_of_nodes:
+            if values.count(value) > 1:
+                values.pop(index - trim)
+                self.remove_at(index - trim)
+                trim += 1

@@ -74,7 +74,30 @@ if __name__ == "__main__":
     # saída:
     # 13. -1
 
-    linked_list.clear()
+    linked_list.insert_last(8)
+    linked_list.insert_last(9)
     print(f"14. {linked_list}")
     # saída:
-    # 14. LinkedList(len=0, nodes=None)
+    # 14. LinkedList(len=5, nodes=
+    #       Node(value=5, next=
+    #       Node(value=6, next=
+    #       Node(value=7, next=
+    #       Node(value=8, next=
+    #       Node(value=9, next=
+    #       Node(value=8, next=
+    #       Node(value=9, next=None))))))))
+
+    linked_list.delete_duplicates()
+    print(f"15. {linked_list}")
+    # saída:
+    # 15. LinkedList(len=5, nodes=
+    #       Node(value=5, next=
+    #       Node(value=6, next=
+    #       Node(value=7, next=
+    #       Node(value=8, next=
+    #       Node(value=9, next=None))))))
+
+    linked_list.clear()
+    print(f"16. {linked_list}")
+    # saída:
+    # 16. LinkedList(len=0, nodes=None)

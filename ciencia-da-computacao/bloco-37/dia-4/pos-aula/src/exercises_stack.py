@@ -33,6 +33,10 @@ if __name__ == "__main__":
     # saída:
     # 9
 
+    print(content_stack.min_value())
+    # saída:
+    # 1
+
     print(content_stack.clear())
     # saída:
     # None, pois a função não retorna nada!

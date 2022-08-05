@@ -35,7 +35,7 @@ class LinkedList:
             return self.insert_first(value)
 
         last_node = Node(value)
-        current_node = self.__get_node_at(len(self) - 1)
+        current_node, _ = self.__get_node_at(len(self) - 1)
 
         current_node.next = last_node
         self.__length += 1
@@ -138,3 +138,18 @@ class LinkedList:
         """
         while not self.is_empty():
             self.remove_first()
+
+    def index_of(self, value):
+        """
+        Complexidade: O(n)
+        """
+        index = 0
+        current_node = self.head_node
+
+        while current_node:
+            if current_node.value == value:
+                return index
+            current_node = current_node.next
+            index += 1
+
+        return -1

@@ -1,4 +1,6 @@
 from src.classes.stack import Stack
+from src.classes.limit_stack import LimitStack
+from src.classes.stack_overflow import StackOverflow
 
 
 if __name__ == "__main__":
@@ -43,3 +45,12 @@ if __name__ == "__main__":
 
     print(content_stack.size())
     # saída: 0
+
+    content_stack = LimitStack(3)
+    content_stack.push(1)
+    content_stack.push(2)
+    content_stack.push(3)
+    try:
+        content_stack.push(4)
+    except StackOverflow:
+        print("A pilha está cheia")

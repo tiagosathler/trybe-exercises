@@ -285,13 +285,13 @@ Este repositório contém todas as minhas atividades de aprendizagem desenvolvid
 - [x] 36-3: _Algoritmos de ordenação e busca_
 - [x] 36-4: _[Projeto - Algoritmos](https://github.com/tiagosathler/36-project-algorithms)_
 
-##### :hourglass_flowing_sand: Bloco 37: Estrutura de Dados I: Arrays, Listas, Filas e Pilhas
+##### :white_check_mark: Bloco 37: Estrutura de Dados I: Arrays, Listas, Filas e Pilhas
 
 - [x] 37-1: _Arquitetura de Computadores_
 - [x] 37-2: _Arrays_
 - [x] 37-3: _Nó e Listas Encadeadas_
 - [x] 37-4: _Pilhas e Filas_
-- [ ] 37-5: _[Projeto - TING - Tryber Is Not Google]()_
+- [x] 37-5: _[Projeto - TING - Tryber Is Not Google](https://github.com/tiagosathler/37-project-ting)_
 
 ##### :hourglass_flowing_sand: Bloco 38: Estrutura de Dados II: Hashmaps e Sets
 

@@ -53,6 +53,27 @@ if __name__ == "__main__":
     registry.update(14, "Manuelzinho")
     print(registry.get_name(14))
 
-    # exercício 3:
+    # exercício 5:
     double = {i: 2 * i for i in range(3, 21)}
     print(double)
+
+    # exercício 6:
+    string = "bbbbaaaacccaaaaaaddddddddccccccc"
+    result = {}
+
+    for char in string:
+        if char not in result:
+            result[char] = 1
+        else:
+            result[char] += 1
+    print(result)
+
+    string = "coxinha"
+    result = {}
+
+    for char in string:
+        if char not in result:
+            result[char] = 1
+        else:
+            result[char] += 1
+    print(result)

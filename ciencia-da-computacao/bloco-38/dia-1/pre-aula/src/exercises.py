@@ -23,6 +23,11 @@ class HashMap:
         index = self.hash_function(id)
         return bool(self.__buckets[index])
 
+    def update(self, id: int, name: str) -> None:
+        if self.has(id):
+            index = self.hash_function(id)
+            self.__buckets[index].name = name
+
 
 if __name__ == "__main__":
 
@@ -43,3 +48,6 @@ if __name__ == "__main__":
 
     print(registry.has(15))
     print(registry.has(9))
+
+    registry.update(14, "Manuelzinho")
+    print(registry.get_name(14))

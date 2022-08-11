@@ -30,7 +30,7 @@ class HashMap:
 
 
 if __name__ == "__main__":
-
+    # exercício 1:
     employees = [
         (14, "Zezinho"),
         (23, "Fulano"),
@@ -49,5 +49,10 @@ if __name__ == "__main__":
     print(registry.has(15))
     print(registry.has(9))
 
+    # exercício 2:
     registry.update(14, "Manuelzinho")
     print(registry.get_name(14))
+
+    # exercício 3:
+    double = {i: 2 * i for i in range(3, 21)}
+    print(double)

@@ -29,6 +29,12 @@ class HashMap:
             self.__buckets[index].name = name
 
 
+def calculate(i: int) -> int:
+    if i % 2:
+        return 3 * i
+    return 2 * i
+
+
 if __name__ == "__main__":
     # exercício 1:
     employees = [
@@ -77,3 +83,12 @@ if __name__ == "__main__":
         else:
             result[char] += 1
     print(result)
+
+    # exercício 7:
+    my_dict = {i: calculate(i) for i in range(3, 21)}
+    print(my_dict)
+
+    for key in double.keys():
+        if key % 2:
+            double[key] = 3 * key
+    print(double)

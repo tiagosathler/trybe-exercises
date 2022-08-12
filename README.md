@@ -295,8 +295,8 @@ Este repositório contém todas as minhas atividades de aprendizagem desenvolvid
 
 ##### :hourglass_flowing_sand: Bloco 38: Estrutura de Dados II: Hashmaps e Sets
 
-- [ ] 38-1: _Hashmap e Dict_
-- [ ] 38-2: _Set_
+- [x] 38-1: _Hashmap e Dict_
+- [x] 38-2: _Set_
 - [ ] 38-3: _[Projeto - Restaurant Orders]()_
 
 # [...]

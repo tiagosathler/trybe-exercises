@@ -255,7 +255,7 @@ Este repositório contém todas as minhas atividades de aprendizagem desenvolvid
 - [x] 31-2: _Dia 2_
 
 
-## Ciência da Computação :hourglass_flowing_sand:
+## Ciência da Computação :white_check_mark:
 
 ##### :white_check_mark: Bloco 33: Introdução à Python
 
@@ -293,10 +293,10 @@ Este repositório contém todas as minhas atividades de aprendizagem desenvolvid
 - [x] 37-4: _Pilhas e Filas_
 - [x] 37-5: _[Projeto - TING - Tryber Is Not Google](https://github.com/tiagosathler/37-project-ting)_
 
-##### :hourglass_flowing_sand: Bloco 38: Estrutura de Dados II: Hashmaps e Sets
+##### :white_check_mark: Bloco 38: Estrutura de Dados II: Hashmaps e Sets
 
 - [x] 38-1: _Hashmap e Dict_
 - [x] 38-2: _Set_
-- [ ] 38-3: _[Projeto - Restaurant Orders]()_
+- [x] 38-3: _[Projeto - Restaurant Orders](https://github.com/tiagosathler/38-restaurant-orders)_
 
 # [...]

@@ -14,6 +14,8 @@ import os
 
 def compareTriplets(a: list[int], b: list[int]) -> list[int]:
     """
+    https://www.hackerrank.com/challenges/compare-the-triplets/
+
     Alice and Bob each created one problem for HackerRank.
     A reviewer rates the two challenges,
     awarding points on a scale from 1 to 100 for three categories:

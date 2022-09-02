@@ -12,6 +12,8 @@ import os
 
 def simpleArraySum(ar: list[int]) -> int:
     """
+    https://www.hackerrank.com/challenges/simple-array-sum/
+
     Given an array of integers, find the sum of its elements.
 
     For example, if the array ar = [1, 2, 3], 1 + 2 + 3, so return 6.
